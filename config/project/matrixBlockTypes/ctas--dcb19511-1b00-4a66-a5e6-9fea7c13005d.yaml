@@ -1,0 +1,71 @@
+field: 841a9dc9-2449-48a3-b2c5-e56ef71507b9 # Call to actions
+fieldLayouts:
+  d6ebd64d-cae7-4bf9-81dd-312db7419493:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 9f73862a-148a-43ae-ad8a-65566b027b1b # Call to action
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b057ff76-890b-4574-aa17-8a4d40339c53
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 188badc9-0d4f-4a68-b75e-71232eb43077
+        userCondition: null
+fields:
+  9f73862a-148a-43ae-ad8a-65566b027b1b: # Call to action
+    columnSuffix: ofcjiimd
+    contentColumnType: text
+    fieldGroup: null
+    handle: cta
+    instructions: 'Selecteer waar je naar wil linken, welke tekst je op de call to action wil voorzien en hoe de call to action er moet uitzien.'
+    name: 'Call to action'
+    searchable: true
+    settings:
+      allowClass: '1'
+      allowCustomText: '1'
+      allowTarget: '1'
+      allowedLinkNames:
+        3: entry
+        6: url
+      class: null
+      classes: null
+      defaultLinkName: entry
+      defaultText: ''
+      typeSettings:
+        __assoc__:
+          -
+            - email
+            -
+              __assoc__:
+                -
+                  - disableValidation
+                  - ''
+          -
+            - tel
+            -
+              __assoc__:
+                -
+                  - disableValidation
+                  - ''
+          -
+            - url
+            -
+              __assoc__:
+                -
+                  - disableValidation
+                  - ''
+    translationKeyFormat: null
+    translationMethod: site
+    type: statikbe\cta\fields\CTAField
+handle: ctas
+name: 'Call to action(s)'
+sortOrder: 1

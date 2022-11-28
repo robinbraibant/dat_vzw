@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 49a4daa7-0854-420d-85f6-f5b9c29a4d4d # Banners
+handle: ctas
+instructions: 'Gebruik dit veld om 1 of meerdere call to actions te voorzien. '
+name: 'Call to actions'
+searchable: true
+settings:
+  contentTable: '{{%matrixcontent_ctas}}'
+  maxBlocks: null
+  minBlocks: null
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

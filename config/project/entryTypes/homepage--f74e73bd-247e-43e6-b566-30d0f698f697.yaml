@@ -2,6 +2,7 @@ fieldLayouts:
   8507f64b-b607-4808-b4cc-92c4de1f290d:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,9 +10,10 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
             instructions: null
-            label: null
+            label: Titel
             max: null
             min: null
             name: null
@@ -25,20 +27,36 @@ fieldLayouts:
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
             uid: 4b1a4d6c-1f28-421b-b633-223d0ce94ba5
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: 923e90c0-ecae-4bbc-97eb-6cc3136a8cd1 # Banner intro
+            elementCondition: null
+            fieldUid: 923e90c0-ecae-4bbc-97eb-6cc3136a8cd1 # Intro
+            instructions: null
+            label: Intro
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4f8f520f-8b8d-4de4-b294-68bb2bc278c1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 841a9dc9-2449-48a3-b2c5-e56ef71507b9 # Call to actions
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 4f8f520f-8b8d-4de4-b294-68bb2bc278c1
+            uid: 5438d5b4-25fb-4678-b3b7-a59412ec77a1
+            userCondition: null
             warning: null
-            width: 50
+            width: 100
         name: 'Home banner'
         uid: c9299d7a-5d02-46af-a40b-d60a7510ea95
+        userCondition: null
 handle: homepage
 hasTitleField: true
 name: Startpagina

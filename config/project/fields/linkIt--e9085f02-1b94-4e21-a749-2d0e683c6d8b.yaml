@@ -1,9 +1,9 @@
-columnSuffix: pqbfgljl
+columnSuffix: scwlupzi
 contentColumnType: string(255)
-fieldGroup: c945c5c3-b55d-4610-8948-0cc8b1d5270e # Globals
-handle: instagram
+fieldGroup: 1ed7efa2-b8da-4da5-8c3a-6c98c05577b0 # Common
+handle: linkIt
 instructions: null
-name: Instagram
+name: Link
 searchable: true
 settings:
   maxLength: 255

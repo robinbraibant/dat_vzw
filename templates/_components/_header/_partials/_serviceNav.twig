@@ -22,7 +22,7 @@
         <div class="top-nav-links">
             {% if contactInfo.instagram|length %}
                 <div class="insta-link">
-                    <a class="nav-link" href="{{ contactInfo.instagram }}">
+                    <a class="nav-link" target="_blank" rel="nofollow" href="{{ contactInfo.instagram }}">
                         <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewbox="0 0 29 29">
                             <g id="insta-icon" data-name="Icon instagram" transform="translate(-8995.295 3602.705)">
                                 <circle id="Ellipse_72" data-name="Ellipse 72" cx="14.5" cy="14.5" r="14.5"
@@ -46,9 +46,7 @@
                 </ul>
             </nav>
 
-            {#            ToDo: add functionality to login #}
-            <a href="" class="button button-outline-primary">{{ "Inloggen" }}</a>
-
+            <a href="{{ other.linkIt }}" target="_blank" rel="nofollow" class="button button-outline-primary">{{ "Inloggen"|t }}</a>
         </div>
     </div>
 </div>

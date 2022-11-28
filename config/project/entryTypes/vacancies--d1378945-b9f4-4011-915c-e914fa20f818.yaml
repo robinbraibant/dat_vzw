@@ -28,7 +28,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 923e90c0-ecae-4bbc-97eb-6cc3136a8cd1 # Banner intro
+            fieldUid: 923e90c0-ecae-4bbc-97eb-6cc3136a8cd1 # Intro
             instructions: null
             label: null
             required: false

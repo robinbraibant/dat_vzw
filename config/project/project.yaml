@@ -1,6 +1,6 @@
 assets:
   tempVolumeUid: fdb9bfff-e48f-424c-b268-d852e14a76ff # Sponsors
-dateModified: 1669484814
+dateModified: 1669651326
 elementSources:
   craft\elements\Asset:
     -
@@ -50,6 +50,9 @@ elementSources:
       type: native
   craft\elements\Entry:
     -
+      defaultSort:
+        - postDate
+        - desc
       disabled: false
       key: '*'
       tableAttributes:
@@ -59,25 +62,17 @@ elementSources:
         - link
       type: native
     -
-      disabled: false
-      key: singles
-      tableAttributes:
-        - link
+      heading: Algemeen
+      type: heading
+    -
+      key: 'single:4fa55fe2-6dbc-4e03-aeaf-2e4acd4e5449' # Startpagina
       type: native
     -
       heading: ''
       type: heading
     -
-      disabled: true
-      key: 'section:298e299b-a244-47dd-8420-45bf6e1c3f4e' # Doelgroepen
-      tableAttributes:
-        - postDate
-        - expiryDate
-        - link
-      type: native
-    -
       disabled: false
-      key: 'section:5a50b43e-57ff-451d-99a9-6e517f9d600d' # Over ons
+      key: 'section:1a5e8394-ba57-4463-b046-6c9de0812b2c' # Werken bij d.a.t.
       tableAttributes:
         - postDate
         - expiryDate
@@ -88,11 +83,28 @@ elementSources:
       type: native
     -
       disabled: false
-      key: 'section:1a5e8394-ba57-4463-b046-6c9de0812b2c' # Werken bij d.a.t.
+      key: 'section:5a50b43e-57ff-451d-99a9-6e517f9d600d' # Over ons
       tableAttributes:
         - postDate
         - expiryDate
         - link
+      type: native
+    -
+      disabled: true
+      key: 'section:298e299b-a244-47dd-8420-45bf6e1c3f4e' # Doelgroepen
+      tableAttributes:
+        - postDate
+        - expiryDate
+        - link
+      type: native
+    -
+      key: 'single:9d52999e-de87-4d20-9e95-0b9a1a6d0419' # Contact
+      type: native
+    -
+      key: 'single:aea891e5-7577-41f6-a827-258037235a16' # Default HTML styling
+      type: native
+    -
+      key: 'single:5be4ab95-7c42-4fb8-bc49-4bceedd6d67f' # Onze werking
       type: native
   verbb\formie\elements\Form:
     -
@@ -169,6 +181,7 @@ meta:
     9ae3759e-7da8-4b2e-8d7f-b9f2c711a63f: Afbeelding # Afbeelding
     9d52999e-de87-4d20-9e95-0b9a1a6d0419: Contact # Contact
     9db55e63-6fb1-4978-9ce9-0b954be6a91e: 'Banner afbeeldingen' # Banner afbeeldingen
+    9f73862a-148a-43ae-ad8a-65566b027b1b: 'Call to action' # Call to action
     19f7c926-e6fc-475c-980b-5264046aad25: 'Fit content' # Fit content
     28a02e15-0fc5-4cb5-9f7d-ebaea34f6d6e: 'Contact SVG' # Contact SVG
     33b9a6a8-f771-4a59-a8d6-4800dc41bc2d: nl # nl
@@ -189,8 +202,9 @@ meta:
     515fb477-dae9-4b04-9de1-f31c7e0eac68: Telefoonnummer # Telefoonnummer
     547c5c72-db99-4202-909e-a48dabcf05c9: 'Titel van de doelgroep' # Titel van de doelgroep
     567b0b6c-df99-4b13-88c8-b798c1f3210a: 'Contact Form' # Contact Form
+    841a9dc9-2449-48a3-b2c5-e56ef71507b9: 'Call to actions' # Call to actions
     853bf7f2-69d8-463d-b8de-b209214299f3: Team # Team
-    923e90c0-ecae-4bbc-97eb-6cc3136a8cd1: 'Banner intro' # Banner intro
+    923e90c0-ecae-4bbc-97eb-6cc3136a8cd1: Intro # Intro
     997fe667-1226-4516-9cfc-511327ca0b6b: 'contact img' # contact img
     1949f3e2-18c5-4b9b-9f1a-eef1b436c2c0: 'Url webpagina' # Url webpagina
     5487f591-93a8-4829-ba8b-db935950e0b8: 'Beschrijving doelgroep' # Beschrijving doelgroep
@@ -202,6 +216,7 @@ meta:
     638581e2-7f91-40de-97d3-d2665b6b8c38: Tekstblok # Tekstblok
     86512894-9905-4140-9023-372e12c4aad4: Afbeelding # Afbeelding
     a0184370-60c2-4d56-8b47-e0d90ca2c218: Beschrijving # Beschrijving
+    a048077c-8fef-4fcc-937f-d8e187498361: Andere # Andere
     a2bb7dcc-7e37-49a2-895e-dcdca4b3aaf7: 'Link destination' # Link destination
     a8fb3d5a-1a38-471a-9f47-e40a2bf14f84: 'Default HTML styling' # Default HTML styling
     a29019e4-2a19-4028-98c9-ffe999e1475b: Afbeelding # Afbeelding
@@ -213,6 +228,7 @@ meta:
     bc974703-8192-42fb-9f24-3f56f6958745: Functie # Functie
     bf8d4172-3ceb-47bb-aa1d-06b197a49271: Afbeelding # Afbeelding
     c1db4b54-abb0-4a79-8f05-18c5415e18e8: 'contact item' # contact item
+    c945c5c3-b55d-4610-8948-0cc8b1d5270e: Globals # Globals
     c30035de-f5ed-4cd6-92bd-7202cd70701a: Locatie # Locatie
     c99427ed-f87a-4d16-9741-f3fbd1a2e52b: Default # Default
     ca30bd80-b927-493c-8958-8571f1b0ff32: Locatie # Locatie
@@ -222,8 +238,10 @@ meta:
     d907c00f-80e2-4d7d-b2f4-4eb61308725a: 'Onze werking' # Onze werking
     d1378945-b9f4-4011-915c-e914fa20f818: 'Werken bij d.a.t.' # Werken bij d.a.t.
     d6893358-6209-49d3-aacd-4c70217b3636: Instagram # Instagram
+    dcb19511-1b00-4a66-a5e6-9fea7c13005d: 'Call to action(s)' # Call to action(s)
     e38d253f-b5c1-457e-925f-2670c4704eb1: en # en
     e56ad2b8-f25f-47c4-885d-b4a6486b90f0: Stad # Stad
+    e9085f02-1b94-4e21-a749-2d0e683c6d8b: Link # Link
     e12094c8-d18a-4e6b-89e0-d868b63c5beb: 'Postcode + stad' # Postcode + stad
     ef5be5d2-26f8-49c9-910d-88ba30b4c23e: Contactgegevens # Contactgegevens
     ef8fb09d-1627-4aaf-a326-1f27189b0af6: Default # Default
