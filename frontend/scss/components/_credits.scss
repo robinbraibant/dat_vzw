@@ -1,0 +1,144 @@
+.credits-container {
+    background-color: $color-primary-light;
+}
+
+.credits {
+    max-width: $max-width;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: $gutter;
+    padding-right: $gutter;
+
+    font-size: $font-size-small;
+    text-align: center;
+
+    a {
+        text-decoration: none;
+    }
+    @include mq(md) {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-between;
+
+        text-align: left;
+    }
+}
+
+.credits-start {
+    padding-top: $spacing * 2;
+    padding-bottom: $spacing * 2;
+}
+
+.credits-end {
+    padding-top: $spacing * 2;
+    padding-bottom: $spacing * 2;
+
+    img {
+        margin-left: 4px;
+    }
+
+    a {
+        font-weight: 900;
+
+        &:hover,
+        :focus {
+            color: $orange;
+            text-decoration: underline;
+        }
+
+        &:active {
+            color: $orange-darkest;
+            text-decoration: none;
+        }
+    }
+}
+
+.creditsnav {
+    @include mq(md) {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+    }
+}
+
+.creditsnav-image {
+    margin-bottom: $spacing;
+
+    @include mq(md) {
+        margin-right: $spacing;
+        margin-bottom: 0;
+    }
+}
+
+.creditsnav-body {
+}
+
+.creditsnav-line {
+}
+
+.creditsnav-br {
+    display: block;
+    height: 0;
+
+    @include mq(620) {
+        display: none;
+    }
+}
+
+.creditsnav-list {
+    display: block;
+    list-style: none;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-top: $spacing;
+
+    @include mq(620) {
+        margin-top: 0;
+    }
+}
+
+.creditsnav-item {
+    display: block;
+
+    & + & {
+        margin-top: 0.4rem;
+
+        @include mq(621) {
+            padding-left: 4rem;
+        }
+    }
+    a:hover,
+    :focus {
+        color: $color-primary;
+        text-decoration: underline;
+    }
+
+    a:active {
+        color: $color-primary-darkest;
+        text-decoration: none;
+    }
+
+    @include mq(620) {
+        display: inline-block;
+
+        & + & {
+            margin-top: 0;
+        }
+    }
+}
+.footernav-link .creditsnav-link {
+    font-weight: 400;
+    text-decoration: none;
+    color: $color-primary;
+
+    &:hover,
+    &:focus {
+        text-decoration: underline;
+    }
+
+    &:active {
+        color: $color-primary-darkest;
+        text-decoration: none;
+    }
+}

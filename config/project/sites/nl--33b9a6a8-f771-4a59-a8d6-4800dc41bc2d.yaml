@@ -1,0 +1,9 @@
+baseUrl: '@baseUrlNL'
+enabled: true
+handle: nl
+hasUrls: true
+language: nl-BE
+name: nl
+primary: true
+siteGroup: 181df45b-ef1d-4bea-96f6-1655f875539c # Revalidatiecentrum DAT
+sortOrder: 1

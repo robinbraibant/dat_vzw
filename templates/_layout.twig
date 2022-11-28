@@ -1,0 +1,20 @@
+{% set lang = craft.app.language |split('-') %}
+
+<!DOCTYPE html>
+
+{% include '_components/_head/_head.twig' %}
+
+<html lang="{{ lang[0] }}">
+
+	<body class="ltr">
+		{% include '_components/_header/_header.twig' %}
+{#		<div> </div>#}
+		<div>
+			{% block content %}{% endblock %}
+		</div>
+
+{#		{% include '_components/_footer/_index.twig' %}#}
+		<script src="/js/main.js"></script>
+	</body>
+
+</html>

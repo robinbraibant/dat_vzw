@@ -1,0 +1,183 @@
+/// Variables
+/*
+** Sizes:
+* -xsmall 
+* -small
+* 
+* -large
+* -xlarge
+*
+** Lightness
+* -lightest
+* -lighter
+* -light
+* 
+* -dark
+* -darker
+* -darkest
+*/
+
+/// BASICS
+
+// assets paths (see functions assets helper)
+$assets-image-path: "/front/images";
+$assets-font-path: "/front/fonts";
+
+// defaults
+$vertical-spacing: 1.5rem;
+
+$spacing: 1.5rem;
+$spacing-small: 1rem;
+$spacing-large: 3rem;
+
+$gutter: 1.5rem;
+$max-width: 120rem;
+$max-width-small: 100rem;
+$max-width-large: 144rem;
+$columns: 12;
+
+/// Breakpoints - used by the grid and media query manager
+/// @type Map
+/// @prop {size}: [min-width] - breakpoint name and minimum width for media queries
+$breakpoints: (
+    "xs": 0,
+    "sm": 420px,
+    "md": 700px,
+    "lg": 960px,
+    "xl": 1200px,
+    "xxl": 1440px,
+);
+
+/// COLORS
+
+// colors
+
+$blue: #0067a8;
+$blue-dark: #11537d;
+$blue-darkest: #04263c;
+$blue-light: #f0f9ff;
+$blue-lightest: #f8fcff;
+$blue-offlight: #E9F6FE ;
+$orange: #fbab28;
+$orange-dark: #9e6b18;
+$orange-darkest: #503405;
+$orange-light: #fff1d9;
+$orange-lightest: #fff1d9;
+
+$tertiary: #57c5dc;
+
+$offwhite: #eaf3fb; //#E0E0E9;
+$white: #ffffff;
+$gray-lightest: #e8e8fa;
+$gray-lighter: #acacc1;
+$gray-light: #8d8ca8;
+$gray: #70708b;
+$gray-dark: #2b2a61;
+$gray-darker: #19183a;
+$gray-darkest: #101029;
+$black: #000000;
+
+// color names
+$color-text: $blue-darkest;
+$color-text-light: $gray;
+
+$color-primary: $blue;
+$color-primary-dark: $blue-dark;
+$color-primary-darkest: $blue-darkest;
+$color-primary-light: $blue-light;
+$color-primary-offlight: $blue-offlight;
+$color-primary-lightest: $blue-lightest;
+
+$color-secondary: $orange;
+$color-secondary-dark: $orange-dark;
+$color-secondary-darkest: $orange-darkest;
+$color-secondary-light: $orange-light;
+$color-secondary-lightest: $orange-lightest;
+
+$color-tertiary: $tertiary;
+
+.color-tertiary {
+    color: $color-tertiary;
+}
+
+$color-subsidiary: $gray;
+$color-subsidiary-light: $gray-light;
+$color-subsidiary-lighter: $gray-lighter;
+$color-subsidiary-lightest: $gray-lightest;
+$color-subsidiary-dark: $gray-dark;
+$color-subsidiary-darker: $gray-darker;
+$color-subsidiary-darkest: $gray-darkest;
+
+$red: #e20613;
+$red-lightest: lighten($red, 40%);
+
+$color-success: #2dcb48;
+$color-success-lightest: #c5e9cb;
+$color-warning: #f5a623;
+$color-warning-lightest: #f6e5c9;
+$color-danger: $red;
+$color-danger-lightest: $red-lightest;
+
+$color-facebook: #3b5998;
+$color-twitter: #1da1f2;
+$color-linkedin: #0077b5;
+$color-whatsapp: #25d366;
+$color-youtube: #cd201f;
+$color-pinterest: #e60023;
+
+$gradient-instagram: radial-gradient(
+        circle farthest-corner at 32% 106%,
+        rgb(255, 225, 125) 0%,
+        rgb(255, 205, 105) 10%,
+        rgb(250, 145, 55) 28%,
+        rgb(235, 65, 65) 42%,
+        transparent 82%
+    ),
+    linear-gradient(135deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
+
+/// TYPOGRAPHY
+
+// fonts
+$comfortaa: "Comfortaa", sans-serif;
+$source-sans-pro: "Source Sans Pro", sans-serif;
+
+// default
+$font-size: 1.7rem;
+$font-size-small: 1.5rem;
+$font-size-large: 1.9rem;
+$font-lineheight: 1.5;
+$font-weight: 400;
+
+$font-family-primary: $comfortaa;
+// $font-family:           $source-sans-pro;
+
+$fa-brands: "Font Awesome 5 Brands";
+$fa-regular: "Font Awesome 5 Free";
+$fa-solid: "Font Awesome 5 Free";
+
+/// DEFAULT STYLES
+
+//header & nav
+$bp-mobilenav: md;
+$mobilenav-header-height: 7rem;
+
+$borderradius: 0;
+$boxshadow: 0;
+
+// plyr.io
+// $plyr-color-main: $color-secondary;
+// $plyr-video-background: rgba($color-subsidiary-dark, 0.1);
+
+// lightGallery
+// $backdrop-opacity: 0.9;
+// $lg-backdrop-bg: $color-subsidiary-darkest;
+// $lg-theme-highlight: $color-primary;
+// $lg-toolbar-bg: transparent;
+// $lg-border-radius-base: 0;
+// $lg-path-images: '../js/libs/lightGallery';
+// $lg-thumb-toggle-bg: $color-primary;
+// $lg-icon-bg: transparent;
+// $lg-icon-color: $white;
+// $lg-icon-hover-color: $color-primary;
+// $lg-thumb-toggle-bg: transparent;
+// $lg-thumb-bg: rgba($color-subsidiary-darkest, 1);

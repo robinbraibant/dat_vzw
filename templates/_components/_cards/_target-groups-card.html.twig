@@ -1,0 +1,42 @@
+{% set targetGroupEntries = craft.entries.section('targetGroups').all() %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-full">
+            <div class="target-audience">
+
+                <div class="target-audience--heading">
+                    <h2 class="leading">
+                       {{ "Voor wie zijn wij er?"|t }}
+                    </h2>
+                    
+                </div>
+                <div class="target-audience--cardgrid">
+
+                    {% for item in targetGroupEntries %}
+                    <a href="{{ item.getUrl() }}" class="target-audience--cardgrid-item">
+                        <div class="target-audience--card-content">
+                        {% set icon = item.image.one() %}
+                            {% if icon %}
+                            <div class="target-audience--card-image">
+                                <img src="{{ icon.getUrl() }}" alt="" />
+                            </div>
+                            
+                            {% endif %}
+                            
+
+                        
+                            <div class="target-audience--card-text">
+                                <h4 class="target-audience--card-leading">
+                                    {{ item.title }}
+                                </h4>
+                            </div>
+                        </div>
+                    </a>
+                    {% endfor %}
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+{% set teamGroupCat = craft.categories.group('team').all() %}
+
+    {% if teamGroupCat|length %}
+	<div class="container">
+		<div class="row">
+			<div class="col-full">
+				<div class="links-content">
+					<div class="links-headline">
+						<h4 class="links-leading">
+							{{ entry.title }}
+							overzicht
+						</h4>
+					</div>
+					<nav class="links-contentlist">
+						<ul class="list-clear">
+							{% for item in teamGroupCat %}
+								<li class="links-listitem">
+									<a href="" class="links-item">
+										{{ item.title}}
+									</a>
+								</li>
+							{% endfor %}
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endif %}

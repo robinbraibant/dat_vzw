@@ -1,0 +1,100 @@
+field: ef5be5d2-26f8-49c9-910d-88ba30b4c23e # Contactgegevens
+fieldLayouts:
+  1629db3a-47d6-452d-8c14-d8f61908f3cd:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 28a02e15-0fc5-4cb5-9f7d-ebaea34f6d6e # Contact SVG
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: acd6c7b8-2f6a-4aad-bac0-5ec8b5acd42f
+            warning: null
+            width: 100
+          -
+            fieldUid: 8ed8301b-b5f3-4303-9fbf-a86e97b1fd96 # Contact item
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 14d80a8e-5953-432c-975a-26670e8e6a22
+            warning: null
+            width: 100
+        name: Content
+        uid: 7f0a3535-9a2f-4b22-88d3-0d649174f753
+fields:
+  8ed8301b-b5f3-4303-9fbf-a86e97b1fd96: # Contact item
+    columnSuffix: girdwnya
+    contentColumnType: text
+    fieldGroup: null
+    handle: contactItem
+    instructions: null
+    name: 'Contact item'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  28a02e15-0fc5-4cb5-9f7d-ebaea34f6d6e: # Contact SVG
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: contactSvg
+    instructions: null
+    name: 'Contact SVG'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:fd161842-f0ba-4d20-8d61-2225c5ff20c1' # Contactinfo iconen
+      defaultUploadLocationSubpath: '@web/images/svg/footer'
+      localizeRelations: false
+      maxRelations: 1
+      minRelations: null
+      previewMode: full
+      restrictFiles: false
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:fdb9bfff-e48f-424c-b268-d852e14a76ff' # Sponsors
+      restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
+      selectionLabel: null
+      showSiteMenu: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      source: null
+      sources:
+        - 'volume:fd161842-f0ba-4d20-8d61-2225c5ff20c1' # Contactinfo iconen
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+handle: contactInfo
+name: 'Contact info'
+sortOrder: 1

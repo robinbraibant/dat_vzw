@@ -1,0 +1,5 @@
+{% set form = craft.formie.forms({ handle: 'contactForm' }).one() %}
+{% set submissions = craft.formie.submissions({ formId: 123, limit: 10 }).all() %}
+
+
+{{ craft.formie.renderForm('contactForm') }}

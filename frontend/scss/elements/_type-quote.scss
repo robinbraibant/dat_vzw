@@ -1,0 +1,72 @@
+/// Quote
+blockquote, .explanation {
+    display: block;
+    margin-bottom: $vertical-spacing;
+    margin-left: $gutter *2;
+    margin-top: 0;
+    margin-right: 0;
+
+    color: $color-primary;
+    font-family: $font-family-primary;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 2.1rem;
+    line-height: 1.05;
+    
+    &.blockquote-small {
+        font-size: $font-size-large;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        display: inline;
+        color: inherit;
+        font-family: inherit;
+        font-size: inherit;
+        font-weight: inherit;
+        font-style: inherit;
+        line-height: inherit;  
+        text-transform: none;
+
+        .contrast-element & {
+            color: inherit;
+        }
+    }
+    
+    p {
+        display: inline;
+        line-height: inherit;
+    }
+
+    &::before, &::after {
+        display: inline-block;
+        line-height: 1;
+        font-style: normal;
+        position: relative;
+        top: 0.15em;
+    }
+
+    &::before {
+        content: '“';
+        font-size: 1.25em;
+        line-height: 1;
+        margin-right: -0.4rem;
+    }
+
+    &::after {
+        content: '”';
+        font-size: 1.25em;
+        line-height: 1;
+        margin-left: -0.4rem;
+    }
+
+    cite {
+        display: block;
+        font-style: normal;
+        font-weight: 600;
+        font-size: $font-size;
+
+        &::before {
+            content: '- ';
+        }
+    }
+}

@@ -1,0 +1,105 @@
+.contact-block{
+    @include mq(lg){
+        display: flex;
+        width:100%;
+        gap:6rem;
+    }
+}
+
+.form-block{
+    width:100%;
+    background: $color-primary-lightest;
+    padding:3rem;
+    border-radius: 25px;
+    @include mq(lg){
+        width:50%;
+    }
+}
+
+.locations-block{
+    margin-top:3rem;
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    border:2px solid $color-primary-offlight;
+    padding:3rem;
+    border-radius: 25px;
+    @include mq(lg){
+        width:50%;
+        margin-top:0rem;
+
+    }
+
+}
+
+.location-blocks-container{
+   display: flex;
+   flex-direction: column;
+   margin: 0 auto;
+}
+
+.location-block{
+    margin-bottom:3rem;
+    &:last-child{
+        margin-bottom:0;
+    }
+
+}
+
+.our-locations-heading{
+    display: flex;
+    align-items:center;
+    gap:1.5rem;
+    img{
+        margin-bottom: 3rem;
+    }
+}
+
+.phone-and-map{
+    display:flex;
+    align-items:center;
+    gap:1.5rem;
+}
+
+.phone-number{
+    font-weight: 700;
+    font-size:1.5rem;
+    color:$tertiary;
+    margin-bottom:0;
+    border-radius: 25px;
+    border: 2px solid $tertiary;
+    padding-top:0.75rem;
+    padding-right: 1.5rem;
+    padding-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    @include mq(lg){
+        font-size:1.7rem; 
+    }
+}
+
+.google-maps-link{
+    border-radius: 25px;
+    font-size:1.5rem;
+    border: 2px solid $color-primary-offlight;
+    padding-top:0.75rem;
+    padding-right: 1.5rem;
+    padding-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    text-decoration: none;
+    img{
+        height:25px;
+
+    }
+    &:hover,
+    &:focus{
+        text-decoration: underline;
+    }
+    @include mq(lg){
+        font-size:1.7rem;
+        img{
+            height:30px;
+    
+        }
+    }
+
+}

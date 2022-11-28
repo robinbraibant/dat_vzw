@@ -1,0 +1,12 @@
+.contrast-element {
+    .banner-headline h1 {
+        color: $color-primary;
+    }
+    .banner-text p {
+        color: $color-primary;
+    }
+
+    &.list-clear li a {
+        color: $color-primary-dark;
+    }
+}

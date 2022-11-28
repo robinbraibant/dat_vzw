@@ -1,0 +1,20 @@
+fieldLayouts:
+  5bcc976b-fcde-4300-972c-ab0450c23248:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: ef5be5d2-26f8-49c9-910d-88ba30b4c23e # Contactgegevens
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0a23d9b1-b4e0-4119-b58e-5c9604f26623
+            warning: null
+            width: 50
+        name: Contactgegevens
+        uid: d1dc0d69-2421-4f49-b611-874bcc8f0049
+handle: footer
+name: Footer
+sortOrder: 1

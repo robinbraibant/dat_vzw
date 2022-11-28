@@ -1,0 +1,137 @@
+field: b87f3585-f683-47d2-a221-4457003d89f8 # Titel | Tekstblok | Afbeelding
+fieldLayouts:
+  c524286b-0b45-449c-b207-28a57caef030:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 7a96cd15-7a33-4486-82aa-366dadcdb453 # Titel
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 76268059-9b6d-41ce-98b9-65893e27409d
+            warning: null
+            width: 100
+          -
+            fieldUid: 638581e2-7f91-40de-97d3-d2665b6b8c38 # Tekstblok
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1d2dea0d-ed43-4633-9b45-c58ac7441cb1
+            warning: null
+            width: 100
+          -
+            fieldUid: f210fb24-5901-441c-84d9-b4ba967d398d # Afbeelding
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3b92b517-ae7f-4f75-adcc-7b05dc072d5e
+            warning: null
+            width: 100
+        name: Content
+        uid: 9f75c711-7772-4de3-91d7-954ea0c7e30b
+fields:
+  7a96cd15-7a33-4486-82aa-366dadcdb453: # Titel
+    columnSuffix: nolopefm
+    contentColumnType: text
+    fieldGroup: null
+    handle: ttiTitle
+    instructions: null
+    name: Titel
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  638581e2-7f91-40de-97d3-d2665b6b8c38: # Tekstblok
+    columnSuffix: elimjycz
+    contentColumnType: text
+    fieldGroup: null
+    handle: ttiTextblock
+    instructions: null
+    name: Tekstblok
+    searchable: false
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: null
+      purifyHtml: true
+      redactorConfig: null
+      removeEmptyTags: false
+      removeInlineStyles: false
+      removeNbsp: false
+      showHtmlButtonForNonAdmins: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  f210fb24-5901-441c-84d9-b4ba967d398d: # Afbeelding
+    columnSuffix: nllagxwb
+    contentColumnType: string
+    fieldGroup: null
+    handle: ttiImage
+    instructions: null
+    name: Afbeelding
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:fdb9bfff-e48f-424c-b268-d852e14a76ff' # Sponsors
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maxRelations: null
+      minRelations: null
+      previewMode: full
+      restrictFiles: false
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:fdb9bfff-e48f-424c-b268-d852e14a76ff' # Sponsors
+      restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
+      selectionLabel: null
+      showSiteMenu: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      source: null
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+handle: titleTextImage
+name: 'Titel Tekstblok Afbeelding'
+sortOrder: 1

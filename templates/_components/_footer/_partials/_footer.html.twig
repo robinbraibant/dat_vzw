@@ -1,0 +1,73 @@
+{% set contactIcon = craft.assets().volume('contactIcon').kind('image') %}
+{% set icons = contactIcon.all() %}
+
+{% set footerNav = craft.navigate.raw('footerNav') %}
+
+<div class="site-footer">
+	<div class="footersections-container">
+		<div class="row">
+			<div
+				class="col-full">
+				{# <div class="footer-background-small">
+				<img src="/front/images/svg/footer/footer-circle-small.svg" alt="footer vector small" />
+				</div>
+				<div class="footer-background">
+				<img src="/front/images/svg/footer/footer-circle-big.svg" alt="footer vector big" />
+				</div> #}
+
+				<div class="footersections">
+					<section class="footersection footersection-1">
+						<div class="footer-head">
+							<div class="footer-logo">
+								<img src="/front/images/logo/dat-logo-footer.svg" alt="logo dat vzw"/>
+							</div>
+						</div>
+						<div class="footer-contact">
+						{% if contactInfo.phoneNumber %}
+						<a href="" class="item-icon">
+									 <img src="/front/images/svg/footer/Icoon_telefoon.svg" alt="icon phone"> 
+										<span class="item-link"> {{ contactInfo.phoneNumber }} </span>
+								</a>
+						{% endif %}
+						{% if contactInfo.email %}
+						<a href="" class="item-icon">
+									 <img src="/front/images/svg/footer/Icoon_email.svg" alt="icon email"> 
+										<span class="item-link"> {{ contactInfo.email }} </span>
+								</a>
+						{% endif %}
+						{% if socialMedia.ig %}
+						<a href="" class="item-icon">
+									 <img src="/front/images/svg/footer/Icoon_instagram.svg" alt="icon instagram"> 
+										<span class="item-link"> {{ socialMedia.ig }} </span>
+								</a>
+						{% endif %}
+						
+								
+						</div>
+					</section>
+					{% for item in footerNav %}
+						<section class="footersection">
+							<div class="footer-headline">
+								<span class="footer-leading">
+									{{ item.name }}
+								</span>
+							</div>
+							{% if item.children|length %}
+								<nav class="footernav">
+									<ul class="footernav-list">
+										<li class="footernav-item">
+											<a class="footernav-link" href="#">
+												{{ item.children.name }}
+											</a>
+										</li>
+									</ul>
+								</nav>
+							{% endif %}
+						</section>
+					{% endfor %}
+					{# <section class="footersection">																																																					</section> #}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

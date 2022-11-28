@@ -1,0 +1,83 @@
+/// Lists
+
+// standard lists
+ul, ol {
+    margin-top: 0;
+    margin-bottom: $vertical-spacing;
+    line-height: $font-lineheight;
+    margin-left: 1.25em;
+    padding-left: 0;
+
+    ul, ol {
+        margin-bottom: 0;
+    }
+}
+
+ul {
+    list-style: disc;
+
+    &:not([class]) {
+        list-style: none;
+
+        > li {
+            &::before {
+                display: inline-block;
+                content: "•"; 
+                font-weight: normal;
+                color: $color-primary;
+                width: 1em;
+                margin-left: -1em;
+                position: relative;
+                top: -1px;
+            }
+        }
+    }
+
+    .contrast-element &:not([class]) > li::before {
+        color: $white;
+    }
+}
+
+ol {
+    list-style: decimal;
+
+    &:not([class]) {
+        list-style: none;
+        counter-reset: li;
+
+        > li {
+            counter-increment: li;
+
+            &::before {
+                display: inline-block;
+                content: counter(li)'.';
+                font-family: $font-family-primary;
+                font-weight: 500;
+                font-style: italic;
+                color: $color-primary;
+                width: 1em;
+                margin-left: -1em;
+            }
+        }
+    }
+
+    .contrast-element &:not([class]) > li::before {
+        color: $white;
+    }
+}
+
+li {
+
+}
+
+// definition lists
+dl {
+    margin-bottom: $vertical-spacing;
+    line-height: $font-lineheight;
+}
+dt {
+    font-weight: 600;
+}
+dd {
+    margin-left: 0;
+}

@@ -1,0 +1,35 @@
+{% set mainNav = craft.navigate.raw('mainNav') %}
+
+<div class="main-nav-container">
+    <div class="main-nav">
+        <div class="main-nav-links">
+            <nav>
+                <ul class="main-nav-list">
+                    {% for node in mainNav %}
+                        <li  class=" mainnav__item {% if node.children|length %} has-children {% endif %}">
+                            <div>
+                            {% if node.children %}
+                                <div class="subnav-toggle">
+                                    <svg class="arrow-icon" width="18" height="9" viewbox="0 0 19 10" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">#}
+                                        <path id="arrow-icon"
+                                              d="M9.74301 6.98301L16.353 0.368007C16.4686 0.251782 16.606 0.159551 16.7574 0.0966158C16.9088 0.0336805 17.0711 0.00128174 17.235 0.00128174C17.3989 0.00128174 17.5612 0.0336805 17.7126 0.0966158C17.864 0.159551 18.0014 0.251782 18.117 0.368007C18.3497 0.603802 18.4801 0.921741 18.4801 1.25301C18.4801 1.58427 18.3497 1.90221 18.117 2.13801L10.627 9.63301C10.3997 9.85962 10.0937 9.98984 9.77273 9.99654C9.45179 10.0032 9.14063 9.88593 8.90401 9.66901L1.36401 2.14201C1.12929 1.90808 0.997116 1.5905 0.996553 1.25913C0.995991 0.927751 1.12709 0.609723 1.36101 0.375007C1.59493 0.14029 1.91251 0.00811095 2.24389 0.00754833C2.57527 0.00698572 2.89329 0.138085 3.12801 0.372006L9.74301 6.98301Z "/>
+                                    </svg>
+                                </div>
+                            {% endif %}
+                                <a class="main-nav-link" href="{{ node.url }}">{{ node.name }}</a>
+                            </div>
+                            {% if node.children %}
+                                <ul class="subnav" aria-label="subnavigation" aria-hidden="true">
+                                    {% for child in node.children %}
+                                        <a class="" href="{{ child.url }}">{{ child.name }}</a>
+                                    {% endfor %}
+                                </ul>
+                            {% endif %}
+                        </li>
+                    {% endfor %}
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,215 @@
+.banner-container {
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+
+    @include mq(md) {
+        padding-top: 3rem;
+    }
+
+    @include mq(lg) {
+        margin-bottom: 6rem;
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+
+    &.banner-primary {
+        background-color: $color-primary;
+    }
+}
+
+.banner {
+    max-width: $max-width;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include mq(640) {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+    }
+}
+
+.banner-leading {
+    font-family: $comfortaa;
+    font-size: 5rem;
+    font-weight: 800;
+
+    margin-bottom: 3rem;
+
+    color: $white;
+
+    &.contrast-element {
+        color: $color-primary;
+    }
+}
+
+.banner-body {
+    z-index: 1;
+
+    padding-left: $gutter;
+    padding-right: $gutter;
+    padding-top: 12rem;
+    // padding-top: $gutter;
+    // padding-bottom: $gutter;
+
+    color: $white;
+    font-weight: 600;
+
+    > :last-child {
+        margin-bottom: 0;
+    }
+
+    @include mq(640) {
+        flex: 1 1 auto;
+    }
+    @include mq(lg) {
+        padding-top: 3rem;
+    }
+}
+
+.banner-breadcrumbs ul {
+    display: flex;
+    flex-flow: row wrap;
+
+    img {
+        width: 7px;
+    }
+    li:first-child {
+        margin-right: $spacing;
+    }
+    li + li {
+        padding-right: $spacing;
+    }
+    a {
+        color: $white;
+        font-size: 1.4rem;
+
+        &:hover,
+        :focus {
+            color: $offwhite;
+        }
+        &:active {
+            color: $color-primary-darkest;
+        }
+    }
+}
+
+.breadcrumbs-light ul li a {
+    color: $color-primary-dark;
+}
+
+.banner-content {
+    @include mq(900) {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .banner-main {
+        @include mq(900) {
+            // flex-direction: column;
+            width: 50%;
+            margin-right: 3rem;
+        }
+
+        @include mq(lg) {
+            flex-direction: column;
+            width: 70%;
+            margin-right: 6rem;
+        }
+    }
+
+    .banner-headline {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+    .banner-text {
+        width: 100%;
+        margin-bottom: 3rem;
+        font-size: 1.7rem;
+
+        @include mq(lg) {
+            margin-right: 3rem;
+        }
+    }
+
+    .banner-media {
+        max-width: 39rem;
+        @include mq(900) {
+            width: 50%;
+        }
+
+        @include mq(lg) {
+            min-width: 340px;
+            min-height: auto;
+        }
+        @include mq(1100) {
+            min-width: 440px;
+            min-height: 220px;
+        }
+
+        margin-top: 3rem;
+
+        // display: flex;
+        // align-self: center;
+
+        img {
+            width: 100%;
+            border-radius: 3rem;
+        }
+    }
+
+    .banner-background {
+        margin-top: 3rem;
+        // width: 250px;
+        opacity: 0.1;
+        width: 20%;
+
+        img {
+            width: 100%;
+        }
+
+        display: none;
+        @include mq(420) {
+            display: block;
+        }
+        @include mq(lg) {
+            width: 325px;
+        }
+    }
+
+    .banner-buttongroup {
+        display: flex;
+        flex-direction: column;
+        a + a {
+            margin-top: $spacing;
+            @include mq(500) {
+                margin-top: 0;
+                margin-left: $spacing;
+            }
+        }
+
+        @include mq(500) {
+            flex-direction: row;
+            a {
+                min-width: max-content;
+            }
+        }
+    }
+}
+
+.banner-link {
+    color: $white;
+    text-decoration: none;
+    margin-left: $spacing;
+
+    &:hover,
+    :focus {
+        color: $offwhite;
+        text-decoration: underline;
+    }
+    &:active {
+        color: $color-primary-darkest;
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,58 @@
+.section-card-container-lightblue {
+
+    background-color: $blue-lightest;
+
+    justify-content: center;
+    display: flex;
+
+    flex-flow: row wrap;
+    row-gap: 2.2rem;
+    border-radius: 0.8rem;
+    width: 100%;
+
+    @include mq(md) {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    @include mq(lg) {
+        margin-left: 12rem;
+        margin-right: 12rem;
+        background-color: $blue-lightest;
+        padding-left: 9rem;
+        padding-right: 9rem;
+        padding-top: 3.1rem;
+        padding-bottom: 3.1rem;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 2rem;
+        column-gap: 2.5rem;
+        border-radius: 0.8rem;
+    }
+}
+
+.section-card-container-text {
+    width: 100%;
+}
+
+.section-card-container-text-h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: $blue;
+    letter-spacing: normal;
+}
+
+.section-card-container-text-p {
+    font-size: 17px;
+    color: #11537d;
+    letter-spacing: normal;
+    margin-bottom: 0.5rem;
+}
+
+.spanblue {
+    color: $color-tertiary;
+}

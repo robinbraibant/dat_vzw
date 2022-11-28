@@ -1,0 +1,44 @@
+{% set services = craft.entries.section('services').all() %}
+
+<div class="container container-light">
+	<div class="row">
+		<div class="col-full">
+			<div class="team-category">
+				<div class="team-category--heading">
+					<h2 class="leading">{{ "Ons team staat"|t }}
+						<br>
+						<span class="color-tertiary">{{"klaar voor jou!"|t}}</span>
+					</h2>
+					{% if services|length %}
+
+						<div class="team-category--cardgrid">
+
+							{% for service in services %}
+
+								<a href="{{ service.getUrl() }}" class="team-category--cardgrid-item">
+									<div class="team-category--card-image">
+									{% set image = service.bannerImage.one() %}
+									<img src="{{ image.getUrl() }}" alt=""> 
+
+									</div>
+									<div class="team-category--card-text">
+										<h4 class="team-category--card-leading">
+											{{ service.title }}
+										</h4>
+									</div>
+									<div class="team-category--line">
+										<div class="team-category--card-circle"></div>
+										<div class="team-category--card-line">
+											<div class="team-category-card-line-animation"></div>
+										</div>
+									</div>
+								</a>
+							{% endfor %}
+						{% endif %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+

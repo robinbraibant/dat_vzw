@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 6a420a10-28d4-4dba-b528-4c89aed4b1fd # Tekstblokken
+handle: titleTextBlock
+instructions: null
+name: 'Titel | Tekstblok'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_titletextblock}}'
+  maxBlocks: null
+  minBlocks: null
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

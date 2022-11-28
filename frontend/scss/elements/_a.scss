@@ -1,0 +1,35 @@
+/// Anchor
+a {
+    color: $color-primary;
+    text-decoration: none;
+    font-weight: 400;
+    outline-offset: 1px;
+
+    cursor: pointer;
+
+    transition: color 0.1s;
+
+    &:not([class]) {
+        outline-offset: 0;
+    }
+
+    &:hover, &:focus {
+        color: $color-primary-dark;
+        text-decoration: underline;
+    }
+
+    &:active {
+        color: $color-primary-darkest;
+        text-decoration: none;
+    }
+
+    &:focus-visible {
+        outline: 2px dashed $color-secondary-light;
+        outline-offset: 1px;
+        z-index: 1;
+    }
+
+    &:visited {
+
+    }
+}

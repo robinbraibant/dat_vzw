@@ -1,0 +1,40 @@
+/// Images
+img, svg {
+    // max-width : 100%;
+    // height: auto;
+    border-width: 0;
+    vertical-align: middle;
+    -ms-interpolation-mode: bicubic; //optimized rendering for images in IE
+    //image-rendering: -webkit-optimize-contrast; //optimized rendering for scaled images in webkit
+
+    p &[style*="float: left"] {
+        margin: 0 $vertical-spacing $vertical-spacing 0;
+    }
+
+    p &[style*="float: right"] {
+        margin: 0 0 $vertical-spacing $vertical-spacing;
+    }
+}
+
+svg {
+    max-height: 100%;
+}
+
+img[src$=".svg"] {
+    max-height: 100%;
+}
+
+figure {
+    display: block;
+    margin-bottom: $vertical-spacing;
+
+    img {
+        margin-bottom: $vertical-spacing / 2;
+    }
+}
+
+figcaption {
+
+}
+
+

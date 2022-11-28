@@ -1,0 +1,70 @@
+defaultPlacement: end
+fieldLayouts:
+  123efd6e-8101-43b7-b778-43b16def4320:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            uid: 7f8f37ab-37a0-4470-a3e6-04fef9b80f24
+            warning: null
+            width: 100
+          -
+            fieldUid: a29019e4-2a19-4028-98c9-ffe999e1475b # Afbeelding
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d6470be7-6e13-4f43-beba-5627d26b30be
+            warning: null
+            width: 100
+          -
+            fieldUid: 2ac35130-5421-4b13-98e9-916fc6c5c9c3 # Beschrijving
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d98d3fd7-ade2-4f71-ae05-de4f8a60ba67
+            warning: null
+            width: 100
+        name: Content
+        uid: 9a46dc24-f8aa-469a-8c23-eac17ede741b
+handle: team
+name: Team
+siteSettings:
+  7fb1be39-cc20-49d5-8628-889003e31f09: # fr
+    hasUrls: true
+    template: null
+    uriFormat: 'team/{slug}'
+  33b9a6a8-f771-4a59-a8d6-4800dc41bc2d: # nl
+    hasUrls: true
+    template: null
+    uriFormat: 'team/{slug}'
+  e38d253f-b5c1-457e-925f-2670c4704eb1: # en
+    hasUrls: true
+    template: null
+    uriFormat: 'team/{slug}'
+structure:
+  maxLevels: null
+  uid: 718c5dca-1bc5-4af7-866d-7d8836233cf9

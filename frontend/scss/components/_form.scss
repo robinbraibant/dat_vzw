@@ -1,0 +1,586 @@
+
+$form-height: 4.8rem !default;
+$form-padding-horizontal: 1rem;
+$form-input-selectors:
+'[type="color"]',
+'[type="date"]',
+'[type="datetime"]',
+'[type="datetime-local"]',
+'[type="email"]',
+'[type="month"]',
+'[type="number"]',
+'[type="password"]',
+'[type="search"]',
+'[type="tel"]',
+'[type="text"]',
+'[type="time"]',
+'[type="url"]',
+'[type="week"]';
+
+
+
+.form-container {
+    background-color: $offwhite;
+    padding-left: $gutter;
+    padding-right: $gutter;
+    padding-top: $gutter;
+    padding-bottom: $gutter;
+    
+    > :last-child {
+        margin-bottom: 0;
+    }
+}
+
+.form-fieldset {
+    border: 0;
+    padding: 0;
+    display: block;
+}
+
+.form-row {
+    margin-bottom: $vertical-spacing;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 0.75rem;
+
+    line-height: 1;
+    font-size: $font-size;
+    font-family: $font-family-primary;
+    font-weight: 600;
+}
+
+.form-control {
+    position: relative;
+
+    #{$form-input-selectors},
+    select, 
+    textarea {
+        position: relative;
+        -webkit-appearance: none;
+        border: 1px solid $color-subsidiary-lighter;
+        border-radius: $borderradius;
+        background-color: $white;
+
+        height: $form-height;
+        max-width: 100%;
+        width: 100%;
+
+        padding-top: 0.2em;
+        padding-bottom: 0.2em;
+        padding-left: $form-padding-horizontal;
+        padding-right: $form-padding-horizontal;
+
+        vertical-align: middle;
+        color: $color-text;
+        font-weight: 400;
+        line-height: 1;
+
+        transition: border-color 0.1s ease-in, box-shadow 0.1s ease-in, outline 0.1s ease-in;
+
+        &:focus {
+            color: $color-text;
+            border-color: $color-secondary;
+            outline: 1px solid $color-secondary;
+            z-index: 1;
+        }
+    }
+
+    [disabled] {
+        background-color: rgba($color-secondary-light, 0.6);
+        border-color: rgba($color-secondary-light, 0.6);
+    }
+
+    select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance:none;
+
+        background-color: $white;
+        background-image: image('icons/select-caret-down.svg'); // select-caret-down.svg or select-angle-down.svg
+        background-position: right $form-padding-horizontal center;
+        background-repeat: no-repeat;
+        background-size: 1rem 0.5rem; // caret: 1rem 0.5rem - angle: 1rem 0.6rem - rem to scale
+
+        padding-right: ($form-padding-horizontal * 2 + 1rem);
+
+        &::-ms-expand {
+            display: none;
+        }
+    }
+
+    textarea {
+        resize: vertical;
+        min-height: 8em;
+        line-height: 1.3;
+        padding-top: 0.5em;
+    }
+
+    :focus {
+        & ~ .form-label {
+            color: $color-secondary;
+        }
+    }
+
+    &-margin {
+        > * {
+            margin-left: $gutter;
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+.form-inline {
+    @include mq(sm) {
+        display: flex;
+        flex-flow: row wrap;
+
+        > * {
+            flex: 0 1 auto;
+        }
+
+        > * + * {
+            margin-left: $spacing-small;
+        }
+
+        > #{$form-input-selectors},
+        > select,
+        > textarea {
+            width: auto;
+        }
+    }
+}
+
+.form-separator {
+    line-height: $form-height - 0.2rem;
+}
+
+
+.form-rows-inline {
+    margin-bottom: $vertical-spacing;
+
+    > .form-row-floating-label {
+        margin-bottom: 0.5rem;
+    }
+
+    > .form-row-floating-label + .form-row-floating-label {
+        margin-top: 1.4rem;
+        margin-bottom: 1.4rem;
+    }
+
+    .button {
+        white-space: nowrap;
+    }
+
+    @include mq(md) {
+        display: flex;
+        flex-flow: row nowrap;
+
+        > .form-row {
+            flex: 1 1 auto;
+            margin-bottom: 0;
+        }
+
+        > .form-row-shrink {
+            flex: 0 1 auto;
+        }
+
+        > .form-row + .form-row {
+            margin-left: $gutter;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.form-row-floating-label {
+    position: relative;
+    z-index: 0;
+
+    & + & {
+        //margin-top: -1rem;
+    }
+
+    .form-control {
+        //padding-top: 1.7rem;
+    }
+
+    .form-label {
+        position: absolute;
+        z-index: 2;
+        left: 0;
+        top: 0.1rem;
+        height: $form-height;
+        padding-left: $form-padding-horizontal;
+        padding-right: $form-padding-horizontal;
+
+        line-height: $form-height;
+        font-size: 1em;
+        font-weight: 400;
+        cursor: text;
+
+        pointer-events: none;
+
+        max-width: 100%;
+        @include ellipsis();
+
+        transition: top 0.05s ease-out;
+    }
+
+    :focus ~ .form-label, 
+        &.has-label-top .form-label,
+        &.form-row-invalid .form-label,
+        .no-js & .form-label {
+        top: -1.1rem;
+        left: $form-padding-horizontal;
+        font-size: 0.8em;
+        //font-weight: 700;
+        color: $white;
+        height: auto;
+        line-height: 1;
+        cursor: default;
+        padding-top: 0.3rem;
+        padding-bottom: 0.3rem;
+        padding-left: 0.3rem;
+        padding-right: 0.3rem;
+        background-color: $color-secondary;
+    }
+}
+
+.form-row-inline {
+
+}
+
+.file-input {
+}
+
+.file-input-button {
+    float: left;
+    display: inline-block;
+
+    > span {
+        display: inline-block;
+        padding: 0 1em;
+        line-height: $form-height;
+        height: $form-height;
+
+        border-radius: 0;
+        border: 0;
+
+        font-family: $font-family-primary;
+        font-size: 1.6rem;
+        font-weight: 500;
+        text-align: center;
+        text-decoration: none;
+        text-transform: normal;
+        text-shadow: none;
+        letter-spacing: 0;
+
+        background-color: $color-secondary;
+        color: $white;
+
+        &:hover, &:focus, &:active {
+            border-color: $color-secondary-dark;
+            background-color: $color-secondary-dark;
+            color: $white;
+        }
+
+        &:active {
+            background-color: $color-secondary-darkest;
+            box-shadow: none;
+        }
+    }
+
+    &:hover > span,
+        [type="file"]:focus ~ span,
+        span:hover, 
+        span:focus, 
+        span:active {
+
+        border-color: $color-secondary-dark;
+        background-color: $color-secondary-dark;
+        color: $white;
+    }
+
+    &:active > span {
+        background-color: $color-secondary-darkest;
+        box-shadow: none;
+    }
+
+    [type="file"]:focus-visible ~ span {
+        outline: 2px dashed rgba($color-secondary-light, 0.5);
+        outline-offset: 2px;
+    }
+
+    [type="file"] {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+        cursor: pointer;
+        opacity: 0;
+        z-index: 1;
+        filter: alpha(opacity=0);
+    }
+}
+
+.file-input-path {
+    overflow: hidden;
+    cursor: pointer;
+    padding-left: $gutter;
+}
+
+.check-input {
+    position: relative;
+
+    [type="radio"], [type="checkbox"] {
+        position: absolute;
+        opacity: 0;
+        z-index: -1;
+
+        &:checked ~ .check-input-indicator {
+            border-color: $color-secondary;
+            background-image: none;
+
+            &::after {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        &:focus ~ .check-input-indicator {
+            border-color: $color-secondary;
+            outline: 1px solid $color-secondary;
+        }
+    }
+}
+
+.check-input-group {
+    @include mq(sm) {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        > * {
+            flex: 0 1 auto;
+            width: calc(50% - #{$gutter});
+
+            &:nth-child(even) {
+                margin-left: $gutter;
+            }
+        }   
+
+        .check-input-label {
+            margin-bottom: $vertical-spacing / 2;
+        }
+    }
+
+    .check-input-label {
+        display: block;
+    }
+}
+
+.check-input-label {
+    display: inline-flex;
+    flex-flow: row nowrap;
+    align-items: center;
+
+    //margin-bottom: 0.5rem;
+    //overflow:hidden;
+
+    padding-top: 2px;
+    line-height: 1.3;
+    margin-right: 0.4em;
+
+    > .check-input {
+        display: inline-block;
+        margin-right: 0.4rem;
+        flex: 0 0 auto;
+    }
+
+    > .check-input-text {
+        flex: 1 1 auto;
+    }
+
+    .custom-controls-stacked:not(.check-input-inline) & {
+        display: block;
+    }
+}
+
+.check-input-text {
+
+}
+
+.check-input-indicator {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    line-height: 1;
+    vertical-align: middle;
+    top: -2px;
+
+    background-color: $white;
+    //background-size: 50% 50%;
+    //background-position: center center;
+    //background-repeat: no-repeat;
+    //background-image: linear-gradient(to top, $color-subsidiary-lightest, $white);
+
+    pointer-events: none;
+
+    border: 1px solid $color-subsidiary-light;
+    border-radius: $borderradius;
+
+    transition: border-color 0.1s ease-in;
+
+    &:not(:last-child) {
+        margin-right: 0.4em;
+    }
+
+    [type="radio"] ~ & {
+        border-radius: 50%;
+
+        &:after {
+            border-radius: 50%;
+        }
+    }
+
+    [type="checkbox"] ~ & {
+        &::after {
+            content: '';
+            font-size: 1.7rem;
+            background-color: transparent;
+            background-image: image('icons/checkbox-checkmark.svg');
+            background-size: 100% auto;
+            left: 1px;
+            top: 1px;
+            right: 1px;
+            bottom: 1px;
+            color: $color-secondary;
+        }
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        background-color: $color-secondary;
+        left: 4px;
+        top: 4px;
+        bottom: 4px;
+        right: 4px;
+        text-align: center;
+
+        opacity: 0;
+        transform: scale(0);
+
+        transition: opacity 0.1s, transform 0.05s ease-in;
+    }
+}
+
+.form-row-description {
+    position: relative;
+    color: $color-text;
+    font-size: $font-size;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.form-errors {
+    color: $color-danger;
+    font-size: $font-size;
+    font-weight: 400;
+    margin-top: 0.5rem;
+}
+
+.form-error {
+
+}
+
+.form-row-invalid {
+    #{$form-input-selectors},
+    select, 
+    textarea {
+        border-color: $color-danger;
+        outline: 1px solid $color-danger;
+
+        &:focus {
+            border-color: $color-danger;
+            outline: 1px solid $color-danger;
+
+            & ~ .form-label {
+                color: $color-danger;
+            }
+        }
+    }
+
+    .form-label, 
+    .check-input-label {
+        color: $color-danger;
+    }
+}
+
+.integer-input {
+    position: relative;
+
+    [type="number"] {
+        appearance: textfield;
+        padding-left: $form-height;
+        padding-right: $form-height;
+        text-align: center;
+    }
+
+    &-controls {
+
+    }
+
+    &-increase, &-decrease {
+        position: absolute;
+        top: 1rem;
+        bottom: 1rem;
+        height: $form-height - 2rem;
+        width: 2.6rem;
+
+        margin: 0;
+        padding: 0;
+        border: 1px solid $color-secondary-dark;
+        background-color: $color-secondary;
+        border-radius: 0.4rem;
+
+        box-shadow: inset 0 -0.3rem 0 0 $color-secondary-dark;
+
+        text-align: center;
+        color: $white;
+        padding-left: 0.4rem;
+        padding-right: 0.4rem;
+        padding-bottom: 0.3rem;
+
+        &:hover, &:focus, &:active {
+            background-color: $color-secondary-dark;
+            border-color: $color-secondary-dark;
+        }
+
+        &:active {
+            padding-top: 0.2rem;
+            box-shadow: none;
+        }
+    }
+
+    &-decrease {
+        left: 1rem;
+    }
+
+    &-increase {
+        right: 1rem;
+    }
+}

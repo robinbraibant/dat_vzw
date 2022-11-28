@@ -1,0 +1,48 @@
+columnSuffix: isirbggl
+contentColumnType: string
+fieldGroup: 49a4daa7-0854-420d-85f6-f5b9c29a4d4d # Banners
+handle: bannerImage
+instructions: null
+name: 'Banner afbeelding'
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowSubfolders: false
+  allowUploads: true
+  allowedKinds:
+    - image
+  defaultUploadLocationSource: 'volume:9db55e63-6fb1-4978-9ce9-0b954be6a91e' # Banner afbeeldingen
+  defaultUploadLocationSubpath: /front/images/images/banner
+  localizeRelations: false
+  maxRelations: 1
+  minRelations: null
+  previewMode: full
+  restrictFiles: true
+  restrictLocation: false
+  restrictedDefaultUploadSubpath: null
+  restrictedLocationSource: 'volume:fdb9bfff-e48f-424c-b268-d852e14a76ff' # Sponsors
+  restrictedLocationSubpath: null
+  selectionCondition:
+    __assoc__:
+      -
+        - elementType
+        - craft\elements\Asset
+      -
+        - fieldContext
+        - global
+      -
+        - class
+        - craft\elements\conditions\assets\AssetCondition
+  selectionLabel: null
+  showSiteMenu: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  source: null
+  sources:
+    - 'volume:9db55e63-6fb1-4978-9ce9-0b954be6a91e' # Banner afbeeldingen
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

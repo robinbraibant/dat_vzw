@@ -1,0 +1,36 @@
+.textblock-container {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+    @include mq(md) {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+    @include mq(900) {
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+    }
+
+    // & + & {
+    //     margin-top: 3rem;
+    // }
+}
+
+.textblock-content {
+    @include mq(lg) {
+        display: flex;
+        margin-left: 16rem;
+        margin-right: 16rem;
+    }
+}
+
+.textblock-body {
+    @include mq(lg) {
+        width: 60%;
+        margin-right: 3rem;
+
+        &.textblock-large {
+            width: 100%;
+        }
+    }
+}

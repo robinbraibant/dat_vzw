@@ -1,0 +1,73 @@
+fieldLayouts:
+  af6b9949-d15a-427d-9350-f08392b88205:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: aa1e1344-9c1f-4f2c-96b6-60878e5194ec
+            warning: null
+            width: 100
+          -
+            fieldUid: 923e90c0-ecae-4bbc-97eb-6cc3136a8cd1 # Banner intro
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 66b151f2-503c-4876-b9a9-a1197094537f
+            warning: null
+            width: 50
+          -
+            fieldUid: 1c629b66-cd2f-4da6-85a4-72e69772ba1e # Banner afbeelding
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e212a58f-2729-4a18-a4e8-08f89e346a3e
+            warning: null
+            width: 50
+        name: Banner
+        uid: a481b513-44fd-4fd2-a6d2-3909a75fee3a
+      -
+        elements:
+          -
+            fieldUid: 073500d7-f6ec-444e-8f0a-650eaa803cb0 # Titel | Tekstblok
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d33fbdce-1882-4457-8b75-d9027d3c3abd
+            warning: null
+            width: 100
+        name: Inhoud
+        uid: 8ff5ad62-2c74-42f2-8fd3-ee169200e03f
+handle: default
+hasTitleField: true
+name: Default
+section: b17c7155-e166-4b9b-b39a-d66e80e2d676 # Praktische info
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

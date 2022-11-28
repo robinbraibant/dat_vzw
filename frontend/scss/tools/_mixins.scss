@@ -1,0 +1,55 @@
+/// Mixins
+
+@mixin visually-hidden() {
+    &:not(:focus):not(:active) {
+        position: absolute;
+
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+
+        white-space: nowrap;
+
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    }
+}
+
+/*
+ * Word wrap & ellipsis mixins
+ * https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/
+ */
+@mixin word-wrap() {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+    word-break: break-word;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}
+
+@mixin ellipsis() {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+@mixin icon-fontawesome($variable) {
+    display: inline-block;
+    font-family: $icon-material;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: inherit;
+    line-height: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    content: $variable;
+}

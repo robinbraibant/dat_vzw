@@ -1,0 +1,107 @@
+@mixin containerBackground() {
+    margin-bottom: 3;
+    margin-top: 0;
+
+    padding-top: $vertical-spacing * 2;
+    padding-bottom: $vertical-spacing;
+
+    @include mq(md) {
+        padding-top: $vertical-spacing * 3;
+        padding-bottom: $vertical-spacing * 2;
+
+        margin-bottom: 3rem;
+    }
+
+    @include mq(lg) {
+        margin-bottom: 6rem;
+    }
+
+    & + & {
+        padding-top: 0;
+    }
+
+    // &:last-child {
+    //     margin-bottom: 0 !important;
+    // }
+
+    &.container-small {
+        padding-top: $vertical-spacing * 2;
+        padding-bottom: $vertical-spacing;
+
+        @include mq(lg) {
+            padding-top: $vertical-spacing * 2;
+            padding-bottom: $vertical-spacing;
+        }
+    }
+
+    &.contains-banner {
+        padding-top: 0;
+    }
+
+    &.container-large {
+        @include mq(lg) {
+            padding-top: $vertical-spacing * 6;
+            padding-bottom: $vertical-spacing * 5;
+        }
+    }
+
+    .site-main > &:last-child {
+        margin-bottom: -$vertical-spacing !important;
+    }
+}
+
+.container {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+    @include mq(md) {
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+    }
+
+    &.container-light {
+        background-color: $color-primary-lightest;
+    }
+
+    // .banner-container + & {
+    //     margin-top: $vertical-spacing;
+    // }
+}
+
+.container-small {
+    @include mq(md) {
+        margin-top: $vertical-spacing * 2;
+        margin-bottom: $vertical-spacing;
+    }
+}
+
+.container-large {
+    @include mq(lg) {
+        margin-top: $vertical-spacing * 6;
+        margin-bottom: $vertical-spacing * 5;
+    }
+}
+
+.container-light {
+    background-color: $color-subsidiary-lightest;
+
+    @include containerBackground();
+}
+
+.container-offwhite {
+    background-color: $offwhite;
+
+    @include containerBackground();
+}
+
+.container-dark {
+    background-color: $color-subsidiary-darker;
+
+    @include containerBackground();
+}
+
+.container-darkest {
+    background-color: $color-subsidiary-darkest;
+
+    @include containerBackground();
+}

@@ -1,0 +1,27 @@
+columnSuffix: fvdmazvf
+contentColumnType: text
+fieldGroup: 49a4daa7-0854-420d-85f6-f5b9c29a4d4d # Banners
+handle: bannerIntro
+instructions: null
+name: 'Banner intro'
+searchable: false
+settings:
+  availableTransforms: '*'
+  availableVolumes: '*'
+  columnType: text
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: null
+  purifyHtml: true
+  redactorConfig: null
+  removeEmptyTags: false
+  removeInlineStyles: false
+  removeNbsp: false
+  showHtmlButtonForNonAdmins: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: none
+type: craft\redactor\Field

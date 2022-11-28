@@ -1,0 +1,16 @@
+columnSuffix: btzcmzqj
+contentColumnType: string
+fieldGroup: 95eab332-7029-4034-8a53-0221d3f797ca # Link / PDF blokken
+handle: externLinks
+instructions: null
+name: 'Handige links'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_externlinks}}'
+  maxBlocks: null
+  minBlocks: null
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

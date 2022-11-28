@@ -1,0 +1,55 @@
+{% set myEntryQuery = craft.entries().section('practical').level('2') %}
+{% set entries = myEntryQuery.all() %}
+
+{% set relatedAssets = entry.bannerImage.all() %}
+
+<div class="container">
+	<div class="row">
+		<div class="col-full">
+			<div class="team-category--cardgrid">
+
+				<h1>TODO: banner images from childpages should be rendered inside cards</h1>
+
+				{% if entries|length %}
+					{% for item in entries %}
+
+						<a href="{{ item.url }}" class="team-category--cardgrid-item">
+							<div class="team-category--card-image">
+
+								{% if relatedAssets|length %}
+									{% for image in relatedAssets %}
+										<div class="banner-media">
+											<img src="{{ image.url }}" alt="{{ image.filename}}" width="360" height="160">
+										</div>
+									{% endfor %}
+								{% else %}
+									<p>No image uploaded</p>
+								{% endif %}
+
+							</div>
+
+							<div class="team-category--card-text">
+								<h4 class="team-category--card-leading">
+									{{ item.title }}
+								</h4>
+							</div>
+							<div class="team-category--line">
+								<div class="team-category--card-circle"></div>
+								<div class="team-category--card-line">
+									<div class="team-category-card-line-animation"></div>
+								</div>
+							</div>
+
+						</a>
+					{% endfor %}
+
+				{% else %}
+                    
+					<p>Er werden geen resulaten gevonden.</p>
+				{% endif %}
+
+			</div>
+
+		</div>
+	</div>
+</div>

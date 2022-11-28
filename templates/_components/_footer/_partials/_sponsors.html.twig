@@ -1,0 +1,20 @@
+{% set sponsors = sponsors.globalSponsors.all() %}
+
+<div class="container">
+	<div class="row">
+		<div class="col-full">
+
+		<h3> {{ "Mede mogelijk gemaakt door onze sponsors"|t }} </h3>
+
+			<ul class="sponsorgrid">
+				{% for sponsor in sponsors %}
+					<li class="sponsorgrid-item">
+						<a class="sponsorgrid-link" href="{{ sponsor.sponsorLink }}" target="_blank">
+							<img class="sponsorgrid-logo" src="{{ sponsor.sponsorLogo.one().getUrl() }}" alt="{{ sponsor.sponsorName }}">
+						</a>
+					</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+</div>

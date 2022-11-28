@@ -1,0 +1,19 @@
+/// Table
+table {
+    max-width: 100%;
+    margin-bottom: $vertical-spacing;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: none;
+}
+
+td,
+th {
+    vertical-align: top;
+    line-height: $font-lineheight;
+}
+
+th {
+    font-weight: 600;
+    text-align: left;
+}

@@ -1,0 +1,22 @@
+{% for block in entry.titleTextBlock.all() %}
+	<div class="textblock-container">
+		<div class="row">
+			<div class="col-full">
+				<div class="textblock-content">
+					<div class="textblock-body textblock-large">
+						<div class="textblock-headline">
+							<h1 class="leading contrast-element">
+								{{ block.ttTitle }}
+							</h1>
+						</div>
+						<div class="textblock-text">
+							<p>
+								{{ block.ttContent }}
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endfor %}

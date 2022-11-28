@@ -1,0 +1,287 @@
+assets:
+  tempVolumeUid: fdb9bfff-e48f-424c-b268-d852e14a76ff # Sponsors
+dateModified: 1669484814
+elementSources:
+  craft\elements\Asset:
+    -
+      disabled: false
+      key: 'volume:fdb9bfff-e48f-424c-b268-d852e14a76ff' # Sponsors
+      tableAttributes:
+        - filename
+        - size
+        - dateModified
+        - link
+      type: native
+    -
+      disabled: false
+      key: 'volume:3cbaf529-18c6-4a27-82d7-a0ef6f1d3938' # Doelgroep iconen
+      tableAttributes:
+        - filename
+        - size
+        - dateModified
+        - link
+      type: native
+    -
+      disabled: false
+      key: 'volume:9db55e63-6fb1-4978-9ce9-0b954be6a91e' # Banner afbeeldingen
+      tableAttributes:
+        - filename
+        - size
+        - dateModified
+        - link
+      type: native
+    -
+      disabled: false
+      key: 'volume:fd161842-f0ba-4d20-8d61-2225c5ff20c1' # Contactinfo iconen
+      tableAttributes:
+        - filename
+        - size
+        - dateModified
+        - link
+      type: native
+    -
+      disabled: false
+      key: 'volume:fe6e5ae7-1535-49f3-ba12-588b4fc92e39' # PDF
+      tableAttributes:
+        - filename
+        - size
+        - dateModified
+        - link
+      type: native
+  craft\elements\Entry:
+    -
+      disabled: false
+      key: '*'
+      tableAttributes:
+        - section
+        - postDate
+        - expiryDate
+        - link
+      type: native
+    -
+      disabled: false
+      key: singles
+      tableAttributes:
+        - link
+      type: native
+    -
+      heading: ''
+      type: heading
+    -
+      disabled: true
+      key: 'section:298e299b-a244-47dd-8420-45bf6e1c3f4e' # Doelgroepen
+      tableAttributes:
+        - postDate
+        - expiryDate
+        - link
+      type: native
+    -
+      disabled: false
+      key: 'section:5a50b43e-57ff-451d-99a9-6e517f9d600d' # Over ons
+      tableAttributes:
+        - postDate
+        - expiryDate
+        - link
+      type: native
+    -
+      key: 'section:b17c7155-e166-4b9b-b39a-d66e80e2d676' # Praktische info
+      type: native
+    -
+      disabled: false
+      key: 'section:1a5e8394-ba57-4463-b046-6c9de0812b2c' # Werken bij d.a.t.
+      tableAttributes:
+        - postDate
+        - expiryDate
+        - link
+      type: native
+  verbb\formie\elements\Form:
+    -
+      disabled: false
+      key: '*'
+      tableAttributes:
+        - title
+        - handle
+        - template
+        - dateCreated
+        - dateUpdated
+      type: native
+email:
+  fromEmail: georgi_ivanov99@outlook.com
+  fromName: dev.dat-vzw
+  transportType: craft\mail\transportadapters\Sendmail
+fs:
+  bannerImages:
+    hasUrls: true
+    name: 'Banner afbeeldingen'
+    settings:
+      path: '@webroot/front/images/images/banner'
+    type: craft\fs\Local
+    url: '@web/front/images/images/banner'
+  contactInfo:
+    hasUrls: true
+    name: 'Contactinfo iconen'
+    settings:
+      path: '@webroot/front/images/svg/footer'
+    type: craft\fs\Local
+    url: '@web/front/images/svg/footer'
+  pdf:
+    hasUrls: true
+    name: PDF
+    settings:
+      path: '@webroot/front/images/pdf'
+    type: craft\fs\Local
+    url: '@web/front/images/pdf'
+  sponsors:
+    hasUrls: true
+    name: Sponsors
+    settings:
+      path: '@webroot/front/images/logo/sponsors'
+    type: craft\fs\Local
+    url: '@web/front/images/logo/sponsors'
+  targetGroupIcons:
+    hasUrls: true
+    name: 'Doelgroepen iconen'
+    settings:
+      path: '@webroot/images/svg/target-groups'
+    type: craft\fs\Local
+    url: '@web/images/svg/target-groups'
+meta:
+  __names__:
+    0be18b89-889d-4b82-9b45-3d135031d006: Footer # Footer
+    0e0e9abd-f0a4-4c86-9750-a72a43c26b33: 'Afbeelding ' # Afbeelding 
+    1a5e8394-ba57-4463-b046-6c9de0812b2c: 'Werken bij d.a.t.' # Werken bij d.a.t.
+    1c629b66-cd2f-4da6-85a4-72e69772ba1e: 'Banner afbeelding' # Banner afbeelding
+    1ed7efa2-b8da-4da5-8c3a-6c98c05577b0: Common # Common
+    2a7bf3bc-6a3a-4ccd-88e2-7dd82ff659a5: 'Naam ' # Naam 
+    2ac35130-5421-4b13-98e9-916fc6c5c9c3: Beschrijving # Beschrijving
+    2b4d5b23-5cfd-4185-be9c-154c713e85eb: 'Team kaart afbeelding' # Team kaart afbeelding
+    2b4f1288-b893-4599-82b2-002598749128: Input # Input
+    3cbaf529-18c6-4a27-82d7-a0ef6f1d3938: 'Doelgroep iconen' # Doelgroep iconen
+    4fa55fe2-6dbc-4e03-aeaf-2e4acd4e5449: Startpagina # Startpagina
+    5a0272a2-a83f-43d1-86e3-fb010fb4ba44: Contacgegevens # Contacgegevens
+    5a50b43e-57ff-451d-99a9-6e517f9d600d: 'Over ons' # Over ons
+    5b410140-67c8-4b65-ae0b-48bebbc086dc: 'Doelgroep titel' # Doelgroep titel
+    5be4ab95-7c42-4fb8-bc49-4bceedd6d67f: 'Onze werking' # Onze werking
+    6a420a10-28d4-4dba-b528-4c89aed4b1fd: Tekstblokken # Tekstblokken
+    7a96cd15-7a33-4486-82aa-366dadcdb453: Titel # Titel
+    7fb1be39-cc20-49d5-8628-889003e31f09: fr # fr
+    8ed8301b-b5f3-4303-9fbf-a86e97b1fd96: 'Contact item' # Contact item
+    9ae3759e-7da8-4b2e-8d7f-b9f2c711a63f: Afbeelding # Afbeelding
+    9d52999e-de87-4d20-9e95-0b9a1a6d0419: Contact # Contact
+    9db55e63-6fb1-4978-9ce9-0b954be6a91e: 'Banner afbeeldingen' # Banner afbeeldingen
+    19f7c926-e6fc-475c-980b-5264046aad25: 'Fit content' # Fit content
+    28a02e15-0fc5-4cb5-9f7d-ebaea34f6d6e: 'Contact SVG' # Contact SVG
+    33b9a6a8-f771-4a59-a8d6-4800dc41bc2d: nl # nl
+    39aadce1-b28b-45e1-b7e0-fdfa779db19f: 'PDF ' # PDF 
+    41a4deb1-ce7b-42cc-a18b-2ea7670366bd: Doelgroepen # Doelgroepen
+    47eda180-ddfb-4d66-9090-e099fb3d20a5: 'Titel tekstblok' # Titel tekstblok
+    49a4daa7-0854-420d-85f6-f5b9c29a4d4d: Banners # Banners
+    68c5663c-8e35-4546-b22e-538ea6e4126a: Contact # Contact
+    69c0f99c-d481-455c-8c59-d622830a42b4: Titel # Titel
+    70c26e79-449f-49da-bb2a-754c3a723577: 'Link Text' # Link Text
+    72e1523f-113e-4c29-88d0-43ce06edda37: 'Illustratie doelgroep' # Illustratie doelgroep
+    81edb2ab-72b4-4733-9165-593cf2e5f8d5: 'Team kaart titel' # Team kaart titel
+    95eab332-7029-4034-8a53-0221d3f797ca: 'Link / PDF blokken' # Link / PDF blokken
+    98bd0220-c31e-42e0-9a98-caaf67e2280e: New # New
+    181df45b-ef1d-4bea-96f6-1655f875539c: 'Revalidatiecentrum DAT' # Revalidatiecentrum DAT
+    298e299b-a244-47dd-8420-45bf6e1c3f4e: Doelgroepen # Doelgroepen
+    510eb9fd-46de-4aa4-8f10-4282c0fb4de8: Inhoud # Inhoud
+    515fb477-dae9-4b04-9de1-f31c7e0eac68: Telefoonnummer # Telefoonnummer
+    547c5c72-db99-4202-909e-a48dabcf05c9: 'Titel van de doelgroep' # Titel van de doelgroep
+    567b0b6c-df99-4b13-88c8-b798c1f3210a: 'Contact Form' # Contact Form
+    853bf7f2-69d8-463d-b8de-b209214299f3: Team # Team
+    923e90c0-ecae-4bbc-97eb-6cc3136a8cd1: 'Banner intro' # Banner intro
+    997fe667-1226-4516-9cfc-511327ca0b6b: 'contact img' # contact img
+    1949f3e2-18c5-4b9b-9f1a-eef1b436c2c0: 'Url webpagina' # Url webpagina
+    5487f591-93a8-4829-ba8b-db935950e0b8: 'Beschrijving doelgroep' # Beschrijving doelgroep
+    6766d5b5-1a22-4dfd-b26e-7162755da5ad: 'Contact info' # Contact info
+    9438f96a-57ec-49c4-a710-41848548afb5: 'Google Maps Link' # Google Maps Link
+    073500d7-f6ec-444e-8f0a-650eaa803cb0: 'Titel | Tekstblok' # Titel | Tekstblok
+    187580b7-6dbe-4d63-ab88-5288f10e41aa: 'Handige links' # Handige links
+    427575e1-082a-4c07-92a1-4c984047fec7: Linken # Linken
+    638581e2-7f91-40de-97d3-d2665b6b8c38: Tekstblok # Tekstblok
+    86512894-9905-4140-9023-372e12c4aad4: Afbeelding # Afbeelding
+    a0184370-60c2-4d56-8b47-e0d90ca2c218: Beschrijving # Beschrijving
+    a2bb7dcc-7e37-49a2-895e-dcdca4b3aaf7: 'Link destination' # Link destination
+    a8fb3d5a-1a38-471a-9f47-e40a2bf14f84: 'Default HTML styling' # Default HTML styling
+    a29019e4-2a19-4028-98c9-ffe999e1475b: Afbeelding # Afbeelding
+    aac07f29-d0c9-4351-a711-7741945a7395: 'Doelgroep icoon' # Doelgroep icoon
+    ab3e3d3a-debc-42ca-a231-3766789addd3: Titel # Titel
+    aea891e5-7577-41f6-a827-258037235a16: 'Default HTML styling' # Default HTML styling
+    b17c7155-e166-4b9b-b39a-d66e80e2d676: 'Praktische info' # Praktische info
+    b87f3585-f683-47d2-a221-4457003d89f8: 'Titel | Tekstblok | Afbeelding' # Titel | Tekstblok | Afbeelding
+    bc974703-8192-42fb-9f24-3f56f6958745: Functie # Functie
+    bf8d4172-3ceb-47bb-aa1d-06b197a49271: Afbeelding # Afbeelding
+    c1db4b54-abb0-4a79-8f05-18c5415e18e8: 'contact item' # contact item
+    c30035de-f5ed-4cd6-92bd-7202cd70701a: Locatie # Locatie
+    c99427ed-f87a-4d16-9741-f3fbd1a2e52b: Default # Default
+    ca30bd80-b927-493c-8958-8571f1b0ff32: Locatie # Locatie
+    d174afc5-3904-4376-9998-5e5e9336b2a5: Default # Default
+    d385d78b-b2fe-477f-b2eb-279e466ef378: 'Straat + nr.' # Straat + nr.
+    d440d838-7983-4b94-9031-bceaefab9e40: 'Team beschrijving' # Team beschrijving
+    d907c00f-80e2-4d7d-b2f4-4eb61308725a: 'Onze werking' # Onze werking
+    d1378945-b9f4-4011-915c-e914fa20f818: 'Werken bij d.a.t.' # Werken bij d.a.t.
+    d6893358-6209-49d3-aacd-4c70217b3636: Instagram # Instagram
+    e38d253f-b5c1-457e-925f-2670c4704eb1: en # en
+    e56ad2b8-f25f-47c4-885d-b4a6486b90f0: Stad # Stad
+    e12094c8-d18a-4e6b-89e0-d868b63c5beb: 'Postcode + stad' # Postcode + stad
+    ef5be5d2-26f8-49c9-910d-88ba30b4c23e: Contactgegevens # Contactgegevens
+    ef8fb09d-1627-4aaf-a326-1f27189b0af6: Default # Default
+    f4db53ff-699c-4582-a55a-81a07d41b5c4: 'Titel Tekstblok Afbeelding' # Titel Tekstblok Afbeelding
+    f74e73bd-247e-43e6-b566-30d0f698f697: Startpagina # Startpagina
+    f210fb24-5901-441c-84d9-b4ba967d398d: Afbeelding # Afbeelding
+    f8000b6f-9ca9-4500-9986-37c1b9507a61: Functie # Functie
+    fcc0c23e-426f-424c-ba1d-a6d7def9e859: 'Pagina Intro' # Pagina Intro
+    fd161842-f0ba-4d20-8d61-2225c5ff20c1: 'Contactinfo iconen' # Contactinfo iconen
+    fdb9bfff-e48f-424c-b268-d852e14a76ff: Sponsors # Sponsors
+    fe6e5ae7-1535-49f3-ba12-588b4fc92e39: PDF # PDF
+    fee593e7-c65b-45c3-9d81-a9c4a1863566: Footer # Footer
+plugins:
+  config-values-field:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  cta:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  dumper:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  enupal-translate:
+    edition: standard
+    enabled: true
+    licenseKey: R72MHLXWORU7HLAQTPVQXYAW
+    schemaVersion: 3.0.0
+  expanded-singles:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  formie:
+    edition: standard
+    enabled: true
+    licenseKey: OY7WITURMFAEEXHA97Z7YLL9
+    schemaVersion: 2.0.8
+  navigate:
+    edition: standard
+    enabled: true
+    licenseKey: K97R7X3MUF7AZXXV5YBDAWSZ
+    schemaVersion: 2.4.0
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+system:
+  edition: pro
+  live: true
+  name: 'Revalidatiecentrum DAT'
+  retryDuration: null
+  schemaVersion: 4.0.0.9
+  timeZone: Europe/Brussels
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

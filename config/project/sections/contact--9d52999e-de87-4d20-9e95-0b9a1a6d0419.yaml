@@ -1,0 +1,22 @@
+defaultPlacement: end
+enableVersioning: true
+handle: contact
+name: Contact
+propagationMethod: all
+siteSettings:
+  7fb1be39-cc20-49d5-8628-889003e31f09: # fr
+    enabledByDefault: true
+    hasUrls: true
+    template: _pages\_contact\index.html.twig
+    uriFormat: contact
+  33b9a6a8-f771-4a59-a8d6-4800dc41bc2d: # nl
+    enabledByDefault: true
+    hasUrls: true
+    template: _pages\_contact\index.html.twig
+    uriFormat: contact
+  e38d253f-b5c1-457e-925f-2670c4704eb1: # en
+    enabledByDefault: true
+    hasUrls: true
+    template: _pages\_contact\index.html.twig
+    uriFormat: contact
+type: single

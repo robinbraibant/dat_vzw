@@ -1,0 +1,141 @@
+.banner {
+    &-text {
+        width: 60%;
+    }
+}
+
+.home {
+    &-leading {
+        width: 60%;
+        margin-bottom: 6rem;
+    }
+}
+
+.banner-home-container {
+    // margin-bottom: 3rem;
+    // padding-top: $gutter;
+    padding-bottom: 3rem;
+
+    @include mq(md) {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    @include mq(lg) {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+
+    &.banner-primary {
+        background-color: $color-primary;
+    }
+    &.banner-light {
+        background-color: $color-primary-light;
+    }
+}
+
+.banner-home-body {
+    z-index: 1;
+
+    padding-left: $gutter;
+    padding-right: $gutter;
+    padding-top: 12rem;
+    // padding-top: $gutter;
+    // padding-bottom: $gutter;
+
+    color: $white;
+    font-weight: 600;
+
+    > :last-child {
+        margin-bottom: 0;
+    }
+
+    @include mq(640) {
+        flex: 1 1 auto;
+    }
+    @include mq(lg) {
+        padding-top: 3rem;
+    }
+}
+
+// .banner-home-info {
+//     width: 100%;
+
+//     // @include mq(xl) {
+//     //     width: 50%;
+//     // }
+// }
+
+// .home-text {
+//     @include mq(lg) {
+//         width: 80%;
+//     }
+//     @include mq(xl) {
+//         width: 100%;
+//     }
+// }
+
+.home-h4 {
+    font-size: 1.8rem;
+    color: $white;
+}
+
+.banner-home-content {
+    @include mq(xl) {
+        margin-top: 3rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+}
+
+.banner-home-first {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 6rem;
+    // gap: 6rem;
+    @include mq(lg) {
+        width: 50%;
+    }
+
+    @include mq(xl) {
+        margin-bottom: 0;
+    }
+}
+
+.banner-home-second {
+    width: 100%;
+    // margin-top: 3rem;
+    overflow-x: scroll;
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    // margin-bottom: 3rem - $gutter;
+
+    // @include mq(md) {
+    //     margin-bottom: 3rem;
+    // }
+
+    @include mq(lg) {
+        width: 100%;
+        margin-top: 3rem;
+        margin-bottom: 0;
+
+        overflow-x: initial;
+    }
+    @include mq(xl) {
+        margin-top: 0;
+        margin-left: 3rem;
+        width: 50%;
+    }
+}
+
+.banner-home-second::-webkit-scrollbar {
+    display: none;
+}
+
+.banner-buttongroup {
+    margin-bottom: 6rem;
+}

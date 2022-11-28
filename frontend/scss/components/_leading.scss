@@ -1,0 +1,58 @@
+.headline {
+    margin-bottom: 3rem;
+
+    .leading span {
+        color: $color-tertiary;
+    }
+}
+
+.leading {
+    font-family: $comfortaa;
+    font-size: 3.6rem;
+    font-weight: 600;
+
+    color: $color-primary;
+
+    position: relative;
+
+    margin-bottom: 3rem;
+
+    &.contrast-element::before {
+        content: "";
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        top: -1.2rem;
+        left: -1.9rem;
+        border-radius: 100px;
+        background-color: #57c5dc;
+        opacity: 0.4;
+        z-index: -1;
+    }
+
+    @include mq(md) {
+        font-size: 4.2rem;
+    }
+}
+
+.leading-cta {
+    font-family: $comfortaa;
+    font-size: 3.6rem;
+    font-weight: 600;
+
+    color: $color-primary;
+
+    margin-bottom: 3rem;
+}
+
+.title-cards {
+    font-family: $comfortaa;
+    font-size: 2rem;
+    font-weight: 400;
+
+    color: $color-primary;
+
+    &.contrast-element {
+        color: $white;
+    }
+}

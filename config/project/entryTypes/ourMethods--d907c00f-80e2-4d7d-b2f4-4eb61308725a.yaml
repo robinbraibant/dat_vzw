@@ -1,0 +1,73 @@
+fieldLayouts:
+  0bab0b60-859e-4830-9600-4a5a3ff7c84b:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 9d8c53ea-2d10-4009-b88a-35f082032a7d
+            warning: null
+            width: 100
+          -
+            fieldUid: 923e90c0-ecae-4bbc-97eb-6cc3136a8cd1 # Banner intro
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7742a350-2c4e-47b5-a718-ea45541fe382
+            warning: null
+            width: 50
+          -
+            fieldUid: 1c629b66-cd2f-4da6-85a4-72e69772ba1e # Banner afbeelding
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1930a8c7-0067-4e3f-8f9e-2b75740f384b
+            warning: null
+            width: 50
+        name: Banner
+        uid: 02285512-7d0e-45d3-8b88-8d4721e52483
+      -
+        elements:
+          -
+            fieldUid: b87f3585-f683-47d2-a221-4457003d89f8 # Titel | Tekstblok | Afbeelding
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8c363ad6-141b-4757-bae2-4079147965d3
+            warning: null
+            width: 100
+        name: Inhoud
+        uid: f7d5d25b-81f2-4610-9b9a-00b0ef2605b3
+handle: ourMethods
+hasTitleField: true
+name: 'Onze werking'
+section: 5be4ab95-7c42-4fb8-bc49-4bceedd6d67f # Onze werking
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

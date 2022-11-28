@@ -1,0 +1,39 @@
+fieldLayouts:
+  71059127-c965-463f-a5f8-bf103f7eb56e:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: 9f006000-6d77-4e6c-93a0-0c1df2a8ded0
+            warning: null
+            width: 100
+        name: Content
+        uid: 9f29357e-bfef-45cd-b7ad-41f969331ae6
+fs: contactInfo
+handle: contactIcon
+name: 'Contactinfo iconen'
+sortOrder: 6
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+transformFs: ''
+transformSubpath: ''
