@@ -1,0 +1,75 @@
+@use "../settings/global" as *;
+@use "../tools" as *;
+
+.notification {
+    margin-bottom: $spacing;
+    padding: $spacing;
+
+    border-radius: $border-radius;
+    border-bottom: 1px solid $color-subsidiary-lighter;
+    background-color: $offwhite;
+    color: $color-text;
+
+    > :last-child {
+        margin-bottom: 0;
+    }
+
+    @include mq(lg) {
+        padding-left: $spacing-large;
+        padding-right: $spacing-large;
+    }
+
+    &.notification--small {
+        padding: $spacing-small;
+
+        @include mq(lg) {
+            padding-left: $spacing-small;
+            padding-right: $spacing-small;
+        }
+    }
+
+    &.notification--spacing {
+        margin: $spacing;
+    }
+}
+
+.notification--primary {
+    color: $color-text;
+    background-color: $color-primary-lightest;
+    border-color: $color-primary;
+}
+
+.notification--secondary {
+    color: $color-text;
+    background-color: $color-secondary-lightest;
+    border-color: $color-secondary;
+}
+
+.notification--success {
+    color: $color-text;
+    background-color: $color-success-lightest;
+    border-color: $color-success;
+}
+
+.notification--warning {
+    color: $color-text;
+    background-color: $color-warning-lightest;
+    border-color: $color-warning;
+}
+
+.notification--danger {
+    color: $color-text;
+    background-color: $color-danger-lightest;
+    border-color: $color-danger;
+}
+
+.notification__headline {
+    display: block;
+    margin-bottom: $spacing-small;
+
+    font-size: 2rem;
+    font-family: $font-family-secondary;
+    font-weight: 600;
+    font-style: italic;
+    color: $color-text;
+}

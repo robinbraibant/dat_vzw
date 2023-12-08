@@ -1,0 +1,63 @@
+{% set coreItemsLeft = block.coreItemsLeft.collect() %}
+{% set coreItemsRight = block.coreItemsRight.collect() %}
+{% set image = block.image|default(fallback.image)|first %}
+{% set optimizedImage = image.optimizedImages %}
+
+{% if block.bgColor != null %}
+{% set bgColor = true %}
+{% else %}
+{% set bgColor = false %}
+{% endif %}
+
+<div class="core-image container{% if bgColor %} container--light{% endif %}">
+
+    {% if block.blockTitle|length or block.redactor|length %}
+    <div class="row">
+        <div class="col-full">
+            <div class="leading leading--center">
+                {% if block.blockTitle|length %}
+                <h2 class="h2 leading__section">{{block.blockTitle}}</h2>
+                {% endif %}
+
+                {% if block.redactor|length %}
+                {{block.redactor}}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+    <div class="row row-grid">
+        <div class="core-image__content">
+            {% if coreItemsLeft|length %}
+            <div class="col-lg-4">
+                <div class="core-image__left">
+                    {% for core in coreItemsLeft %}
+                    {% include "_snippets/_components/_core.twig" %}
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+
+            <div class="col-lg-4">
+                <div class="core-image__media">
+                    <picture class="core-image__picture">
+                        <source media="(max-width: 960px)" srcset="{{image.getUrl('fit1000x1260')}} 2x" />
+                        <source media="(min-width: 960px)" srcset="{{image.getUrl('fit506x984')}} 2x" />
+                        <img class="core-image__image" src="{{image.getUrl('fit506x984')}} 2x" alt="{{image.alt}}" loading="lazy" />
+                    </picture>
+                </div>
+            </div>
+
+            {% if coreItemsRight|length %}
+            <div class="col-lg-4">
+                <div class="core-image__right">
+                    {% for core in coreItemsRight %}
+                    {% include "_snippets/_components/_core.twig" %}
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>

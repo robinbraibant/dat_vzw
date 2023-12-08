@@ -1,0 +1,11 @@
+fill: null
+format: webp
+handle: crop760x760
+height: 760
+interlace: none
+mode: crop
+name: 'Square 2x'
+position: center-center
+quality: 100
+upscale: true
+width: 760

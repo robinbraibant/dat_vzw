@@ -1,0 +1,35 @@
+{% extends '_layout.twig' %}
+
+{% set breadcrumbs = [entry] %}
+
+{% block content %}
+
+    {% include "_snippets/_hero/_heroDefault.twig" %}
+
+    {% set targetGroupEntries = craft.entries.section('targetGroups').collect() %}
+    <div class="container">
+        <div class="row row-grid target-audience">
+            {% for item in targetGroupEntries %}
+                <a href="{{ item.getUrl() }}" class="target-audience--cardgrid-item">
+                    <div class="target-audience--card-content">
+                        {% set icon = item.image.one() %}
+                        {% if icon %}
+                            <div class="target-audience--card-image">
+                                <img src="{{ icon.getUrl() }}" alt="{{ icon.title }}"/>
+                            </div>
+                        {% endif %}
+                        <div class="target-audience--card-text">
+                            <h4 class="target-audience--card-leading">
+                                {{ item.title }}
+                            </h4>
+                        </div>
+                    </div>
+                </a>
+            {% endfor %}
+        </div>
+    </div>
+
+
+    {% include '_snippets/_content/_contentBuilder.twig' %}
+
+{% endblock %}

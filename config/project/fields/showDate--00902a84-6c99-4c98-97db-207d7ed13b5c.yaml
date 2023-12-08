@@ -1,0 +1,14 @@
+columnSuffix: jvzaiatm
+contentColumnType: boolean
+fieldGroup: ee71a197-2900-41c3-8ede-20b5bc467852 # Common
+handle: showDate
+instructions: 'Geef hier mee aan of je de datum van de blog wilt tonen waarop de blog werd aangemaakt'
+name: 'Toon datum'
+searchable: true
+settings:
+  default: false
+  offLabel: 'Verberg datum'
+  onLabel: 'Toon datum'
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

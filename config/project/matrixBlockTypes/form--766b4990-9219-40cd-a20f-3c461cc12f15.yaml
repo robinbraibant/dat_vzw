@@ -1,0 +1,148 @@
+field: 42753f56-881c-4d30-82a4-7062d713de9b # Contentbuilder
+fieldLayouts:
+  4e046972-92d8-40bb-8ba0-7efeec4a482b:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 7df27cc9-e98e-4f22-8a21-6398b08ddada # Titel
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3c062198-4c5c-4fc8-93bf-8f3435d9a5e5
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 3cd4a533-64b9-4638-8732-64be1729b809 # Tekst
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6d03c7d2-327c-4ee6-8509-57fbec01fcc9
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b7535a4a-9814-4405-b69d-925334f5e180 # Formulier
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 36b02ed1-bb11-44ba-99cc-bf5fe49c3cc2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 41db35dc-7055-475f-b15e-761d456030c4 # Achtergrondkleur
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5228e01b-9bc0-41b2-b80b-4e63fc72cd87
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: cf1869ee-35cd-4364-8ba5-e2a0f67f02aa
+        userCondition: null
+fields:
+  3cd4a533-64b9-4638-8732-64be1729b809: # Tekst
+    columnSuffix: poemnxye
+    contentColumnType: text
+    fieldGroup: null
+    handle: redactor
+    instructions: 'Gebruik dit optionele veld om een tekst in te vullen voor dit blok.'
+    name: Tekst
+    searchable: true
+    settings:
+      availableTransforms: ''
+      availableVolumes: '*'
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: null
+      purifyHtml: true
+      redactorConfig: null
+      removeEmptyTags: false
+      removeInlineStyles: false
+      removeNbsp: false
+      showHtmlButtonForNonAdmins: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  7df27cc9-e98e-4f22-8a21-6398b08ddada: # Titel
+    columnSuffix: tquyaeam
+    contentColumnType: text
+    fieldGroup: null
+    handle: blockTitle
+    instructions: 'Voeg een optionele titel toe voor dit blok.'
+    name: Titel
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  41db35dc-7055-475f-b15e-761d456030c4: # Achtergrondkleur
+    columnSuffix: naxgomsu
+    contentColumnType: string
+    fieldGroup: null
+    handle: bgColor
+    instructions: 'Selecteer een kleur voor de achtergrond van dit blok'
+    name: Achtergrondkleur
+    searchable: false
+    settings:
+      dataSet: 'Background colors'
+      type: dropdown
+    translationKeyFormat: null
+    translationMethod: none
+    type: statikbe\configvaluesfield\fields\ConfigValuesFieldField
+  b7535a4a-9814-4405-b69d-925334f5e180: # Formulier
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: form
+    instructions: 'Selecteer het formulier dat je wil weergeven.'
+    name: Formulier
+    searchable: true
+    settings:
+      allowSelfRelations: false
+      branchLimit: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: 1
+      minRelations: 1
+      selectionLabel: 'Selecteer een formulier'
+      showSiteMenu: true
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: verbb\formie\fields\Forms
+handle: form
+name: Formulier
+sortOrder: 11

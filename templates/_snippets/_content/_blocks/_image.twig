@@ -1,0 +1,19 @@
+{% set image = block.image.one() %}
+{% set optimizedImage = image.optimizedImages %}
+
+{% if block.bgColor != null %}
+{% set bgColor = true %}
+{% else %}
+{% set bgColor = false %}
+{% endif %}
+
+<div class="image container{% if bgColor %} container--light{% endif %}">
+    <div class="row">
+        <div class="col-full">
+            <picture class="image__picture">
+                <source srcset="{{image.getUrl('fullWidthLarge')}} 2x" />
+                <img class="image__image" src="{{image.getUrl('fullWidthLarge')}} 2x" alt="{{image.alt}}" loading="lazy" />
+            </picture>
+        </div>
+    </div>
+</div>

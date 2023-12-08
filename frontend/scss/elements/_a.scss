@@ -1,11 +1,11 @@
+@use '../settings/global' as *;
+
 /// Anchor
 a {
     color: $color-primary;
-    text-decoration: none;
-    font-weight: 400;
+    text-decoration: underline;
+    font-weight: 600;
     outline-offset: 1px;
-
-    cursor: pointer;
 
     transition: color 0.1s;
 
@@ -13,9 +13,9 @@ a {
         outline-offset: 0;
     }
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
         color: $color-primary-dark;
-        text-decoration: underline;
     }
 
     &:active {
@@ -29,7 +29,5 @@ a {
         z-index: 1;
     }
 
-    &:visited {
-
-    }
+    &:visited {}
 }

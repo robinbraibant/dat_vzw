@@ -1,0 +1,9 @@
+baseUrl: '@baseUrl'
+enabled: true
+handle: primary
+hasUrls: true
+language: nl
+name: 'Dat vzw'
+primary: true
+siteGroup: 38dbafcc-4a93-443f-a8c8-5e2999a788f9 # Dat vzw
+sortOrder: 1

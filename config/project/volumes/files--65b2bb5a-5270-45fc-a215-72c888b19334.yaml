@@ -1,0 +1,120 @@
+fieldLayouts:
+  f50afcbe-15ad-4600-808b-7688f7e0cfb8:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: Titel
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: d2dc881f-71d2-4281-a2fb-2e39baf3909f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            attribute: alt
+            class: null
+            cols: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: true
+            required: false
+            rows: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AltField
+            uid: ca8e49d4-49af-4cfd-be83-1b0e121475b4
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 77a29d4b-fdc1-4983-9cd1-a5650c2c6a22
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 874309e7-eddc-4f4e-b7d3-c9ab131c4a04 # Optimized Images
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 91a2403a-8ff2-48b9-ac65-ca4298b01cbe
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f78fd832-93f8-489a-8c90-3a6f7ab9abbb # Optimized ratio 1/1
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 677a793e-e24b-41cb-ba29-61df99aa6604
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: c0a4e21a-31a9-45c3-9047-f16c3be4a9d0 # Optimized Blog Cases
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 92b5c5cd-5224-4335-b412-7f01df08afe5
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 50e251cc-bb40-433b-90eb-e44e5e7ae24c # Cases Square
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c0c4a68b-d747-4866-a95a-cdf512927373
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Optimized NEW'
+        uid: 6221eae2-48a2-4601-b73c-8e9c422f012b
+        userCondition: null
+fs: files
+handle: files
+name: Bestanden
+sortOrder: 1
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+transformFs: ''
+transformSubpath: ''

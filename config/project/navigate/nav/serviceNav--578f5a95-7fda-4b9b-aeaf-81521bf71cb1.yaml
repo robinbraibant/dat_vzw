@@ -1,6 +1,0 @@
-adminOnly: 1
-allowSources: '["entry","url"]'
-enabledSiteGroups: '*'
-handle: serviceNav
-levels: '1'
-title: Servicenavigatie

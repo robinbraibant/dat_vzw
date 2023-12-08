@@ -1,0 +1,138 @@
+@use "../settings/global" as *;
+@use "../tools" as *;
+
+.mobilenav {
+    position: relative;
+    flex: 0 1 auto;
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+    margin-right: -$gutter;
+
+    // &::before {
+    //     content: "";
+    //     position: absolute;
+    //     z-index: 0;
+    //     top: 0;
+    //     bottom: 0;
+    //     left: -100vw;
+    //     right: -100vw;
+    //     border: 1px solid $color-subsidiary-dark;
+    // }
+
+    @include mq($bp-mobilenav) {
+        display: none;
+    }
+}
+
+.mobilenav__item {
+    flex: 0 1 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+
+    & + & {
+        margin-left: $spacing-small;
+    }
+}
+
+.mobilenav__logo {
+    max-height: 22px;
+}
+
+.mobilenav__button,
+.mobilenav__toggle {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    cursor: pointer;
+
+    border: none;
+    margin: 0;
+    text-decoration: none;
+    background: transparent;
+    font-family: sans-serif;
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    padding: 1rem;
+    text-align: center;
+
+    line-height: 1;
+
+    font-family: $font-family-secondary;
+    text-decoration: none;
+    text-transform: none;
+    font-weight: 600;
+    color: $color-secondary;
+
+    transition: color 0.1s;
+
+    &:hover {
+        color: $color-secondary;
+        background-color: transparent;
+
+        .mobilenav-icon,
+        .mobilenav__toggle__hamburger {
+            color: currentColor;
+        }
+    }
+
+    &:active {
+        color: $color-secondary-light;
+        background-color: transparent;
+    }
+}
+
+.mobilenav__buttontext {
+    @include visually-hidden();
+}
+
+.mobilenav__action {
+    display: none;
+
+    @include mq(540) {
+        display: block;
+    }
+}
+
+.mobilenav__icon {
+    font-size: 3.2rem;
+    color: $color-primary;
+    margin-right: 0.2rem;
+}
+
+.mobilenav__toggle__label {
+    flex: 0 1 auto;
+    display: inline-block;
+
+    @include mq(0, 520) {
+        @include visually-hidden();
+    }
+
+    .has-open-navigation & {
+        display: none;
+    }
+
+    &.is-opened {
+        display: none;
+
+        .has-open-navigation & {
+            display: inline-block;
+        }
+    }
+}
+
+.mobilenav__toggle__hamburger {
+    flex: 0 1 auto;
+    margin-right: 0.6rem;
+    color: $color-primary;
+}

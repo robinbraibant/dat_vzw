@@ -1,0 +1,55 @@
+fieldLayouts:
+  0eb17601-98e7-4169-aebe-02ea8b45678e:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: Titel
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 5a70616d-dbe2-4596-9dde-c3f51462cb54
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 99603efa-2602-40ce-9bd8-058d114c1498 # Afbeelding
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5390934e-1294-489a-b930-6c07b0a6f057
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 7126682d-123c-417f-b9a0-77e0af55f4f7
+        userCondition: null
+handle: default
+hasTitleField: true
+name: Default
+section: 41486e80-8cfb-4167-ab71-3939dc65b270 # Doelgroepen
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

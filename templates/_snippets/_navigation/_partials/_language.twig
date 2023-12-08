@@ -1,0 +1,26 @@
+{% set currentLanguage = currentSite.language %}
+{% set currentLocal = currentLanguage|split('-') %}
+{% set group = craft.app.getSites().getGroupById(currentSite.groupId) %}
+
+<nav class="language">
+    <ul class="language__list list-clear">
+        {% for site in group.getSites() %}
+        {% if entry is defined %}
+        {% set localeEntry = craft.entries.id(entry.id).siteId(site.id).one() %}
+        {% if localeEntry is defined and localeEntry.siteId != currentSite.id %}
+        {% set locale = localeEntry.site.language|split('-') %}
+        <li class="language__item">
+            <a class="language__button" href="{{ url(localeEntry.url) }}">{{ locale[0] }}</a>
+        </li>
+        {% else %}
+        {% if localeEntry is defined %}
+        {% set locale = localeEntry.site.language|split('-') %}
+        <li class="language__item">
+            <a class="language__button" href="{{ currentSite.baseUrl }}">{{ locale[0] }}</a>
+        </li>
+        {% endif %}
+        {% endif %}
+        {% endif %}
+        {% endfor %}
+    </ul>
+</nav>

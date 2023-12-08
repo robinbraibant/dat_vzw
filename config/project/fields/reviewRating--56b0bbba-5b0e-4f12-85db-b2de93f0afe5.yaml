@@ -1,0 +1,20 @@
+columnSuffix: gosfxeon
+contentColumnType: smallint(1)
+fieldGroup: fbc70935-3e41-4885-9162-f35795897351 # Reviews
+handle: reviewRating
+instructions: 'Score van 0 tot 5 sterren'
+name: Rating
+searchable: false
+settings:
+  decimals: 0
+  defaultValue: 5
+  max: 5
+  min: 0
+  prefix: null
+  previewCurrency: null
+  previewFormat: decimal
+  size: null
+  suffix: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Number

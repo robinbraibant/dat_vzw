@@ -1,0 +1,11 @@
+fill: null
+format: webp
+handle: fit128x128
+height: 128
+interlace: none
+mode: fit
+name: 'USP 2x '
+position: center-center
+quality: 100
+upscale: true
+width: 128

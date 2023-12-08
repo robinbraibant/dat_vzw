@@ -1,0 +1,24 @@
+fieldLayouts:
+  c916dbcf-8415-475f-9a19-7544ca0180d4:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 99603efa-2602-40ce-9bd8-058d114c1498 # Afbeelding
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: dbbf4900-dbec-4c7f-9907-8794bf070eea
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 585c0a01-1cf1-45ce-8f9f-e5ae66c44858
+        userCondition: null
+handle: fallback
+name: 'Fallback afbeelding'
+sortOrder: 1

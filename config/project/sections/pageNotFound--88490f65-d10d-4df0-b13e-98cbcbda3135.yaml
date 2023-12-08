@@ -1,0 +1,24 @@
+defaultPlacement: end
+enableVersioning: true
+handle: pageNotFound
+name: 'Pagina niet gevonden'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  753d678c-4018-409d-9dfa-5c4fdc2219b7: # Dat vzw
+    enabledByDefault: true
+    hasUrls: true
+    template: 404.twig
+    uriFormat: '404'
+type: single

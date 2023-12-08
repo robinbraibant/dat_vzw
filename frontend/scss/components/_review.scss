@@ -1,0 +1,94 @@
+@use "../settings/global.scss" as *;
+@use "../tools" as *;
+
+.review {
+    padding-top: $vertical-spacing;
+    padding-bottom: $vertical-spacing;
+}
+
+.review__content {
+    // padding: $spacing * 3;
+    background-color: $white;
+    box-shadow: $box-shadow;
+    border-radius: $border-radius;
+}
+
+.review__rating {
+    position: relative;
+    margin-bottom: $vertical-spacing;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 14.5rem;
+        top: 0.2rem;
+        width: 2.4rem;
+        height: 2.4rem;
+        background-image: url("/assets/svg/google.svg");
+    }
+}
+
+.review__star {
+    color: $color-yellow;
+}
+
+.review__cite {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    font-size: 1.2rem;
+    font-style: normal;
+    line-height: 1.7;
+
+    color: $color-subsidiary-light;
+
+    strong {
+        color: $color-text;
+    }
+    // margin-left: 4rem + $spacing;
+
+    // &::before {
+    //     content: "\201C";
+    //     position: absolute;
+    //     left: -4rem - $spacing;
+    //     bottom: 0.8rem;
+
+    //     width: 4rem;
+    //     height: 4rem;
+
+    //     font-size: 4rem;
+    //     font-family: "Times New Roman", serif;
+    //     font-weight: 700;
+
+    //     color: $color-primary;
+
+    //     display: flex;
+    //     justify-content: center;
+
+    //     z-index: 2;
+    // }
+
+    // &::after {
+    //     content: "";
+    //     position: absolute;
+
+    //     width: 4rem;
+    //     height: 4rem;
+
+    //     background-color: $color-primary-light;
+    //     border-radius: $border-radius;
+
+    //     left: -4rem - $spacing;
+
+    //     z-index: 1;
+    // }
+}
+
+.review-image__media {
+    @include mq(0, md) {
+        display: flex;
+        justify-content: center;
+        margin: $vertical-spacing 0;
+    }
+}

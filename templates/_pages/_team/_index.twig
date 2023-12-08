@@ -1,0 +1,37 @@
+{% extends '_layout.twig' %}
+
+{% set breadcrumbs = [entry] %}
+
+{% block content %}
+
+    {% include "_snippets/_hero/_heroDefault.twig" %}
+
+    {% set disciplines = craft.entries.section('team').all() %}
+    {% if disciplines|length %}
+        <div class="team-category--cardgrid">
+        {% for discipline in disciplines %}
+            <a href="{{ discipline.getUrl() }}" class="team-category--cardgrid-item">
+                <div class="team-category--card-image">
+                    {% set image = discipline.heroImage.one() %}
+                    <img src="{{ image.getUrl() }}" alt="{{ image.title }}">
+
+                </div>
+                <div class="team-category--card-text">
+                    <h4 class="team-category--card-leading">
+                        {{ discipline.title }}
+                    </h4>
+                </div>
+                <div class="team-category--line">
+                    <div class="team-category--card-circle"></div>
+                    <div class="team-category--card-line">
+                        <div class="team-category-card-line-animation"></div>
+                    </div>
+                </div>
+            </a>
+        {% endfor %}
+        </div>
+    {% endif %}
+
+    {% include '_snippets/_content/_contentBuilder.twig' %}
+
+{% endblock %}

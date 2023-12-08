@@ -1,0 +1,26 @@
+{% set entry = craft.entries.section('systemOffline').one() %}
+{% extends '_layout.twig' %}
+
+{% set breadcrumbs = [
+    entry
+] %}
+
+{% block content %}
+
+    <div class="container">
+        <div class="row">
+            <div class="col-full">
+                {% include '_snippets/_item/_main/_defaultHeader.twig' %}
+            </div>
+        </div>
+    </div>
+
+    {% include '_snippets/_content/_contentBuilder.twig' with {
+        settings: {
+            container: 'container',
+            row: 'row',
+            col: 'col-full'
+        }
+    } %}
+
+{% endblock %}

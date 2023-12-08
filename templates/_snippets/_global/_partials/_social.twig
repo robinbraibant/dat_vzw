@@ -1,0 +1,55 @@
+{% if smallIcons is defined %}
+{% set smallIcons = true %}
+{% else %}
+{% set smallIcons = false %}
+{% endif %}
+
+<span class="social {% if smallIcons %}social--small{% endif %}">
+    <span class="social__label">
+        Volg ons op
+    </span>
+    <div class="social__links">
+        {% if socialMedia.linkedin|length %}
+        <a class="social__link social__link--linkedin" href="{{socialMedia.linkedin}}" target="_blank" rel="noopener">
+            {{ svg('@webroot/assets/svg/socials/linkedin-round.svg') }}
+            <span class="visually-hidden">LinkedIn</span>
+        </a>
+        {% endif %}
+
+        {% if socialMedia.facebook|length %}
+        <a class="social__link social__link--facebook" href="{{socialMedia.facebook}}" target="_blank" rel="noopener">
+            {{ svg('@webroot/assets/svg/socials/facebook-circle.svg') }}
+            <span class="visually-hidden">Facebook</span>
+        </a>
+        {% endif %}
+
+        {% if socialMedia.instagram|length %}
+        <a class="social__link social__link--instagram" href="{{socialMedia.instagram}}" target="_blank" rel="noopener">
+            {{ svg('@webroot/assets/svg/socials/instagram-rounded.svg') }}
+            <span class="visually-hidden">Instagram</span>
+        </a>
+        {% endif %}
+
+        {% if socialMedia.dribbble|length %}
+        <a class="social__link social__link--dribbble" href="{{socialMedia.dribbble}}" target="_blank" rel="noopener">
+            {{ svg('@webroot/assets/svg/socials/dribbble.svg') }}
+            <span class="visually-hidden">Dribbble</span>
+        </a>
+        {% endif %}
+
+        {% if socialMedia.youtube|length %}
+        <a class="social__link social__link--youtube" href="{{socialMedia.youtube}}" target="_blank" rel="noopener">
+            {{ svg('@webroot/assets/svg/socials/youtube.svg') }}
+            <span class="visually-hidden">YouTube</span>
+        </a>
+        {% endif %}
+
+        {% if socialMedia.tiktok|length %}
+        <a class="social__link social__link--tiktok" href="{{socialMedia.tiktok}}" target="_blank" rel="noopener">
+            {{ svg('@webroot/assets/svg/socials/tiktok.svg') }}
+            <span class="visually-hidden">TikTok</span>
+        </a>
+        {% endif %}
+    </div>
+
+</span>

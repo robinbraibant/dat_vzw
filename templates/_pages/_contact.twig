@@ -1,0 +1,42 @@
+{% extends '_layout.twig' %}
+
+{% set breadcrumbs = [entry] %}
+
+{% block content %}
+
+    {% include "_snippets/_hero/_hero.twig" %}
+
+    <div class="container container--light">
+        <div class="row">
+            <div class="col-full">
+                <div class="leading leading--center">
+                    <h2 class="h2 leading__section">{{ "Heb je een vraag voor ons?"|t }}</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row row-grid row-center contact__page">
+            {% set centers = entry.centers.collect() %}
+            {% if centers %}
+                <div class="centers">
+                    <h3 class="centers__leading">{{ "Onze centra"|t }}</h3>
+                    {% for center in centers %}
+                        <h4 class="centers__sub-leading" >{{ center.centerTitle }}</h4>
+                        <div>{{ center.centerName }}</div>
+                        <div>{{ center.streetNr }}</div>
+                        <div>{{ center.postalCode }} {{ center.town }}</div>
+			<div>
+				<a mailto="{{ center.mail }}" class="button button--link">{{ center.mail }}</a>
+			</div>
+                        <div class="centers__buttons">
+                            <div class="button button--outline-primary">{{ center.phone }}</div>
+                            <div class="button button--outline-light">Open Google Maps</div>
+                        </div>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        </div>
+    </div>
+
+    {% include '_snippets/_content/_contentBuilder.twig' %}
+
+{% endblock %}

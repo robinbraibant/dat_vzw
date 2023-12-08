@@ -1,0 +1,12 @@
+columnSuffix: pckeytay
+contentColumnType: string
+fieldGroup: 0ae41f7b-646b-4f66-8dad-e8411d392412 # Contactgegevens
+handle: email
+instructions: null
+name: E-mailadres
+searchable: true
+settings:
+  placeholder: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Email

@@ -1,107 +1,88 @@
 @charset 'UTF-8';
 
 /// Settings (defining variables, fonts and other configurations)
-@import
-'settings/global',
-// 'settings/fonts',
-'settings/mq',
-//'settings/fontawesome',
-'settings/materialdesignicons';
-// 'settings/pikaday',
-// 'settings/colors';
+@use "settings/global";
+@use "settings/mq-settings";
 
 /// Tools (mixins, functions and placeholders)
-@import
-'tools/mixins',
-// 'tools/functions',
-// 'tools/placeholders',
-'tools/assets-helper',
-'tools/mq';
+@use "tools/mixins";
+@use "tools/placeholders";
+@use "tools/mq";
 
 /// Generic (resetting defaults)
-@import
-'generic/box-sizing',
-'generic/normalize';
+@use "generic/normalize";
+@use "generic/box-sizing";
 
 /// Vendor
-// @import
-//'vendor/fontawesome/fontawesome',
-//'vendor/fontawesome/brands',
-//'vendor/fontawesome/solid',
-//'vendor/fontawesome/regular',
-// 'vendor/materialdesignicons',
-// 'vendor/pikaday',
-// 'vendor/plyr/plyr',
-// 'vendor/lightgallery';
-//'vendor/owl-carousel/owl.carousel';
+/// ...
 
 /// Elements (basic styling for HTML elements)
-@import
-'elements/a',
-'elements/contrast-element',
-'elements/form',
-'elements/hr',
-'elements/page',
-'elements/img',
-'elements/table',
-'elements/type-headings',
-'elements/type-list',
-'elements/type-misc',
-'elements/type-paragraph',
-'elements/type-quote';
+@use "elements/page";
+@use "elements/type-headings";
+@use "elements/type-paragraph";
+@use "elements/type-list";
+@use "elements/type-quote";
+@use "elements/type-misc";
+@use "elements/a";
+@use "elements/hr";
+@use "elements/img";
+@use "elements/table";
+@use "elements/form-element";
+@use "elements/file-input";
 
-/// Objects (structuring and layouting)
-@import
-'objects/grid';
+/// Objects (structuring and layout)
+@use "objects/grid";
 
 /// Components
-@import
-// 'components/contrast-element',
-'components/leading',
-'components/button',
-'components/list',
-'components/table',
-'components/form',
-'components/call-to-action',
-'components/header',
-'components/gallery-home',
-'components/dat-form',
-'components/dat-contact-section',
-// 'components/notification',
-// 'components/pagination',
-// 'components/share',
-// 'components/social',
-// 'components/map',
-// 'components/micromodal',
-// 'components/gallery',
-'components/card--target-audience',
-'components/card--team-category',
-'components/section-card-lightblue',
+@use "components/breadcrumbs";
+@use "components/contrast-element";
+@use "components/leading";
+@use "components/button";
+@use "components/list";
+// @use 'components/form-original';
+@use "components/form";
+@use "components/formie";
+@use "components/notification";
+@use "components/pagination";
+@use "components/search";
+@use "components/language";
+@use "components/social";
+@use "components/sponsors";
+@use "components/teamcard";
+@use "components/target-audience";
+@use "components/core-image";
+@use "components/case";
+@use "components/blog";
+@use "components/logo";
+@use "components/section";
+@use "components/contactinfo";
 
-//planes
-// 'components/media',
-// 'components/callout',
+/// Content builder
+@use "components/text-image";
+@use "components/review";
+@use "components/video";
+@use "components/gallery";
+@use "components/service";
+@use "components/overview";
+@use "components/usp";
 
-//page
-'components/site',
-'components/container',
-// 'components/head',
-// 'components/topsubnav',
-// 'components/subnav',
-'components/banner',
-'components/banner-home',
-'components/links-content',
-'components/link-block',
-'components/textblock-image',
-'components/textblock',
-'components/footer',
-'components/sponsors',
-'components/credits';
+/// Page
+@use "components/site";
+@use "components/container";
+@use "components/header";
+@use "components/topnav";
+@use "components/topsubnav";
+@use "components/mobilenav";
+@use "components/hamburger";
+@use "components/mainnav";
+@use "components/subnav";
+@use "components/hero";
+@use "components/footer";
+@use "components/credits";
+@use "components/banner";
 
-//other
-// 'components/cookiemodal';
+/// Others
+@use "components/cookienotice";
 
 /// Utilities (helpers)
-
-// @import
-// 'utilities/helpers';
+@use "utilities/helpers";

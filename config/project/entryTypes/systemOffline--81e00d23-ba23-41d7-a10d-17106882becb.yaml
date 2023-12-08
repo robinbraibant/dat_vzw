@@ -1,0 +1,115 @@
+fieldLayouts:
+  d06a99c0-67b9-455a-bb11-ee584e428df4:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: Titel
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 6570eb02-a11b-4557-8415-222cfc2f3e72
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b693e790-e464-467a-81a1-f62bb9914cb2 # Hero afbeelding
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9fcd5581-7911-4ba3-8a3a-beeb9f2db080
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 71121d32-13d9-4173-b4d5-cb96fb596e4d # Intro
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4725d7b3-ae52-4e87-a493-2313aa1ff8be
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 2a7635da-9798-4a72-9262-84d14e66931f # Call to action(s)
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 20556f28-30a2-4415-a99e-4c71adb920eb
+            userCondition: null
+            warning: null
+            width: 100
+        name: Hero
+        uid: 36b0f677-1afc-4839-b99b-33beec21bc28
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 42753f56-881c-4d30-82a4-7062d713de9b # Contentbuilder
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1cfc1952-3582-4960-844b-f681b5e3d7c8
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhoud
+        uid: 97becc2c-9686-4f75-8626-d4e9fe65562d
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 87757b92-04cd-4915-971d-e0d100fccb17 # SEO instellingen
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5509b94d-8387-4810-ba60-03dac9f8f090
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: 46d32df0-406f-4265-b26f-73b641a3cd0f
+        userCondition: null
+handle: systemOffline
+hasTitleField: true
+name: 'Systeem offline'
+section: defdf311-a20e-4586-9fd6-e5a6fbe2df2f # Systeem offline
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

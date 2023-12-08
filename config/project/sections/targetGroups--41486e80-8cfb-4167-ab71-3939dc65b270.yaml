@@ -1,0 +1,15 @@
+defaultPlacement: end
+enableVersioning: true
+handle: targetGroups
+name: Doelgroepen
+propagationMethod: all
+siteSettings:
+  753d678c-4018-409d-9dfa-5c4fdc2219b7: # Dat vzw
+    enabledByDefault: true
+    hasUrls: true
+    template: _pages/_targetGroups/_entry.twig
+    uriFormat: 'doelgroepen/{slug}'
+structure:
+  maxLevels: 1
+  uid: 318d0ad1-0961-4d13-9770-d94880deed35
+type: structure

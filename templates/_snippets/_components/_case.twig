@@ -1,0 +1,45 @@
+{% set image = case.overviewImage|default(fallback.image)|first %}
+
+<article class="case">
+    <a class="case__content" href="{{ case.getUrl() }}">
+        <div class="case__body">
+            {% if case.title|length %}
+                <h3 class="case__headline">{{ case.overviewTitle|length ? case.overviewTitle : case.title }}</h3>
+            {% endif %}
+        </div>
+
+        <div class="case__media">
+            {% if highlight is defined %}
+                <picture class="case__picture">
+                    {% if loopIndex == 1 %}
+                        <source media="(max-width: 769px)" srcset="{{ image.getUrl('crop1472x908') }} 2x"/>
+                        <source media="(min-width: 769px)" srcset="{{ image.getUrl('crop2240x1012') }} 2x"/>
+                    {% elseif loopIndex < 4 %}
+                        <source media="(max-width: 769px)" srcset="{{ image.getUrl('crop1472x908') }} 2x"/>
+                        <source media="(min-width: 769px)" srcset="{{ image.getUrl('crop1100x764') }} 2x"/>
+                    {% endif %}
+                    <img class="case__image" src="{{ image.getUrl('crop2240x1012') }} 2x" alt="{{ image.alt }}"
+                         loading="lazy"/>
+                </picture>
+            {% endif %}
+
+            {% if casesMixed is defined %}
+                <picture class="case__picture">
+                    <source media="(max-width: 769px)" srcset="{{ image.getUrl('crop1472x908') }} 2x"/>
+                    <source media="(min-width: 769px)" srcset="{{ image.getUrl('crop760x760') }} 2x"/>
+                    <img class="case__image" src="{{ image.getUrl('crop760x760') }} 2x" alt="{{ image.alt }}"
+                         loading="lazy"/>
+                </picture>
+            {% endif %}
+
+{#            {% if casesLatest is defined %}#}
+{#                <picture class="case__picture">#}
+{#                    <source media="(max-width: 769px)" srcset="{{ image.getUrl('crop1472x908') }} 2x"/>#}
+{#                    <source srcset="{{ image.getUrl('crop760x760') }} 2x"/>#}
+{#                    <img class="case__image" src="{{ image.getUrl('crop760x760') }} 2x" alt="{{ image.alt }}"#}
+{#                         loading="lazy"/>#}
+{#                </picture>#}
+{#            {% endif %}#}
+        </div>
+    </a>
+</article>

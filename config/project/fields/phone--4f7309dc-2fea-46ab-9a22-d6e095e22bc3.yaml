@@ -1,0 +1,19 @@
+columnSuffix: dfqybxds
+contentColumnType: text
+fieldGroup: 0ae41f7b-646b-4f66-8dad-e8411d392412 # Contactgegevens
+handle: phone
+instructions: null
+name: Telefoonnummer
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

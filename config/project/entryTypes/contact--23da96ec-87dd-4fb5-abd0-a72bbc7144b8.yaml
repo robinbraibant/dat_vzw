@@ -1,0 +1,127 @@
+fieldLayouts:
+  29cb68dc-692e-4a8c-b610-d08d2f869385:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: Titel
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 6e997a2e-1196-417d-9a2b-180119ddbb07
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b693e790-e464-467a-81a1-f62bb9914cb2 # Hero afbeelding
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9fbdc571-bf28-4bc2-928a-615bd100dfdd
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 71121d32-13d9-4173-b4d5-cb96fb596e4d # Intro
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 73a2816d-e579-4de8-9734-643e7fabd1a9
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 2a7635da-9798-4a72-9262-84d14e66931f # Call to action(s)
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ac2f627d-1dc3-4bb4-acb9-c0b60a8c5cbf
+            userCondition: null
+            warning: null
+            width: 100
+        name: Hero
+        uid: 8c779c43-1b4b-43c0-890d-fb34048285bb
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: cc9be780-1445-4090-9b31-2c7fe893e319 # Centra
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 455aa41c-55a0-4a88-9f52-7df6adf48174
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 42753f56-881c-4d30-82a4-7062d713de9b # Contentbuilder
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ec7dd63b-8a61-4b2e-9226-5501361e75a2
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhoud
+        uid: f5d877ca-b3f8-4c3f-82ef-7222c799e9be
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 87757b92-04cd-4915-971d-e0d100fccb17 # SEO instellingen
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2be83ad5-f822-4795-a9cc-2231c9bf8e8c
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: 3c6d6961-25f6-46f8-84cd-ca1f6acd7362
+        userCondition: null
+handle: contact
+hasTitleField: true
+name: Contact
+section: 877440ea-915c-43b1-9d9b-b55f629c2075 # Contact
+sortOrder: 1
+titleFormat: '{heroTitle|striptags}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

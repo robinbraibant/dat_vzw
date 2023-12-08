@@ -1,0 +1,11 @@
+fill: null
+format: webp
+handle: fullWidthLarge
+height: 1350
+interlace: none
+mode: fit
+name: 'Full width Large'
+position: center-center
+quality: 100
+upscale: true
+width: 2400

@@ -1,3 +1,6 @@
+@use "../settings/global.scss" as *;
+@use "../tools" as *;
+
 /*
  *  Grid
  *  <Based> on Bootstrap's grid
@@ -7,7 +10,7 @@
 $grid-show-outlines: false !default;
 
 @if $grid-show-outlines {
-    [class*='col-'] {
+    [class*="col-"] {
         outline: 1px dotted LightSalmon;
     }
 }
@@ -24,9 +27,22 @@ $grid-show-outlines: false !default;
         margin-left: -$gutter;
         margin-right: -$gutter;
     }
-    
+
     &.row-narrow {
         max-width: $max-width-small;
+    }
+
+    &.row-reverse {
+        flex-flow: row-reverse wrap;
+    }
+
+    &.row-center {
+        justify-content: center;
+    }
+
+    &.row-grid {
+        margin-top: $vertical-spacing *2;
+        margin-bottom: -$vertical-spacing;
     }
 }
 
@@ -34,7 +50,8 @@ $grid-show-outlines: false !default;
     align-items: center;
 }
 
-[class*='col-'], .col-full {
+[class*="col-"],
+.col-full {
     position: relative;
     width: 100%;
     padding-left: $gutter;
@@ -48,13 +65,13 @@ $grid-show-outlines: false !default;
     display: flex;
     flex-flow: row wrap;
     align-items: stretch;
-    
+
     > * {
         flex: 0 1 auto;
     }
 }
 
-$grid-ratio: 100% / $columns;
+$grid-ratio: calc(100% / $columns);
 
 @mixin gridCreateCols($size, $grid-ratio, $columns) {
     @for $i from 1 through $columns {
@@ -63,13 +80,16 @@ $grid-ratio: 100% / $columns;
             width: $grid-ratio * $i;
             //width: calc(100% / #{$columns} * #{$i});
         }
+
         .col-#{$size}-offset-#{$i} {
             margin-left: $grid-ratio * $i;
             //margin-left: calc(100% / #{$columns} * #{$i});
         }
+
         .col-#{$size}-pull-#{$i} {
             right: $grid-ratio * $i;
         }
+
         .col-#{$size}-push-#{$i} {
             left: $grid-ratio * $i;
         }
@@ -77,11 +97,11 @@ $grid-ratio: 100% / $columns;
 }
 
 @each $size, $min-width in $breakpoints {
-    @if $min-width > 0 {
+    @if $min-width >0 {
         @include mq($min-width) {
-            @include gridCreateCols($size, $grid-ratio, $columns)
+            @include gridCreateCols($size, $grid-ratio, $columns);
         }
     } @else {
-        @include gridCreateCols($size, $grid-ratio, $columns)
+        @include gridCreateCols($size, $grid-ratio, $columns);
     }
 }

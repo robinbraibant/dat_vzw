@@ -1,0 +1,15 @@
+defaultPlacement: end
+enableVersioning: true
+handle: team
+name: Disciplines
+propagationMethod: all
+siteSettings:
+  753d678c-4018-409d-9dfa-5c4fdc2219b7: # Dat vzw
+    enabledByDefault: true
+    hasUrls: true
+    template: _pages/_team/_entry.twig
+    uriFormat: 'team/{slug}'
+structure:
+  maxLevels: 1
+  uid: 4611fa48-bb48-487b-a298-65671dbab124
+type: structure

@@ -18,11 +18,62 @@
  */
 
 use craft\helpers\App;
+use craft\mail\transportadapters\Smtp;
+use craftcms\postmark\Adapter;
 
 return [
-    'id' => App::env('CRAFT_APP_ID') ?: 'CraftCMS',
-    'modules' => [
-        'my-module' => \modules\Module::class,
+    '*' => [
+        'modules' => [
+            'alpinedigital' => [
+                'class' => \modules\alpinedigital\AlpineDigital::class
+            ],
+        ],
+        'bootstrap' => ['alpinedigital']
     ],
-    //'bootstrap' => ['my-module'],
+
+    /* The mailer component overwrites the settings in the Craft backend. The Postmark adapter will be used. */
+    'production' => [
+        'components' => [
+            'mailer' => function () {
+                $settings = App::mailSettings();
+                $settings->transportType = Adapter::class;
+                $settings->transportSettings = [
+                    'token' => getenv("POSTMARK_API_KEY")
+                ];
+                return Craft::createObject(App::mailerConfig($settings));
+            }
+        ]
+    ],
+
+    /* The mailer component overwrites the settings in the Craft backend. The Postmark adapter will be used. In
+    config/general.php, a debug email address is defined. This will be used as the receiver address for all email send
+    from a staging environment */
+    'staging' => [
+        'components' => [
+            'mailer' => function () {
+                $settings = App::mailSettings();
+                $settings->transportType = Adapter::class;
+                $settings->transportSettings = [
+                    'token' => getenv("POSTMARK_API_KEY")
+                ];
+                return Craft::createObject(App::mailerConfig($settings));
+            }
+        ]
+    ],
+
+    /* The mailer component overwrites the settings in the Craft backend. A local mail client will be used */
+    'dev' => [
+        'components' => [
+            'mailer' => function () {
+                $settings = App::mailSettings();
+                $settings->transportType = Smtp::class;
+                $settings->transportSettings = [
+                    'host' => '127.0.0.1',
+                    'port' => '1025',
+                    'useAuthentication' => false,
+                ];
+                return Craft::createObject(App::mailerConfig($settings));
+            }
+        ]
+    ],
 ];

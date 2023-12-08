@@ -1,0 +1,72 @@
+@use "../settings/global" as *;
+
+.breadcrumbs-container {
+    // margin-top: $vertical-spacing * 2;
+    margin-bottom: $vertical-spacing;
+    // background-color: rgba($color-secondary, 0.05);
+}
+
+.breadcrumbs {
+    max-width: $max-width;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+.breadcrumbs__navigation {
+    position: relative;
+    width: 100%;
+    // padding-left: $gutter;
+    // padding-right: $gutter;
+
+    flex: 0 0 auto;
+    max-width: 100%;
+}
+
+.breadcrumbs__list {
+    list-style: none;
+    margin: 0;
+    padding-bottom: $vertical-spacing;
+}
+
+.breadcrumbs__item {
+    display: inline-block;
+    line-height: 2.1rem;
+    vertical-align: middle;
+
+    &:not(:first-child) {
+        &::before {
+            content: "|";
+            margin-left: 0.4rem;
+            margin-right: 0.2rem;
+            display: inline-block;
+            font-size: 2.1rem;
+            line-height: 1;
+            vertical-align: bottom;
+            color: $color-primary;
+        }
+    }
+}
+
+.breadcrumbs__link {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: $white;
+    opacity: 0.6;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        color: $color-text-light;
+    }
+
+    .breadcrumbs__item:last-child:not(:first-child) & {
+        font-weight: 400;
+
+        &::before {
+            font-weight: normal;
+        }
+    }
+}

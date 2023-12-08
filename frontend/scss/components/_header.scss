@@ -1,331 +1,128 @@
-.top-nav-container {
-    width: 100%;
-    background: $white;
-}
+@use "../settings/global" as *;
+@use "../tools" as *;
 
-.main-nav-container {
-    width: 100%;
-    background: $color-primary;
-}
-
-.logo {
+.header-container {
     position: relative;
+    background-color: #0067a8;
+    //background-color: $color-primary-lightest;
+    // .has-open-navigation & {
+    // }
 }
 
-#logo {
-    min-width: 110px;
-    @include mq(md) {
-        min-width: 120px;
+.header {
+    //background-color: #0067a8;
+    position: relative;
+    max-width: $max-width-large;
+    margin-left: auto;
+    margin-right: auto;
+    padding: $spacing $gutter;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+
+    &.header--wrap {
+        flex-flow: row wrap;
     }
-    @include mq(lg) {
-        min-width: 130px;
+
+    @include mq(0, $bp-mobilenav) {
+        .has-open-navigation & {
+            box-shadow: 0;
+        }
     }
-    @include mq(xl) {
-        min-width: 140px;
+
+    @include mq($bp-mobilenav) {
+        // flex-flow: row wrap;
+        justify-content: flex-end;
+        align-items: center;
+        box-shadow: none;
+        min-height: 0;
+
+        //background-color: transparent;
     }
 }
 
-.header-logo {
-    background: $white;
+.header__logo {
     position: absolute;
-    top: -6rem;
+    background: #fff;
+    top: 0;
     left: 0;
-    padding-top: 3rem;
-    padding-right: 3rem;
-    padding-bottom: 1rem;
-    padding-left: 3rem;
+    padding: 2rem 0rem 0rem;
     border-radius: 0px 0px 55px 55px;
+    //z-index: 9999;
 
-    @include mq(lg) {
-        top: -3rem;
-        padding-top: 1.5rem;
+    //display: block;
+    //flex: 0 1 auto;
+    // margin-top: 0.6rem;
+    //margin-right: $gutter;
+    // margin-bottom: -1.6rem;
+
+    @include mq(0, $bp-mobilenav) {
+        > svg,
+        img {
+            max-height: 8rem;
+            width: 16rem;
+        }
+    }
+
+    @include mq($bp-mobilenav) {
+        top: -6rem;
+        padding-top: 3rem;
+        padding-right: 3rem;
+        padding-bottom: 1rem;
+        padding-left: 3rem;
+        // margin-top: 1.2rem;
+        margin-right: $gutter * 2;
+        // margin-bottom: 1.8rem;
+        // align-self: flex-end;
+
+        > svg,
+        img {
+            // width: 30rem;
+
+            // @include mq(1000) {
+            width: 15rem;
+            // }
+        }
     }
 }
 
-.main-nav,
-.top-nav {
-    max-width: 120rem;
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    margin: 0 auto;
+.header__start {
+    justify-content: flex-end;
+    display: flex;
+    // align-self: flex-end;
+}
+
+.header__start,
+.header__end {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+
+    @include mq($bp-mobilenav) {
+        flex: 0 0 auto;
+    }
+
+    // @include mq(xxl) {
+    //     width: 20rem;
+    // }
+}
+
+.header__end {
+    margin-left: auto;
     display: flex;
     justify-content: flex-end;
+
+    @include mq($bp-mobilenav) {
+        margin-left: 0;
+    }
+
+    // .button--primary {
+    //     padding: $gutter $gutter * 2;
+
+    //     @include mq(xl) {
+    //         margin-right: $spacing-large;
+    //     }
+    // }
 }
-
-.top-nav {
-    position: relative;
-    background: $white;
-    height: fit-content;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.main-nav-links {
-    padding-top: 3rem;
-    width: 80%;
-
-    nav {
-        display: block;
-        width: 100%;
-    }
-
-    ul:first-child {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: end;
-        margin: 0;
-    }
-
-    li {
-        margin-left: 3rem;
-        list-style-type: none;
-
-        div {
-            align-items: center;
-            display: flex;
-        }
-    }
-}
-
-.top-nav-links,
-.main-nav-links,
-.top-nav-links ul
-{
-    display: flex;
-    gap: 2rem;
-    align-items: center;
-}
-
-.arrow-icon {
-    fill: #c8e6f9;
-}
-
-.main-nav-links a {
-    text-decoration: none;
-    color: $white;
-    font-weight: 700;
-    font-size: 2rem;
-    &:hover {
-        text-decoration: underline;
-    }
-    &:focus {
-    }
-    &:first-child {
-        color: #c8e6f9;
-    }
-}
-.top-nav-links {
-    text-decoration: none;
-    // color: #0067A8;
-    font-weight: 700;
-    font-size: 1.7rem;
-
-    ul {
-        margin:0;
-        li {
-            list-style-type: none;
-        }
-    }
-
-}
-
-.subnav {
-    display: none;
-}
-
-.subnav-toggle {
-    border: 0;
-    background: none;
-    cursor: pointer;
-    margin-right: .5rem;
-}
-
-.login-link {
-    padding: 0.45rem 0.85rem;
-    border-radius: 30px;
-    border: 2.5px solid #0067a8;
-    font-weight: 700;
-    color: #fff;
-    transition: 0.2s ease-out;
-}
-
-.login-link:hover {
-    background: #0067a8;
-    transition: 0.2s ease-out;
-}
-
-.login-link:hover a {
-    color: #fff;
-    transition: 0.2s ease-out;
-}
-
-.insta-link > .nav-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.45rem;
-}
-
-.toggler {
-    align-items: center;
-    gap: 1rem;
-    width: fit-content;
-    justify-content: space-between;
-    margin-top: 1.5rem;
-    margin-right: 1.5rem;
-    margin-bottom: 1.5rem;
-    margin-left: 1.5rem;
-    padding: 1rem 1.25rem;
-    background: #0067a8;
-    color: #fff;
-    border-radius: 30px;
-    border: 3px solid #fff;
-    font-size: 1.6rem;
-    font-weight: 700;
-    box-shadow: 0.5px 0.5px 4px 1px #c3c3c36d;
-    display: none;
-    transition: all 0.2s ease-out;
-}
-
-.fixed-position {
-    position: fixed;
-    position: -ms-position-fixed;
-    top: 0;
-    right: 1rem;
-    transition: all 0.2s ease-out;
-}
-
-.arrow-icon {
-    margin: 40% 0;
-    transition: 0.3s ease-out;
-}
-
-.main-nav-link:hover .arrow-icon {
-    transform: rotate(180deg);
-    transform-origin: center;
-    transform-box: fill-box;
-    transition: 0.3s ease-out;
-}
-
-@media screen and (max-width: 1020px) {
-    .top-nav-links,
-    .main-nav-links {
-        display: flex;
-        gap: 1.75rem;
-        align-items: center;
-    }
-    .main-nav-links a {
-        text-decoration: none;
-        color: $white;
-        font-weight: 700;
-        font-size: 1.6rem;
-    }
-    .top-nav-links a {
-        text-decoration: none;
-        color: #0067a8;
-        font-weight: 700;
-        font-size: 1.4rem;
-    }
-}
-
-@media screen and (max-width: 960px) {
-    .top-nav-container {
-        background: $color-primary;
-    }
-    .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
-    .main-nav {
-        display: none;
-    }
-    .top-nav-links {
-        display: none;
-    }
-    .top-nav {
-        background: transparent;
-        width: 100%;
-        height: auto;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .logo-svg {
-        position: relative;
-        background: #fff;
-        padding: 1.5rem 2.5rem 1rem 2.5rem;
-    }
-    .toggler {
-        display: flex;
-
-        transition: all 0.2s ease-out;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .toggle-icon {
-        width: 100%;
-        height: fit-content;
-        position: relative;
-        padding-top: 0rem;
-        padding-right: 1rem;
-        padding-bottom: 1.6rem;
-        padding-left: 1rem;
-    }
-    .line1,
-    .line2,
-    .line3 {
-        position: absolute;
-        width: 20px;
-        height: 2px;
-        background: #fff;
-        left: 0;
-        top: 1px;
-        border-radius: 2px;
-        transition: 0.2s ease-out;
-    }
-    .line2 {
-        top: 8px;
-    }
-    .line3 {
-        top: 15px;
-    }
-    .toggler:hover {
-        cursor: pointer;
-    }
-    .toggler:hover .line2 {
-        opacity: 0;
-        transform: translateX(0.5rem);
-        transform-origin: center;
-        transform-box: fill-box;
-        transition: 0.1s ease-out;
-    }
-    .toggler:hover .line1 {
-        transform-origin: center;
-        transform-box: fill-box;
-        transform: rotateZ(-35deg) translateY(2px);
-    }
-    .toggler:hover .line3 {
-        transform-origin: center;
-        transform-box: fill-box;
-        transform: rotateZ(35deg) translateY(-2px);
-    }
-}
-
-@media screen and (max-width: 769px) {
-    .toggler {
-        gap: 1rem;
-        padding: 0.75rem 1.25rem;
-        font-size: 1.4rem;
-    }
-    .logo-svg {
-        position: relative;
-        background: #fff;
-        padding: 1rem 2rem 1rem 2rem;
-    }
-}
-

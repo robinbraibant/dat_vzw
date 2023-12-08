@@ -1,0 +1,66 @@
+columnSuffix: fpbareyw
+contentColumnType: text
+fieldGroup: ee71a197-2900-41c3-8ede-20b5bc467852 # Common
+handle: cta
+instructions: null
+name: 'Call to action'
+searchable: true
+settings:
+  allowClass: '1'
+  allowCustomText: '1'
+  allowTarget: '1'
+  allowedLinkNames:
+    1: asset
+    3: entry
+    6: url
+  class: null
+  classes: null
+  defaultLinkName: entry
+  defaultText: ''
+  typeSettings:
+    __assoc__:
+      -
+        - asset
+        -
+          __assoc__:
+            -
+              - sources
+              - '*'
+      -
+        - category
+        -
+          __assoc__:
+            -
+              - sources
+              - '*'
+      -
+        - entry
+        -
+          __assoc__:
+            -
+              - sources
+              - '*'
+      -
+        - email
+        -
+          __assoc__:
+            -
+              - disableValidation
+              - ''
+      -
+        - tel
+        -
+          __assoc__:
+            -
+              - disableValidation
+              - ''
+      -
+        - url
+        -
+          __assoc__:
+            -
+              - disableValidation
+              - ''
+translationKeyFormat: null
+translationMethod: none
+type: statikbe\cta\fields\CTAField

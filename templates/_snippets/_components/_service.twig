@@ -1,0 +1,35 @@
+<div class="service">
+    <div class="service__content">
+        <div class="service__body">
+            {% if service.title|length %}
+            <h3 class="h4">{{service.overviewTitle|length ? service.overviewTitle : service.title}}</h3>
+            {% endif %}
+
+            {% if service.redactor|length %}
+                {% if service.redactor|length > 100 %}
+                <p>{{service.redactor|striptags|slice(0, 100) ~ '...'}}</p>
+                {% else %}
+                {{service.redactor}}               
+                {% endif %}
+
+            {% else %}
+                {% if service.intro|length > 100 %}
+                <p>{{service.intro|striptags|slice(0, 100) ~ '...'}}</p>
+                {% else %}
+                {{service.intro}}
+                {% endif %}
+            {% endif %}
+
+            <a class="service__link" href="{{service.getUrl()}}">{{"Bekijk dienst"|t}}</a>
+        </div>
+
+        <div class="service__media">
+            {% set image = service.overviewImage|default(fallback.image)|first %}
+            <picture class="service__picture">
+                <source media="(max-width: 769px)" srcset="{{image.getUrl('crop800x800')}} 2x" />
+                <source media="(min-width: 769px)" srcset="{{image.getUrl('crop536x536')}} 2x" />
+                <img class="service__image" src="{{image.getUrl('crop800x800')}}" alt="{{image.alt}}" loading="lazy" />
+            </picture>
+        </div>
+    </div>
+</div>

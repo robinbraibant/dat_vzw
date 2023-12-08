@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: ee71a197-2900-41c3-8ede-20b5bc467852 # Common
+handle: centers
+instructions: 'Geef hieronder de gegevens in van de verschillende centra. Deze zullen langs het contactformulier getoond worden.'
+name: Centra
+searchable: true
+settings:
+  contentTable: '{{%matrixcontent_centers}}'
+  maxBlocks: null
+  minBlocks: null
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

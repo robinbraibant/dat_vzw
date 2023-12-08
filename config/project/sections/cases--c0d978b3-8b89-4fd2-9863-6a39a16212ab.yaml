@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: cases
+name: Vacatures
+propagationMethod: all
+siteSettings:
+  753d678c-4018-409d-9dfa-5c4fdc2219b7: # Dat vzw
+    enabledByDefault: true
+    hasUrls: true
+    template: _pages/_cases/_entry.twig
+    uriFormat: 'cases/{slug}'
+type: channel

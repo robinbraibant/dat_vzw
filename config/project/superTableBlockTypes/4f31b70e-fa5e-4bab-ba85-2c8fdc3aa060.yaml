@@ -1,0 +1,145 @@
+changedFieldIndicator: 2006924664
+field: 1dd6c46e-ee08-43a4-a8bd-6f0211e9a024 # USP
+fieldLayouts:
+  5e4590dd-4128-466f-9c9a-261d9c56bdbd:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 740d0e8b-1e44-4ab1-88d3-b087e9a90fc8 # Titel
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bb1f40b4-b09a-4cb0-8d61-18330cb9418a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 717adfb8-46e4-49fa-bad7-5857e5d0640e # Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0b4ab045-6cee-45d7-acf5-bad67394a373
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 3993aa71-b649-4685-9711-bc339c22cb38 # Afbeelding
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6a65fc28-06e0-485f-803f-2381277c0add
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: de609172-9fe2-4822-9942-6911dccf440d
+        userCondition: null
+fields:
+  717adfb8-46e4-49fa-bad7-5857e5d0640e: # Text
+    columnSuffix: czkawrqv
+    contentColumnType: text
+    fieldGroup: null
+    handle: uspRedactor
+    instructions: null
+    name: Text
+    searchable: true
+    settings:
+      availableTransforms: ''
+      availableVolumes: '*'
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: null
+      purifyHtml: true
+      redactorConfig: null
+      removeEmptyTags: false
+      removeInlineStyles: false
+      removeNbsp: false
+      showHtmlButtonForNonAdmins: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  740d0e8b-1e44-4ab1-88d3-b087e9a90fc8: # Titel
+    columnSuffix: wzspjlxr
+    contentColumnType: text
+    fieldGroup: null
+    handle: uspTitle
+    instructions: null
+    name: Titel
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  3993aa71-b649-4685-9711-bc339c22cb38: # Afbeelding
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: uspImage
+    instructions: null
+    name: Afbeelding
+    searchable: true
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: false
+      allowedKinds:
+        - image
+      branchLimit: null
+      defaultUploadLocationSource: 'volume:65b2bb5a-5270-45fc-a215-72c888b19334' # Bestanden
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: 1
+      minRelations: null
+      previewMode: full
+      restrictFiles: true
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:65b2bb5a-5270-45fc-a215-72c888b19334' # Bestanden
+      restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
+      selectionLabel: null
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets

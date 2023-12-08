@@ -1,0 +1,62 @@
+{% if block.bgColor != null %}
+{% set bgColor = true %}
+{% else %}
+{% set bgColor = false %}
+{% endif %}
+
+{% if not block.titleColumn2|length and block.titleColumn1|length %}
+{% set hasTitle = true %}
+{% else %}
+{% set hasTitle = false %}
+{% endif %}
+
+<div class="columns container{% if bgColor %} container--light{% endif %}">
+    {% if block.blockTitle|length or hasTitle %}
+    <div class="row">
+        <div class="col-full">
+            <div class="leading leading--center">
+                {% if block.blockTitle|length %}
+                <h2 class="h2 leading__section">{{block.blockTitle}}</h2>
+                {% endif %}
+                {# {% if not block.blockTitle|length %}
+                {% if not block.titleColumn2|length and block.titleColumn1|length %}
+                <h2 class="h2 leading__section">{{ block.titleColumn1 }}</h2>
+                {% endif %}
+                {% endif %} #}
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+    <div class="row row-grid">
+        {% if block.titleColumn1|length or block.textColumn1|length %}
+        <div class="col-lg-6">
+            {% if block.titleColumn1|length %}
+            <h3 class="h3">{{block.titleColumn1}}</h3>
+            {% endif %}
+
+            {{ block.textColumn1 }}
+
+            {% if block.ctaColumn1|length and block.ctaColumn1.value %}
+            {% set cta = block.ctaColumn1 %}
+            {% include '_snippets/_content/_blocks/_partials/_callToActions.twig' %}
+            {% endif %}
+        </div>
+        {% endif %}
+
+        {% if block.titleColumn2|length or block.textColumn2|length %}
+        <div class="col-lg-6">
+            {% if block.titleColumn2|length %}
+            <h3 class="h3">{{block.titleColumn2}}</h3>
+            {% endif %}
+
+            {{ block.textColumn2 }}
+
+            {% if block.ctaColumn2|length and block.ctaColumn2.value %}
+            {% set cta = block.ctaColumn2 %}
+            {% include '_snippets/_content/_blocks/_partials/_callToActions.twig' %}
+            {% endif %}
+        </div>
+        {% endif %}
+    </div>
+</div>

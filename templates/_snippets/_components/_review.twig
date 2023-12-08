@@ -1,0 +1,24 @@
+<div class="review">
+    <div class="review__content">
+        <div class="review__body">
+            <div class="review__rating">
+                {% set restRating = 5 - review.reviewRating %}
+                {% for i in range(1, review.reviewRating) %}
+                <span class="material-icons review__star">star_rate</span>
+                {% endfor %}
+                {% if restRating != 0 %}
+                {% for i in range(1, (5 - review.reviewRating)) %}
+                <span class="material-icons review__star">star_outline</span>
+                {% endfor %}
+                {% endif %}
+            </div>
+            {{ review.reviewRedactor }}
+        </div>
+        <div class="review__footer">
+            <cite class="review__cite">
+                <strong rel="author">{{ review.reviewAuthor }}</strong>
+                {{ review.client.one().title }}
+            </cite>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,6 @@
+adminOnly: 1
+allowSources: '["entry","url","heading"]'
+enabledSiteGroups: '*'
+handle: footerNav
+levels: '2'
+title: Footernavigatie

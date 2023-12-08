@@ -1,0 +1,38 @@
+{# Todo: implement a way to set a backgroundcolor if a backgroundcolor field exists on the block #}
+
+{% if settings is not defined %}
+{% set settings = [] %}
+{% endif %}
+
+{% set contentBuilderBlocks = entry.contentBuilder.with(['textImage:image', 'images:images']).collect() %}
+
+{% for block in contentBuilderBlocks %}
+
+{# Parent Container for Contentbuilder #}
+{% if settings.container is defined %}
+<div class="{{ settings.container }}">
+    {% endif %}
+
+    {# Main blocks -> Full width or shrink when asides #}
+    {# <div> #}
+        {% if settings.row is defined %}
+        <div class="{{ settings.row }}">
+            {% endif %}
+            {% if settings.col is defined %}
+            <div class="{{ settings.col }}">
+                {% endif %}
+                {% include '_snippets/_content/_blocks/_'~block.type.handle with { settings: settings} %}
+                {% if settings.col is defined %}
+            </div>
+            {% endif %}
+            {% if settings.row is defined %}
+        </div>
+        {% endif %}
+        {#
+    </div> #}
+
+    {% if settings.container is defined %}
+</div>
+{% endif %}
+
+{% endfor %}

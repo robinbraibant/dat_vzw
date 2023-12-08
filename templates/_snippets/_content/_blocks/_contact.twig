@@ -1,0 +1,26 @@
+{% if block.bgColor != null %}
+{% set bgColor = true %}
+{% else %}
+{% set bgColor = false %}
+{% endif %}
+
+<div class="contact container{% if bgColor %} container--light{% endif %}">
+    {% if block.blockTitle|length %}
+    <div class="row">
+        <div class="col-full">
+            <div class="leading leading--center">
+                <h2 class="h2 leading__section">{{block.blockTitle}}</h2>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+    <div class="row row-grid">
+        <div class="col-lg-8">
+            <div id="map"></div>
+        </div>
+        <div class="col-lg-4">
+            {% include "_snippets/_global/_contactinfo.twig" %}
+        </div>
+    </div>
+</div>

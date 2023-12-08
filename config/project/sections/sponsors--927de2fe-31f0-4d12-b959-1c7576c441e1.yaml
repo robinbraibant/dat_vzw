@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: sponsors
+name: Sponsors
+propagationMethod: all
+siteSettings:
+  753d678c-4018-409d-9dfa-5c4fdc2219b7: # Dat vzw
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+type: channel

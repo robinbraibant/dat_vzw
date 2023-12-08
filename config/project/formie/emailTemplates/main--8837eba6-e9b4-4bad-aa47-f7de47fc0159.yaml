@@ -1,0 +1,4 @@
+handle: main
+name: Main
+sortOrder: 1
+template: _mail/_template.twig

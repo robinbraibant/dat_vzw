@@ -1,0 +1,14 @@
+{% set searchResultsEntry = craft.entries.section('searchResults').one() %}
+
+<div class="search">
+    <form class="search__form" action="{{ searchResultsEntry.getUrl() }}">
+        <button type="submit" class="button button--secondary">
+            {{ svg("assets/icons/magnify.svg") }}
+        </button>
+        <div class="search__input">
+            <div class="form__control">
+                <input type="search" name="q" placeholder="{{ " Zoeken"|t }}">
+            </div>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,59 @@
+@use "../settings/global" as *;
+@use "../tools" as *;
+
+.logo {
+    display: block;
+    padding: $vertical-spacing 0;
+}
+
+.logo__content {
+    position: relative;
+    flex: 0 1 auto;
+    // margin-top: $vertical-spacing *2;
+    margin-left: auto;
+    margin-right: auto;
+    padding: $spacing;
+    min-height: 10rem;
+    // max-width: 14rem;
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+
+    // background-color: $color-subsidiary-lightest;
+    // border-radius: $border-radius;
+    // border: 1px solid rgb(230, 241, 249, 0.05);
+
+    // box-shadow: $box-shadow;
+
+    @include hover-up;
+
+    &:hover {
+        transform: translateY(-0.3rem);
+        // box-shadow: $box-shadow;
+
+        // .contrast-element & {
+        //     box-shadow: 0 0.3rem 0.5rem rgba($color-subsidiary-light, 0.5),
+        //         0 0 0.2rem rgba($color-subsidiary-light, 0.6);
+        // }
+    }
+
+    &:active {
+        // box-shadow: none;
+        transform: translateY(0);
+
+        // .contrast-element & {
+        //     box-shadow: none;
+        // }
+    }
+}
+
+.logo__image {
+    width: 100%;
+    object-fit: contain;
+
+    @include mq(0, lg) {
+        max-width: 8rem;
+    }
+}

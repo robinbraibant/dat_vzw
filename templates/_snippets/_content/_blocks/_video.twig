@@ -1,0 +1,26 @@
+{% if block.bgColor != null %}
+{% set bgColor = true %}
+{% else %}
+{% set bgColor = false %}
+{% endif %}
+
+<div class="video container{% if bgColor %} container--light{% endif %}">
+    <div class="row">
+        <div class="col-full">
+            {% if block.blockTitle|length %}
+            <div class="leading leading--center">
+                <h2 class="h2 leading__section">
+                    {{ block.blockTitle }}
+                </h2>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+    <div class="row row-grid">
+        <div class="col-full">
+            <div class="video__media">
+                {% include '_snippets/_components/_video-iframe.twig' %}
+            </div>
+        </div>
+    </div>
+</div>

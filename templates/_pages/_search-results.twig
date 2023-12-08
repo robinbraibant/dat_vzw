@@ -1,0 +1,41 @@
+{% extends '_layout.twig' %}
+
+{% set searchQuery = craft.app.request.getQueryParam('q') %}
+
+{% set results = craft.entries()
+.search(searchQuery)
+.id('not ' ~ entry.id)
+.orderBy('score')
+.collect() %}
+
+{% set breadcrumbs = [entry] %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-full">
+            {% include '_snippets/_item/_main/_defaultHeader.twig' %}
+        </div>
+        <div class="search-results-container">
+            {% if results|length %}
+            <ul class="search-results__list list-clear">
+                {% for result in results %}
+                <li class="search-results__item">
+                    <a href="{{ result.getUrl() }}">
+                        {{ result.title }}
+                    </a>
+                    {% if result.intro is defined and result.intro|length %}
+                    <p>{{ result.intro|slice(0,200)|raw }}</p>
+                    {% endif %}
+                </li>
+                {% endfor %}
+            </ul>
+            {% else %}
+            {{ "Geen resultaten gevonden voor "|t ~ searchQuery }}
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,27 @@
+columnSuffix: cedupizz
+contentColumnType: text
+fieldGroup: a12c8282-8e4b-4e7e-aa2f-f288232d2219 # Hero
+handle: heroTitle
+instructions: null
+name: 'Hero titel'
+searchable: true
+settings:
+  availableTransforms: ''
+  availableVolumes: '*'
+  columnType: text
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: null
+  purifyHtml: true
+  redactorConfig: null
+  removeEmptyTags: false
+  removeInlineStyles: false
+  removeNbsp: false
+  showHtmlButtonForNonAdmins: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: none
+type: craft\redactor\Field

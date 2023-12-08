@@ -1,0 +1,196 @@
+field: 42753f56-881c-4d30-82a4-7062d713de9b # Contentbuilder
+fieldLayouts:
+  ee93bb02-34fa-4296-a193-1374c8a352ed:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 925e416f-5b2f-42fe-b649-d0707614bb65 # Titel
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b87cc4a4-d30d-456c-9309-223680b1e1f0
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 01872df7-214d-4fba-aab3-e560acce495d # Tekst
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 55aff3a9-ae99-4863-95cd-95201428b65f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 1dd6c46e-ee08-43a4-a8bd-6f0211e9a024 # USP
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 858c4e68-6476-4323-b647-5989a79604d9
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 6e749848-f0d2-4915-ab0d-c0e3dd5a077f # Achtergrondkleur
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b19744a4-ff05-45f5-9301-478c1d3cbf40
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: cfa95560-f5ff-4b13-9df5-7a2700380396 # Uitlijning USP's
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4a430e8c-4765-4b46-aa75-f54a7c80b230
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 950ff212-28e8-450f-9b18-137b2d25246d
+        userCondition: null
+fields:
+  1dd6c46e-ee08-43a4-a8bd-6f0211e9a024: # USP
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: usp
+    instructions: null
+    name: USP
+    searchable: true
+    settings:
+      blockTypeFields: 0
+      changedFieldIndicator: 1539426028
+      columns:
+        __assoc__:
+          -
+            - 740d0e8b-1e44-4ab1-88d3-b087e9a90fc8 # Titel
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+          -
+            - 717adfb8-46e4-49fa-bad7-5857e5d0640e # Text
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+          -
+            - 3993aa71-b649-4685-9711-bc339c22cb38 # Afbeelding
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+      contentTable: '{{%stc_43_usp}}'
+      fieldLayout: table
+      maxRows: null
+      minRows: null
+      propagationKeyFormat: null
+      propagationMethod: all
+      selectionLabel: null
+      staticField: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: verbb\supertable\fields\SuperTableField
+  6e749848-f0d2-4915-ab0d-c0e3dd5a077f: # Achtergrondkleur
+    columnSuffix: thirviex
+    contentColumnType: string
+    fieldGroup: null
+    handle: bgColor
+    instructions: 'Selecteer een kleur voor de achtergrond van dit blok'
+    name: Achtergrondkleur
+    searchable: false
+    settings:
+      dataSet: 'Background colors'
+      type: dropdown
+    translationKeyFormat: null
+    translationMethod: none
+    type: statikbe\configvaluesfield\fields\ConfigValuesFieldField
+  925e416f-5b2f-42fe-b649-d0707614bb65: # Titel
+    columnSuffix: ecmaricj
+    contentColumnType: text
+    fieldGroup: null
+    handle: blockTitle
+    instructions: null
+    name: Titel
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  01872df7-214d-4fba-aab3-e560acce495d: # Tekst
+    columnSuffix: xjolpqpn
+    contentColumnType: text
+    fieldGroup: null
+    handle: redactor
+    instructions: null
+    name: Tekst
+    searchable: true
+    settings:
+      availableTransforms: ''
+      availableVolumes: '*'
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: null
+      purifyHtml: true
+      redactorConfig: null
+      removeEmptyTags: false
+      removeInlineStyles: false
+      removeNbsp: false
+      showHtmlButtonForNonAdmins: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  cfa95560-f5ff-4b13-9df5-7a2700380396: # Uitlijning USP's
+    columnSuffix: gporbjys
+    contentColumnType: boolean
+    fieldGroup: null
+    handle: alignment
+    instructions: null
+    name: 'Uitlijning USP''s'
+    searchable: false
+    settings:
+      default: false
+      offLabel: Links
+      onLabel: Gecentreerd
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch
+handle: usps
+name: 'USP''s'
+sortOrder: 6

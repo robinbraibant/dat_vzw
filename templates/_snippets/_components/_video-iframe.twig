@@ -1,0 +1,14 @@
+{% set video = craft.videoparser.parse(block.videoUrl) %}
+
+<div class="video__iframe-container">
+    {% if cookie == 'true' or cookie == 3 %}
+    <iframe class="video__iframe" src="{{video.embedSrc}}?iv_load_policy=3&rel=0" title="Embedded video" frameborder="0"
+        allowfullscreen="allowfullscreen" width="560" height="315">
+    </iframe>
+    {% else %}
+    <p>
+        The video cannot be shown due to your cookie preferences. You can change them
+        <a href="#" class="js-cookie-settings" role="button">here</a>
+    </p>
+    {% endif %}
+</div>

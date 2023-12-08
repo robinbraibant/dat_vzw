@@ -1,0 +1,101 @@
+field: 42753f56-881c-4d30-82a4-7062d713de9b # Contentbuilder
+fieldLayouts:
+  06729324-f5ee-4137-aa98-939f517fc1d1:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 825f91aa-6a2e-47cd-a8d0-465e1e49ce1b # Afbeelding
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9aa4a92e-5853-4db6-83ff-59a3ea5a65fd
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 97045692-3725-43a8-a480-2c8a3f31327d # Achtergrondkleur
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 00a08ef2-cc9d-4043-873e-2e353acd9cd2
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: cd156c48-b735-4406-8911-3a819d3669e4
+        userCondition: null
+fields:
+  825f91aa-6a2e-47cd-a8d0-465e1e49ce1b: # Afbeelding
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: image
+    instructions: null
+    name: Afbeelding
+    searchable: true
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: false
+      allowedKinds:
+        - image
+      branchLimit: null
+      defaultUploadLocationSource: 'volume:65b2bb5a-5270-45fc-a215-72c888b19334' # Bestanden
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: 1
+      minRelations: null
+      previewMode: full
+      restrictFiles: true
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:65b2bb5a-5270-45fc-a215-72c888b19334' # Bestanden
+      restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
+      selectionLabel: null
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  97045692-3725-43a8-a480-2c8a3f31327d: # Achtergrondkleur
+    columnSuffix: funoteub
+    contentColumnType: string
+    fieldGroup: null
+    handle: bgColor
+    instructions: 'Selecteer een kleur voor de achtergrond van dit blok'
+    name: Achtergrondkleur
+    searchable: false
+    settings:
+      dataSet: 'Background colors'
+      type: dropdown
+    translationKeyFormat: null
+    translationMethod: none
+    type: statikbe\configvaluesfield\fields\ConfigValuesFieldField
+handle: image
+name: Afbeelding
+sortOrder: 7

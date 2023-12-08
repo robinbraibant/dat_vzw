@@ -1,0 +1,84 @@
+fieldLayouts:
+  f15235d0-1191-489d-a730-c3389a2ab1c4:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 34f3b8c1-8699-4ca7-a398-e300dd1b28ae # Facebook
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 99e12137-64d7-4734-a706-ed96bee478f7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 0e4ae926-c3a7-463d-b0ad-5886315929bf # Instagram
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f407a2cf-87e8-47dc-8a8f-ea725ed54e7b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f224cc2c-be98-4068-a538-f12d068731ce # TikTok
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1191f43b-9ccc-44ea-bac7-bc2643280c30
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b427067e-c94a-4c52-8a70-353b7ddf14a8 # YouTube
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 11ed710e-3b25-40e1-b248-b8e945db3078
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 99353161-d95b-4cf5-a3a2-69edf88d7f44 # LinkedIn
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 845d8fda-f346-4064-9746-1d74f02c9532
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 326302a7-5ca8-46e5-9bd6-2481961ba4b2 # Dribbble
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: cd0cb0c0-94f0-40de-aaf6-e726ba0b5892
+            userCondition: null
+            warning: null
+            width: 100
+        name: Linken
+        uid: eb9e5e18-580c-4eba-ac35-29c79380de27
+        userCondition: null
+handle: socialMedia
+name: 'Social Media'
+sortOrder: 3

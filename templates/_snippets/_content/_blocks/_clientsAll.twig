@@ -1,0 +1,39 @@
+{% set clients = craft.entries().section('clients').with(['image']).collect() %}
+
+{% if block.bgColor != null %}
+{% set bgColor = true %}
+{% else %}
+{% set bgColor = false %}
+{% endif %}
+
+<div class="clients container{% if bgColor %} container--light{% endif %}">
+    {% if block.blockTitle|length or block.redactor|length %}
+    <div class="row">
+        <div class="col-full">
+            <div class="leading leading--center">
+                {% if block.blockTitle|length %}
+                <h2 class="h2 leading__section">{{block.blockTitle}}</h2>
+                {% endif %}
+
+                {% if block.redactor|length %}
+                {{block.redactor}}
+                {% endif %}
+            </div>
+
+            {% if block.ctas|length and not block.ctas.cta.isEmpty() %}
+            <div class="buttongroup buttongroup--center">
+                {% include "_snippets/_content/_blocks/_partials/_callToActions.twig" %}
+            </div>
+            {% endif %}
+        </div>
+    </div>
+    {% endif %}
+
+    <div class="row row-grid row-center align-items">
+        {% for client in clients %}
+        <div class="col-sm-6 col-md-3 col-lg-2">
+            {% include '_snippets/_components/_logo.twig' %}
+        </div>
+        {% endfor %}
+    </div>
+</div>

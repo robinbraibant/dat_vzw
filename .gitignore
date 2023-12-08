@@ -3,13 +3,23 @@
 /vendor
 .DS_Store
 
+/config/firebase_credentials.json
+
+/public/files/*
+/public/images/*
 /node_modules/*
 
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-*.crt
-*.key
+/public/js
+/public/js/main/*
+/public/css/*
+
 /storage/config-backups
 /storage/composer-backups
+
+/templates/_head/_head-assets.twig
+
+/translations
+
+*.crt
+
 

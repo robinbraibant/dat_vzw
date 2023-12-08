@@ -1,0 +1,11 @@
+fill: null
+format: webp
+handle: crop896x896
+height: 896
+interlace: none
+mode: crop
+name: 'Team Mobile'
+position: center-center
+quality: 100
+upscale: true
+width: 896

@@ -1,0 +1,106 @@
+@use "../settings/global" as *;
+@use "../tools" as *;
+
+.contactinfo__item {
+    margin-bottom : 2rem;
+    .banner & {
+        display: flex;
+    }
+
+    .footersection__social & {
+        margin-top: $spacing-large;
+    }
+
+    & + & {
+        margin-top: $spacing-small;
+    }
+}
+
+.contactinfo__line {
+    text-align: center;
+
+    @include mq($bp-mobilenav) {
+        text-align: left;
+    }
+    .contact & {
+        text-align: left;
+    }
+}
+
+.contactinfo__link {
+    display: flex;
+    justify-content: center;
+    color: $color-primary-dark;
+
+    margin-top: $spacing-small;
+    margin-bottom: $spacing-small;
+
+    @include mq($bp-mobilenav) {
+        justify-content: left;
+    }
+
+    &:hover,
+    &:focus {
+        color: $color-primary;
+    }
+    &:active {
+        color: transparent;
+    }
+
+    .contrast-element & {
+        color: $white;
+
+        &:hover,
+        &:focus {
+            color: $color-secondary;
+        }
+        &:active {
+            color: transparent;
+        }
+    }
+
+    svg {
+        margin-right: $spacing;
+    }
+
+    .contact & {
+        justify-content: flex-start;
+    }
+
+    .banner & {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+.centers {
+    padding: 3rem;
+    border: 1px $color-primary-light solid;
+    border-radius: 2rem;
+    margin-left: 6rem;
+    margin-top: 6rem;
+
+    @include mq($bp-mobilenav) {
+        margin-top: unset;
+    }
+
+    &__leading {
+        color: $color-primary;
+        font-weight: 400;
+    }
+
+    &__sub-leading {
+        color: $color-primary;
+        font-weight: 400;
+        font-size: $font-size-large;
+    }
+
+    &__buttons {
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+    }
+}
+
+.contact__page > .fui-i {
+    width: 50%;
+}

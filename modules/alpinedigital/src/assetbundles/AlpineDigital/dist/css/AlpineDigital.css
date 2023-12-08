@@ -1,0 +1,30 @@
+body.login {
+  overflow: hidden;
+  background: #fff;
+}
+
+body.login::after {
+  content: "";
+  background: url(../images/installer-bg.png) no-repeat 50% 40%;
+  background-size: cover;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 0;
+}
+
+body.login main {
+  z-index: 1;
+}
+
+.btn.submit {
+  background-image: linear-gradient(#006ac0, #2da9c5);
+}
+
+.btn.submit:not(.disabled):not(.inactive):hover, .btn.submit:not(.disabled):not(.inactive).hover,
+.btn.submit:not(.disabled):not(.inactive):active, .btn.submit:not(.disabled):not(.inactive).active {
+  background-image: linear-gradient(#2da9c5, #006ac0);
+}

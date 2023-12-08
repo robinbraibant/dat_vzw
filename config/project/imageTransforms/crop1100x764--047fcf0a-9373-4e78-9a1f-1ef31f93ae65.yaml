@@ -1,0 +1,11 @@
+fill: null
+format: webp
+handle: crop1100x764
+height: 764
+interlace: none
+mode: crop
+name: 'Cases Landscape 2x'
+position: center-center
+quality: 100
+upscale: true
+width: 1100

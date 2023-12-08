@@ -1,0 +1,18 @@
+<div class="core">
+    <div class="core__content">
+        <div class="core__body">
+            {% if core.coreTitle|length %}
+            <h3 class="core__headline">{{core.coreTitle}}</h3>
+            {% endif %}
+
+            {% if core.redactor|length %}
+            {{core.redactor}}
+            {% endif %}
+
+            {% if core.cta|length and not core.cta.isEmpty() %}
+            {% set cta = core.cta %}
+            <a class="core__link" href="{{cta.getUrl()}}">{{cta.customText}}</a>
+            {% endif %}
+        </div>
+    </div>
+</div>

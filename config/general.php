@@ -11,9 +11,9 @@
 use craft\config\GeneralConfig;
 use craft\helpers\App;
 
-$isDev = App::env('CRAFT_ENVIRONMENT') === 'dev';
-$isStaging = App::env('CRAFT_ENVIRONMENT') === 'staging';
-$isProd = App::env('CRAFT_ENVIRONMENT') === 'production';
+$isDev = App::env('ENVIRONMENT') === 'dev';
+$isStaging = App::env('ENVIRONMENT') === 'staging';
+$isProd = App::env('ENVIRONMENT') === 'production';
 
 return [
     "*" => [
@@ -44,7 +44,14 @@ return [
         'enableTemplateCaching' => true,
         'backupOnUpdate' => true,
         // Whether administrative changes should be allowed
-        'allowAdminChanges' => (php_sapi_name() === 'cli'),
+        'allowAdminChanges' => true,
+        'aliases' => [
+            'basePath' => $_SERVER['DOCUMENT_ROOT'],
+            "baseUrl" => App::env("BASE_URL"),
+            "baseUrlNL" => App::env("BASE_URL") . "/nl",
+            "baseUrlEN" => App::env("BASE_URL") . "/en",
+            "baseUrlFR" => App::env("BASE_URL") . "/fr",
+        ],
     ],
 
     'staging' => [
@@ -56,8 +63,8 @@ return [
             'basePath' => $_SERVER['DOCUMENT_ROOT'],
             "baseUrl" => App::env("BASE_URL"),
             "baseUrlNL" => App::env("BASE_URL") . "/nl",
-            "baseUrlFR" => App::env("BASE_URL") . "/fr",
             "baseUrlEN" => App::env("BASE_URL") . "/en",
+            "baseUrlFR" => App::env("BASE_URL") . "/fr",
         ],
     ],
 
@@ -69,8 +76,8 @@ return [
             'basePath' => $_SERVER['DOCUMENT_ROOT'],
             "baseUrl" => App::env("BASE_URL"),
             "baseUrlNL" => App::env("BASE_URL") . "/nl",
-            "baseUrlFR" => App::env("BASE_URL") . "/fr",
             "baseUrlEN" => App::env("BASE_URL") . "/en",
+            "baseUrlFR" => App::env("BASE_URL") . "/fr",
         ]
     ],
 ];

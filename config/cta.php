@@ -1,10 +1,13 @@
 <?php
 
+/**
+ *  Configuration for the CTA Plugin
+ */
+
 return [
     'classes' => [
-        'button button-primary' => 'Primary',
-        'button button-secondary' => 'Secondary',
-        'banner-link' => 'Link',
-        'button button-light' => 'Secondary Light'
+        'button button--primary'        => 'Primary',
+        'button button--secondary'      => 'Secondary',
+        'link'                          => 'Link',
     ]
-];
+]; 

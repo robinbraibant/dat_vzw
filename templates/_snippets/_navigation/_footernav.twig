@@ -1,0 +1,47 @@
+{% set footerNav = craft.navigate.raw('footerNav') %}
+
+{% set otherNodes = [] %}
+{% if footerNav|length %}
+	{% for node in footerNav %}
+		{% if node.type == 'heading' %}
+			<div class="footer__section footer__section--main">
+				<h4 class="footersection__headline">
+					{{ node.name }}
+				</h4>
+				{% if node.children|length %}
+					<nav class="footernav" aria-label="{{ node.name|lower }}-navigation" role="navigation">
+						<ul class="footernav__list">
+							{% for child in node.children %}
+								<li class="footernav__item {% if child.classes|length %}{{ child.classes }}{% endif %}">
+									<a href="{{ child.url }}" class="footernav__link" {% if child.blank %} target="_blank" rel="noopener" {% endif %}>
+										{{ child.name }}
+									</a>
+								</li>
+							{% endfor %}
+						</ul>
+					</nav>
+				{% endif %}
+			</div>
+		{% else %}
+			{% set otherNodes = otherNodes|merge([node]) %}
+		{% endif %}
+	{% endfor %}
+
+
+	{% if otherNodes|length %}
+		<div class="footer__section footer__section--other">
+			<nav class="footernav" aria-label="footer-links-navigation" role="navigation">
+				<ul class="footernav__list">
+					{% for node in otherNodes %}
+						<li class="footernav__item {% if node.classes|length %}{{ node.classes }}{% endif %}">
+							<a href="{{ node.url }}" class="footernav__link" {% if node.blank %} target="_blank" rel="noopener" {% endif %}>
+								{{ node.name }}
+							</a>
+						</li>
+					{% endfor %}
+				</ul>
+			</nav>
+		</div>
+	{% endif %}
+
+{% endif %}

@@ -1,0 +1,115 @@
+fieldLayouts:
+  eafd7e9a-e420-4058-a759-2f5d1d7c5df7:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: Titel
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: e88d6493-1e4c-4c68-bd68-c969cfa9085e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b693e790-e464-467a-81a1-f62bb9914cb2 # Hero afbeelding
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d8eaf528-27e9-471c-83b3-7bf8d466e6a9
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 71121d32-13d9-4173-b4d5-cb96fb596e4d # Intro
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d1dd551c-f466-4a5f-9219-e346d3736f12
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 2a7635da-9798-4a72-9262-84d14e66931f # Call to action(s)
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a5264ee9-25cd-47f1-866e-e6c8c53bc88d
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: d4e3d5f6-4d5e-43b7-aac2-70389d20c21e
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 42753f56-881c-4d30-82a4-7062d713de9b # Contentbuilder
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: da7687a9-bdaa-4927-80c4-426c75b06116
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhoud
+        uid: 52f5a8e4-d21d-4fec-99be-f029b8ed7c1a
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 87757b92-04cd-4915-971d-e0d100fccb17 # SEO instellingen
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a10be9ec-b46f-469f-9acd-bcb66e9380d4
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: cb5b596d-d1c8-4e7f-8c29-e061906f0c73
+        userCondition: null
+handle: pageNotFound
+hasTitleField: true
+name: 'Pagina niet gevonden'
+section: 88490f65-d10d-4df0-b13e-98cbcbda3135 # Pagina niet gevonden
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

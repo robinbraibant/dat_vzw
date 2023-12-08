@@ -1,0 +1,30 @@
+{
+    "buttons": [
+        "redo",
+        "undo",
+        "format",
+        "bold",
+        "italic",
+        "deleted",
+        "underline",
+        "ul",
+        "ol",
+        "link",
+        "line",
+        "sup",
+        "sub"
+    ],
+    "formatting": [
+        "h2",
+        "h3",
+        "h4",
+        "h5",
+        "h6",
+        "p"
+    ],
+    "plugins": [
+        "fullscreen"
+    ],
+    "linkNewTab": true,
+    "toolbarFixed": true
+}

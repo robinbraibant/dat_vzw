@@ -1,0 +1,27 @@
+columnSuffix: cbyhlxuk
+contentColumnType: text
+fieldGroup: ee71a197-2900-41c3-8ede-20b5bc467852 # Common
+handle: redactor
+instructions: null
+name: Tekst
+searchable: true
+settings:
+  availableTransforms: ''
+  availableVolumes: '*'
+  columnType: text
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: null
+  purifyHtml: true
+  redactorConfig: Simple.json
+  removeEmptyTags: false
+  removeInlineStyles: false
+  removeNbsp: false
+  showHtmlButtonForNonAdmins: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: none
+type: craft\redactor\Field

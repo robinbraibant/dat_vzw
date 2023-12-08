@@ -1,0 +1,21 @@
+{% set sponsors = craft.entries.section('sponsors').all() %}
+
+<div class="sponsorcontainer">
+    <div class="row">
+        <div class="col-full">
+            <h5> {{ "Mede mogelijk gemaakt door onze sponsors"|t }} </h5>
+            <ul class="sponsorgrid">
+                {% for sponsor in sponsors %}
+                    {% set logo = sponsor.image.one() %}
+                    {% if logo %}
+                        <li class="sponsorgrid-item">
+                            <a class="sponsorgrid-link" href="{{ sponsor.linkIt }}" target="_blank">
+                                <img class="sponsorgrid-logo" src="{{ logo.getUrl() }}" alt="{{ sponsor.title }}">
+                            </a>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>

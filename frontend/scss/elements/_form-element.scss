@@ -1,0 +1,44 @@
+@use '../settings/global' as *;
+
+/// Form defaults
+input {
+    &::-moz-focus-inner {
+        border: 0;
+        padding: 0;
+    }
+    &::-webkit-input-placeholder {
+        color: lighten($color-text, 10%);
+    }
+    &:-moz-placeholder {
+        color: lighten($color-text, 10%);
+    }
+    &::-moz-placeholder {
+        color: lighten($color-text, 10%);
+    }
+    &:-ms-input-placeholder {
+        color: lighten($color-text, 10%);
+    }
+}
+
+[placeholder]:focus::-webkit-input-placeholder {
+    opacity: 0;
+    transition: opacity 0.5s 0.5s ease;
+}
+
+button,
+[type="button"] {
+    &:focus-visible {
+        outline: 2px dashed $color-secondary-light;
+        outline-offset: 1px;
+    }
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin: 4px 6px 0 0;
+    line-height: normal;
+}
+
+input[type="search"] {
+    -webkit-appearance: none;
+}

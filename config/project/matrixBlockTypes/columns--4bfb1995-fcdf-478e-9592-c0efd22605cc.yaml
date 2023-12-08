@@ -1,0 +1,378 @@
+field: 42753f56-881c-4d30-82a4-7062d713de9b # Contentbuilder
+fieldLayouts:
+  0b5791e2-471e-4521-b89f-9d19c0eb0c11:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 0072234d-8594-45ed-9e22-e546bc27c192 # Titel
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ebb77d8f-e57e-4279-9ab2-badd0902c868
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: bbd8ea04-bbbf-4435-880f-8ae6a7b40b42 # Titel kolom 1
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6357250b-b77a-40e6-8121-f5ae8b2f27ba
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 44b87e8d-7e0d-47e4-95df-668e8186eb94 # Tekst kolom 1
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 81ee0a4e-85ec-485c-9c6a-61c88940b03b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 7f22b33c-9550-4501-9895-e236b5d47451 # Call to action kolom 1
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a5d1c1cb-cd59-4329-a6e0-1ab715b06111
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f433d5a4-2df1-4c0d-b2fd-3c1c6d9856d2 # Titel kolom 2
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 99d0d7bc-4f9a-4071-b1d8-c7c16688d014
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 56fe041a-0cc2-488c-b7be-169fb059aa65 # Tekst kolom 2
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0529ff5a-cd5a-4aa3-9f58-af7d6871cd1f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 8c01d1c2-8821-4418-b0e5-b145a9ba257e # Call to action kolom 2
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a40ca903-2b4f-4029-b6b0-c763c34df3a4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 3447f0a1-19cf-4eb7-ab91-7ab3d9de036a # Achtergrondkleur
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6cc8f735-26eb-4cb2-b607-a7db9b5c144a
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: f9211bab-56a9-4ebd-b449-54577d8d24b7
+        userCondition: null
+fields:
+  7f22b33c-9550-4501-9895-e236b5d47451: # Call to action kolom 1
+    columnSuffix: ldtnmszx
+    contentColumnType: text
+    fieldGroup: null
+    handle: ctaColumn1
+    instructions: 'Voeg hier een optionele call to action toe voor deze kolom.'
+    name: 'Call to action kolom 1'
+    searchable: true
+    settings:
+      allowClass: '1'
+      allowCustomText: '1'
+      allowTarget: '1'
+      allowedLinkNames:
+        1: asset
+        3: entry
+        4: email
+        5: tel
+        6: url
+      class: null
+      classes: null
+      defaultLinkName: entry
+      defaultText: ''
+      typeSettings:
+        __assoc__:
+          -
+            - asset
+            -
+              __assoc__:
+                -
+                  - sources
+                  - '*'
+          -
+            - category
+            -
+              __assoc__:
+                -
+                  - sources
+                  - '*'
+          -
+            - entry
+            -
+              __assoc__:
+                -
+                  - sources
+                  - '*'
+          -
+            - email
+            -
+              __assoc__:
+                -
+                  - disableValidation
+                  - ''
+          -
+            - tel
+            -
+              __assoc__:
+                -
+                  - disableValidation
+                  - ''
+          -
+            - url
+            -
+              __assoc__:
+                -
+                  - disableValidation
+                  - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: statikbe\cta\fields\CTAField
+  8c01d1c2-8821-4418-b0e5-b145a9ba257e: # Call to action kolom 2
+    columnSuffix: dmvijhnx
+    contentColumnType: text
+    fieldGroup: null
+    handle: ctaColumn2
+    instructions: 'Voeg hier een optionele call to action toe voor deze kolom.'
+    name: 'Call to action kolom 2'
+    searchable: true
+    settings:
+      allowClass: '1'
+      allowCustomText: '1'
+      allowTarget: '1'
+      allowedLinkNames:
+        1: asset
+        3: entry
+        4: email
+        5: tel
+        6: url
+      class: null
+      classes: null
+      defaultLinkName: entry
+      defaultText: ''
+      typeSettings:
+        __assoc__:
+          -
+            - asset
+            -
+              __assoc__:
+                -
+                  - sources
+                  - '*'
+          -
+            - category
+            -
+              __assoc__:
+                -
+                  - sources
+                  - '*'
+          -
+            - entry
+            -
+              __assoc__:
+                -
+                  - sources
+                  - '*'
+          -
+            - email
+            -
+              __assoc__:
+                -
+                  - disableValidation
+                  - ''
+          -
+            - tel
+            -
+              __assoc__:
+                -
+                  - disableValidation
+                  - ''
+          -
+            - url
+            -
+              __assoc__:
+                -
+                  - disableValidation
+                  - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: statikbe\cta\fields\CTAField
+  44b87e8d-7e0d-47e4-95df-668e8186eb94: # Tekst kolom 1
+    columnSuffix: uuzngwme
+    contentColumnType: text
+    fieldGroup: null
+    handle: textColumn1
+    instructions: 'Vul hier de tekst in voor deze kolom.'
+    name: 'Tekst kolom 1'
+    searchable: true
+    settings:
+      availableTransforms: ''
+      availableVolumes: '*'
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: null
+      purifyHtml: true
+      redactorConfig: null
+      removeEmptyTags: false
+      removeInlineStyles: false
+      removeNbsp: false
+      showHtmlButtonForNonAdmins: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  56fe041a-0cc2-488c-b7be-169fb059aa65: # Tekst kolom 2
+    columnSuffix: kjwanira
+    contentColumnType: text
+    fieldGroup: null
+    handle: textColumn2
+    instructions: 'Vul hier de tekst in voor deze kolom.'
+    name: 'Tekst kolom 2'
+    searchable: true
+    settings:
+      availableTransforms: ''
+      availableVolumes: '*'
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: null
+      purifyHtml: true
+      redactorConfig: null
+      removeEmptyTags: false
+      removeInlineStyles: false
+      removeNbsp: false
+      showHtmlButtonForNonAdmins: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  3447f0a1-19cf-4eb7-ab91-7ab3d9de036a: # Achtergrondkleur
+    columnSuffix: pkgmgome
+    contentColumnType: string
+    fieldGroup: null
+    handle: bgColor
+    instructions: 'Selecteer een kleur voor de achtergrond van dit blok'
+    name: Achtergrondkleur
+    searchable: false
+    settings:
+      dataSet: 'Background colors'
+      type: dropdown
+    translationKeyFormat: null
+    translationMethod: none
+    type: statikbe\configvaluesfield\fields\ConfigValuesFieldField
+  0072234d-8594-45ed-9e22-e546bc27c192: # Titel
+    columnSuffix: nqablgau
+    contentColumnType: text
+    fieldGroup: null
+    handle: blockTitle
+    instructions: null
+    name: Titel
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 1
+      multiline: true
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  bbd8ea04-bbbf-4435-880f-8ae6a7b40b42: # Titel kolom 1
+    columnSuffix: wrjzrjjt
+    contentColumnType: text
+    fieldGroup: null
+    handle: titleColumn1
+    instructions: 'Voeg een optionele titel toe voor de eerste kolom'
+    name: 'Titel kolom 1'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  f433d5a4-2df1-4c0d-b2fd-3c1c6d9856d2: # Titel kolom 2
+    columnSuffix: tripovnz
+    contentColumnType: text
+    fieldGroup: null
+    handle: titleColumn2
+    instructions: 'Voeg een optionele titel toe voor de eerste kolom'
+    name: 'Titel kolom 2'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: columns
+name: 'Tekst - 2 kolommen'
+sortOrder: 3

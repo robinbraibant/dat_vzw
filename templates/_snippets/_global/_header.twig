@@ -1,0 +1,20 @@
+<header class="site-header">
+    <div class="header-container">
+        <div class="header">
+            {# <div class="header__start"> #}
+                <a class="header__logo" href="/">
+                    {{ svg('@webroot/assets/logo/dat-vzw.svg')|attr({ role: 'img', 'aria-label': 'logo' }) }}
+                </a>
+                {#
+            </div> #}
+            {# <div class="header__center"> #}
+                {% include '_snippets/_navigation/_index.twig' %}
+                {# </div> #}
+            {# <div class="header__end"> #}
+                {# {% include '_snippets/_navigation/_partials/_language.twig' %} #}
+                {# {% include '_snippets/_navigation/_partials/_search.twig' %} #}
+                {# </div> #}
+            {% include '_snippets/_navigation/_mobilenav.twig' %}
+        </div>
+    </div>
+</header>

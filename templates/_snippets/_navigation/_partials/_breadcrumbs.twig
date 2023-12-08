@@ -1,0 +1,35 @@
+<div class="breadcrumbs-container visually-hidden">
+    <div class="breadcrumbs">
+        <nav class="breadcrumbs__navigation" aria-label="breadcrumbs-navigation" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+            {% set segmentUri = '/' %}
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                    <a href="{{ siteUrl }}" class="breadcrumbs__link" title="home">{{ systemName }}</a>
+                </li>
+                <meta itemprop="position" content="1">
+                {% if breadcrumbs is defined %}
+                {% for crumb in breadcrumbs %}
+                {% if crumb %}
+                <li class="breadcrumbs__item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                    <a class="breadcrumbs__link" href="{{ crumb.url }}" itemprop="item" title="{{ crumb.title }}">
+                        {{ crumb.title }}
+                    </a>
+                    <meta itemprop="position" content="{{ loop.index + 1 }}">
+                </li>
+                {% endif %}
+                {% endfor %}
+                {% else %}
+                {% for segment in craft.app.request.segments %}
+                {% set segmentUri = segmentUri ~ segment ~ "/" %}
+                <span class="" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                    <a class="" href="{{ segmentUri }}" itemprop="item">
+                        <span itemprop="name">{{ segment|replace('-',' ') }}</span>
+                    </a>
+                    <meta itemprop="position" content="{{ loop.index + 1 }}">
+                </span>
+                {% endfor %}
+                {% endif %}
+            </ul>
+        </nav>
+    </div>
+</div>

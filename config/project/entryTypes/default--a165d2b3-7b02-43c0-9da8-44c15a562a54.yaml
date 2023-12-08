@@ -1,0 +1,157 @@
+fieldLayouts:
+  b34caa01-f186-4369-b490-010a2faea635:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: Titel
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 19d66fe8-37fc-43ff-8224-8bb1dba728c3
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b693e790-e464-467a-81a1-f62bb9914cb2 # Hero afbeelding
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4d95d0af-a359-408a-8aa7-bcb3fb634f63
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 71121d32-13d9-4173-b4d5-cb96fb596e4d # Intro
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a5e6a787-1e19-4cf2-a941-c38243d3ecac
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 2a7635da-9798-4a72-9262-84d14e66931f # Call to action(s)
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ecb9c87b-ad24-4219-af7f-2ce1bf0da4c5
+            userCondition: null
+            warning: null
+            width: 100
+        name: Hero
+        uid: da929994-81f2-4396-bf64-1deae091932f
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: c7e33047-eed9-474f-b8e4-80a1945b1f57 # Overview Titel
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a76440da-eb94-46ec-bbf4-4bcfb110186d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 2ed0506e-2d1d-4f21-a387-92dcc5cf64f7 # Overview Afbeelding
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0c0095b6-dbd4-4eb4-acf7-1f91cf933f24
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 4e18d419-eb43-4cd2-8bbc-4506bd22e89b # Tekst
+            instructions: "Geef hier een omschrijving in die je wilt gebruiken wanneer een overzichtskaartje van deze entry wordt weergeven.\r\n"
+            label: 'Overview Omschrijving'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1174a8c4-1742-4203-bc91-27824917eb30
+            userCondition: null
+            warning: null
+            width: 100
+        name: Overview
+        uid: 27c0de69-10c6-4f0e-a0ae-1a3edea2ce57
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 42753f56-881c-4d30-82a4-7062d713de9b # Contentbuilder
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1100d9f5-3310-4710-a0e9-75dcb87ec3b9
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhoud
+        uid: 2384f987-87c1-4d71-83e7-9488778ee842
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 87757b92-04cd-4915-971d-e0d100fccb17 # SEO instellingen
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f412fd3c-db62-41bb-a3f4-ed061312655b
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: fab0bbf2-d704-4220-8199-207f27d47beb
+        userCondition: null
+handle: default
+hasTitleField: true
+name: Default
+section: c0d978b3-8b89-4fd2-9863-6a39a16212ab # Vacatures
+sortOrder: 1
+titleFormat: '{pageTitle|striptags}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

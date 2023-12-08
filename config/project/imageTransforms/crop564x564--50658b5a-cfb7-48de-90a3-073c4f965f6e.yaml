@@ -1,0 +1,11 @@
+fill: null
+format: webp
+handle: crop564x564
+height: 564
+interlace: none
+mode: crop
+name: Gallery
+position: center-center
+quality: 100
+upscale: true
+width: 564

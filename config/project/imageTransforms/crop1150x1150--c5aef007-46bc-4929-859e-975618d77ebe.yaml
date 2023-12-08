@@ -1,0 +1,11 @@
+fill: null
+format: webp
+handle: crop1150x1150
+height: 1150
+interlace: none
+mode: crop
+name: 'Gallery Big'
+position: center-center
+quality: 100
+upscale: true
+width: 1150

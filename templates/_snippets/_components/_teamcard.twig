@@ -1,0 +1,25 @@
+{% set image = member.image|default(fallback.image)|first %}
+
+<div class="teamcard">
+    <div class="teamcard__content">
+        {% if member.fullName|length or member.function|length %}
+        <div class="teamcard__body">
+            {% if member.fullName|length %}
+            <h3 class="teamcard__headline">{{member.fullName}}</h3>
+            {% endif %}
+
+            {% if member.function|length %}
+            {{member.function}}
+            {% endif %}
+        </div>
+        {% endif %}
+
+        <div class="teamcard__media">
+            <picture class="teamcard__picture">
+                <source media="(max-width: 769px)" srcset="{{image.getUrl('crop896x896')}} 2x" />
+                <source media="(min-width: 769px)" srcset="{{image.getUrl('crop530x530')}} 2x" />
+                <img class="teamcard__image" src="{{image.getUrl('crop530x530')}} 2x" alt="{{image.alt}}" loading="lazy"/>
+            </picture>
+        </div>
+    </div>
+</div>

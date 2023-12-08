@@ -1,0 +1,28 @@
+@use "../settings/global" as *;
+@use "../tools/" as *;
+
+.search {
+    // padding: $spacing-small $spacing;
+
+    @include mq(0, $bp-mobilenav) {
+        margin: $spacing 0;
+        padding: 0 $gutter;
+    }
+
+    .button {
+        min-width: max-content;
+    }
+    // margin: $spacing 0;
+}
+
+.search__form {
+    display: flex;
+
+    .button + .search__input {
+        margin-left: $spacing;
+    }
+}
+
+.search__input {
+    flex: 1 1 auto;
+}

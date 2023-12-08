@@ -1,0 +1,11 @@
+fill: null
+format: webp
+handle: crop720x444
+height: 444
+interlace: none
+mode: crop
+name: 'Blog 2x'
+position: center-center
+quality: 100
+upscale: true
+width: 720

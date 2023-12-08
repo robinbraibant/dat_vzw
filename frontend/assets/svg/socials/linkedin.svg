@@ -1,0 +1,6 @@
+<svg class="social__link-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+    style="enable-background:new 0 0 20 20"
+    xml:space="preserve"
+    width="20" height="20">
+    <path  fill="currentColor" d="M4.5 20H.3V6.6h4.1V20zM2.4 4.8C1.1 4.8 0 3.7 0 2.4S1.1 0 2.4 0s2.4 1.1 2.4 2.4-1.1 2.4-2.4 2.4zM20 20h-4.1v-6.5c0-1.5 0-3.5-2.2-3.5s-2.5 1.7-2.5 3.4V20H7.1V6.6h4v1.8h.1c.6-1 1.9-2.2 3.9-2.2 4.2 0 5 2.8 5 6.4L20 20z"/>
+</svg>

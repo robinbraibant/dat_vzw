@@ -1,0 +1,173 @@
+field: 42753f56-881c-4d30-82a4-7062d713de9b # Contentbuilder
+fieldLayouts:
+  184c5e86-9673-485e-8dd8-54bede19b572:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 2cddb03f-964f-4f5b-8848-5bd8c50cf4e5 # Titel
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 960b0c8b-dbcf-405d-9a53-d68a01c639df
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 6a3d2c09-957d-4e21-9e65-98c873967b27 # Tekst
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 071b2451-1c6c-4ab6-9ac1-10e4879c00f7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 2f4961f0-eef2-4c30-b286-f7f3337ebc15 # Afbeeldingen
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1e9a36e0-c520-4041-9b2a-0900cc79190a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 6a576752-824e-4ac2-8202-d8eb22eb26cb # Achtergrondkleur
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9cba153d-f39f-42d6-a03c-2b6844c30cfd
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: e33ec9b3-1844-4a2b-9e73-8d1e67c60995
+        userCondition: null
+fields:
+  2cddb03f-964f-4f5b-8848-5bd8c50cf4e5: # Titel
+    columnSuffix: dpcqkidz
+    contentColumnType: text
+    fieldGroup: null
+    handle: blockTitle
+    instructions: null
+    name: Titel
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  2f4961f0-eef2-4c30-b286-f7f3337ebc15: # Afbeeldingen
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: images
+    instructions: null
+    name: Afbeeldingen
+    searchable: true
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds: null
+      branchLimit: null
+      defaultUploadLocationSource: 'volume:65b2bb5a-5270-45fc-a215-72c888b19334' # Bestanden
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: null
+      minRelations: 2
+      previewMode: full
+      restrictFiles: false
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:65b2bb5a-5270-45fc-a215-72c888b19334' # Bestanden
+      restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
+      selectionLabel: null
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  6a3d2c09-957d-4e21-9e65-98c873967b27: # Tekst
+    columnSuffix: uaehnlfz
+    contentColumnType: text
+    fieldGroup: null
+    handle: redactor
+    instructions: null
+    name: Tekst
+    searchable: false
+    settings:
+      availableTransforms: ''
+      availableVolumes: '*'
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: null
+      purifyHtml: true
+      redactorConfig: null
+      removeEmptyTags: false
+      removeInlineStyles: false
+      removeNbsp: false
+      showHtmlButtonForNonAdmins: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  6a576752-824e-4ac2-8202-d8eb22eb26cb: # Achtergrondkleur
+    columnSuffix: ajraawqq
+    contentColumnType: boolean
+    fieldGroup: null
+    handle: bgColor
+    instructions: 'Geef hier aan of je een lichte achtergrond wenst.'
+    name: Achtergrondkleur
+    searchable: true
+    settings:
+      default: false
+      offLabel: 'Geen achtergrondkleur'
+      onLabel: Achtergrondkleur
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch
+handle: gallery
+name: Gallery
+sortOrder: 8

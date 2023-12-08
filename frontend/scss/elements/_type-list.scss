@@ -1,3 +1,5 @@
+@use '../settings/global' as *;
+
 /// Lists
 
 // standard lists
@@ -51,7 +53,7 @@ ol {
             &::before {
                 display: inline-block;
                 content: counter(li)'.';
-                font-family: $font-family-primary;
+                font-family: $font-family-secondary;
                 font-weight: 500;
                 font-style: italic;
                 color: $color-primary;
@@ -64,10 +66,6 @@ ol {
     .contrast-element &:not([class]) > li::before {
         color: $white;
     }
-}
-
-li {
-
 }
 
 // definition lists

@@ -2,6 +2,9 @@
 namespace modules;
 
 use Craft;
+use craft\events\TemplateEvent;
+use craft\web\View;
+use yii\base\Event;
 
 /**
  * Custom module class.
@@ -29,13 +32,6 @@ class Module extends \yii\base\Module
     {
         // Set a @modules alias pointed to the modules/ directory
         Craft::setAlias('@modules', __DIR__);
-
-        // Set the controllerNamespace based on whether this is a console or web request
-        if (Craft::$app->getRequest()->getIsConsoleRequest()) {
-            $this->controllerNamespace = 'modules\\console\\controllers';
-        } else {
-            $this->controllerNamespace = 'modules\\controllers';
-        }
 
         parent::init();
 

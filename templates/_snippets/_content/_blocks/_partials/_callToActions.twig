@@ -1,0 +1,10 @@
+{% if block.ctas|length %}
+{% set ctas = block.ctas.collect() %}
+
+{% for cta in ctas %}
+{{ cta.cta.getLink() }}
+{% endfor %}
+
+{% else %}
+<a class="{{cta.class}}" href="{{cta.getUrl()}}">{{cta.customText}}</a>
+{% endif %}

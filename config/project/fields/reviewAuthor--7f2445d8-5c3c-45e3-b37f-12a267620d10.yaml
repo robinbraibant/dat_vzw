@@ -1,0 +1,19 @@
+columnSuffix: xdejncvj
+contentColumnType: text
+fieldGroup: fbc70935-3e41-4885-9162-f35795897351 # Reviews
+handle: reviewAuthor
+instructions: null
+name: Auteur
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

@@ -1,0 +1,38 @@
+<div class="hero-container has-pattern">
+    <div class="hero{% if not entry.heroImage|length %} hero--center{% endif %}">
+        <div class="hero__body">
+
+            {# {% set homePage = craft.entries.section('home').one() %} #}
+            {# {% if homePage and entry.id != homePage.id %} #}
+            <div class="hero__breadcrumbs">
+                {% include '_snippets/_navigation/_partials/_breadcrumbs.twig' %}
+            </div>
+            {# {% endif %} #}
+
+            <h1 class="hero__headline">
+                {{entry.title|striptags('<strong>')|raw}}
+            </h1>
+
+            {% if entry.intro|length %}
+            {{entry.intro}}
+            {% endif %}
+
+            {% if entry.ctas|length %}
+            <div class="buttongroup {% if not entry.heroImage|length %}buttongroup--center{% endif %}">
+                {% include '_snippets/_hero/_partials/_callToActions.twig' %}
+            </div>
+            {% endif %}
+        </div>
+
+        {% if entry.heroImage|length %}
+        {% set image = entry.heroImage.one() %}
+        <div class="hero__media">
+            <picture class="hero__picture">
+                <source media="(max-width: 959px)" srcset="{{image.getUrl('heroMedium')}} 2x" />
+                <source media="(min-width: 960px)" srcset="{{image.getUrl('heroLarge')}} 2x" />
+                <img class="hero__image" src="{{image.getUrl('heroLarge')}} 2x" alt="{{image.alt}}" loading="lazy" />
+            </picture>
+        </div>
+        {% endif %}
+    </div>
+</div>

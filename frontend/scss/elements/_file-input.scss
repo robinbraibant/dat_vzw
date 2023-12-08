@@ -1,0 +1,39 @@
+@use "../settings/global" as *;
+@use "../components/button" as *;
+
+/// File upload button (@extend .button gives strange issues with buttongroup class) *//
+/// input[type="file"]::file-selector-button {
+input::file-selector-button {
+    position: relative;
+    display: inline-block;
+    -webkit-appearance: none;
+    margin: 0;
+    width: auto;
+    overflow: visible;
+    cursor: pointer;
+
+    padding: $button-padding-vertical $button-padding-horizontal;
+
+    line-height: $button-lineheight;
+
+    background-color: $color-subsidiary-lightest;
+    border-radius: $button-border-radius;
+    border: 0;
+    color: $color-text;
+
+    font-family: $font-family;
+    font-size: $button-font-size;
+    font-weight: $button-font-weight;
+    text-align: center;
+    text-decoration: none;
+    // text-transform: uppercase;
+    text-shadow: none;
+
+    transition: background-color 0.1s, border-color 0.1s, color 0.1s, box-shadow 0.1s, outline 0.1s;
+
+    background-color: $color-secondary;
+    color: $white;
+
+    margin-right: $spacing;
+    @extend .button--secondary;
+}

@@ -1,0 +1,13 @@
+{% set image = client.image|default(fallback.image)|first %}
+{% set optimizedImage = image.optimizedImages %}
+
+<a class="logo" href="{{client.website}}" target="_blank">
+    <div class="logo__content">
+        <div class="logo__media">
+            <picture class="logo__picture">
+                <source srcset="{{image.getUrl('fit400xauto')}} 2x" />
+                <img class="logo__image" src="{{image.getUrl('fit400xauto')}} 2x" alt="{{image.alt}}" loading="lazy" />
+            </picture>
+        </div>
+    </div>
+</a>

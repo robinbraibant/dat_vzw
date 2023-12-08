@@ -1,0 +1,38 @@
+@use "../settings/global" as *;
+@use "../tools/" as *;
+
+.usp {
+    padding-top: $vertical-spacing;
+    padding-bottom: $vertical-spacing;
+}
+
+.usp__content {
+    display: flex;
+    flex-flow: column nowrap;
+
+    .usp--center & {
+        align-items: center;
+    }
+}
+
+.usp__body {
+    :last-child {
+        margin-bottom: 0;
+    }
+}
+
+.usp__headline {
+    font-family: $font-family;
+    font-size: $font-size-large;
+    font-weight: 700;
+}
+
+.usp__media {
+    order: -1;
+    margin-bottom: $vertical-spacing;
+}
+
+.usp__image {
+    width: 6.4rem;
+    height: 6.4rem;
+}

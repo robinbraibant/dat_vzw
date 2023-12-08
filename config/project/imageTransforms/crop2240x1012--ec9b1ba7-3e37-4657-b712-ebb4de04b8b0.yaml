@@ -1,0 +1,11 @@
+fill: null
+format: webp
+handle: crop2240x1012
+height: 1012
+interlace: none
+mode: crop
+name: 'Cases Highlight 2x'
+position: center-center
+quality: 100
+upscale: true
+width: 2240

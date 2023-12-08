@@ -1,0 +1,148 @@
+@use "../settings/global" as *;
+@use "../tools" as *;
+
+.social {
+    display: flex;
+    justify-content: center;
+    margin-top: $vertical-spacing ;
+    // margin-bottom: $vertical-spacing *2;
+    @include mq($bp-mobilenav) {
+        justify-content: left;
+    }
+}
+
+.social__label {
+    @include visually-hidden();
+}
+
+// .social__links {
+// }
+
+.social__link {
+    position: relative;
+    display: inline-block;
+    // margin-top: 0.2rem;
+    // margin-bottom: 0.2rem;
+    // padding: $spacing;
+    // background-color: $offwhite;
+    // border: 0;
+    // border-radius: 0;
+    height: auto;
+    width: auto;
+    line-height: 1.1;
+
+    text-align: center;
+    color: $color-text;
+
+    transition: color 0.1s;
+
+    &:hover,
+    &:focus {
+        color: $color-primary;
+    }
+
+    .contrast-element & {
+        background-color: transparent;
+        color: $white;
+
+        &:hover,
+        &:focus {
+            color: $color-secondary;
+        }
+
+        &:active {
+            color: $color-primary-dark;
+        }
+    }
+
+    & + & {
+        margin-left: $spacing-small;
+    }
+
+    .social--small & {
+        top: -2px;
+        color: $white;
+    }
+}
+
+.social__link-icon {
+    display: inline-block;
+    width: 3.6rem;
+    height: 3.6rem;
+    // max-height: 1.8rem;
+    vertical-align: middle;
+    position: relative;
+
+    .social--small & {
+        max-height: 2rem;
+        width: 2rem;
+        color: #0067a8;
+
+        &:hover,
+        &:focus {
+            color: $color-primary;
+        }
+
+        &:active {
+            color: $color-primary-dark;
+        }
+    }
+}
+
+.social__link-label {
+    @include visually-hidden();
+}
+
+.social__link--facebook {
+    &:first-child {
+        margin-left: -0.3em;
+    }
+}
+
+// .social__link-email {
+//     &:hover,
+//     &:focus {
+//     }
+// }
+
+// .social__link--facebook {
+//     &:hover,
+//     &:focus {
+//         background-color: $color-facebook;
+//     }
+// }
+
+// .social__link--twitter {
+//     &:hover,
+//     &:focus {
+//         background-color: $color-twitter;
+//     }
+// }
+
+// .social__link--instagram {
+//     &:hover,
+//     &:focus {
+//         background-image: $gradient-instagram;
+//     }
+// }
+
+// .social__link--youtube {
+//     &:hover,
+//     &:focus {
+//         background-color: $color-youtube;
+//     }
+// }
+
+// .social__link--linkedin {
+//     &:hover,
+//     &:focus {
+//         background-color: $color-linkedin;
+//     }
+// }
+
+// .social__link--pinterest {
+//     &:hover,
+//     &:focus {
+//         background-color: $color-pinterest;
+//     }
+// }

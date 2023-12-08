@@ -1,0 +1,155 @@
+field: 42753f56-881c-4d30-82a4-7062d713de9b # Contentbuilder
+fieldLayouts:
+  51f1549e-07d2-46ae-be43-8c333c6052db:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 38112319-6d36-47c8-9e42-0fd894abdc84 # Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d21f9a65-9cc8-43d6-8bff-2bc00fad1bc3
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e911b114-5949-4b35-91e3-b5c5c9078b13 # Tekst
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 796ef1d0-f657-4ced-bd74-fb24c7a5f620
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 501f3d96-f29b-43ff-b392-abc0e4951179 # Call to action(s)
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 06e569cd-dabb-4b51-a7ff-a02ba3aa1661
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 3540f360-b267-47da-a331-44471ce0be24 # Achtergrondkleur
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0a92604e-be1c-46fd-adb5-954617f0e618
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 8e32f570-bdde-435a-8807-abba5d6989ab
+        userCondition: null
+fields:
+  501f3d96-f29b-43ff-b392-abc0e4951179: # Call to action(s)
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: ctas
+    instructions: null
+    name: 'Call to action(s)'
+    searchable: true
+    settings:
+      blockTypeFields: 0
+      changedFieldIndicator: 1178268786
+      columns:
+        __assoc__:
+          -
+            - 540766f2-cd4c-4b87-980c-d1449f2e1601 # Call to action
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+      contentTable: '{{%stc_17_ctas}}'
+      fieldLayout: matrix
+      maxRows: 2
+      minRows: null
+      propagationKeyFormat: null
+      propagationMethod: all
+      selectionLabel: null
+      staticField: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: verbb\supertable\fields\SuperTableField
+  3540f360-b267-47da-a331-44471ce0be24: # Achtergrondkleur
+    columnSuffix: phcqwpzg
+    contentColumnType: string
+    fieldGroup: null
+    handle: bgColor
+    instructions: 'Selecteer een kleur voor de achtergrond van dit blok'
+    name: Achtergrondkleur
+    searchable: false
+    settings:
+      dataSet: 'Background colors'
+      type: dropdown
+    translationKeyFormat: null
+    translationMethod: none
+    type: statikbe\configvaluesfield\fields\ConfigValuesFieldField
+  38112319-6d36-47c8-9e42-0fd894abdc84: # Title
+    columnSuffix: yphctvaj
+    contentColumnType: text
+    fieldGroup: null
+    handle: blockTitle
+    instructions: null
+    name: Title
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  e911b114-5949-4b35-91e3-b5c5c9078b13: # Tekst
+    columnSuffix: hctedcqi
+    contentColumnType: text
+    fieldGroup: null
+    handle: redactor
+    instructions: null
+    name: Tekst
+    searchable: true
+    settings:
+      availableTransforms: ''
+      availableVolumes: '*'
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: null
+      purifyHtml: true
+      redactorConfig: null
+      removeEmptyTags: false
+      removeInlineStyles: false
+      removeNbsp: false
+      showHtmlButtonForNonAdmins: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+handle: cta
+name: 'Call to action'
+sortOrder: 5

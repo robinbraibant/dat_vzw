@@ -1,0 +1,11 @@
+fill: null
+format: webp
+handle: crop800x800
+height: 800
+interlace: none
+mode: crop
+name: 'Services Mobile'
+position: center-center
+quality: 100
+upscale: true
+width: 800

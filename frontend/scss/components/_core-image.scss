@@ -1,0 +1,75 @@
+@use "../settings/global" as *;
+@use "../tools/mq" as *;
+
+.core-image__content {
+    display: flex;
+    flex: 1 1 auto;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.core-image__left {
+    text-align: center;
+
+    @include mq($bp-mobilenav) {
+        text-align: right;
+    }
+}
+
+.core-image__right {
+    text-align: center;
+
+    @include mq($bp-mobilenav) {
+        text-align: left;
+    }
+}
+
+.core-image__media {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    @include mq(0, $bp-mobilenav) {
+        padding: $vertical-spacing 0;
+    }
+}
+.core-image__image {
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.core {
+    padding-top: $vertical-spacing;
+    padding-bottom: $vertical-spacing;
+}
+
+.core__content {
+    position: relative;
+}
+
+.core__body {
+    font-size: $font-size-small;
+
+    p:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.core__headline {
+    font-family: $font-family;
+    font-size: $font-size;
+    font-weight: 700;
+}
+
+.core__link {
+    display: block;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+}

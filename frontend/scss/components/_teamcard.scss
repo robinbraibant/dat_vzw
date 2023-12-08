@@ -1,0 +1,186 @@
+@use "../settings/global" as *;
+@use "../tools" as *;
+
+.teamcard {
+    padding-top: $vertical-spacing;
+    padding-bottom: $vertical-spacing;
+}
+
+.teamcard__content {
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+
+    &:hover,
+    &:focus {
+        &::before {
+            content: "";
+            position: absolute;
+            top: 25%;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: linear-gradient(180deg, rgba($color-primary, 0) 0%, $color-primary-darkest 100%);
+            border-bottom-left-radius: $border-radius;
+            border-bottom-right-radius: $border-radius;
+            transition: all 0.2s ease-out;
+            z-index: 1;
+        }
+
+        .teamcard__body {
+            opacity: 1;
+        }
+    }
+}
+
+.teamcard__body {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: $vertical-spacing *2;
+    padding-right: $gutter;
+    padding-left: $gutter;
+
+    font-family: $font-family;
+    font-size: $font-size;
+    font-weight: 700;
+    text-align: center;
+    color: $white;
+
+    transition: all 0.2s ease-out;
+    z-index: 2;
+    opacity: 0;
+
+    p:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.teamcard__headline {
+    margin-bottom: $spacing-small;
+    font-family: $font-family;
+    font-size: $font-size;
+    color: $white;
+}
+
+.teamcard__media {
+    order: -1;
+}
+
+.teamcard__image {
+    width: 100%;
+    object-fit: cover;
+    border-radius: $border-radius;
+}
+
+.team-category--heading {
+    margin-bottom: 3rem;
+}
+
+.team-category--cardgrid {
+    width: 75%;
+    margin: 6rem auto;
+    @include mq(md) {
+        display: flex;
+        flex-flow: row wrap;
+    }
+}
+
+.team-category--cardgrid-item {
+    display: flex;
+    flex-direction: column;
+
+    text-decoration: none;
+    width: 100%;
+    // max-width: 38rem;
+    max-width: 55rem;
+
+    margin-bottom: 3rem;
+    :last-child {
+        margin-bottom: 0;
+    }
+
+    cursor: pointer;
+
+    &:hover .team-category-card-line-animation {
+        width: 100%;
+        background-color: #57c5dc;
+        transition: 0.5s;
+    }
+
+    @include mq(md) {
+        width: 50%;
+        padding-right: 3rem;
+
+        box-sizing: border-box;
+    }
+
+    @include mq(lg) {
+        width: 33.33%;
+    }
+}
+
+.team-category--card-image {
+    width: 100%;
+    max-width: 60rem;
+    // height: 16rem;
+    margin-bottom: 1.6rem;
+
+    img {
+        width: 100%;
+        border-radius: 2rem;
+    }
+
+    // .banner-media img {
+    //     border-radius: 2rem;
+    // }
+}
+
+.team-category--card-text {
+    width: 100%;
+    color: #0067a8;
+    margin-bottom: 1.5rem;
+}
+
+.team-category--card-leading {
+    font-size: 1.7rem;
+    color: #0067a8;
+}
+
+.team-category--card-image:hover {
+    transform: scale(1.03);
+    transition: 0.5s;
+}
+
+.team-category--line {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.team-category--card-circle {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border-color: #57c5dc;
+    border-style: solid;
+    border-width: 3px;
+}
+
+.team-category--card-line {
+    height: 3px;
+    background-color: #0067a8;
+    width: 100%;
+    border-radius: 100px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.team-category-card-line-animation {
+    height: 100%;
+    width: 0%;
+    background-color: #57c5dc;
+}
+

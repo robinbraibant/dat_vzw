@@ -1,0 +1,25 @@
+<div class="usp{% if block.alignment %} usp--center{% endif %}">
+    <div class="usp__content">
+        {% if usp.uspTitle|length or usp.uspRedactor|length %}
+        <div class="usp__body">
+            {% if usp.uspTitle|length %}
+            <h3 class="usp__headline">{{usp.uspTitle}}</h3>
+            {% endif %}
+
+            {% if usp.uspRedactor|length %}
+            {{usp.uspRedactor}}
+            {% endif %}
+        </div>
+        {% endif %}
+
+        {% if usp.uspImage|length %}
+        <div class="usp__media">
+            {% set image = usp.uspImage|first %}
+            <picture class="usp__picture">
+                <source srcset="{{image.getUrl('fit128x128')}} 2x" />
+                <img title="hello" class="usp__image" src="{{image.getUrl('fit128x128')}} 2x" alt="{{image.alt}}" loading="lazy"/>
+            </picture>
+        </div>
+        {% endif %}
+    </div>
+</div>

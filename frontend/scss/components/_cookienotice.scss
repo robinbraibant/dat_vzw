@@ -1,0 +1,180 @@
+@use "../settings/global" as *;
+@use "../tools" as *;
+@use "../components/button" as *;
+@use "../elements/type-headings" as *;
+
+$background-cookienotice: $white;
+
+.cookienotice-overlay {
+    position: fixed;
+    z-index: 101;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba($color-primary-darkest, 0.9);
+}
+
+/// Cookie banner
+.cookienotice-banner {
+    position: fixed;
+    z-index: 110;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-size: $font-size;
+    line-height: $lineheight-body;
+
+    max-width: 100vw;
+    // max-height: 100vh;
+
+    @include mq(md) {
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.cookienotice-banner__content {
+    font-size: $font-size;
+    border-radius: $border-radius;
+    background-color: $background-cookienotice;
+    padding: $gutter;
+    padding-bottom: 0;
+    box-shadow: $box-shadow;
+
+    @include mq(650) {
+        max-width: 65rem;
+    }
+
+    @include mq(md) {
+        padding: $spacing-large;
+        padding-bottom: $spacing;
+    }
+}
+
+.cookienotice-banner h1 {
+    @extend .h2;
+}
+
+.cookienotice-banner__notice {
+    line-height: $lineheight-body;
+    margin-bottom: $spacing;
+}
+
+.cookienotice-banner__actions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cookienotice-banner__button {
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    margin-right: $spacing;
+    margin-bottom: $spacing;
+}
+
+.cookienotice-banner__accept {
+    @extend .button, .button--primary;
+}
+
+/// Cookie modal
+.cookienotice-modal {
+    position: fixed;
+    z-index: 110;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow-y: auto;
+    max-width: 100vw;
+    max-height: 100vh;
+
+    @include mq(md) {
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.cookienotice-modal__content {
+    border-radius: $border-radius;
+    background-color: $background-cookienotice;
+    padding: $gutter;
+    font-size: $font-size;
+    line-height: $lineheight-body;
+    box-shadow: $box-shadow;
+
+    @include mq(md) {
+        padding: $spacing-large;
+    }
+
+    @include mq(1000) {
+        max-width: 100rem;
+    }
+}
+
+.cookienotice-modal h1 {
+    @extend .h2;
+}
+
+.cookienotice-modal h2 {
+    @extend .h3;
+}
+
+.cookienotice-modal__actions {
+    > .button-cookie.js-cookie-accept {
+        margin-bottom: $spacing-large;
+        @extend .button, .button--primary;
+    }
+
+    > .button-cookie.js-modal-close {
+        @extend .button, .button--secondary;
+    }
+}
+
+.cookienotice-modal__close-action {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.cookienotice-modal__form {
+    display: block;
+
+    @include mq($bp-mobilenav) {
+        display: flex;
+    }
+}
+
+.cookienotice-modal__options {
+    margin-bottom: $spacing;
+
+    @include mq($bp-mobilenav) {
+        margin-right: $spacing;
+    }
+}
+
+.cookienotice-modal__checks {
+    display: flex;
+    align-items: center;
+    font-size: $font-size;
+    font-weight: 700;
+    margin-bottom: $spacing-small;
+}
+
+.cookienotice-modal__checks {
+    input {
+        width: 1.8rem;
+        height: 1.8rem;
+        margin-right: $spacing-small;
+        margin-top: -0.2rem;
+    }
+}
+
+.cookienotice-modal__description {
+    margin-left: 2.4rem;
+}

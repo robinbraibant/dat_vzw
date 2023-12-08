@@ -1,5 +1,6 @@
-/// Mixins
+@use "../settings/global" as *;
 
+/// Mixins
 @mixin visually-hidden() {
     &:not(:focus):not(:active) {
         position: absolute;
@@ -52,4 +53,56 @@
     -moz-osx-font-smoothing: grayscale;
 
     content: $variable;
+}
+
+@mixin tooltip-tip {
+    &::before,
+    &::after {
+        bottom: 100%;
+        left: 50%;
+        border: solid transparent;
+        content: "";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+    }
+
+    &::before {
+        border-color: rgba(194, 225, 245, 0);
+        border-bottom-color: $color-subsidiary-lightest;
+        border-width: 8px;
+        margin-left: -8px;
+    }
+
+    &::after {
+        border-color: rgba(136, 183, 213, 0);
+        border-bottom-color: $white;
+        border-width: 7px;
+        margin-left: -7px;
+    }
+}
+
+@mixin hover-up {
+    transition: transform 0.1s, box-shadow 0.1s;
+    transform: translateY(0);
+
+    &:hover {
+        transform: translateY(-0.3rem);
+        box-shadow: $box-shadow;
+
+        .contrast-element & {
+            box-shadow: 0 0.3rem 0.5rem rgba($color-subsidiary-light, 0.5),
+                0 0 0.2rem rgba($color-subsidiary-light, 0.6);
+        }
+    }
+
+    &:active {
+        box-shadow: none;
+        transform: translateY(0);
+
+        .contrast-element & {
+            box-shadow: none;
+        }
+    }
 }

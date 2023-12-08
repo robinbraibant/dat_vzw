@@ -1,0 +1,30 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: ee71a197-2900-41c3-8ede-20b5bc467852 # Common
+handle: ctas
+instructions: null
+name: 'Call to action(s)'
+searchable: true
+settings:
+  blockTypeFields: 0
+  changedFieldIndicator: 299697683
+  columns:
+    __assoc__:
+      -
+        - e206c2e2-53a4-45f9-abf7-f4a6d24723df # Call to action
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+  contentTable: '{{%stc_ctas}}'
+  fieldLayout: matrix
+  maxRows: 2
+  minRows: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  selectionLabel: null
+  staticField: null
+translationKeyFormat: null
+translationMethod: none
+type: verbb\supertable\fields\SuperTableField

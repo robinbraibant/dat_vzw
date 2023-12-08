@@ -1,0 +1,31 @@
+<div class="credits-container">
+    <div class="credits">
+        <nav class="creditsnav" aria-label="credits-navigation" role="navigation">
+            <ul class="creditsnav__list">
+                <li class="creditsnav__item">
+                    <span class="creditsnav__item">&copy;
+                        {{ now|date('Y') }} &mdash;
+                        <strong>{{systemName}}. {{"All Rights Reserved."|t}}</strong>
+                    </span>
+                </li>
+                {% set privacyPage = craft.entries.section('privacyPolicy').one() %}
+                {% if privacyPage %}
+                <li class="creditsnav__item">
+                    <a class="creditsnav__link" href="{{ privacyPage.url }}">{{ "Privacybeleid"|t }}</a>
+                </li>
+                {% endif %}
+
+                {% set cookiePage = craft.entries.section('cookiePolicy').one() %}
+                {% if cookiePage %}
+                <li class="creditsnav__item">
+                    <a href="#" class="js-cookie-settings creditsnav__link" role="button">{{ 'Cookie-instellingen'|t }}</a>
+                </li>
+
+                <li class="creditsnav__item">
+                    <a class="creditsnav__link" href="{{ cookiePage.url }}">{{ "Cookiebeleid"|t }}</a>
+                </li>
+                {% endif %}
+            </ul>
+        </nav>
+    </div>
+</div>

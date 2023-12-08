@@ -1,0 +1,33 @@
+@use '../settings/global' as *;
+
+/// Contrast element
+.contrast-element {
+    color: $white;
+
+    h1,h2,h3,h4,h5,h6 {
+        &:not([class]) {
+            color: $white;
+        }
+    }
+    .h1,.h2,.h3,.h4,.h5,.h6 {
+        color: $white;
+    }
+
+    a:not([class]) {
+        color: $white;
+
+        &:hover, &:focus {
+            color: $color-primary;
+            text-decoration: underline;
+        }
+        
+        &:active {
+            color: $color-primary;
+            text-decoration: none;
+        }
+    }
+}
+
+.background--dark {
+    background-color: $color-subsidiary-darkest;
+}

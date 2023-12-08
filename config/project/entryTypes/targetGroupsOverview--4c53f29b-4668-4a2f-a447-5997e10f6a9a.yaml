@@ -1,0 +1,115 @@
+fieldLayouts:
+  1ef399a5-0d54-4bc1-b093-7454eabcb4b5:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: Titel
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 94bc22d8-0790-4331-a852-f58c0b7c7c79
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b693e790-e464-467a-81a1-f62bb9914cb2 # Hero afbeelding
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 333525cc-a7f1-4060-b780-e30342f1b197
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 71121d32-13d9-4173-b4d5-cb96fb596e4d # Intro
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 848d8f6c-cf9b-4b4c-b104-4c15de7d0dac
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 2a7635da-9798-4a72-9262-84d14e66931f # Call to action(s)
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 171df7c3-5112-4f70-bb98-f8d3c533ceb0
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: a1f50d1a-16d1-45ee-a3aa-131efe08844a
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 42753f56-881c-4d30-82a4-7062d713de9b # Contentbuilder
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 04d18649-25ed-4bc0-9a66-6f1a0e428808
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhoud
+        uid: 32f80f27-7df4-4fec-8745-2cd2edfc188e
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 87757b92-04cd-4915-971d-e0d100fccb17 # SEO instellingen
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 91f07c2e-a942-4b8c-a836-e991bb3ae33b
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: b10c2e05-1f74-45e9-b657-2e148d5ff1ed
+        userCondition: null
+handle: targetGroupsOverview
+hasTitleField: true
+name: 'Doelgroepen overzicht'
+section: fe3adc56-c49e-468c-a8d2-6033cc7846c5 # Doelgroepen overzicht
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

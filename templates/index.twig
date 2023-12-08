@@ -1,12 +1,9 @@
-{% extends "_layout.twig" %}
+{% extends '_layout.twig' %}
 
 {% block content %}
-	{% include '_components/_banner/_banner-home.twig' %}
-{# 	{{ include('_components/_cards/_target-groups-card.html.twig') }}#}
-{#	{{ include('_components/_cards/_team-category.html.twig') }}#}
-{#	{% set ctaBlocks = entry.ctaBlock.all() %}#}
 
-{#	{% for block in ctaBlocks %}#}
-{#		{{ include('/_components/_call-to-action/_call-to-action.html.twig')}} #}
-{#	{% endfor %}#}
+{% include "_snippets/_hero/_hero.twig" %}
+
+{% include '_snippets/_content/_contentBuilder.twig' %}
+
 {% endblock %}

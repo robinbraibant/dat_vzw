@@ -1,0 +1,12 @@
+{% set mainNav = craft.navigate.raw('mainNav') %}
+{% set topNav = craft.navigate.raw('topNav') %}
+
+{% if mainNav|length %}
+<nav class="mainnav-container" aria-label="main-navigation" role="navigation">
+    {% include '_snippets/_navigation/_mainnav.twig' %}
+
+    {% if topNav|length %}
+    {% include '_snippets/_navigation/_topnav.twig' %}
+    {% endif %}
+</nav>
+{% endif %}

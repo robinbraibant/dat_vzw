@@ -1,0 +1,115 @@
+fieldLayouts:
+  f0ed8a60-afd0-4b7c-8186-91106d89c433:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: Titel
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 76524a19-25be-488c-b449-da06de56f3a2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b693e790-e464-467a-81a1-f62bb9914cb2 # Hero afbeelding
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f092b558-45cd-4fe6-937f-a817d6253084
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 71121d32-13d9-4173-b4d5-cb96fb596e4d # Intro
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 559e4316-88b3-4f70-b338-d3652ace9b2e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 2a7635da-9798-4a72-9262-84d14e66931f # Call to action(s)
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 819783a0-ccb1-4644-84f5-2e9bd827ebae
+            userCondition: null
+            warning: null
+            width: 100
+        name: Hero
+        uid: 16800ff4-3c6b-4e49-b858-19122ea8d0bb
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 42753f56-881c-4d30-82a4-7062d713de9b # Contentbuilder
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4a5843db-875e-4ffb-b364-d836a0dfd359
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhoud
+        uid: 64d1cb54-de4c-462f-a697-4020f3d02fa6
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 87757b92-04cd-4915-971d-e0d100fccb17 # SEO instellingen
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7e9ef266-d8e9-4dee-b32f-a35ad553f2fb
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: 3a39a2d2-f41c-4e0a-9f20-99a350596f6b
+        userCondition: null
+handle: privacyPolicy
+hasTitleField: true
+name: Privacybeleid
+section: db87c08e-7aa1-4adf-a5db-c8fd41241928 # Privacybeleid
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

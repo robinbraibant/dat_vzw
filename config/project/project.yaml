@@ -1,11 +1,12 @@
-assets:
-  tempVolumeUid: fdb9bfff-e48f-424c-b268-d852e14a76ff # Sponsors
-dateModified: 1669651326
+dateModified: 1687453454
 elementSources:
   craft\elements\Asset:
     -
+      defaultSort:
+        - dateCreated
+        - desc
       disabled: false
-      key: 'volume:fdb9bfff-e48f-424c-b268-d852e14a76ff' # Sponsors
+      key: 'volume:65b2bb5a-5270-45fc-a215-72c888b19334' # Bestanden
       tableAttributes:
         - filename
         - size
@@ -13,35 +14,11 @@ elementSources:
         - link
       type: native
     -
+      defaultSort:
+        - dateCreated
+        - desc
       disabled: false
-      key: 'volume:3cbaf529-18c6-4a27-82d7-a0ef6f1d3938' # Doelgroep iconen
-      tableAttributes:
-        - filename
-        - size
-        - dateModified
-        - link
-      type: native
-    -
-      disabled: false
-      key: 'volume:9db55e63-6fb1-4978-9ce9-0b954be6a91e' # Banner afbeeldingen
-      tableAttributes:
-        - filename
-        - size
-        - dateModified
-        - link
-      type: native
-    -
-      disabled: false
-      key: 'volume:fd161842-f0ba-4d20-8d61-2225c5ff20c1' # Contactinfo iconen
-      tableAttributes:
-        - filename
-        - size
-        - dateModified
-        - link
-      type: native
-    -
-      disabled: false
-      key: 'volume:fe6e5ae7-1535-49f3-ba12-588b4fc92e39' # PDF
+      key: 'folder:494455b5-58cd-48b9-a915-43d2a8cd4f8e'
       tableAttributes:
         - filename
         - size
@@ -65,197 +42,524 @@ elementSources:
       heading: Algemeen
       type: heading
     -
-      key: 'single:4fa55fe2-6dbc-4e03-aeaf-2e4acd4e5449' # Startpagina
+      defaultSort:
+        - title
+        - asc
+      disabled: false
+      key: 'single:c72145dd-9962-410a-b01b-ad7ca7258478' # Homepage
+      tableAttributes:
+        - postDate
+        - expiryDate
+        - link
       type: native
     -
-      heading: ''
+      defaultSort:
+        - title
+        - asc
+      disabled: false
+      key: 'single:877440ea-915c-43b1-9d9b-b55f629c2075' # Contact
+      tableAttributes:
+        - postDate
+        - expiryDate
+        - author
+        - link
+      type: native
+    -
+      key: 'section:14ff9459-9619-4a01-9cbb-c9614a846858' # Pagina's
+      type: native
+    -
+      key: 'section:927de2fe-31f0-4d12-b959-1c7576c441e1' # Sponsors
+      type: native
+    -
+      heading: Werking
       type: heading
     -
-      disabled: false
-      key: 'section:1a5e8394-ba57-4463-b046-6c9de0812b2c' # Werken bij d.a.t.
-      tableAttributes:
-        - postDate
-        - expiryDate
-        - link
-      type: native
-    -
-      key: 'section:b17c7155-e166-4b9b-b39a-d66e80e2d676' # Praktische info
-      type: native
-    -
-      disabled: false
-      key: 'section:5a50b43e-57ff-451d-99a9-6e517f9d600d' # Over ons
-      tableAttributes:
-        - postDate
-        - expiryDate
-        - link
-      type: native
-    -
-      disabled: true
-      key: 'section:298e299b-a244-47dd-8420-45bf6e1c3f4e' # Doelgroepen
-      tableAttributes:
-        - postDate
-        - expiryDate
-        - link
-      type: native
-    -
-      key: 'single:9d52999e-de87-4d20-9e95-0b9a1a6d0419' # Contact
-      type: native
-    -
-      key: 'single:aea891e5-7577-41f6-a827-258037235a16' # Default HTML styling
-      type: native
-    -
-      key: 'single:5be4ab95-7c42-4fb8-bc49-4bceedd6d67f' # Onze werking
-      type: native
-  verbb\formie\elements\Form:
-    -
-      disabled: false
-      key: '*'
-      tableAttributes:
+      defaultSort:
         - title
-        - handle
-        - template
-        - dateCreated
-        - dateUpdated
+        - asc
+      disabled: false
+      key: 'single:e782c6a6-d9c0-413a-8058-4f24bd7ff518' # Werking Overzicht
+      tableAttributes:
+        - postDate
+        - expiryDate
+        - link
+      type: native
+    -
+      key: 'section:7ef3951c-2209-42d7-8ece-10077019d52c' # Werking
+      type: native
+    -
+      heading: Doelgroepen
+      type: heading
+    -
+      key: 'single:fe3adc56-c49e-468c-a8d2-6033cc7846c5' # Doelgroepen overzicht
+      type: native
+    -
+      key: 'section:41486e80-8cfb-4167-ab71-3939dc65b270' # Doelgroepen
+      type: native
+    -
+      heading: Team
+      type: heading
+    -
+      key: 'single:2ff59dd4-51db-4003-b745-1540e397b55f' # Team overzicht
+      type: native
+    -
+      defaultSort:
+        - structure
+        - asc
+      disabled: false
+      key: 'section:b0068c71-d862-4ad1-9662-f98325faf90a' # Disciplines
+      tableAttributes:
+        - postDate
+        - expiryDate
+        - link
+      type: native
+    -
+      heading: Blogs
+      type: heading
+    -
+      key: 'single:e8aee90c-bbbd-4082-928c-d34b7b58d3e0' # Blog Overzicht
+      type: native
+    -
+      key: 'section:17b45978-7dbb-4e1a-b576-dbd15ff1f1ae' # Blog
+      type: native
+    -
+      heading: Vacatures
+      type: heading
+    -
+      key: 'single:792ae990-64b1-4ad4-bfd1-4e3c7c94d68c' # Vacatures Overzicht
+      type: native
+    -
+      defaultSort:
+        - postDate
+        - desc
+      disabled: false
+      key: 'section:c0d978b3-8b89-4fd2-9863-6a39a16212ab' # Vacatures
+      tableAttributes:
+        - postDate
+        - expiryDate
+        - link
+      type: native
+    -
+      heading: Andere
+      type: heading
+    -
+      key: 'single:80ff6c1f-a362-46a8-968e-075a260d17ce' # Cookiebeleid
+      type: native
+    -
+      key: 'single:db87c08e-7aa1-4adf-a5db-c8fd41241928' # Privacybeleid
+      type: native
+    -
+      key: 'single:88490f65-d10d-4df0-b13e-98cbcbda3135' # Pagina niet gevonden
+      type: native
+    -
+      key: 'single:defdf311-a20e-4586-9fd6-e5a6fbe2df2f' # Systeem offline
       type: native
 email:
-  fromEmail: georgi_ivanov99@outlook.com
-  fromName: dev.dat-vzw
+  fromEmail: hello@bluezoo.be
+  fromName: 'Blue Zoo'
+  replyToEmail: null
+  template: null
+  transportSettings:
+    command: '/usr/sbin/sendmail -bs'
   transportType: craft\mail\transportadapters\Sendmail
 fs:
-  bannerImages:
+  files:
     hasUrls: true
-    name: 'Banner afbeeldingen'
+    name: Bestanden
     settings:
-      path: '@webroot/front/images/images/banner'
+      path: '@webroot/files'
     type: craft\fs\Local
-    url: '@web/front/images/images/banner'
-  contactInfo:
-    hasUrls: true
-    name: 'Contactinfo iconen'
-    settings:
-      path: '@webroot/front/images/svg/footer'
-    type: craft\fs\Local
-    url: '@web/front/images/svg/footer'
-  pdf:
-    hasUrls: true
-    name: PDF
-    settings:
-      path: '@webroot/front/images/pdf'
-    type: craft\fs\Local
-    url: '@web/front/images/pdf'
-  sponsors:
-    hasUrls: true
-    name: Sponsors
-    settings:
-      path: '@webroot/front/images/logo/sponsors'
-    type: craft\fs\Local
-    url: '@web/front/images/logo/sponsors'
-  targetGroupIcons:
-    hasUrls: true
-    name: 'Doelgroepen iconen'
-    settings:
-      path: '@webroot/images/svg/target-groups'
-    type: craft\fs\Local
-    url: '@web/images/svg/target-groups'
+    url: '@baseUrl/files/'
 meta:
   __names__:
-    0be18b89-889d-4b82-9b45-3d135031d006: Footer # Footer
-    0e0e9abd-f0a4-4c86-9750-a72a43c26b33: 'Afbeelding ' # Afbeelding 
-    1a5e8394-ba57-4463-b046-6c9de0812b2c: 'Werken bij d.a.t.' # Werken bij d.a.t.
-    1c629b66-cd2f-4da6-85a4-72e69772ba1e: 'Banner afbeelding' # Banner afbeelding
-    1ed7efa2-b8da-4da5-8c3a-6c98c05577b0: Common # Common
-    2a7bf3bc-6a3a-4ccd-88e2-7dd82ff659a5: 'Naam ' # Naam 
-    2ac35130-5421-4b13-98e9-916fc6c5c9c3: Beschrijving # Beschrijving
-    2b4d5b23-5cfd-4185-be9c-154c713e85eb: 'Team kaart afbeelding' # Team kaart afbeelding
-    2b4f1288-b893-4599-82b2-002598749128: Input # Input
-    3cbaf529-18c6-4a27-82d7-a0ef6f1d3938: 'Doelgroep iconen' # Doelgroep iconen
-    4fa55fe2-6dbc-4e03-aeaf-2e4acd4e5449: Startpagina # Startpagina
-    5a0272a2-a83f-43d1-86e3-fb010fb4ba44: Contacgegevens # Contacgegevens
-    5a50b43e-57ff-451d-99a9-6e517f9d600d: 'Over ons' # Over ons
-    5b410140-67c8-4b65-ae0b-48bebbc086dc: 'Doelgroep titel' # Doelgroep titel
-    5be4ab95-7c42-4fb8-bc49-4bceedd6d67f: 'Onze werking' # Onze werking
-    6a420a10-28d4-4dba-b528-4c89aed4b1fd: Tekstblokken # Tekstblokken
-    7a96cd15-7a33-4486-82aa-366dadcdb453: Titel # Titel
-    7fb1be39-cc20-49d5-8628-889003e31f09: fr # fr
-    8ed8301b-b5f3-4303-9fbf-a86e97b1fd96: 'Contact item' # Contact item
-    9ae3759e-7da8-4b2e-8d7f-b9f2c711a63f: Afbeelding # Afbeelding
-    9d52999e-de87-4d20-9e95-0b9a1a6d0419: Contact # Contact
-    9db55e63-6fb1-4978-9ce9-0b954be6a91e: 'Banner afbeeldingen' # Banner afbeeldingen
-    9f73862a-148a-43ae-ad8a-65566b027b1b: 'Call to action' # Call to action
-    19f7c926-e6fc-475c-980b-5264046aad25: 'Fit content' # Fit content
-    28a02e15-0fc5-4cb5-9f7d-ebaea34f6d6e: 'Contact SVG' # Contact SVG
-    33b9a6a8-f771-4a59-a8d6-4800dc41bc2d: nl # nl
-    39aadce1-b28b-45e1-b7e0-fdfa779db19f: 'PDF ' # PDF 
-    41a4deb1-ce7b-42cc-a18b-2ea7670366bd: Doelgroepen # Doelgroepen
-    47eda180-ddfb-4d66-9090-e099fb3d20a5: 'Titel tekstblok' # Titel tekstblok
-    49a4daa7-0854-420d-85f6-f5b9c29a4d4d: Banners # Banners
-    68c5663c-8e35-4546-b22e-538ea6e4126a: Contact # Contact
-    69c0f99c-d481-455c-8c59-d622830a42b4: Titel # Titel
-    70c26e79-449f-49da-bb2a-754c3a723577: 'Link Text' # Link Text
-    72e1523f-113e-4c29-88d0-43ce06edda37: 'Illustratie doelgroep' # Illustratie doelgroep
-    81edb2ab-72b4-4733-9165-593cf2e5f8d5: 'Team kaart titel' # Team kaart titel
-    95eab332-7029-4034-8a53-0221d3f797ca: 'Link / PDF blokken' # Link / PDF blokken
-    98bd0220-c31e-42e0-9a98-caaf67e2280e: New # New
-    181df45b-ef1d-4bea-96f6-1655f875539c: 'Revalidatiecentrum DAT' # Revalidatiecentrum DAT
-    298e299b-a244-47dd-8420-45bf6e1c3f4e: Doelgroepen # Doelgroepen
-    510eb9fd-46de-4aa4-8f10-4282c0fb4de8: Inhoud # Inhoud
-    515fb477-dae9-4b04-9de1-f31c7e0eac68: Telefoonnummer # Telefoonnummer
-    547c5c72-db99-4202-909e-a48dabcf05c9: 'Titel van de doelgroep' # Titel van de doelgroep
-    567b0b6c-df99-4b13-88c8-b798c1f3210a: 'Contact Form' # Contact Form
-    841a9dc9-2449-48a3-b2c5-e56ef71507b9: 'Call to actions' # Call to actions
-    853bf7f2-69d8-463d-b8de-b209214299f3: Team # Team
-    923e90c0-ecae-4bbc-97eb-6cc3136a8cd1: Intro # Intro
-    997fe667-1226-4516-9cfc-511327ca0b6b: 'contact img' # contact img
-    1949f3e2-18c5-4b9b-9f1a-eef1b436c2c0: 'Url webpagina' # Url webpagina
-    5487f591-93a8-4829-ba8b-db935950e0b8: 'Beschrijving doelgroep' # Beschrijving doelgroep
-    6766d5b5-1a22-4dfd-b26e-7162755da5ad: 'Contact info' # Contact info
-    9438f96a-57ec-49c4-a710-41848548afb5: 'Google Maps Link' # Google Maps Link
-    073500d7-f6ec-444e-8f0a-650eaa803cb0: 'Titel | Tekstblok' # Titel | Tekstblok
-    187580b7-6dbe-4d63-ab88-5288f10e41aa: 'Handige links' # Handige links
-    427575e1-082a-4c07-92a1-4c984047fec7: Linken # Linken
-    638581e2-7f91-40de-97d3-d2665b6b8c38: Tekstblok # Tekstblok
-    86512894-9905-4140-9023-372e12c4aad4: Afbeelding # Afbeelding
-    a0184370-60c2-4d56-8b47-e0d90ca2c218: Beschrijving # Beschrijving
-    a048077c-8fef-4fcc-937f-d8e187498361: Andere # Andere
-    a2bb7dcc-7e37-49a2-895e-dcdca4b3aaf7: 'Link destination' # Link destination
-    a8fb3d5a-1a38-471a-9f47-e40a2bf14f84: 'Default HTML styling' # Default HTML styling
-    a29019e4-2a19-4028-98c9-ffe999e1475b: Afbeelding # Afbeelding
-    aac07f29-d0c9-4351-a711-7741945a7395: 'Doelgroep icoon' # Doelgroep icoon
-    ab3e3d3a-debc-42ca-a231-3766789addd3: Titel # Titel
-    aea891e5-7577-41f6-a827-258037235a16: 'Default HTML styling' # Default HTML styling
-    b17c7155-e166-4b9b-b39a-d66e80e2d676: 'Praktische info' # Praktische info
-    b87f3585-f683-47d2-a221-4457003d89f8: 'Titel | Tekstblok | Afbeelding' # Titel | Tekstblok | Afbeelding
-    bc974703-8192-42fb-9f24-3f56f6958745: Functie # Functie
-    bf8d4172-3ceb-47bb-aa1d-06b197a49271: Afbeelding # Afbeelding
-    c1db4b54-abb0-4a79-8f05-18c5415e18e8: 'contact item' # contact item
-    c945c5c3-b55d-4610-8948-0cc8b1d5270e: Globals # Globals
-    c30035de-f5ed-4cd6-92bd-7202cd70701a: Locatie # Locatie
-    c99427ed-f87a-4d16-9741-f3fbd1a2e52b: Default # Default
-    ca30bd80-b927-493c-8958-8571f1b0ff32: Locatie # Locatie
-    d174afc5-3904-4376-9998-5e5e9336b2a5: Default # Default
-    d385d78b-b2fe-477f-b2eb-279e466ef378: 'Straat + nr.' # Straat + nr.
-    d440d838-7983-4b94-9031-bceaefab9e40: 'Team beschrijving' # Team beschrijving
-    d907c00f-80e2-4d7d-b2f4-4eb61308725a: 'Onze werking' # Onze werking
-    d1378945-b9f4-4011-915c-e914fa20f818: 'Werken bij d.a.t.' # Werken bij d.a.t.
-    d6893358-6209-49d3-aacd-4c70217b3636: Instagram # Instagram
-    dcb19511-1b00-4a66-a5e6-9fea7c13005d: 'Call to action(s)' # Call to action(s)
-    e38d253f-b5c1-457e-925f-2670c4704eb1: en # en
-    e56ad2b8-f25f-47c4-885d-b4a6486b90f0: Stad # Stad
-    e9085f02-1b94-4e21-a749-2d0e683c6d8b: Link # Link
-    e12094c8-d18a-4e6b-89e0-d868b63c5beb: 'Postcode + stad' # Postcode + stad
-    ef5be5d2-26f8-49c9-910d-88ba30b4c23e: Contactgegevens # Contactgegevens
-    ef8fb09d-1627-4aaf-a326-1f27189b0af6: Default # Default
-    f4db53ff-699c-4582-a55a-81a07d41b5c4: 'Titel Tekstblok Afbeelding' # Titel Tekstblok Afbeelding
-    f74e73bd-247e-43e6-b566-30d0f698f697: Startpagina # Startpagina
-    f210fb24-5901-441c-84d9-b4ba967d398d: Afbeelding # Afbeelding
-    f8000b6f-9ca9-4500-9986-37c1b9507a61: Functie # Functie
-    fcc0c23e-426f-424c-ba1d-a6d7def9e859: 'Pagina Intro' # Pagina Intro
-    fd161842-f0ba-4d20-8d61-2225c5ff20c1: 'Contactinfo iconen' # Contactinfo iconen
-    fdb9bfff-e48f-424c-b268-d852e14a76ff: Sponsors # Sponsors
-    fe6e5ae7-1535-49f3-ba12-588b4fc92e39: PDF # PDF
-    fee593e7-c65b-45c3-9d81-a9c4a1863566: Footer # Footer
+    0ae41f7b-646b-4f66-8dad-e8411d392412: Contactgegevens # Contactgegevens
+    0b28fe61-b8ff-46fb-9552-da9db3a1722c: Tooltip # Tooltip
+    0b9892a1-1456-4b6b-a99b-8265c5d19c49: 'Call to action' # Call to action
+    0bc3f94f-a78e-4766-8414-ee28e27bdf2d: 'Call to actions' # Call to actions
+    0bd428e6-882a-4f74-9ab0-a015b9bc7dcd: 'Call to action(s)' # Call to action(s)
+    0bf2d621-1789-4183-9e12-7fe55f304971: 'Call to action' # Call to action
+    0c954491-d495-4824-8545-4f3063c0e534: Tekst # Tekst
+    0dfc3f14-37fe-48f5-84a6-3b92988c434c: Titel # Titel
+    0e4ae926-c3a7-463d-b0ad-5886315929bf: Instagram # Instagram
+    0e5ab63a-4f5f-4141-bcc5-071c00c237e0: Icon # Icon
+    00fa83bf-1026-4f45-aa5d-0402a15297fb: Achtergrondkleur # Achtergrondkleur
+    1c312155-420e-4220-b303-c671c5b60f13: 'Stad / gemeente' # Stad / gemeente
+    01cf9287-508e-4cfb-8caf-7a1508c9a2ee: Default # Default
+    1d99a261-a3a2-4cce-9c54-64636821e700: 'Positie afbeelding' # Positie afbeelding
+    1d31113b-733f-415b-a079-22b9d4014a76: 'Algemene titel' # Algemene titel
+    1db46db5-98ed-41ad-9898-c891a6a73634: 'Call to action' # Call to action
+    1dd6c46e-ee08-43a4-a8bd-6f0211e9a024: USP # USP
+    1df83239-cc75-45db-aec3-020c6fe51be5: 'Call to action(s)' # Call to action(s)
+    1f0f182c-7d24-48fb-b7f2-3bec16e61cd4: 'Lijst item' # Lijst item
+    1f5be208-5f20-4f1d-995a-1ac03cf9823b: Default # Default
+    01f319e1-895d-4972-bcb3-09fc3d905c1b: Tekst # Tekst
+    2a54d133-f872-4d21-9dbf-53d17cf36ff6: 'Werking overzichtskaarten' # Werking overzichtskaarten
+    2a2798e0-96da-48f0-8ae9-096674571c6d: 'Accent positite' # Accent positite
+    2a7635da-9798-4a72-9262-84d14e66931f: 'Call to action(s)' # Call to action(s)
+    2b98ef8f-2b83-48a2-96b0-e987c2bff979: Titel # Titel
+    2ba01606-3cdb-4961-b59c-f639c3b302e5: Tekst # Tekst
+    2bd20d53-41e3-453e-a892-fa01c49844db: Titel # Titel
+    2be6bf47-7c6c-4ebc-881c-909b038383a2: 'Call to action' # Call to action
+    2c0fc37e-3759-4e18-b6eb-4c465d5d1ba0: 'Social Media' # Social Media
+    2c4c6973-1e83-4cf3-8a52-d38f823dfff3: 'Blog Overzicht' # Blog Overzicht
+    2c52ece1-d061-4a11-a044-57da62f1528e: Contentbuilder # Contentbuilder
+    2cddb03f-964f-4f5b-8848-5bd8c50cf4e5: Titel # Titel
+    2d795ed1-6b8b-4498-a42b-1ffbb589fe86: Text # Text
+    2dde28c0-8dc3-4953-abe8-74dced720b33: Klanten # Klanten
+    2e35a0ff-5562-40cd-aed4-94f769c908fd: Afbeelding # Afbeelding
+    2e347f7c-204d-4a1d-8ce2-8440ee9627bf: Overview # Overview
+    2ed0506e-2d1d-4f21-a387-92dcc5cf64f7: 'Overview Afbeelding' # Overview Afbeelding
+    2eed17ff-70ab-4734-b78f-f3b5b91af035: 'Vacatures Overzicht' # Vacatures Overzicht
+    2f4961f0-eef2-4c30-b286-f7f3337ebc15: Afbeeldingen # Afbeeldingen
+    2fd3f5ca-2633-4a3b-b40b-e7f3d8ea2c2d: Gallery # Gallery
+    2ff59dd4-51db-4003-b745-1540e397b55f: 'Team overzicht' # Team overzicht
+    3aef0870-e313-4198-bf50-16cda443aa22: Subtekst # Subtekst
+    3cc91ca4-2d96-426a-bb90-fc52622494da: 'Call to action(s)' # Call to action(s)
+    3cd4a533-64b9-4638-8732-64be1729b809: Tekst # Tekst
+    3e56d1c3-9586-4792-9ce9-47fcf80a065c: Accentpositite # Accentpositite
+    4a86c3de-0f29-486a-88ca-d857f405ebe5: 'Blog 2x' # Blog 2x
+    4bb8ab8c-f5d9-47ec-824a-143cf96a88a9: optimizedCases # optimizedCases
+    4bfb1995-fcdf-478e-9592-c0efd22605cc: 'Tekst - 2 kolommen' # Tekst - 2 kolommen
+    4c53f29b-4668-4a2f-a447-5997e10f6a9a: 'Doelgroepen overzicht' # Doelgroepen overzicht
+    4da7930a-8ed4-4cd1-9d7d-6664842075dc: Titel # Titel
+    4dabc4d6-7c92-4564-96d1-353c8bcdd8c5: Achtergrondkleur # Achtergrondkleur
+    4e18d419-eb43-4cd2-8bbc-4506bd22e89b: Tekst # Tekst
+    4f32ed74-15d4-4af8-b76d-225bed74fc38: Titel # Titel
+    4f7309dc-2fea-46ab-9a22-d6e095e22bc3: Telefoonnummer # Telefoonnummer
+    5ab57172-1d5d-4021-b86f-1fccbb30bd31: Afbeelding # Afbeelding
+    5c61fe00-5302-4c1d-a804-99ec01932e2a: Link # Link
+    5d4bab41-4481-4ca1-9a66-6707d059117d: 'Call to action' # Call to action
+    5e7d61a3-f9e7-43eb-b0e9-abdb777ffe0c: 'Logo''s' # Logo's
+    5e9897d4-a4bb-4a02-9c5e-9f16e26cf9e3: Achtergrondkleur # Achtergrondkleur
+    5f77ef4c-6f5b-44a6-a22f-fd97cb90e607: E-mailadres # E-mailadres
+    5f238af3-d60a-4489-8334-377131dec325: Titel # Titel
+    6a3d2c09-957d-4e21-9e65-98c873967b27: Tekst # Tekst
+    6a544243-220a-48df-91bb-13e70511fcf4: Achtergrondkleur # Achtergrondkleur
+    6a576752-824e-4ac2-8202-d8eb22eb26cb: Achtergrondkleur # Achtergrondkleur
+    6c51b634-2f00-41ad-ac97-93b691cc5eaa: Titel # Titel
+    6e749848-f0d2-4915-ab0d-c0e3dd5a077f: Achtergrondkleur # Achtergrondkleur
+    6ff6ad71-f1fb-4ae6-bb19-0d0f9e460c5e: 'Call to action' # Call to action
+    7b18c60a-5858-4538-a7c5-5f09b3e7b4b5: Achtergrondkleur # Achtergrondkleur
+    7bf666ab-f1aa-443d-ba81-0ec00e3f5a42: 'Optimized Images' # Optimized Images
+    7df27cc9-e98e-4f22-8a21-6398b08ddada: Titel # Titel
+    7ef3951c-2209-42d7-8ece-10077019d52c: Werking # Werking
+    7f22b33c-9550-4501-9895-e236b5d47451: 'Call to action kolom 1' # Call to action kolom 1
+    7f84ec17-6b6d-4ff2-8c4f-6ddc1985b47b: Accentkleur # Accentkleur
+    7f2445d8-5c3c-45e3-b37f-12a267620d10: Auteur # Auteur
+    7f378989-98b8-4ed9-8ce9-d9896c2b5095: Review # Review
+    8ab1bf7f-df17-40d6-8f26-d3649c67d263: Subtekst # Subtekst
+    8ae04f87-c29b-40d5-aa85-7eda669ccf72: Titel # Titel
+    8b3b3586-9325-4ed6-a052-612e6a0fd2d1: Titel # Titel
+    8b253743-df16-4b9b-bc0f-1dd56e117bf1: URL # URL
+    8bd3fb7c-3911-4b8d-b205-d5b933b76a26: Afbeelding # Afbeelding
+    8c01d1c2-8821-4418-b0e5-b145a9ba257e: 'Call to action kolom 2' # Call to action kolom 2
+    8c8dd039-5df7-4046-99d3-6079c2ada90d: 'Blog mobile' # Blog mobile
+    8d5a9c57-28fe-4acd-9a1d-e37eb3a7f255: Titel # Titel
+    8d702bef-cdc3-479a-9c2c-4246efa5b06f: Default # Default
+    8e05b5f2-ab8e-453f-9802-d6d60b9c8bfd: 'Lijst item' # Lijst item
+    8f4b8ab4-1586-4f7b-81cc-82622a8896f5: Tekst # Tekst
+    9b404d49-9a94-4e2d-81e9-208900b5683b: 'Square 2x' # Square 2x
+    9c89dafd-c6e2-4e5c-af96-88ad7429f249: 'Hero titel' # Hero titel
+    9cf8e425-ba2c-4e07-bbf6-19c9c30848a6: 'Team overzicht' # Team overzicht
+    9f6582c3-a1aa-4a2d-a2bc-68ee734b52f4: 'Positie blok' # Positie blok
+    10cc59f9-47ac-4a98-886a-cb99d422ef8b: Text # Text
+    12c1fa8c-6614-42a0-8180-099359d30f9d: 'Voornaam & naam' # Voornaam & naam
+    13cae2b0-148c-470a-88c4-57e9f18b9d4f: Tekst # Tekst
+    14a42652-f63e-494f-ad29-38b546949a5a: Title # Title
+    14ff9459-9619-4a01-9cbb-c9614a846858: 'Pagina''s' # Pagina's
+    17b45978-7dbb-4e1a-b576-dbd15ff1f1ae: Blog # Blog
+    17f2c241-d81e-49da-a2fe-c950b435263b: 'Call to action' # Call to action
+    018de1e4-5ad3-46fd-bf67-142fbfb1eba6: Tekst # Tekst
+    19ec4d83-4c68-4d8b-a474-560ce4e0ab8f: 'Pagina niet gevonden' # Pagina niet gevonden
+    23d97382-167a-45f0-9231-6deb0063c973: 'Positie blok' # Positie blok
+    23da96ec-87dd-4fb5-abd0-a72bbc7144b8: Contact # Contact
+    26d7c8ca-8b3a-40f4-bfdc-c65d35681126: Achtergrondkleur # Achtergrondkleur
+    028dd3cf-5c1a-4b3d-b705-0cf184bf4216: 'Contact Form' # Contact Form
+    29dd7045-35b9-4978-b364-666efc6bb245: Titel # Titel
+    33f95781-cb5d-4693-85be-d72d9eb4e42b: 'Positie blok' # Positie blok
+    34f3b8c1-8699-4ca7-a398-e300dd1b28ae: Facebook # Facebook
+    35bdf9d0-c610-4e31-a9d6-561f8c76c589: Titel # Titel
+    38b877a9-6a46-4793-bb04-90e94b6c874c: Homepage # Homepage
+    38cd09e6-eb73-485e-ad7c-4386d438e44e: Titel # Titel
+    38dbafcc-4a93-443f-a8c8-5e2999a788f9: 'Dat vzw' # Dat vzw
+    039bc5b4-bcea-4656-8cb0-56e5bfe0167f: Profile # Profile
+    41db35dc-7055-475f-b15e-761d456030c4: Achtergrondkleur # Achtergrondkleur
+    42e6baac-94ef-4a47-b1fd-c5031c4df88c: Privacybeleid # Privacybeleid
+    44b87e8d-7e0d-47e4-95df-668e8186eb94: 'Tekst kolom 1' # Tekst kolom 1
+    47a73520-8ab9-4ee0-99a6-74ac81658a6f: 'Alpine Digital' # Alpine Digital
+    047fcf0a-9373-4e78-9a1f-1ef31f93ae65: 'Cases Landscape 2x' # Cases Landscape 2x
+    49a2c2ee-fadf-4f20-83e1-b6f2513721d1: 'Call to action(s)' # Call to action(s)
+    49b2e501-f490-423e-bf75-44effe76308b: Achtergrondkleur # Achtergrondkleur
+    50e251cc-bb40-433b-90eb-e44e5e7ae24c: 'Cases Square' # Cases Square
+    51e8d0b6-683b-4ed7-a7a2-31f0ac53c7d7: Tekst # Tekst
+    56b0bbba-5b0e-4f12-85db-b2de93f0afe5: Rating # Rating
+    56fe041a-0cc2-488c-b7be-169fb059aa65: 'Tekst kolom 2' # Tekst kolom 2
+    61c9a6de-5d8b-4320-8c7d-815e136241fd: 'Call to action(s)' # Call to action(s)
+    61cff0c6-669e-4f57-9e5d-cf5c52559f59: 'Call to action' # Call to action
+    64f61dee-7ced-4882-a61b-aa82659a7134: Blogs # Blogs
+    65b2bb5a-5270-45fc-a215-72c888b19334: Bestanden # Bestanden
+    67be4005-b630-442c-afc2-4e1ffabf00c6: Auteur # Auteur
+    70d06fd1-395f-4a88-a258-828d9cf416c5: 'Team 2x' # Team 2x
+    70ef8094-25bb-420d-b6b7-2b1dce499710: Afbeelding # Afbeelding
+    72cdfb0c-58f9-4c05-8fff-fcc14fee38db: Afbeeldingen # Afbeeldingen
+    74fff7e2-1518-4daa-bcd2-229e688b6876: New # New
+    75d27957-6dab-4ec7-b69e-e262a11b3432: Title # Title
+    80f52cb4-2874-4cb2-9d47-74480dfefd40: 'Icoon kleur' # Icoon kleur
+    80ff6c1f-a362-46a8-968e-075a260d17ce: Cookiebeleid # Cookiebeleid
+    81e00d23-ba23-41d7-a10d-17106882becb: 'Systeem offline' # Systeem offline
+    87c8a587-cb5d-4f38-a81d-1dda6adb8bcd: 'Call to action(s)' # Call to action(s)
+    91d89fcd-94b7-4e7b-8feb-4933ea20b0f6: Story # Story
+    94f7d5fd-632d-4b32-81c5-abeda71e18e7: Accentkleur # Accentkleur
+    95ffc05c-81e2-4bf2-831f-1fdfc0ded39d: Titel # Titel
+    98d56ee6-f6f2-40d3-8a7a-cd289e0b173a: Titel # Titel
+    119d9e24-9ebc-45be-aeff-eaa4cc0de83d: 'Hero Medium' # Hero Medium
+    148b8d62-a41b-46de-b88f-ebe75935728a: Vacatures # Vacatures
+    150b2333-cac2-449e-a87e-63ff5495292b: Titel # Titel
+    0237c026-6c5e-4d97-aebc-bfb500bb27b0: Klant # Klant
+    264d1ce4-2026-41ad-ba6f-e507cec68d14: 'Call to action(s)' # Call to action(s)
+    264df666-1c87-4c38-a49d-bb07a49ef171: Titel # Titel
+    281b3b71-a56c-4506-acea-15c94c1594f9: 'Call to action' # Call to action
+    308c24ad-414e-4b74-ac8b-22a384fbeefd: Default # Default
+    0319ee93-d257-4ce1-b710-9e4007401880: 'Call to actions' # Call to actions
+    391dcdbb-0a8d-4bd6-9449-e9e700717aa4: Doelgroepen # Doelgroepen
+    444c47d1-963d-48a1-9a07-58f96da02792: 'Straat + nr' # Straat + nr
+    490a2557-0b24-49c6-b6e2-8b7798e81fcf: 'Content Managers' # Content Managers
+    501f3d96-f29b-43ff-b392-abc0e4951179: 'Call to action(s)' # Call to action(s)
+    520bd42c-315b-4139-b2ac-ae086094063c: Tekst # Tekst
+    602eddbe-2cfe-4e05-aafb-45ce7180cef5: 'Core Image Mobile' # Core Image Mobile
+    654b032f-9eda-4e14-ac61-532b88bddf50: 'Tekst + afbeelding' # Tekst + afbeelding
+    656c3b06-27a5-4968-9b74-c08ab5b577c3: Achtergrondkleur # Achtergrondkleur
+    656d571e-89dc-4b2b-8930-aa003f6f9abe: 'Positie blok' # Positie blok
+    663f99ff-5cc3-4cae-a0f3-de58f9ebdd22: Achtergrondkleur # Achtergrondkleur
+    717adfb8-46e4-49fa-bad7-5857e5d0640e: Text # Text
+    727ef76c-071b-4fc2-8a16-2358a64f3b08: 'Call to actions' # Call to actions
+    740d0e8b-1e44-4ab1-88d3-b087e9a90fc8: Titel # Titel
+    753d678c-4018-409d-9dfa-5c4fdc2219b7: 'Dat vzw' # Dat vzw
+    766b4990-9219-40cd-a20f-3c461cc12f15: Formulier # Formulier
+    788f2e94-ef03-42fd-9ce3-4074eb1285f7: Achtergrondkleur # Achtergrondkleur
+    792ae990-64b1-4ad4-bfd1-4e3c7c94d68c: 'Vacatures Overzicht' # Vacatures Overzicht
+    825f91aa-6a2e-47cd-a8d0-465e1e49ce1b: Afbeelding # Afbeelding
+    836f5f07-1bfd-490d-bf1d-504e9457919b: Titel # Titel
+    845cec7b-b98e-4051-bbe3-b410026467ad: 'Call to action' # Call to action
+    0853d88c-017f-4722-8366-89f37ca22cc4: Titelblok # Titelblok
+    0870e0d6-f1b0-45fc-824e-4865786aef5e: Titel # Titel
+    00902a84-6c99-4c98-97db-207d7ed13b5c: 'Toon datum' # Toon datum
+    903d7b8b-65d6-4892-a8e2-9ef746302b70: 'Rechterkant oplijsting' # Rechterkant oplijsting
+    925e416f-5b2f-42fe-b649-d0707614bb65: Titel # Titel
+    927de2fe-31f0-4d12-b959-1c7576c441e1: Sponsors # Sponsors
+    977cf93f-09dc-45b2-94ba-5338b530129a: 'Kleur opsommingsteken' # Kleur opsommingsteken
+    999ce72a-2cc4-404c-807b-d46b38192ea5: Cookiebeleid # Cookiebeleid
+    1133b591-c7ba-46d9-9163-63d669194c64: 'Full width Medium' # Full width Medium
+    1374d4ab-2e7d-4f99-9c8f-d72598dc37a2: Achtergrondkleur # Achtergrondkleur
+    1403e213-65e8-4d2d-9cdf-8efb8565e861: Achtergrondkleur # Achtergrondkleur
+    1481e661-e9f2-4881-a5c2-b9da69d0b50e: Titel # Titel
+    1751ef71-82cf-4d2a-8902-ec08d2a5d109: Achtergrondkleur # Achtergrondkleur
+    01872df7-214d-4fba-aab3-e560acce495d: Tekst # Tekst
+    02178a68-24ac-425d-b5d0-276c18aa7d96: Titel # Titel
+    2773ac31-9a83-49f3-b9bb-9d812e2f38b7: 'USP 2x ' # USP 2x 
+    3447f0a1-19cf-4eb7-ab91-7ab3d9de036a: Achtergrondkleur # Achtergrondkleur
+    3540f360-b267-47da-a331-44471ce0be24: Achtergrondkleur # Achtergrondkleur
+    3993aa71-b649-4685-9711-bc339c22cb38: Afbeelding # Afbeelding
+    4661a1fc-ab07-482f-86b5-5e3bd2de38a2: Title # Title
+    5544f019-4d5a-4198-8793-06e57ac5717d: Tekst # Tekst
+    5742e5e7-6ba7-4e37-8b85-018b27a80af8: Link # Link
+    5961a9ca-0b69-4556-927b-52949d9ad945: Titel # Titel
+    6186bcae-b905-4241-8773-145ccc3ba4f3: Achtergrondkleur # Achtergrondkleur
+    6299fda1-63f3-4b0a-aa5b-4929820c6cb1: 'Positie blok' # Positie blok
+    6596d67f-6832-4fda-a085-b8f101f7de00: 'Lijst item' # Lijst item
+    7013bea2-586f-4295-b3c8-450a5c9beaee: Achtergrondkleur # Achtergrondkleur
+    8090f263-16ac-4908-be2d-b035947d9d1c: Titel # Titel
+    8837eba6-e9b4-4bad-aa47-f7de47fc0159: Main # Main
+    21814dc3-cb0a-40bd-8680-6d8ee9aafd33: SEO # SEO
+    26538bf4-0f5c-4a7f-9709-9a39a89c4131: Titel # Titel
+    27319bd0-813c-4fb8-9fd5-780de3805188: Afbeelding(en) # Afbeelding(en)
+    36442fc9-0285-4168-8ac5-c78a0d43bc38: Tekst # Tekst
+    41486e80-8cfb-4167-ab71-3939dc65b270: Doelgroepen # Doelgroepen
+    41496f2b-5f7f-49dd-95bd-031b17a06cb5: Achtergrondkleur # Achtergrondkleur
+    42753f56-881c-4d30-82a4-7062d713de9b: Contentbuilder # Contentbuilder
+    50658b5a-cfb7-48de-90a3-073c4f965f6e: Gallery # Gallery
+    62983d63-8208-49e1-a942-7aceb9c8a130: Tekst # Tekst
+    63259fdf-d915-4117-9045-ac3cdd3f30f3: 'Video via URL' # Video via URL
+    67058d8b-b679-4c50-96fc-9e21366eea0c: 'Overview Omschrijving' # Overview Omschrijving
+    71121d32-13d9-4173-b4d5-cb96fb596e4d: Intro # Intro
+    71658ee7-ef4b-4a3d-8ff5-14ea5e6f16fc: 'Straat + nr' # Straat + nr
+    0072234d-8594-45ed-9e22-e546bc27c192: Titel # Titel
+    080925f5-ca32-44e0-a20f-b42937f6baf8: Titel # Titel
+    83620c18-14d3-4f51-add6-eb55681b1559: 'Fallback afbeelding' # Fallback afbeelding
+    87757b92-04cd-4915-971d-e0d100fccb17: 'SEO instellingen' # SEO instellingen
+    88490f65-d10d-4df0-b13e-98cbcbda3135: 'Pagina niet gevonden' # Pagina niet gevonden
+    96896eaf-ae5d-4d1b-b134-2ad54e9f8bd4: 'Call to action' # Call to action
+    99603efa-2602-40ce-9bd8-058d114c1498: Afbeelding # Afbeelding
+    137740dd-9b0d-473e-9dc5-fa52bf444a86: Titel # Titel
+    170788ec-ca0b-42cf-9085-390a7b51f543: Functie # Functie
+    285900f1-341b-47ec-bbf4-183526d578aa: Afbeelding # Afbeelding
+    326302a7-5ca8-46e5-9bd6-2481961ba4b2: Dribbble # Dribbble
+    334588f9-968d-473e-b9fb-785220423cc9: Entries # Entries
+    357292e0-52f5-40ba-81dd-22fadf6c1399: Tekst # Tekst
+    475815db-85bc-422a-81fb-536ca60a801d: 'Call to action(s)' # Call to action(s)
+    479772fc-ec76-4a70-96bf-3fceb67cc65a: 'Logo 2x' # Logo 2x
+    540766f2-cd4c-4b87-980c-d1449f2e1601: 'Call to action' # Call to action
+    586691f7-c9f3-43ba-b584-7e3a910ea3a8: Blogs # Blogs
+    687734ce-6a13-4085-bfd6-2f73e12ec02b: Contactgegevens # Contactgegevens
+    760029b7-3912-4de7-935d-6ab67f22ae8a: 'Call to action' # Call to action
+    874309e7-eddc-4f4e-b7d3-c9ab131c4a04: 'Optimized Images' # Optimized Images
+    877440ea-915c-43b1-9d9b-b55f629c2075: Contact # Contact
+    3043947b-8b38-4325-aefc-dfb65b4a7f10: Titel # Titel
+    3327264f-5bb0-4ed1-8acd-6882cbcb4ca8: Titel # Titel
+    4222272a-7023-4002-9729-41737c0aac17: 'USP''s' # USP's
+    5060792f-0eb2-42b7-b835-cd32e5902136: overview # overview
+    08527269-6401-4ff6-937b-938dbecc53a5: Achtergrondkleur # Achtergrondkleur
+    9445878d-b337-433b-b7e1-a0a30c039120: Overview # Overview
+    09864143-d9db-4a6f-b03d-731ce3aa9b3b: Titel # Titel
+    19693417-0406-48e6-929a-cb6f0a4a5f9e: 'Call to action(s)' # Call to action(s)
+    23062530-9e42-448e-ae36-57406bd5899f: 'Call to action(s)' # Call to action(s)
+    38112319-6d36-47c8-9e42-0fd894abdc84: Title # Title
+    44010198-8517-4cd1-a816-5ca11c0f67c9: Lijst # Lijst
+    49811070-72ae-4f54-9647-de515b8389d3: 'Call to action' # Call to action
+    67570986-56e5-4ab7-811f-affc46240744: 'Positie blok' # Positie blok
+    94594033-0ed8-4fcc-bce2-c1bfe90b0507: Gemeente # Gemeente
+    97045692-3725-43a8-a480-2c8a3f31327d: Achtergrondkleur # Achtergrondkleur
+    99353161-d95b-4cf5-a3a2-69edf88d7f44: LinkedIn # LinkedIn
+    a0d6f1b0-18c0-4e7c-a61e-e3cdf4ce67a3: Titel # Titel
+    a0fc3167-bf08-4232-b1d3-dd5e46f9c6a0: Reviews # Reviews
+    a8a94f3d-52e9-4008-a3d0-0ed0d21b481f: Achtergrondkleur # Achtergrondkleur
+    a9f7a832-befb-4077-8a4c-6505aaba2246: 'Full width Large' # Full width Large
+    a12c8282-8e4b-4e7e-aa2f-f288232d2219: Hero # Hero
+    a23c097e-fea2-479e-8d86-3e986c99ad54: 'Call to action(s)' # Call to action(s)
+    a23ff9f1-8080-478b-ac20-7f87e1dd10f5: Titel # Titel
+    a165d2b3-7b02-43c0-9da8-44c15a562a54: Default # Default
+    a8615f7c-b483-44b5-9990-09b42467d45a: Services # Services
+    a76993e8-d62a-4f63-a485-39559aff2c9e: Video # Video
+    a6099548-65b6-4fce-ab2d-dc36fb57ab0c: Vacatures # Vacatures
+    aacc7dc0-85c2-42cb-8882-cbd5c6c48b0a: Titel # Titel
+    ab920652-286b-470c-bdfe-54a6e02c5087: 'Call to action(s)' # Call to action(s)
+    ac475d5a-5297-41b8-9d55-bdd129c2a36e: Achtergrondkleur # Achtergrondkleur
+    acfd4b64-9464-4b98-846d-d3f654e1f8bd: Tekst # Tekst
+    ad26703b-0104-4d34-ac5a-599a50a4dcad: Tekst # Tekst
+    adc4b168-e68b-4646-8d85-013e801307c6: Tekst # Tekst
+    aed6bb85-cab3-4718-9fa4-e2dabf3d3c19: Testing # Testing
+    b0068c71-d862-4ad1-9662-f98325faf90a: Disciplines # Disciplines
+    b1a9971a-4df6-46ad-8dba-1513ad6d5602: Afbeelding # Afbeelding
+    b3d2cdf2-0551-46a2-93fc-67120faf715d: Tekst # Tekst
+    b4c3b008-a9d1-4050-a1f4-0510eb3493c2: 'Call to action' # Call to action
+    b20f857e-09d0-4491-90eb-0390b4efce0e: 'Call to action' # Call to action
+    b693e790-e464-467a-81a1-f62bb9914cb2: 'Hero afbeelding' # Hero afbeelding
+    b815ed0a-21e0-4ff0-b70a-42ae6b5d67ec: Tekst # Tekst
+    b5042dd9-234b-4fc1-b3fd-e04168caeea4: Werkingsonderdelen # Werkingsonderdelen
+    b7535a4a-9814-4405-b69d-925334f5e180: Formulier # Formulier
+    b34185ec-9049-4bbb-bfca-41bd211ba894: Telefoonnummer # Telefoonnummer
+    b427067e-c94a-4c52-8a70-353b7ddf14a8: YouTube # YouTube
+    b898461c-6989-449b-9795-e0f10eda6481: Achtergrondkleur # Achtergrondkleur
+    ba1c48c2-f027-4b2c-9381-6407f4fcc142: Cases # Cases
+    bb9df63c-becc-4fd6-99aa-77b937db6448: Tooltip # Tooltip
+    bb317d1b-5538-4863-a5c8-68fe6e33d992: 'Call to action(s)' # Call to action(s)
+    bbc386f3-3e0d-4d04-9ba8-b2ec05914aac: 'Services Mobile' # Services Mobile
+    bbd8ea04-bbbf-4435-880f-8ae6a7b40b42: 'Titel kolom 1' # Titel kolom 1
+    bc3d9732-d6d3-43ad-a322-78a779e655c8: Titel # Titel
+    be27bccd-bcee-480b-be2c-c5bd2ba6835a: Stack # Stack
+    bea7e199-da05-4754-bae9-f85e5cf04713: Default # Default
+    bed5a266-2220-47db-924c-a72bf4859d17: Titel # Titel
+    beef22db-d952-402c-8d81-2ad5d3efd4e0: Titel # Titel
+    bf63573b-3a46-45f9-8a05-fe1df00844a8: Tekst # Tekst
+    bfdf630a-a045-42c8-be16-3331fa495b6e: Tekst # Tekst
+    c0a4e21a-31a9-45c3-9047-f16c3be4a9d0: 'Optimized Blog Cases' # Optimized Blog Cases
+    c0c55c21-ba7d-4148-9741-cd6e5eadfa01: 'Kleur icon' # Kleur icon
+    c0d978b3-8b89-4fd2-9863-6a39a16212ab: Vacatures # Vacatures
+    c0545833-01ce-4796-ad5b-c71b7681f674: 'Call to action(s)' # Call to action(s)
+    c5aef007-46bc-4929-859e-975618d77ebe: 'Gallery Big' # Gallery Big
+    c6df9fe5-084d-496b-a95b-deaed4b8f903: Postcode # Postcode
+    c7dcb4ed-b459-4f5a-be99-58f6373e3624: 'Text image 2x' # Text image 2x
+    c7e33047-eed9-474f-b8e4-80a1945b1f57: 'Overview Titel' # Overview Titel
+    c9bc3639-409b-4e74-a585-8bebd1240b75: Achtergrondkleur # Achtergrondkleur
+    c21b1ead-1dd5-4baf-9631-5d85e05b1936: 'Call to action' # Call to action
+    c53d5712-ca90-48a4-9abb-c3137357eb02: 'Icoon klasse' # Icoon klasse
+    c86b4395-57d5-4eaa-86ac-95b29e83b055: 'Call to action(s)' # Call to action(s)
+    c603be04-a3c6-47e6-b056-c73d087abe76: 'Call to action' # Call to action
+    c72145dd-9962-410a-b01b-ad7ca7258478: Homepage # Homepage
+    cb0290a7-99ac-4c37-8100-624e9d441a8a: Achtergrondkleur # Achtergrondkleur
+    cc9be780-1445-4090-9b31-2c7fe893e319: Centra # Centra
+    cd012a5f-aa21-426a-8cd9-f998532ca2bb: 'Call to action' # Call to action
+    cdbcd49b-120d-44b0-8eb8-ec5dd64181b1: Achtergrondkleur # Achtergrondkleur
+    cf4e05cf-6017-46f9-8d70-31f3c1d227c4: Afbeelding # Afbeelding
+    cf143959-dd98-4560-a9b3-1b01c25de079: Titel # Titel
+    cfa95560-f5ff-4b13-9df5-7a2700380396: 'Uitlijning USP''s' # Uitlijning USP's
+    cfe31158-3eb9-45cd-9add-5d180d3be359: 'Call to action' # Call to action
+    d0d59fd4-a9a1-49b7-a593-98ff41d3e709: Afbeelding # Afbeelding
+    d0ec0352-a89f-439c-a399-46444bbd7c7c: 'Call to action' # Call to action
+    d2c542d7-adc8-4141-95c8-5afa035f56d1: 'Call to action(s)' # Call to action(s)
+    d7f39b5b-9e4a-4c3c-bd1e-1e1c78a0b7b4: 'Positie blok' # Positie blok
+    d18fe41f-2b90-4e7a-b98e-1be9c9350317: Tekst # Tekst
+    d81fc516-8630-47b8-98b9-662392bcc37f: Tooltip # Tooltip
+    d90f8731-b1ea-42c2-a273-c4c4ee6be002: 'Call to action(s)' # Call to action(s)
+    d791a274-27da-4bcb-bc20-dd381cec644b: 'Call to action' # Call to action
+    d28465fe-07ae-4bd4-aecf-79855ac24bad: Overviews # Overviews
+    da442341-126b-415e-a8d6-fe4945d1c650: Title # Title
+    db87c08e-7aa1-4adf-a5db-c8fd41241928: Privacybeleid # Privacybeleid
+    dc1dfa5b-1e24-4cb4-992c-05ac3f8fdc5b: Titel # Titel
+    dc7cb444-9d01-419e-89bf-e0019fe15ec2: Titel # Titel
+    de9903b9-4b06-4d9f-a8f4-13c8e30dfb07: Tekst # Tekst
+    defdf311-a20e-4586-9fd6-e5a6fbe2df2f: 'Systeem offline' # Systeem offline
+    df6e436d-d5c5-47c9-acc0-b106085f22da: Tekst # Tekst
+    dfdf807c-3b94-4a5d-97e0-6b426d765b64: Afbeelding # Afbeelding
+    e04d7a4d-b435-4bb5-bf07-68172f94b486: 'Tekst 2' # Tekst 2
+    e2a11a3f-4f5f-4bd8-ad4e-c42d8902f934: 'Core Image 2x' # Core Image 2x
+    e3c02d3d-143f-478a-950b-3adc502f5000: Achtergrondkleur # Achtergrondkleur
+    e3ceee77-db47-4f44-9e30-5de56d873402: 'Call to actions' # Call to actions
+    e3f3007e-c1e9-4163-b793-71c87306e2a7: Tekst # Tekst
+    e6b405a5-8fcb-4fa6-8936-5e4481390424: Website # Website
+    e8aee90c-bbbd-4082-928c-d34b7b58d3e0: 'Blog Overzicht' # Blog Overzicht
+    e55fe433-4cc3-489b-80f5-b581690087c2: 'Linkerkant oplijsting' # Linkerkant oplijsting
+    e206c2e2-53a4-45f9-abf7-f4a6d24723df: 'Call to action' # Call to action
+    e348a174-a527-47ca-b923-3320f41347b0: Titel # Titel
+    e500f71a-4761-4052-92c4-da721c26adc9: Titel # Titel
+    e574a654-e7b4-4388-87cc-76bc72db9a52: Icon # Icon
+    e782c6a6-d9c0-413a-8058-4f24bd7ff518: 'Werking Overzicht' # Werking Overzicht
+    e911b114-5949-4b35-91e3-b5c5c9078b13: Tekst # Tekst
+    ea9b868e-881e-4ef9-8d8b-3e5189fed2fa: 'Call to action' # Call to action
+    eadc270d-7e23-4fd1-b626-75f0f9f1cdc6: Tooltip # Tooltip
+    eb076b2d-5c78-45d5-ae21-0f126c7d1a0c: Tekst # Tekst
+    ec5fd790-7d5e-46d2-82fc-16a00dc148b6: 'Team Mobile' # Team Mobile
+    ec9b1ba7-3e37-4657-b712-ebb4de04b8b0: 'Cases Highlight 2x' # Cases Highlight 2x
+    ec85c351-04c7-45bd-9549-a7f3d351b8cc: 'Social Media' # Social Media
+    ec95e5c8-1fe5-4bc6-9260-99fe5abf9c40: 'Call to action' # Call to action
+    ee1ebc91-9b83-444d-b25c-50781591f0cb: Hero # Hero
+    ee71a197-2900-41c3-8ede-20b5bc467852: Common # Common
+    efc29b6e-acf4-4d4b-a2d1-c972820a8d9b: Titel # Titel
+    f5e15af2-fe3e-4847-94fa-a686f903887e: Datum # Datum
+    f8c794f7-0cb6-4bb2-be00-397157ca7149: Tekst # Tekst
+    f9efc066-b6f1-4beb-9668-1cec2d8de044: Profiles # Profiles
+    f45e22b0-5213-485f-bad1-a18b90979aea: E-mailadres # E-mailadres
+    f61e0f0a-b4c4-4934-9605-8f54da321230: Tooltip # Tooltip
+    f74fd121-7c41-410e-af32-8cae629363d2: Bedrijfsnaam # Bedrijfsnaam
+    f78fd832-93f8-489a-8c90-3a6f7ab9abbb: 'Optimized ratio 1/1' # Optimized ratio 1/1
+    f224cc2c-be98-4068-a538-f12d068731ce: TikTok # TikTok
+    f427e37c-b3e7-4649-827a-87333fb6ca73: Default # Default
+    f433d5a4-2df1-4c0d-b2fd-3c1c6d9856d2: 'Titel kolom 2' # Titel kolom 2
+    f486a64a-d48e-45a2-85ef-9a4a7fb112e2: Achtergrondkleur # Achtergrondkleur
+    f682d015-3ba9-461b-a676-9cc42d53c6da: Tekst # Tekst
+    f734a5c9-d947-4240-be5f-bcc01ecfb3b2: 'Uitlijning van features' # Uitlijning van features
+    f2778e9d-a7a9-459e-960b-d0247d40787c: Titel # Titel
+    f5888de9-f152-48e2-99b4-372002eb59ed: 'Blog items' # Blog items
+    f6810a60-4f12-43c9-803e-fcc3e2afc5c1: 'Call to action(s)' # Call to action(s)
+    fa1438fd-494e-45f8-8aa4-f7ee24f05745: 'Werking Overzicht' # Werking Overzicht
+    fbc70935-3e41-4885-9162-f35795897351: Reviews # Reviews
+    fbd0191b-5b18-4c77-81db-73ba0839a3c5: 'Titel centrum' # Titel centrum
+    fc4b61e2-a06f-4825-a27c-33eefb4f20aa: Artikels # Artikels
+    fc9d4621-af74-45b4-9ebf-3b64b090bb6f: Postcode # Postcode
+    fd3e6c44-b090-4050-acd1-f201d539bb8f: Tekst # Tekst
+    fd8d5d7e-6bfa-4439-bea4-a0170f232cb1: Titel # Titel
+    fd602255-6775-4011-83d9-56c0d56df171: Tekst # Tekst
+    fe3adc56-c49e-468c-a8d2-6033cc7846c5: 'Doelgroepen overzicht' # Doelgroepen overzicht
+    fe18180d-0999-46d7-97e2-72f709f6b278: 'Naam centrum' # Naam centrum
+    fe377313-3ae7-4bc5-aab0-31bebdce6e93: Centrum # Centrum
+    febeb8b1-cca6-436e-9e8e-2ed3a73f97cf: 'Call to action' # Call to action
+    ff11d0b7-af21-4d4c-be33-5e35e532f235: 'Icoon klasse' # Icoon klasse
 plugins:
   config-values-field:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  cookie-notice:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
@@ -263,6 +567,13 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
+  deepl:
+    edition: standard
+    enabled: false
+    schemaVersion: 1.0.0
+    settings:
+      apiKey: 'e2cd3dfa-aff6-229f-0700-ec62cca4c3fc:fx'
+      primarySiteTranslation: false
   dumper:
     edition: standard
     enabled: true
@@ -270,36 +581,309 @@ plugins:
   enupal-translate:
     edition: standard
     enabled: true
-    licenseKey: R72MHLXWORU7HLAQTPVQXYAW
+    licenseKey: MBKXT3WI4ECMTZ6CFF0O2KGW
     schemaVersion: 3.0.0
+    settings:
+      createPluginTranslationFolder: 0
+      displayPlugins: 1
+      enableFreeGoogleApi: ''
+      enableGoogleApi: ''
+      enableYandex: ''
+      googleApi: AIzaSyCMQ9FKzC9j6Xsre5ATbH3zz0DteqP9DDg
+      pluginNameOverride: Vertalingen
+      twigRegexMethod: enupal\translate\integrations\OptimizedTwigSearch
+      yandexApi: ''
   expanded-singles:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
+  feed-me:
+    edition: standard
+    enabled: false
+    schemaVersion: 5.1.0.0
   formie:
     edition: standard
     enabled: true
-    licenseKey: OY7WITURMFAEEXHA97Z7YLL9
-    schemaVersion: 2.0.8
+    licenseKey: HW968LUMOXV6UAT6T54CBCIV
+    schemaVersion: 2.0.10
+    settings:
+      ajaxTimeout: 10
+      alertEmails: null
+      captchas:
+        __assoc__:
+          -
+            - recaptcha
+            -
+              __assoc__:
+                -
+                  - type
+                  - verbb\formie\integrations\captchas\Recaptcha
+                -
+                  - enabled
+                  - '0'
+                -
+                  - saveSpam
+                  - true
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      -
+                        - handle
+                        - recaptcha
+                      -
+                        - type
+                        - v3
+                      -
+                        - size
+                        - normal
+                      -
+                        - theme
+                        - light
+                      -
+                        - badge
+                        - bottomright
+                      -
+                        - language
+                        - en
+                      -
+                        - minScore
+                        - 0.5
+                      -
+                        - scriptLoadingMethod
+                        - asyncDefer
+          -
+            - hcaptcha
+            -
+              __assoc__:
+                -
+                  - type
+                  - verbb\formie\integrations\captchas\Hcaptcha
+                -
+                  - enabled
+                  - '0'
+                -
+                  - saveSpam
+                  - true
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      -
+                        - handle
+                        - hcaptcha
+                      -
+                        - size
+                        - normal
+                      -
+                        - theme
+                        - light
+                      -
+                        - language
+                        - en
+                      -
+                        - minScore
+                        - 0.5
+                      -
+                        - scriptLoadingMethod
+                        - asyncDefer
+          -
+            - duplicate
+            -
+              __assoc__:
+                -
+                  - type
+                  - verbb\formie\integrations\captchas\Duplicate
+                -
+                  - enabled
+                  - '0'
+                -
+                  - saveSpam
+                  - true
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      -
+                        - handle
+                        - duplicate
+          -
+            - honeypot
+            -
+              __assoc__:
+                -
+                  - type
+                  - verbb\formie\integrations\captchas\Honeypot
+                -
+                  - enabled
+                  - '1'
+                -
+                  - saveSpam
+                  - true
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      -
+                        - handle
+                        - honeypot
+          -
+            - javascript
+            -
+              __assoc__:
+                -
+                  - type
+                  - verbb\formie\integrations\captchas\Javascript
+                -
+                  - enabled
+                  - '1'
+                -
+                  - saveSpam
+                  - true
+                -
+                  - settings
+                  -
+                    __assoc__:
+                      -
+                        - handle
+                        - javascript
+      defaultDateDisplayType: ''
+      defaultDateTime: null
+      defaultDateValueOption: ''
+      defaultEmailTemplate: ''
+      defaultFileUploadVolume: ''
+      defaultFormTemplate: ''
+      defaultInstructionsPosition: verbb\formie\positions\AboveInput
+      defaultLabelPosition: verbb\formie\positions\AboveInput
+      defaultPage: forms
+      disabledFields:
+        - verbb\formie\fields\formfields\Address
+        - verbb\formie\fields\formfields\Group
+        - verbb\formie\fields\formfields\Repeater
+        - verbb\formie\fields\formfields\Section
+        - verbb\formie\fields\formfields\Tags
+        - verbb\formie\fields\formfields\Users
+      emptyValuePlaceholder: 'No response.'
+      enableBackSubmission: true
+      enableCsrfValidationForGuests: true
+      enableLargeFieldStorage: false
+      enableUnloadWarning: true
+      includeDraftElementUsage: false
+      includeRevisionElementUsage: false
+      maxIncompleteSubmissionAge: 30
+      maxSentNotificationsAge: 30
+      pdfPaperOrientation: portrait
+      pdfPaperSize: letter
+      pluginName: Formulieren
+      queuePriority: null
+      saveSpam: true
+      sendEmailAlerts: false
+      sentNotifications: true
+      spamBehaviour: showSuccess
+      spamBehaviourMessage: ''
+      spamEmailNotifications: false
+      spamKeywords: ''
+      spamLimit: 500
+      useQueueForIntegrations: false
+      useQueueForNotifications: false
+  hyper:
+    edition: standard
+    enabled: true
+    licenseKey: HX8QZKV1J0Z67NIZLTUVLDV3
+    schemaVersion: 1.0.0
+  image-optimize:
+    edition: standard
+    enabled: true
+    licenseKey: BXC6VFZYBK98LOO3UVB2GLN9
+    schemaVersion: 1.0.0
+  matrixmate:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   navigate:
     edition: standard
     enabled: true
-    licenseKey: K97R7X3MUF7AZXXV5YBDAWSZ
+    licenseKey: 43INTLH5CLQM8TKMZ7G8VXNY
     schemaVersion: 2.4.0
+    settings:
+      allowWhenReadOnly: ''
+      anyoneCanAdd: ''
+      disableCaching: false
+      pluginLabel: Navigatie
+  position-fieldtype:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  postmark:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.1
   redactor:
     edition: standard
     enabled: true
     schemaVersion: 2.3.0
+  seomatic:
+    edition: standard
+    enabled: true
+    licenseKey: 2CP0AQ6EAFO1V3W7L3YM84JY
+    schemaVersion: 3.0.12
+    settings:
+      addHrefLang: true
+      addPaginatedHreflang: true
+      addXDefaultHrefLang: true
+      alwaysIncludeCanonicalUrls: false
+      cpTitlePrefix: '⚙ '
+      cspNonce: ''
+      cspScriptSrcPolicies:
+        -
+          __assoc__:
+            -
+              - policy
+              - '''self'''
+      devModeCpTitlePrefix: '&#x1f6a7;⚙ '
+      devModeTitlePrefix: '&#x1f6a7; '
+      displayAnalysisSidebar: true
+      displayPreviewSidebar: true
+      enableJsonLdEndpoint: false
+      enableMetaContainerEndpoint: false
+      enableSeoFileLinkEndpoint: false
+      environment: live
+      excludeNonCanonicalUrls: false
+      generatorEnabled: true
+      headersEnabled: true
+      includeHomepageInBreadcrumbs: true
+      lowercaseCanonicalUrl: true
+      manuallySetEnvironment: false
+      maxDescriptionLength: 155
+      maxTitleLength: 70
+      metaCacheDuration: 0
+      pluginName: 'SEO instellingen'
+      regenerateSitemapsAutomatically: true
+      renderEnabled: true
+      separatorChar: '|'
+      sidebarDisplayPreviewTypes:
+        - google
+        - twitter
+        - facebook
+      siteGroupsSeparate: true
+      siteUrlOverride: ''
+      sitemapsEnabled: true
+      socialMediaPreviewTarget: true
+      submitSitemaps: true
+      truncateDescriptionTags: true
+      truncateTitleTags: true
+  super-table:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0
+  video-parser:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
 system:
-  edition: pro
+  edition: solo
   live: true
-  name: 'Revalidatiecentrum DAT'
+  name: 'Centrum Ambulante Revalidatie'
   retryDuration: null
-  schemaVersion: 4.0.0.9
+  schemaVersion: 4.4.0.4
   timeZone: Europe/Brussels
-users:
-  allowPublicRegistration: false
-  defaultGroup: null
-  photoSubpath: null
-  photoVolumeUid: null
-  requireEmailVerification: true

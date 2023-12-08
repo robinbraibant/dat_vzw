@@ -1,0 +1,495 @@
+@use "../settings/global" as *;
+@use "../elements/type-headings" as *;
+@use "../components/button" as *;
+@use "../components/form" as *;
+@use "../tools/mq" as *;
+
+$form-height: $button-height;
+$form-padding-horizontal: $form-padding-horizontal;
+$form-border: 1px solid;
+$form-border-color: $color-subsidiary-lightest;
+$form-border-radius: $button-border-radius;
+$form-border-focus: 0.2rem solid $color-primary;
+$form-border-focus-outline: 0.2rem solid $color-secondary;
+$form-label-color: $color-text;
+$form-label-spacing: $vertical-spacing;
+
+$form-input-selectors: '[type="color"]', '[type="date"]', '[type="datetime"]', '[type="datetime-local"]',
+    '[type="email"]', '[type="month"]', '[type="number"]', '[type="password"]', '[type="search"]', '[type="tel"]',
+    '[type="text"]', '[type="time"]', '[type="url"]', '[type="week"]';
+
+.fui-i {
+    margin-top: $vertical-spacing;
+    width: 100%;
+
+    @include mq(lg) {
+        width: 66.6666666667%;
+    }
+
+    // padding: $spacing * 2;
+    // background-color: $color-primary-light;
+    // border-radius: $form-border-radius;
+
+    // @include mq(md) {
+    //     padding: $spacing * 3;
+    // }
+}
+
+// .fui-from {}
+
+// .fui-form-container {}
+
+.fui-page {
+    position: relative;
+
+    #{$form-input-selectors},
+    select,
+    textarea {
+        position: relative;
+        -webkit-appearance: none;
+        margin-bottom: 0;
+        padding: 0.2em $form-padding-horizontal;
+        width: 100%;
+        max-width: 100%;
+        height: $form-height;
+        vertical-align: middle;
+        font-weight: 400;
+        line-height: 1;
+        color: $color-text;
+
+        background-color: $white;
+        border: $form-border;
+        border-color: $form-border-color;
+        border-radius: $form-border-radius;
+        transition: border-color 0.1s ease-in, box-shadow 0.1s ease-in, outline 0.1s ease-in;
+
+        &:focus {
+            z-index: 1;
+            color: $color-text;
+            outline: $form-border-focus-outline;
+            border-color: $color-secondary;
+        }
+    }
+
+    [disabled] {
+        background-color: rgba($color-secondary-light, 0.6);
+        border-color: rgba($color-secondary-light, 0.6);
+    }
+
+    select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        padding-right: ($form-padding-horizontal * 2 + 1rem);
+        background-image: url("/assets/images/icons/select-caret-down.svg"); // select-caret-down.svg or select-angle-down.svg
+        background-position: right $form-padding-horizontal center;
+        background-repeat: no-repeat;
+        background-size: 1.2rem 2rem; // caret: 1rem 0.5rem - angle: 1rem 0.6rem - rem to scale
+        background-color: $white;
+        cursor: pointer;
+
+        &::-ms-expand {
+            display: none;
+        }
+    }
+
+    textarea {
+        padding-top: 0.5em;
+        min-height: 8em;
+        resize: vertical;
+        line-height: 1.3;
+    }
+}
+
+.fui-row {
+    // margin-bottom: $vertical-spacing;
+
+    @include mq(md) {
+        display: flex;
+    }
+
+    // .fui-field + .fui-field {
+    //     margin-top: $vertical-spacing;
+    // }
+}
+
+.fui-field {
+    flex: 1 1 auto;
+    padding-left: $gutter;
+    padding-right: $gutter;
+}
+
+.fui-field-container {
+    margin-bottom: $vertical-spacing;
+
+    @include mq(md) {
+        margin-bottom: $vertical-spacing * 2;
+    }
+
+    .fui-type-agree & {
+        margin-bottom: 0;
+    }
+}
+
+// .fui-required {
+// display: none;
+// }
+
+.fui-fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.fui-label,
+.fui-legend {
+    display: block;
+    margin-bottom: $form-label-spacing;
+    font-family: $font-family;
+    font-size: $font-size;
+    font-weight: 600;
+    line-height: 1;
+    color: $form-label-color;
+}
+
+.fui-instructions {
+    p {
+        margin-bottom: $form-label-spacing;
+    }
+}
+
+.fui-legend {
+    display: inline-flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin-right: 0.4em;
+    padding-top: 0.2rem;
+    line-height: 1.3;
+    color: $form-label-color;
+}
+
+.fui-checkbox-label {
+    display: inline;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+    color: $form-label-color;
+
+    // a {
+    //     color: $form-label-color;
+
+    //     &:hover,
+    //     &:focus {
+    //         text-decoration: none;
+    //     }
+
+    //     &:active {
+    //         text-decoration: none;
+    //         color: $color-primary-dark;
+    //     }
+    // }
+}
+
+.fui-checkbox,
+.fui-radio {
+    position: relative;
+    // display: flex;
+    display: block;
+    align-items: center;
+    margin-bottom: calc($spacing / 2);
+
+    @include mq(sm) {
+        display: inline-block;
+        width: calc(100% / 2);
+        padding-right: $gutter;
+    }
+
+    @include mq(md) {
+        width: calc(100% / 3);
+    }
+
+    /// Overwrite's default margin (this is done to align text and input box)
+    input[type="checkbox"],
+    input[type="radio"] {
+        margin: -2.5px 6px 0 0;
+        top: 4px;
+    }
+
+    .fui-type-agree & {
+        width: 100%;
+    }
+}
+
+.fui-checkbox-input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    display: inline-block;
+    flex: 0 0 auto;
+    margin-right: 0.5rem;
+    background-color: $white;
+    border-radius: $form-border-radius;
+
+    &:checked {
+        background-image: url("/assets/images/icons/check.svg");
+        // background-color: $color-primary;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        border-radius: $form-border-radius;
+        border: 0.2rem solid;
+        border-color: $form-border-color;
+
+        &::before {
+            opacity: 0;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 1rem;
+            height: 1rem;
+            background-color: $color-primary;
+            border-radius: $form-border-radius;
+        }
+    }
+
+    &:focus {
+        z-index: 1;
+        color: $color-text;
+        outline: $form-border-focus-outline;
+        border-color: $color-secondary;
+
+        &::before {
+            opacity: 0;
+        }
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 2rem;
+        height: 2rem;
+        border-radius: $form-border-radius;
+        border: $form-border;
+        border-color: $form-border-color;
+        background-color: transparent;
+        z-index: 1;
+    }
+}
+
+.fui-radio-input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: inline-block;
+    flex: 0 0 auto;
+    margin-right: 0.5rem;
+    background-color: $white;
+
+    &:checked {
+        border: 0.2rem solid;
+        border-color: $color-primary;
+
+        &::before {
+            opacity: 0;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 1rem;
+            height: 1rem;
+            border-radius: 50%;
+            background-color: $color-primary;
+        }
+    }
+
+    &:focus {
+        z-index: 1;
+        color: $color-text;
+        outline: $form-border-focus-outline;
+        border-color: $color-secondary;
+
+        &::before {
+            opacity: 0;
+        }
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        border: $form-border;
+        border-color: $form-border-color;
+        background-color: transparent;
+        z-index: 1;
+    }
+}
+
+// .fui-input-container {
+//     input[type="file"]::file-selector-button {
+//         margin-right: $spacing;
+//         @extend .button--secondary;
+//     }
+// }
+
+//* Errors *//
+select.has-error,
+textarea.has-error,
+input.has-error {
+    background-color: $color-danger;
+    border-color: $color-danger;
+}
+
+.fui-input-container,
+.fui-checkbox {
+    > .fui-error {
+        border: 0.2rem solid $color-danger;
+
+        &::before {
+            content: none;
+        }
+    }
+}
+
+.fui-error {
+    color: $color-danger;
+    margin-bottom: 0;
+}
+
+.fui-error-message {
+    font-size: $font-size-small;
+    margin-top: 0.5rem;
+}
+
+.fui-alert-top-form {
+    color: $color-danger;
+    margin-bottom: 1rem;
+}
+
+.fui-field:not(.fui-field-required) {
+    > div > label::after {
+        opacity: 0.5;
+    }
+}
+//* End Errors *//
+
+//* Languages *//
+// html[lang="nl"] .fui-field:not(.fui-field-required) {
+//     > div > label::after {
+//         content: " (optioneel)";
+//     }
+// }
+
+// html[lang="fr"] .fui-field:not(.fui-field-required) {
+//     > div > label::after {
+//         content: " (optionnel)";
+//     }
+// }
+
+// html[lang="en"] .fui-field:not(.fui-field-required) {
+//     > div > label::after {
+//         content: " (optional)";
+//     }
+// }
+
+// html[lang="de"] .fui-field:not(.fui-field-required) {
+//     > div > label::after {
+//         content: " (optional)";
+//     }
+// }
+//* End languages *//
+
+//* Table *//
+.fui-table {
+    width: 100%;
+}
+
+.fui-table-remove-btn {
+    position: relative;
+    width: 3rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-indent: 9999px;
+
+    &::after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+}
+
+.fui-table-add-btn {
+    display: inline-flex;
+    text-decoration-line: underline;
+
+    &:hover {
+        text-decoration-line: none;
+    }
+}
+//* End table *//
+
+//* Buttongroup + buttons *//
+.fui-btn-wrapper {
+    margin-top: $vertical-spacing *2; 
+    padding-left: $gutter;
+    padding-right: $gutter;
+    // margin-top: $spacing;
+    // margin-bottom: $spacing-small;
+    &:not(:last-child) {
+        margin-bottom: $vertical-spacing;
+    }
+
+    .fui-btn-container {
+        @include mq(0, md) {
+            .fui-btn {
+                display: block;
+                width: 100%;
+            }
+
+            & + .fui-btn-container {
+                margin-top: $spacing;
+            }
+        }
+    }
+}
+
+.fui-btn-wrapper {
+    @include mq(md) {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+
+        > .fui-btn-container {
+            flex: 0 1 auto;
+            margin-right: $gutter;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.fui-btn.fui-submit {
+    @extend .button, .button--secondary;
+}
+
+.fui-save {
+    @extend .button, .button--link;
+}
+//* End buttongroup + buttons *//

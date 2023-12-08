@@ -1,0 +1,32 @@
+{% set targetGroupEntries = craft.entries.section('targetGroups').collect() %}
+<div class="container">
+    <div class="row">
+        <div class="col-full">
+            <div class="leading leading--center">
+                {% if block.blockTitle|length %}
+                    <h2 class="h2 leading__section">{{block.blockTitle}}</h2>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <div class="row row-grid target-audience">
+                {% for item in targetGroupEntries %}
+                    <a href="{{ item.getUrl() }}" class="target-audience--cardgrid-item">
+                        <div class="target-audience--card-content">
+                            {% set icon = item.image.one() %}
+                            {% if icon %}
+                                <div class="target-audience--card-image">
+                                    <img src="{{ icon.getUrl() }}" alt="{{ icon.title }}"/>
+                                </div>
+                            {% endif %}
+                            <div class="target-audience--card-text">
+                                <h4 class="target-audience--card-leading">
+                                    {{ item.title }}
+                                </h4>
+                            </div>
+                        </div>
+                    </a>
+                {% endfor %}
+    </div>
+</div>

@@ -1,7 +1,10 @@
+@use '../settings/global' as *;
+
 /// Images
-img, svg {
-    // max-width : 100%;
-    // height: auto;
+img,
+svg {
+    max-width: 100%;
+    height: auto;
     border-width: 0;
     vertical-align: middle;
     -ms-interpolation-mode: bicubic; //optimized rendering for images in IE
@@ -29,12 +32,8 @@ figure {
     margin-bottom: $vertical-spacing;
 
     img {
-        margin-bottom: $vertical-spacing / 2;
+        margin-bottom: calc($vertical-spacing / 2);
     }
 }
 
-figcaption {
-
-}
-
-
+figcaption {}

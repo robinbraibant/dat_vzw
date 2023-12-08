@@ -1,0 +1,43 @@
+{% if block.imagePosition == 'left' %}
+{% set imageLeft = true %}
+{% else %}
+{% set imageLeft = false %}
+{% endif %}
+
+{% if block.bgColor != null %}
+{% set bgColor = true %}
+{% else %}
+{% set bgColor = false %}
+{% endif %}
+
+<div class="text-image container {% if bgColor %}container--light{% endif %}">
+    <div class="row {% if imageLeft %}row-reverse{% endif %} align-items">
+        <div class="col-lg-5 {% if imageLeft %}col-lg-offset-1{% endif %}">
+            {% if block.blockTitle|length %}
+            <h2 class="text-image__headline">{{block.blockTitle}}</h2>
+            {% endif %}
+
+            {% if block.redactor|length %}
+            {{block.redactor}}
+            {% endif %}
+
+            {% if block.ctas|length and not block.ctas.cta.isEmpty() %}
+            <div class="buttongroup">
+                {% include '_snippets/_content/_blocks/_partials/_callToActions.twig' %}
+            </div>
+            {% endif %}
+        </div>
+
+        {% if block.image|length %}
+        <div class="col-lg-6 {% if not imageLeft %}col-lg-offset-1{% endif %}">
+            <div class="text-image__media">
+                {% set image = block.image|first %}
+                <picture class="text-image__picture">
+                    <source media="" srcset="{{image.getUrl('fit908x908')}} 2x" />
+                    <img class="text-image__image" src="{{image.getUrl('fit908x908')}} 2x" alt="{{image.alt}}" loading="lazy"/>
+                </picture>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</div>

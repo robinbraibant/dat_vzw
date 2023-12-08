@@ -1,0 +1,11 @@
+fill: null
+format: webp
+handle: fit1000x1260
+height: 1260
+interlace: none
+mode: fit
+name: 'Core Image Mobile'
+position: center-center
+quality: 100
+upscale: true
+width: 1000

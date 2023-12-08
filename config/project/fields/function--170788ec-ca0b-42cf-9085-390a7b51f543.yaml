@@ -1,0 +1,19 @@
+columnSuffix: bhhtdizl
+contentColumnType: text
+fieldGroup: ee71a197-2900-41c3-8ede-20b5bc467852 # Common
+handle: function
+instructions: null
+name: Functie
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

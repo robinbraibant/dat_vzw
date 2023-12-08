@@ -1,19 +1,12 @@
 {
   "buttons": [
-    "html",
-    "formatting",
     "bold",
     "italic",
-    "unorderedlist",
-    "orderedlist",
-    "link",
-    "image",
-    "video"
-  ],
-  "plugins": [
-    "fullscreen",
-    "video"
+    "underline",
+    "ul",
+    "ol"
   ],
   "linkNewTab": true,
-  "toolbarFixed": true
+  "pasteLinks": false,
+  "pasteImages": false
 }

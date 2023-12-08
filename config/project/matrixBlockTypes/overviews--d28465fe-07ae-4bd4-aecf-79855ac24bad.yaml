@@ -1,0 +1,212 @@
+field: 42753f56-881c-4d30-82a4-7062d713de9b # Contentbuilder
+fieldLayouts:
+  3e4a3831-8386-42a7-a700-56a88fa551a6:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: a0d6f1b0-18c0-4e7c-a61e-e3cdf4ce67a3 # Titel
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4e39a985-c1f2-41cb-a1dc-2dfd42ffef33
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: adc4b168-e68b-4646-8d85-013e801307c6 # Tekst
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0be86622-e42b-4311-875d-780b40c15b11
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: bb317d1b-5538-4863-a5c8-68fe6e33d992 # Call to action(s)
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 38636b4d-6363-4a32-8739-9c3b2af3a119
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 2e347f7c-204d-4a1d-8ce2-8440ee9627bf # Overview
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 83a4adce-e6e1-4c99-93e2-c85484e6b020
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 6a544243-220a-48df-91bb-13e70511fcf4 # Achtergrondkleur
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 09736555-bbda-4b00-a7ad-28193e243863
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 45dd5290-c42e-4561-8d37-d83e71ed782d
+        userCondition: null
+fields:
+  2e347f7c-204d-4a1d-8ce2-8440ee9627bf: # Overview
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: overview
+    instructions: null
+    name: Overview
+    searchable: false
+    settings:
+      blockTypeFields: 0
+      changedFieldIndicator: 1298705638
+      columns:
+        __assoc__:
+          -
+            - 8d5a9c57-28fe-4acd-9a1d-e37eb3a7f255 # Titel
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+          -
+            - 2ba01606-3cdb-4961-b59c-f639c3b302e5 # Tekst
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+          -
+            - dfdf807c-3b94-4a5d-97e0-6b426d765b64 # Afbeelding
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+      contentTable: '{{%stc_14_overview}}'
+      fieldLayout: table
+      maxRows: null
+      minRows: 1
+      propagationKeyFormat: null
+      propagationMethod: all
+      selectionLabel: null
+      staticField: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: verbb\supertable\fields\SuperTableField
+  6a544243-220a-48df-91bb-13e70511fcf4: # Achtergrondkleur
+    columnSuffix: mowujvzw
+    contentColumnType: string
+    fieldGroup: null
+    handle: bgColor
+    instructions: 'Selecteer of er een achtergrondkleur op komt'
+    name: Achtergrondkleur
+    searchable: false
+    settings:
+      dataSet: 'Background colors'
+      type: dropdown
+    translationKeyFormat: null
+    translationMethod: none
+    type: statikbe\configvaluesfield\fields\ConfigValuesFieldField
+  a0d6f1b0-18c0-4e7c-a61e-e3cdf4ce67a3: # Titel
+    columnSuffix: iboojobd
+    contentColumnType: text
+    fieldGroup: null
+    handle: blockTitle
+    instructions: 'Voeg een optionele titel toe voor dit blok.'
+    name: Titel
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  adc4b168-e68b-4646-8d85-013e801307c6: # Tekst
+    columnSuffix: sngrmsws
+    contentColumnType: text
+    fieldGroup: null
+    handle: redactor
+    instructions: null
+    name: Tekst
+    searchable: true
+    settings:
+      availableTransforms: ''
+      availableVolumes: '*'
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: null
+      purifyHtml: true
+      redactorConfig: null
+      removeEmptyTags: false
+      removeInlineStyles: false
+      removeNbsp: false
+      showHtmlButtonForNonAdmins: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  bb317d1b-5538-4863-a5c8-68fe6e33d992: # Call to action(s)
+    columnSuffix: vptszzzb
+    contentColumnType: string
+    fieldGroup: null
+    handle: ctas
+    instructions: 'Geef hier eventuele call to actions in.'
+    name: 'Call to action(s)'
+    searchable: true
+    settings:
+      blockTypeFields: 0
+      changedFieldIndicator: 1002935724
+      columns:
+        __assoc__:
+          -
+            - d791a274-27da-4bcb-bc20-dd381cec644b # Call to action
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+      contentTable: '{{%stc_14_ctas}}'
+      fieldLayout: matrix
+      maxRows: 2
+      minRows: null
+      propagationKeyFormat: null
+      propagationMethod: all
+      selectionLabel: null
+      staticField: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: verbb\supertable\fields\SuperTableField
+handle: overviews
+name: Overviews
+sortOrder: 14

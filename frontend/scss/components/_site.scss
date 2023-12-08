@@ -1,7 +1,13 @@
+@use "../settings/global" as *;
+@use "../tools" as *;
+
 .site-container {
     display: flex;
     flex-direction: column;
     min-height: 100%;
+
+    // overflow-x: hidden;
+    // overflow-y: initial;
 }
 
 .site-header {
@@ -9,6 +15,7 @@
     background-color: $white;
     position: relative;
     z-index: 99;
+    // overflow-x: hidden;
 
     @include mq(0, $bp-mobilenav) {
         height: $mobilenav-header-height;
@@ -17,15 +24,12 @@
     &::after {
         position: fixed;
         display: block;
-        content: '';
+        content: "";
         top: 0;
         right: 0;
         bottom: 0;
         left: 0;
-        background-color: rgba($color-subsidiary-darkest, 0.9);
-        background-image: image('bg-noise.png');
-        background-repeat: repeat;
-        background-position: center;
+        background-color: rgba($color-primary-darkest, 0.9);
         z-index: -99;
         opacity: 0;
         visibility: hidden;
@@ -47,4 +51,5 @@
     position: relative;
     flex: 1 0 auto;
     padding-bottom: $vertical-spacing;
+    // background-color: $offwhite;
 }

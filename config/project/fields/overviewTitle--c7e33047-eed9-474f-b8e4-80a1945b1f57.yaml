@@ -1,0 +1,19 @@
+columnSuffix: gqxyvncu
+contentColumnType: text
+fieldGroup: 9445878d-b337-433b-b7e1-a0a30c039120 # Overview
+handle: overviewTitle
+instructions: "Geef hier een titel in die je wilt gebruiken wanneer een overzichtskaartje van deze entry wordt weergeven. \r\nIndien je deze leeg laat zal de titel van de entry gebruikt worden."
+name: 'Overview Titel'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

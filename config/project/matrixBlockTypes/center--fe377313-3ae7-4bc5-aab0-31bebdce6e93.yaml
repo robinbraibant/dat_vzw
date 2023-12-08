@@ -1,0 +1,231 @@
+field: cc9be780-1445-4090-9b31-2c7fe893e319 # Centra
+fieldLayouts:
+  ad8849a0-cc10-48ff-a98b-a5009cdac07d:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: fbd0191b-5b18-4c77-81db-73ba0839a3c5 # Titel centrum
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4f29d115-7735-4731-a627-78159915b9bc
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: fe18180d-0999-46d7-97e2-72f709f6b278 # Naam centrum
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f556d280-1225-4908-ae79-db2a41b6118e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 71658ee7-ef4b-4a3d-8ff5-14ea5e6f16fc # Straat + nr
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ae495508-1a38-46f2-9a23-fb1be23ebc9d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: fc9d4621-af74-45b4-9ebf-3b64b090bb6f # Postcode
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 19e96c84-ae72-4ea9-a701-83f406cfb643
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: 94594033-0ed8-4fcc-bce2-c1bfe90b0507 # Gemeente
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: eabec9cc-a80a-41aa-a9c3-4dd7c9d6fa8e
+            userCondition: null
+            warning: null
+            width: 75
+          -
+            elementCondition: null
+            fieldUid: b34185ec-9049-4bbb-bfca-41bd211ba894 # Telefoonnummer
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 85772d82-800f-4bde-9070-c90b0771da53
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5f77ef4c-6f5b-44a6-a22f-fd97cb90e607 # E-mailadres
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 91733e34-8255-4943-aae2-7c85b394ce69
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 5f0d7019-0675-4084-9488-bda3d255ee9a
+        userCondition: null
+fields:
+  5f77ef4c-6f5b-44a6-a22f-fd97cb90e607: # E-mailadres
+    columnSuffix: tpfyqedp
+    contentColumnType: string
+    fieldGroup: null
+    handle: mail
+    instructions: null
+    name: E-mailadres
+    searchable: true
+    settings:
+      placeholder: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Email
+  71658ee7-ef4b-4a3d-8ff5-14ea5e6f16fc: # Straat + nr
+    columnSuffix: quvoydvp
+    contentColumnType: text
+    fieldGroup: null
+    handle: streetNr
+    instructions: null
+    name: 'Straat + nr'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  94594033-0ed8-4fcc-bce2-c1bfe90b0507: # Gemeente
+    columnSuffix: clpdpeqa
+    contentColumnType: text
+    fieldGroup: null
+    handle: town
+    instructions: null
+    name: Gemeente
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  b34185ec-9049-4bbb-bfca-41bd211ba894: # Telefoonnummer
+    columnSuffix: nqxynstl
+    contentColumnType: text
+    fieldGroup: null
+    handle: phone
+    instructions: null
+    name: Telefoonnummer
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  fbd0191b-5b18-4c77-81db-73ba0839a3c5: # Titel centrum
+    columnSuffix: ovspsqri
+    contentColumnType: text
+    fieldGroup: null
+    handle: centerTitle
+    instructions: null
+    name: 'Titel centrum'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  fc9d4621-af74-45b4-9ebf-3b64b090bb6f: # Postcode
+    columnSuffix: gphohgcp
+    contentColumnType: text
+    fieldGroup: null
+    handle: postalCode
+    instructions: null
+    name: Postcode
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  fe18180d-0999-46d7-97e2-72f709f6b278: # Naam centrum
+    columnSuffix: dmhnsjxs
+    contentColumnType: text
+    fieldGroup: null
+    handle: centerName
+    instructions: null
+    name: 'Naam centrum'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: center
+name: Centrum
+sortOrder: 1

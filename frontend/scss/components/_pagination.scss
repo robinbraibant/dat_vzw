@@ -1,0 +1,176 @@
+@use '../settings/global' as *;
+@use '../tools' as *;
+
+.pagination {
+    text-align: center;
+    margin-top: $vertical-spacing;
+    margin-bottom: $vertical-spacing;
+
+    &:first-child {
+        margin-top: 0;
+    }
+
+    @include mq(560) {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.pagination__results {
+    flex: 0 1 auto;
+
+    font-family: $font-family;
+    color: $color-text-light;
+    font-size: $font-size-small;
+    margin-bottom: $vertical-spacing;
+
+    @include mq(560) {
+        margin-bottom: 0;
+        margin-right: auto;
+    }
+}
+
+.pagination__navigation {
+    flex: 0 1 auto;
+}
+
+.pagination__button {
+    display: inline-block;
+    -webkit-appearance: none;
+    margin: 0;
+    width: auto;
+    overflow: visible;
+
+    padding: 1rem 1rem 1rem 1rem;
+    line-height: 1.125;
+    vertical-align: middle;
+
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+    color: $color-text-light;
+
+    font-family: $font-family-secondary;
+    font-size: $font-size;
+    font-weight: 600;
+    font-style: italic;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    text-shadow: none;
+
+    &.is-active {
+        color: $white;
+        background-color: $color-primary;
+        border-color: $color-primary-dark;
+    }
+
+    .contrast-element & {
+        color: $color-subsidiary-lighter;
+    }
+}
+
+.pagination__icon {
+    @include mq(md) {
+        @include visually-hidden();   
+    }
+}
+
+.pagination__label {
+    @include mq(0, md) {
+        @include visually-hidden();   
+    }
+}
+
+a.pagination__button,
+button.pagination__button {
+    background-color: transparent;
+    color: $color-text;
+    outline-offset: 1px;
+
+    transition: background-color 0.1s, border-color 0.1s, color 0.1s;
+
+    &:hover, &:focus {
+        color: $color-primary;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+
+    &:active {
+        color: $color-primary-dark;
+        background-color: transparent;
+    }
+
+    .contrast-element & {
+        color: $white;
+
+        &:hover, &:focus {
+            color: $color-primary;
+        }
+
+        &:active {
+            color: $color-primary-dark;
+        }
+    }
+}
+
+
+.pagination__page {
+    display: inline-block;
+    -webkit-appearance: none;
+    margin: 0;
+    width: auto;
+    overflow: visible;
+
+    padding: 1rem 1.4rem 1rem 1.4rem;
+    line-height: 1.125;
+    vertical-align: middle;
+    //min-width: 2.4em;
+
+    background-color: $white;
+    border: 0;
+    border-radius: 0;
+    color: $color-text;
+
+    font-family: $font-family-secondary;
+    font-size: 1.6rem;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: none;
+
+    &.is-active {
+        font-style: normal;
+        color: $white;
+        background-color: $color-primary;
+    }
+
+    &.is-disabled {
+        color: $color-subsidiary-light;
+    }
+}
+
+a.pagination__page,
+button.pagination__page {
+    transition: background-color 0.1s, border-color 0.1s, color 0.1s;
+    outline-offset: 1px;
+
+    &:hover, &:focus {
+        color: $color-primary;
+        background-color: $white;
+        text-decoration: underline;
+    }
+
+    &:active {
+        color: $color-primary-dark;
+        background-color: $white;
+    }
+
+    .contrast-element & {
+        
+    }
+}

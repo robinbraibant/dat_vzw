@@ -1,0 +1,11 @@
+fill: null
+format: webp
+handle: fit506x984
+height: 984
+interlace: none
+mode: fit
+name: 'Core Image 2x'
+position: center-center
+quality: 100
+upscale: true
+width: 506

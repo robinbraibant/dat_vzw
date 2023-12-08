@@ -1,0 +1,126 @@
+field: 893e2428-3f6b-4d53-9523-4ae643d9ee33
+fieldLayouts:
+  27811497-67cf-4baa-8b17-31df6bc6acc4:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 6ff6ad71-f1fb-4ae6-bb19-0d0f9e460c5e # Call to action
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f5eeb749-4083-45ca-adb8-da657d3f8805
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 8ab1bf7f-df17-40d6-8f26-d3649c67d263 # Subtekst
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 245c8709-23d1-44a5-8075-95239c64c537
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 369426e3-bf90-4af9-bfd4-b3ff63c6eba2
+        userCondition: null
+fields:
+  6ff6ad71-f1fb-4ae6-bb19-0d0f9e460c5e: # Call to action
+    columnSuffix: zpvakoku
+    contentColumnType: text
+    fieldGroup: null
+    handle: ctaLink
+    instructions: null
+    name: 'Call to action'
+    searchable: true
+    settings:
+      allowClass: '1'
+      allowCustomText: '1'
+      allowTarget: '1'
+      allowedLinkNames:
+        3: entry
+        4: email
+        5: tel
+        6: url
+      class: null
+      classes: null
+      defaultLinkName: entry
+      defaultText: ''
+      typeSettings:
+        __assoc__:
+          -
+            - asset
+            -
+              __assoc__:
+                -
+                  - sources
+                  - '*'
+          -
+            - category
+            -
+              __assoc__:
+                -
+                  - sources
+                  - '*'
+          -
+            - entry
+            -
+              __assoc__:
+                -
+                  - sources
+                  - '*'
+          -
+            - email
+            -
+              __assoc__:
+                -
+                  - disableValidation
+                  - ''
+          -
+            - tel
+            -
+              __assoc__:
+                -
+                  - disableValidation
+                  - ''
+          -
+            - url
+            -
+              __assoc__:
+                -
+                  - disableValidation
+                  - ''
+    translationKeyFormat: null
+    translationMethod: site
+    type: statikbe\cta\fields\CTAField
+  8ab1bf7f-df17-40d6-8f26-d3649c67d263: # Subtekst
+    columnSuffix: mdvtojte
+    contentColumnType: text
+    fieldGroup: null
+    handle: subText
+    instructions: 'Voeg een optionele subtekst toe voor deze call to action.'
+    name: Subtekst
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\PlainText
+handle: cta
+name: 'Call to action'
+sortOrder: 1

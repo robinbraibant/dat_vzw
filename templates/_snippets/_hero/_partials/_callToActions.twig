@@ -1,0 +1,12 @@
+{% if entry.ctas|length %}
+{% set ctas = entry.ctas.collect() %}
+
+{% for cta in ctas %}
+{% if not cta.cta.isEmpty() %}
+{% set cta = cta.cta %}
+<a class="{{ cta.class }}" href="{{ cta.getUrl() }}" target="{{cta.target}}">
+    {{ cta.customText }}
+</a>
+{% endif %}
+{% endfor %}
+{% endif %}

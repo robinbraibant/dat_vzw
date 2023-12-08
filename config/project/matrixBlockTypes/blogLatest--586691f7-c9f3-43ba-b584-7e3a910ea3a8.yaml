@@ -1,0 +1,203 @@
+field: 42753f56-881c-4d30-82a4-7062d713de9b # Contentbuilder
+fieldLayouts:
+  f60246a9-5001-442d-a3cb-2f49f1f9c4cf:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 0870e0d6-f1b0-45fc-824e-4865786aef5e # Titel
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5c3b8794-6535-4943-a52b-6bea78b10b93
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 64f61dee-7ced-4882-a61b-aa82659a7134 # Blogs
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 76a5ac66-be5a-42c7-a423-0e5c5fe4d30f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: acfd4b64-9464-4b98-846d-d3f654e1f8bd # Tekst
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d188d5ca-8646-4570-8d4b-5707c4836639
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: a23c097e-fea2-479e-8d86-3e986c99ad54 # Call to action(s)
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c3ad84bb-4435-449b-b245-a55a0df60d29
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 663f99ff-5cc3-4cae-a0f3-de58f9ebdd22 # Achtergrondkleur
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 704fcf9b-3a9c-4d78-8b5f-7c77c28886a0
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 3457620d-c174-48a3-ade5-177fd363c231
+        userCondition: null
+fields:
+  64f61dee-7ced-4882-a61b-aa82659a7134: # Blogs
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: blogs
+    instructions: null
+    name: Blogs
+    searchable: true
+    settings:
+      allowSelfRelations: false
+      branchLimit: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: null
+      minRelations: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Entry
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\entries\EntryCondition
+      selectionLabel: 'Selecteer een blog'
+      showSiteMenu: true
+      sources:
+        - 'section:17b45978-7dbb-4e1a-b576-dbd15ff1f1ae' # Blog
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+  663f99ff-5cc3-4cae-a0f3-de58f9ebdd22: # Achtergrondkleur
+    columnSuffix: fokmpwcn
+    contentColumnType: string
+    fieldGroup: null
+    handle: bgColor
+    instructions: 'Selecteer een kleur voor de achtergrond van dit blok'
+    name: Achtergrondkleur
+    searchable: false
+    settings:
+      dataSet: 'Background colors'
+      type: dropdown
+    translationKeyFormat: null
+    translationMethod: none
+    type: statikbe\configvaluesfield\fields\ConfigValuesFieldField
+  0870e0d6-f1b0-45fc-824e-4865786aef5e: # Titel
+    columnSuffix: yfhvgfvc
+    contentColumnType: text
+    fieldGroup: null
+    handle: blockTitle
+    instructions: null
+    name: Titel
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  a23c097e-fea2-479e-8d86-3e986c99ad54: # Call to action(s)
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: ctas
+    instructions: null
+    name: 'Call to action(s)'
+    searchable: true
+    settings:
+      blockTypeFields: 0
+      changedFieldIndicator: 157596454
+      columns:
+        __assoc__:
+          -
+            - 49811070-72ae-4f54-9647-de515b8389d3 # Call to action
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+      contentTable: '{{%stc_58_ctas}}'
+      fieldLayout: matrix
+      maxRows: 2
+      minRows: null
+      propagationKeyFormat: null
+      propagationMethod: all
+      selectionLabel: null
+      staticField: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: verbb\supertable\fields\SuperTableField
+  acfd4b64-9464-4b98-846d-d3f654e1f8bd: # Tekst
+    columnSuffix: iqrpzlby
+    contentColumnType: text
+    fieldGroup: null
+    handle: redactor
+    instructions: null
+    name: Tekst
+    searchable: true
+    settings:
+      availableTransforms: ''
+      availableVolumes: '*'
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: null
+      purifyHtml: true
+      redactorConfig: null
+      removeEmptyTags: false
+      removeInlineStyles: false
+      removeNbsp: false
+      showHtmlButtonForNonAdmins: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+handle: blogLatest
+name: Blogs
+sortOrder: 12

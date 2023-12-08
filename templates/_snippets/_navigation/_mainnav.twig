@@ -1,0 +1,30 @@
+<div class="mainnav">
+    <ul class="mainnav__list">
+        {% for node in mainNav %}
+        <li class="mainnav__item{% if node.children|length %} has-children{% endif %} {% if node.active %} is-active{% endif %}">
+            <a class="{% if not node.classes|length %}mainnav__link {% else %}{{node.classes}}{% endif %}" href="{{ node.url }}" {% if node.blank %}
+                target="_blank" rel="noopener" {% endif %}>
+                {{ node.name }}
+            </a>
+
+            {% if node.children|length %}
+            <button class="subnav__toggle">
+                <span class="visually-hidden">Open submenu</span>
+            </button>
+            {% endif %}
+
+            {% if node.children|length %}
+            <ul class="subnav" aria-label="subnavigation" aria-hidden="true">
+                {% for child in node.children %}
+                <li class="subnav__item{% if child.active %} is-active{% endif %}{% if child.classes|length %}{{ child.classes }}{% endif %}">
+                    <a class="subnav__button" href="{{ child.url }}" {% if child.blank %} target="_blank" rel="noopener" {% endif %}>
+                        {{ child.name }}
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+</div>

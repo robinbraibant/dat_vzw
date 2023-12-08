@@ -1,0 +1,14 @@
+columnSuffix: lmhivzpn
+contentColumnType: string(255)
+fieldGroup: ec85c351-04c7-45bd-9549-a7f3d351b8cc # Social Media
+handle: dribbble
+instructions: null
+name: Dribbble
+searchable: true
+settings:
+  maxLength: 255
+  types:
+    - url
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

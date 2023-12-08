@@ -1,0 +1,21 @@
+<div class="topnav">
+    <div class="topnav__section topnav-nav">
+        <ul class="topnav__list">
+            {% for node in topNav %}
+            <li class="topnav__item{% if node.classes|length %}{{ node.classes }}{% endif %}{% if node.children|length %} has-children{% endif %}
+            ">
+                <a class="topnav__link{% if node.active %} is-active{% endif %}" href="{{ node.url }}" {% if node.blank %} target="_blank" rel="noopener"
+                    {% endif %}>
+                    {{ node.name }}
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+    {# <div class="topnav__section topnav-search">
+        {% include '_snippets/_navigation/_partials/_search.twig' %}
+    </div>
+    <div class="topnav__section topnav-language">
+        {% include '_snippets/_navigation/_partials/_language.twig' %}
+    </div> #}
+</div>

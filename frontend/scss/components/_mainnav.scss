@@ -1,0 +1,322 @@
+@use "../settings/global" as *;
+@use "../tools" as *;
+
+.mainnav-container {
+    @include mq(0, $bp-mobilenav) {
+        display: flex;
+        flex-flow: column nowrap;
+        position: fixed;
+        z-index: -1;
+
+        top: 0;
+        left: 100%;
+        overflow: auto;
+
+        height: 100%;
+        width: 100%;
+        max-width: 30rem;
+        padding-top: $mobilenav-header-height;
+
+        background-color: $offwhite;
+
+        visibility: hidden;
+        transform: translateX(0);
+        will-change: translateX;
+        -webkit-overflow-scrolling: touch;
+
+        transition: transform 0.3s, visibility 0.3s;
+
+        .has-open-navigation & {
+            transform: translateX(-100%);
+            //box-shadow: -0.2rem 1rem 1rem rgba($black, 0.2);
+            visibility: visible;
+        }
+    }
+
+    @include mq($bp-mobilenav) {
+        flex: 0 1 auto;
+
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: stretch;
+        justify-content: flex-start;
+
+        > .topnav {
+            order: -1;
+        }
+
+        // > .mainnav {
+        // }
+    }
+}
+
+.mainnav {
+    max-width: $max-width;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include mq(0, $bp-mobilenav) {
+        background-color: $white;
+    }
+
+    @include mq($bp-mobilenav) {
+        position: relative;
+
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: stretch;
+        justify-content: flex-end;
+        align-items: center;
+
+        margin-top: $spacing;
+        margin-bottom: $spacing;
+
+        // &::before {
+        //     content: "";
+        //     position: absolute;
+        //     z-index: 0;
+        //     top: 0;
+        //     bottom: 0;
+        //     left: -100vw;
+        //     right: -100vw;
+        //     border: 1px solid $color-subsidiary-dark;
+        // }
+    }
+}
+
+.mainnav__list {
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: $spacing * 2;
+    padding-bottom: $spacing * 2;
+
+    @include mq($bp-mobilenav) {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: stretch;
+        justify-content: flex-end;
+        margin-top: $spacing-small;
+        margin-bottom: $spacing-small;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    & + .mainnav__actions {
+        margin-top: -$spacing;
+        @include mq($bp-mobilenav) {
+            margin-top: 0;
+            margin-left: $spacing * 2;
+        }
+    }
+}
+
+.mainnav__item {
+    position: relative;
+    display: block;
+    min-width: max-content;
+
+    @include mq(0, $bp-mobilenav) {
+        > .button {
+            margin-top: $spacing-large;
+            margin-left: $gutter;
+        }
+    }
+
+    @include mq($bp-mobilenav) {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        flex: 0 1 auto;
+        transition: background-color 0.1s;
+
+        padding: 0;
+
+        &.has-children {
+            position: relative;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        > .button {
+            position: relative;
+            top: -0.1rem;
+            white-space: nowrap;
+        }
+
+        & + & {
+            margin-left: $spacing;
+
+            @include mq(xxl) {
+                margin-left: $spacing * 2;
+            }
+        }
+    }
+}
+
+.mainnav__link {
+    position: relative;
+    display: block;
+    padding: $spacing-small $spacing;
+    font-family: $font-family-secondary;
+    font-size: $font-size-large;
+    font-weight: 500;
+    color: #0067a8;
+    text-decoration: none;
+    transition: color 0.1s, background-color 0.1s;
+
+    &:hover,
+    &:focus {
+        color: #c8e6f9;
+        text-decoration: none;
+
+        &::before {
+            opacity: 1;
+        }
+    }
+
+    &:active {
+        color: #c8e6f9;
+    }
+
+    @include mq(0, $bp-mobilenav) {
+        .mainnav__item.is-active > & {
+            color: $color-secondary;
+
+            &:hover,
+            &:focus {
+                color: $color-secondary;
+            }
+
+            &:active {
+                color: $color-secondary;
+            }
+        }
+    }
+
+    @include mq($bp-mobilenav) {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        position: relative;
+        z-index: 0;
+        font-weight: 500;
+        font-style: normal;
+        border-bottom: 1px solid transparent;
+        padding: 0;
+        // padding: 2rem $spacing-small;
+        color: #c8e6f9;
+
+        &:hover,
+        &:focus {
+            color: $color-secondary;
+        }
+
+        &:active {
+            color: transparent;
+        }
+
+        .mainnav__item.has-children > & {
+            &::after {
+                content: "";
+                display: block;
+                mask: url("/assets/icons/chevron-down.svg");
+                mask-size: contain;
+                mask-repeat: no-repeat;
+                mask-position: center center;
+                background-color: #c8e6f9;
+
+                width: 1.2rem;
+                height: 1.2rem;
+
+                margin-top: 4px;
+                margin-left: $spacing-small;
+            }
+
+            &:hover,
+            &:focus {
+                &::after {
+                    background-color: $color-secondary-dark;
+                }
+            }
+
+            &:active {
+                &::after {
+                    background-color: transparent;
+                }
+            }
+        }
+
+        .mainnav__item.is-active > & {
+            color: $color-secondary;
+
+            &::after {
+                background-color: $color-secondary;
+            }
+
+            &:hover,
+            &:focus {
+                color: $color-secondary-dark;
+            }
+
+            &:active {
+                color: transparent;
+            }
+        }
+    }
+
+    // @include mq(xl) {
+    //     padding-left: $spacing;
+    //     padding-right: $spacing;
+    // }
+}
+
+.mainnav__actions {
+    @include mq(0, $bp-mobilenav) {
+        padding: 0 $gutter;
+        padding-bottom: $spacing-large;
+    }
+}
+
+// .mainnav__actionbutton {
+//     -webkit-appearance: none;
+//     margin: 0;
+//     width: auto;
+//     overflow: visible;
+//     cursor: pointer;
+//     border: 0;
+
+//     display: flex;
+//     align-items: center;
+//     height: 100%;
+//     position: relative;
+//     z-index: 0;
+//     padding: 0 $gutter;
+
+//     color: $white;
+//     background-color: $color-primary;
+
+//     &:hover,
+//     &:focus {
+//         background-color: $color-primary-dark;
+//         color: $white;
+//     }
+
+//     &:active {
+//         background-color: $color-primary-darkest;
+//         color: $white;
+//     }
+
+//     // @include mq($bp-mobilenav) {
+
+//     // }
+
+//     .mainnav__icon {
+//         color: currentColor;
+//         font-size: 2.7rem;
+//     }
+// }

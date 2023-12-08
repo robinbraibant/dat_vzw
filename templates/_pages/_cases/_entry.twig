@@ -1,0 +1,11 @@
+{% extends '_layout.twig' %}
+{% set parent = craft.entries.section('casesOverview').one() %}
+{% set breadcrumbs = [parent, entry] %}
+
+{% block content %}
+
+{% include "_snippets/_hero/_hero.twig" %}
+
+{% include '_snippets/_content/_contentBuilder.twig' %}
+
+{% endblock %}

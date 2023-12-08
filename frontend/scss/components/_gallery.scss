@@ -1,0 +1,55 @@
+@use "../settings/global" as *;
+@use "../tools" as *;
+
+$gallery-spacing: 1.5rem;
+$gallery-spacing-small: 1rem;
+
+.gallery__media {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.gallery__picture {
+    width: calc(50% - $gallery-spacing-small);
+    margin-bottom: $gallery-spacing-small;
+}
+
+.gallery--3 {
+    .gallery__picture {
+        width: calc(33.33% - $gallery-spacing-small);
+    }
+}
+
+.gallery--4 {
+    .gallery__picture {
+        width: calc(25% - $gallery-spacing-small);
+    }
+}
+
+.gallery--5 {
+    display: inline-block;
+    margin-bottom: -$gallery-spacing-small;
+
+    .gallery__picture {
+        margin-left: $gallery-spacing;
+        float: left;
+        width: calc(25% - $gallery-spacing-small);
+
+        &:nth-child(1) {
+            margin-left: 0;
+            width: calc(50% - $gallery-spacing-small);
+        }
+    }
+}
+
+.gallery--6 {
+    .gallery__picture {
+        width: calc(33.33% - $gallery-spacing-small);
+    }
+}
+
+.gallery__image {
+    border-radius: $border-radius;
+}

@@ -1,0 +1,25 @@
+{% set image = overview.overviewImage|first %}
+
+<div class="overview">
+    <div class="overview__content">
+        {% if overview.overviewTitle|length or overview.overviewRedactor|length %}
+        <div class="overview__body">
+            {% if overview.overviewTitle|length %}
+            <h3 class="overview__headline">{{overview.overviewTitle}}</h3>
+            {% endif %}
+            {% if overview.overviewRedactor|length %}
+            {{overview.overviewRedactor}}
+            {% endif %}
+        </div>
+        {% endif %}
+
+        {% if image|length %}
+        <div class="overview__media">
+            <picture class="overview__picture">
+                <source srcset="{{image.getUrl('overview')}} 2x" />
+                <img class="overview__image" src="{{image.getUrl('overview')}} 2x" alt="{{image.alt}}" loading="lazy" />
+            </picture>
+        </div>
+        {% endif %}
+    </div>
+</div>

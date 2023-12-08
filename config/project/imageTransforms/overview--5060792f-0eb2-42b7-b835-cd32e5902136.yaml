@@ -1,0 +1,11 @@
+fill: null
+format: webp
+handle: overview
+height: 96
+interlace: none
+mode: crop
+name: overview
+position: center-center
+quality: 100
+upscale: true
+width: 96
