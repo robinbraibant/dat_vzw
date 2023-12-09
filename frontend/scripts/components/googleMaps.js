@@ -23,4 +23,9 @@ async function initMap() {
     });
 }
 
-initMap();
+const mapElement = document.getElementById("map");
+
+if (mapElement) {
+    initMap();
+}
+
