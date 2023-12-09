@@ -1,4 +1,4 @@
-changedFieldIndicator: 1783944859
+changedFieldIndicator: 426921443
 field: 2a7635da-9798-4a72-9262-84d14e66931f # Call to action(s)
 fieldLayouts:
   9eff7fbb-54d0-4a0a-9955-c8c901b84d36:
@@ -35,10 +35,7 @@ fields:
       allowCustomText: '1'
       allowTarget: '1'
       allowedLinkNames:
-        1: asset
         3: entry
-        4: email
-        5: tel
         6: url
       class: null
       classes: null

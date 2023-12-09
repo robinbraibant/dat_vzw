@@ -35,8 +35,8 @@ settings:
       -
         - class
         - craft\elements\conditions\assets\AssetCondition
-  selectionLabel: null
-  showSiteMenu: false
+  selectionLabel: 'Voeg een afbeelding toe'
+  showSiteMenu: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
   sources: '*'

@@ -7,7 +7,7 @@ name: 'Call to action(s)'
 searchable: true
 settings:
   blockTypeFields: 0
-  changedFieldIndicator: 299697683
+  changedFieldIndicator: 533361250
   columns:
     __assoc__:
       -
@@ -23,7 +23,7 @@ settings:
   minRows: null
   propagationKeyFormat: null
   propagationMethod: all
-  selectionLabel: null
+  selectionLabel: 'Voeg een call to action toe'
   staticField: null
 translationKeyFormat: null
 translationMethod: none

@@ -33,8 +33,8 @@ fieldLayouts:
           -
             elementCondition: null
             fieldUid: b693e790-e464-467a-81a1-f62bb9914cb2 # Hero afbeelding
-            instructions: null
-            label: null
+            instructions: 'Laad je hier een afbeelding op, dan zal deze langs de titel getoond worden.'
+            label: Hoofdafbeelding
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -87,7 +87,7 @@ fieldLayouts:
           -
             elementCondition: null
             fieldUid: 2ed0506e-2d1d-4f21-a387-92dcc5cf64f7 # Overview Afbeelding
-            instructions: null
+            instructions: "Geef hier een afbeelding in die je wilt gebruiken wanneer een overzichtskaartje van deze entry wordt weergeven.\r\nIndien je deze leeg laat zal de hoofdafbeelding gebruikt worden."
             label: null
             required: false
             tip: null
@@ -99,7 +99,7 @@ fieldLayouts:
           -
             elementCondition: null
             fieldUid: 4e18d419-eb43-4cd2-8bbc-4506bd22e89b # Tekst
-            instructions: "Geef hier een omschrijving in die je wilt gebruiken wanneer een overzichtskaartje van deze entry wordt weergeven.\r\n"
+            instructions: "Geef hier een omschrijving in die je wilt gebruiken wanneer een overzichtskaartje van deze entry wordt weergeven.\r\nIndien je hier niets invult, zal de inhoud van het intro veld gebruikt worden.\r\n"
             label: 'Overview Omschrijving'
             required: false
             tip: null
@@ -151,6 +151,9 @@ handle: default
 hasTitleField: true
 name: Default
 section: c0d978b3-8b89-4fd2-9863-6a39a16212ab # Vacatures
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: '{pageTitle|striptags}'
 titleTranslationKeyFormat: null

@@ -105,10 +105,13 @@ fieldLayouts:
         name: SEO
         uid: e48ec166-655d-4d8e-b0fb-f12fab616d00
         userCondition: null
-handle: casesOverview
+handle: jobsOverview
 hasTitleField: true
 name: 'Vacatures Overzicht'
 section: 792ae990-64b1-4ad4-bfd1-4e3c7c94d68c # Vacatures Overzicht
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: '{heroTitle|striptags}'
 titleTranslationKeyFormat: null

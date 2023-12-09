@@ -1,25 +1,22 @@
 @use "../settings/global" as *;
 @use "../tools/mq" as *;
 
-.case {
+.card {
     padding-top: $vertical-spacing;
     padding-bottom: $vertical-spacing;
+    margin-bottom: $vertical-spacing;
 }
 
-.case__content {
-    position: relative;
+.card__content {
+    //position: relative;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     background-color: transparent;
+    text-decoration: none;
 
     &::before {
         content: "";
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
         background-color: $color-primary-darkest;
         opacity: 0.3;
         border-radius: $border-radius;
@@ -28,6 +25,16 @@
 
     &:hover,
     &:focus-within {
+
+        .card__headline {
+            text-decoration: underline;
+        }
+
+        .button {
+            background-color: $color-primary-dark;
+            color: $white;
+        }
+
         &::before {
             background-color: $color-primary;
             opacity: 0.9;
@@ -35,41 +42,30 @@
             transition: all 0.1s ease-in;
         }
 
-        .case__image {
+        .card__media {
             transform: scale(1.05);
         }
     }
 }
 
-.case__body {
-    position: absolute;
-    bottom: 0;
-    left: $gutter;
-    right: $gutter;
-    bottom: $vertical-spacing;
-    z-index: 2;
 
-    p:last-child {
-        margin-bottom: 0;
-    }
-}
-
-.case__headline {
+.card__headline {
     font-size: 2.4rem;
     font-weight: 700;
-    color: $white;
+    color: $color-primary;
     line-height: $lineheight-heading;
     margin-bottom: 0;
 }
 
-.case__media {
+.card__media {
     flex: 1 1 auto;
     order: -1;
     overflow: hidden;
     border-radius: $border-radius;
+    margin-bottom: .5rem;
 }
 
-.case__image {
+.card__image {
     width: 100%;
     border-radius: $border-radius;
     transform: scale(1);

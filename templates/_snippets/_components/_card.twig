@@ -1,0 +1,31 @@
+{% set image = item.overviewImage|first %}
+{% if image|length <= 0 %}
+    {% set image = item.heroImage.one() %}
+{% endif %}
+
+<article class="card">
+    <a class="card__content" href="{{ item.getUrl() }}">
+        <div class="card__body">
+            {% if item.title|length %}
+                <h3 class="card__headline">{{ item.overviewTitle|length ? item.overviewTitle : item.title }}</h3>
+            {% endif %}
+            {% if item.intro|length or item.redactor|length %}
+                <div class="card__text">{{ item.redactor ? item.redactor : item.intro }}</div>
+            {% endif %}
+            <div class="button button--primary">
+                {{ "Lees meer"|t }}
+            </div>
+        </div>
+
+        {% if image %}
+            <div class="card__media">
+                <picture class="">
+                    <source media="(max-width: 769px)" srcset="{{ image.getUrl('crop1472x908') }} 2x"/>
+                    <source media="(min-width: 769px)" srcset="{{ image.getUrl('crop720x444') }} 2x"/>
+                    <img class="card__image" src="{{ image.getUrl('crop1472x908') }} 2x" alt="{{ image.alt }}"
+                         loading="lazy"/>
+                </picture>
+            </div>
+        {% endif %}
+    </a>
+</article>

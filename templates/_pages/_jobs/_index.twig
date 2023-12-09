@@ -1,0 +1,26 @@
+{% extends '_layout.twig' %}
+{% set breadcrumbs = [entry] %}
+
+{% block content %}
+
+    {% include "_snippets/_hero/_hero.twig" %}
+
+    {% set jobs = craft.entries.section('jobs').collect() %}
+    
+    {% if jobs|length %}
+        <div class="container container--light">
+            <div class="row row-grid">
+                {% for item in jobs %}
+                    <div class="col-md-6 col-lg-4">
+                        {% include "_snippets/_components/_card.twig" %}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    {% endif %}
+
+    <div class="container">
+        {% include '_snippets/_content/_contentBuilder.twig' %}
+    </div>
+
+{% endblock %}
