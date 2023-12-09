@@ -9,6 +9,7 @@
 /public/images/*
 /node_modules/*
 
+/public/assets/*
 /public/js
 /public/js/main/*
 /public/css/*
