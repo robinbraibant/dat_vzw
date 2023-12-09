@@ -4,8 +4,9 @@
 
 .banner-container {
     background-color: #fff;
-
+    display: none;
     @include mq($bp-mobilenav) {
+        display: block;
         order: -1;
     }
 }

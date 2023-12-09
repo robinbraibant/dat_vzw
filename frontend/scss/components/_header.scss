@@ -59,10 +59,16 @@
     // margin-bottom: -1.6rem;
 
     @include mq(0, $bp-mobilenav) {
+        border-radius: 0px 0px 55px 55px;
+        padding-top: 1.5rem;
+        padding-right: 1.5rem;
+        padding-bottom: 0.5rem;
+        padding-left: 1.5rem;
+
         > svg,
         img {
-            max-height: 8rem;
-            width: 16rem;
+            max-height: 7rem;
+            vertical-align: unset;
         }
     }
 

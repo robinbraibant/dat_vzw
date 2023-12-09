@@ -59,7 +59,7 @@
     top: 0;
     right: 50%;
     transform: translate(50%,-50%);
-    padding: 2rem 0rem 2rem;
+    padding: 2rem 2rem;
     border-radius: 0px 55px 55px 55px;
     //z-index: 9999;
 
@@ -73,7 +73,7 @@
         > svg,
         img {
             max-height: 10rem;
-            width: 20rem;
+            //width: 20rem;
         }
     }
 
