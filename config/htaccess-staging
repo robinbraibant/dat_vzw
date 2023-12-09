@@ -1,0 +1,26 @@
+Order allow,deny
+AuthType Basic
+AuthName "Authentication Required"
+AuthUserFile /data/sites/web/cardatbe/.htpasswd
+Require valid-user
+Allow from 127.0.0.1
+Satisfy Any
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Set a seperate robots to all domains
+    RewriteCond %{HTTP_HOST} ^staging.cardat.be
+    RewriteRule ^robots\.txt$ robots-denied.txt [L]
+
+    # Force https
+    RewriteCond %{HTTPS} off
+    RewriteCond %{HTTP:X-Forwarded-Proto} !https
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+    # Send would-be 404 requests to Craft
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} !^/(favicon\.ico|apple-touch-icon.*\.png)$ [NC]
+    RewriteRule (.+) index.php?p=$1 [QSA,L]
+</IfModule>
