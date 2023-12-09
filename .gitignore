@@ -17,7 +17,7 @@
 /storage/config-backups
 /storage/composer-backups
 
-/templates/_head/_head-assets.twig
+/templates/_snippets/_head/_head-assets.twig
 
 /translations
 
