@@ -1,0 +1,13 @@
+{% extends '_layout.twig' %}
+{% set parent = craft.entries.section('targetGroups').one() %}
+{% set breadcrumbs = [parent, entry] %}
+
+{% block content %}
+
+    {% include "_snippets/_hero/_heroDefault.twig" %}
+
+    <div class="container">
+        {% include '_snippets/_content/_contentBuilder.twig' %}
+    </div>
+
+{% endblock %}

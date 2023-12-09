@@ -42,13 +42,88 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-        name: Content
+          -
+            elementCondition: null
+            fieldUid: b693e790-e464-467a-81a1-f62bb9914cb2 # Hero afbeelding
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: aff6a7ea-f8f5-4642-8536-c1211c00a07d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 71121d32-13d9-4173-b4d5-cb96fb596e4d # Intro
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1ccc15a4-1fae-4ef5-856e-79dd81dea5f1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 2a7635da-9798-4a72-9262-84d14e66931f # Call to action(s)
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 23c7275e-fa3d-4a0d-91d9-6dab66663b60
+            userCondition: null
+            warning: null
+            width: 100
+        name: Hero
         uid: 7126682d-123c-417f-b9a0-77e0af55f4f7
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 42753f56-881c-4d30-82a4-7062d713de9b # Contentbuilder
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3675a782-16f1-45a3-a012-ace4442146e8
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhoud
+        uid: 069e18c1-499f-4d77-b533-38dbe4b8ecce
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 87757b92-04cd-4915-971d-e0d100fccb17 # SEO instellingen
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2b7ebe03-d2b5-4b78-ac62-731fa95625eb
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: 3fe68e99-6d2e-4d1c-8e7d-d0bd30a47a1b
         userCondition: null
 handle: default
 hasTitleField: true
 name: Default
 section: 41486e80-8cfb-4167-ab71-3939dc65b270 # Doelgroepen
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null
