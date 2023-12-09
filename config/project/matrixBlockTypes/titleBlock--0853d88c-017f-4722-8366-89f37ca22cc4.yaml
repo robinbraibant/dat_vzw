@@ -100,7 +100,7 @@ fields:
     settings:
       allowSelfRelations: false
       allowSubfolders: false
-      allowUploads: true
+      allowUploads: false
       allowedKinds:
         - image
       branchLimit: null
@@ -127,7 +127,7 @@ fields:
           -
             - class
             - craft\elements\conditions\assets\AssetCondition
-      selectionLabel: null
+      selectionLabel: 'Selecteer een afbeelding'
       showSiteMenu: true
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
@@ -148,7 +148,7 @@ fields:
     searchable: false
     settings:
       blockTypeFields: 0
-      changedFieldIndicator: 328795712
+      changedFieldIndicator: 1756357847
       columns:
         __assoc__:
           -
@@ -171,7 +171,7 @@ fields:
       minRows: null
       propagationKeyFormat: null
       propagationMethod: all
-      selectionLabel: null
+      selectionLabel: 'Voeg een call to action toe'
       staticField: null
     translationKeyFormat: null
     translationMethod: none
