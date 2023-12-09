@@ -6,7 +6,7 @@
     {% include "_snippets/_hero/_hero.twig" %}
 
     {% set jobs = craft.entries.section('jobs').collect() %}
-    
+
     {% if jobs|length %}
         <div class="container container--light">
             <div class="row row-grid">

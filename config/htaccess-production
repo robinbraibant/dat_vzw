@@ -1,0 +1,68 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    RewriteCond %{HTTP:Authorization} ^(.*)
+    RewriteRule .* - [e=HTTP_AUTHORIZATION:%1]
+
+    # Force any not .alpinedigital.dev domain to a www prefix
+    RewriteCond %{HTTP_HOST} !^www\.
+    RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+
+    # Force https
+    RewriteCond %{HTTPS} off
+    RewriteCond %{HTTP:X-Forwarded-Proto} !https
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+    # Send would-be 404 requests to Craft
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} !^/(favicon\.ico|apple-touch-icon.*\.png)$ [NC]
+    RewriteRule (.+) index.php?p=$1 [QSA,L]
+</IfModule>
+
+## EXPIRES CACHING ##
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType application/pdf "access 1 month"
+    ExpiresByType image/gif "access 1 year"
+    ExpiresByType image/jpeg "access 1 year"
+    ExpiresByType image/jpg "access 1 year"
+    ExpiresByType image/png "access 1 year"
+    ExpiresByType image/svg+xml "access 1 year"
+    ExpiresByType image/x-icon "access 1 year"
+    ExpiresByType text/css "access 1 month"
+    ExpiresByType text/html "access 0 seconds"
+    ExpiresByType text/x-javascript "access 0 seconds"
+</IfModule>
+## EXPIRES CACHING ##
+
+# 1 Month for most static assets
+<filesMatch ".(css|jpg|jpeg|png|gif|js|ico)$">
+    Header set Cache-Control "max-age=2592000, public"
+</filesMatch>
+
+# gzip compression
+<IfModule mod_deflate.c>
+    # Compress HTML, CSS, JavaScript, Text, XML and fonts
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE application/rss+xml
+    AddOutputFilterByType DEFLATE application/vnd.ms-fontobject
+    AddOutputFilterByType DEFLATE application/x-font
+    AddOutputFilterByType DEFLATE application/x-font-opentype
+    AddOutputFilterByType DEFLATE application/x-font-otf
+    AddOutputFilterByType DEFLATE application/x-font-truetype
+    AddOutputFilterByType DEFLATE application/x-font-ttf
+    AddOutputFilterByType DEFLATE application/x-javascript
+    AddOutputFilterByType DEFLATE application/xhtml+xml
+    AddOutputFilterByType DEFLATE application/xml
+    AddOutputFilterByType DEFLATE font/opentype
+    AddOutputFilterByType DEFLATE font/otf
+    AddOutputFilterByType DEFLATE font/ttf
+    AddOutputFilterByType DEFLATE image/svg+xml
+    AddOutputFilterByType DEFLATE image/x-icon
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/javascript
+    AddOutputFilterByType DEFLATE text/plain
+    AddOutputFilterByType DEFLATE text/xml
+</IfModule>
