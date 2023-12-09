@@ -1,4 +1,4 @@
-dateModified: 1687453454
+dateModified: 1702120346
 elementSources:
   craft\elements\Asset:
     -
@@ -605,7 +605,7 @@ plugins:
     edition: standard
     enabled: true
     licenseKey: HW968LUMOXV6UAT6T54CBCIV
-    schemaVersion: 2.0.10
+    schemaVersion: 2.0.11
     settings:
       ajaxTimeout: 10
       alertEmails: null
@@ -885,5 +885,5 @@ system:
   live: true
   name: 'Centrum Ambulante Revalidatie'
   retryDuration: null
-  schemaVersion: 4.4.0.4
+  schemaVersion: 4.5.3.0
   timeZone: Europe/Brussels
