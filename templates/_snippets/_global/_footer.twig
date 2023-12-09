@@ -1,83 +1,27 @@
 {% set socialMedia = craft.app.globals().getSetByHandle('socialMedia') %}
+{% set centers = contactDetails.centers.collect() %}
 
 <footer class="site-footer">
     <div class="footer-container contrast-element">
         <div class="footersections">
-                <a class="footersection__logo" href="/">
-{#                    {{ svg('@webroot/assets/logo/dat-vzw.svg')|attr({ role: 'img', 'aria-label': 'logo' }) }}#}
-                    <img src="assets/logo/company_logo.png" alt="logo cardat">
-                </a>
-            <div class="footersection footersection-contactinfo">
-{#                <h3 class="footersection__headline">{{'Contact'|t}}</h3>#}
-                {% include '_snippets/_global/_partials/_address.twig' %}
+            <a class="footersection__logo" href="/">
+                <img src="assets/logo/company_logo.png" alt="logo cardat">
+            </a>
+            <div class="footersection footersection__socials">
                 {% include '_snippets/_global/_partials/_social.twig' %}
             </div>
-{#            <div class="footersection footersection-social">#}
-{#                {% if socialMedia|length %}#}
-{#                <div class="footersection__social">#}
-{#                    {% include '_snippets/_global/_partials/_contact.twig' %}#}
-{#                </div>#}
-{#                {% endif %}#}
-{#            </div>#}
-
+            {% for center in centers %}
+                <div class="footersection footersection-address">
+                    {% include '_snippets/_global/_partials/_address.twig' %}
+                </div>
+            {% endfor %}
              <div class="footersection footersection-navigation">
                 {% include '_snippets/_navigation/_footernav.twig' %}
             </div>
         </div>
     </div>
 
-
     {% include '_snippets/_global/_sponsors.twig' %}
 
     {% include '_snippets/_global/_credits.twig' %}
 </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-{# <footer class="site-footer">
-    <div class="footer row">
-        <div class="footer__sections col-full">
-            <section class="footer__section footer__section--main">
-                {% include '_snippets/_navigation/_footernav.twig' %}
-            </section>
-            <section class="footer__section footer__section--contact">
-                <h4 class="footer__section__headline">{{ 'Contactgegevens'|t }}</h4>
-                <div class="footer__section--contact__sections">
-                    <div class="footer__section--contact__section">
-                        <h5 class="footer__section--contact__headline">{{ systemName }}</h5>
-                    </div>
-                    <div class="footer__section--contact__section">
-                        {% if contactDetails.phone|length %}
-                        <div class="contact__item">
-                            <a title="{{ " Bel "|t ~ systemName }}" target="_blank" rel="nofollow"
-                                href="https://wa.me/{{ contactDetails.phone|replace({' ': ''}) }}">{{ contactDetails.phone }}</a>
-                        </div>
-                        {% endif %}
-                        {% if contactDetails.email|length %}
-                        <div class="contact__item">
-                            <a title="{{ " Mail "|t ~ systemName }}" target="_blank" rel="nofollow"
-                                href="mailto:{{ contactDetails.email }}">{{ contactDetails.email }}</a>
-                        </div>
-                        {% endif %}
-                    </div>
-                </div>
-            </section>
-        </div>
-    </div>
-    {% include '_snippets/_global/_credits.twig' %}
-</footer> #}

@@ -1,16 +1,13 @@
-{% set centers = contactDetails.centers.collect() %}
-
-{% for center in centers %}
 <div class="contactinfo__item">
     {% if center.centerName|length %}
-    <div class="contactinfo__line">
-        {{ center.centerName }}
-    </div>
+        <div class="contactinfo__line">
+            {{ center.centerName }}
+        </div>
     {% endif %}
     {% if center.streetNr|length %}
-    <div class="contactinfo__line">
-        {{ center.streetNr }}
-    </div>
+        <div class="contactinfo__line">
+            {{ center.streetNr }}
+        </div>
     {% endif %}
     {% if center.postalCode|length and center.town|length %}
     <div class="contactinfo__line">
@@ -19,26 +16,35 @@
         </span>
         {% endif %}
         {% if center.town|length %}
-        <span>
+            <span>
             {{ center.town }}
         </span>
         {% endif %}
     </div>
     {% if center.phone|length %}
-        <a class="contactinfo__link" href="tel:{{center.phone}}">
-            {{svg('@webroot/assets/icons/phone.svg')}}
+        <a class="contactinfo__link" href="tel:{{ center.phone }}">
+            {{ svg('@webroot/assets/icons/phone.svg') }}
             <div class="contactinfo__info">
-                {{center.phone}}
+                {{ center.phone }}
             </div>
         </a>
     {% endif %}
     {% if center.email|length %}
-        <a class="contactinfo__link" href="mailto:{{center.email}}">
-            {{svg('@webroot/assets/icons/mail.svg')}}
+        <a class="contactinfo__link" href="mailto:{{ center.email }}">
+            {{ svg('@webroot/assets/icons/mail.svg') }}
             <div class="contactinfo__info">
-                {{center.email}}
+                {{ center.email }}
             </div>
         </a>
     {% endif %}
+    {% if center.openingHours|length %}
+        <div class="contactinfo__item">
+            <div class="contactinfo__line contactinfo__title">
+                <span class="">{{ "Openingsuren:"|t }}</span>
+            </div>
+            <div class="contactinfo__line ">
+                <div class="contactinfo__hours">{{ center.openingHours }}</div>
+            </div>
+        </div>
+    {% endif %}
 </div>
-{% endfor %}

@@ -89,6 +89,18 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            elementCondition: null
+            fieldUid: ddf4eacd-15f0-405c-bd4b-ead4dd854d87 # Openingsuren
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 688e0717-b375-4988-9461-f221439f1afb
+            userCondition: null
+            warning: null
+            width: 100
         name: Content
         uid: 5f0d7019-0675-4084-9488-bda3d255ee9a
         userCondition: null
@@ -166,6 +178,34 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
+  ddf4eacd-15f0-405c-bd4b-ead4dd854d87: # Openingsuren
+    columnSuffix: xrpypkrk
+    contentColumnType: text
+    fieldGroup: null
+    handle: openingHours
+    instructions: null
+    name: Openingsuren
+    searchable: true
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: null
+      purifyHtml: true
+      redactorConfig: Simple.json
+      removeEmptyTags: false
+      removeInlineStyles: false
+      removeNbsp: false
+      showHtmlButtonForNonAdmins: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
   fbd0191b-5b18-4c77-81db-73ba0839a3c5: # Titel centrum
     columnSuffix: ovspsqri
     contentColumnType: text

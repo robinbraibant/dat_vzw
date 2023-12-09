@@ -73,6 +73,23 @@
     }
 }
 
+.contactinfo__title {
+    color: $white;
+    font-weight: 700;
+    text-decoration: underline;
+    margin-top: $spacing-small;
+    margin-bottom: $spacing-small;
+}
+
+.contactinfo__hours {
+    display: flex;
+    flex-wrap: wrap;
+    p {
+        width: 100%;
+        margin-bottom: 0;
+    }
+}
+
 .centers {
     padding: 3rem;
     border: 1px $color-primary-light solid;

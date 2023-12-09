@@ -1,4 +1,4 @@
-dateModified: 1702137666
+dateModified: 1702140038
 elementSources:
   craft\elements\Asset:
     -
@@ -417,6 +417,7 @@ meta:
     44010198-8517-4cd1-a816-5ca11c0f67c9: Lijst # Lijst
     49811070-72ae-4f54-9647-de515b8389d3: 'Call to action' # Call to action
     67570986-56e5-4ab7-811f-affc46240744: 'Positie blok' # Positie blok
+    77399040-87f4-4a7c-8de0-531f10b5337c: Openingsuren # Openingsuren
     94594033-0ed8-4fcc-bce2-c1bfe90b0507: Gemeente # Gemeente
     97045692-3725-43a8-a480-2c8a3f31327d: Achtergrondkleur # Achtergrondkleur
     99353161-d95b-4cf5-a3a2-69edf88d7f44: LinkedIn # LinkedIn
@@ -497,6 +498,7 @@ meta:
     db87c08e-7aa1-4adf-a5db-c8fd41241928: Privacybeleid # Privacybeleid
     dc1dfa5b-1e24-4cb4-992c-05ac3f8fdc5b: Titel # Titel
     dc7cb444-9d01-419e-89bf-e0019fe15ec2: Titel # Titel
+    ddf4eacd-15f0-405c-bd4b-ead4dd854d87: Openingsuren # Openingsuren
     de9903b9-4b06-4d9f-a8f4-13c8e30dfb07: Tekst # Tekst
     defdf311-a20e-4586-9fd6-e5a6fbe2df2f: 'Systeem offline' # Systeem offline
     df6e436d-d5c5-47c9-acc0-b106085f22da: Tekst # Tekst
