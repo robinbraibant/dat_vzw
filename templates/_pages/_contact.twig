@@ -20,16 +20,21 @@
                 <div class="centers">
                     <h3 class="centers__leading">{{ "Onze centra"|t }}</h3>
                     {% for center in centers %}
-                        <h4 class="centers__sub-leading" >{{ center.centerTitle }}</h4>
+                        <h4 class="centers__sub-leading">{{ center.centerTitle }}</h4>
                         <div>{{ center.centerName }}</div>
                         <div>{{ center.streetNr }}</div>
                         <div>{{ center.postalCode }} {{ center.town }}</div>
-			<div>
-				<a mailto="{{ center.mail }}" class="button button--link">{{ center.mail }}</a>
-			</div>
+                        <div>
+                            <a href="mailto:{{ center.mail }}" class="button button--link">{{ center.mail }}</a>
+                        </div>
                         <div class="centers__buttons">
-                            <div class="button button--outline-primary">{{ center.phone }}</div>
-                            <div class="button button--outline-light">Open Google Maps</div>
+                            <div class="button button--outline-primary">
+                                <a href="https://wa.me/{{ center.phone|replace({' ': ''}) }}"
+                                   target="_blank" rel="nofollow">{{ center.phone }}</a>
+                            </div>
+                            <div class="button button--outline-light">
+                                <a href="https://maps.google.com/?q={{ center.streetNr }} {{ center.postalCode }} {{ center.town }}" target="_blank" rel="nofollow">{{ "Open Google Maps"|t }}</a>
+                            </div>
                         </div>
                     {% endfor %}
                 </div>
