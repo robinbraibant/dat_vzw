@@ -4,7 +4,7 @@
             {# <div class="header__start"> #}
                 <a class="header__logo" href="/">
 {#                    {{ svg('@webroot/assets/logo/dat-vzw.svg')|attr({ role: 'img', 'aria-label': 'logo' }) }}#}
-                    <img src="assets/logo/company_logo.png" alt="logo cardat">
+                    <img src="{{ getenv('BASE_URL') }}/assets/logo/company_logo.png" alt="logo cardat">
                 </a>
                 {#
             </div> #}

@@ -5,7 +5,7 @@
     <div class="footer-container contrast-element">
         <div class="footersections">
             <a class="footersection__logo" href="/">
-                <img src="assets/logo/company_logo.png" alt="logo cardat">
+                <img src="{{ getenv('BASE_URL') }}/assets/logo/company_logo.png" alt="logo cardat">
             </a>
             <div class="footersection footersection__socials">
                 {% include '_snippets/_global/_partials/_social.twig' %}

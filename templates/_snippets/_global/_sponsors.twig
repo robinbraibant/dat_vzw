@@ -9,9 +9,13 @@
                     {% set logo = sponsor.image.one() %}
                     {% if logo %}
                         <li class="sponsorgrid-item">
+                            {% if sponsor.linkIt|length %}
                             <a class="sponsorgrid-link" href="{{ sponsor.linkIt }}" target="_blank">
+                            {% endif %}
                                 <img class="sponsorgrid-logo" src="{{ logo.getUrl() }}" alt="{{ sponsor.title }}">
+                            {% if sponsor.linkIt|length %}
                             </a>
+                            {% endif %}
                         </li>
                     {% endif %}
                 {% endfor %}
