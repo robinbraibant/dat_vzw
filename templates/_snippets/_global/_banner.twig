@@ -1,11 +1,9 @@
+{% set topNav = craft.navigate.raw('topNav') %}
+
 <div class="banner-container">
     <div class="banner">
-{#        {% include "_snippets/_global/_partials/_contact.twig" %}#}
-        {% include "_snippets/_global/_partials/_social.twig"
-        with {
-        'smallIcons': true
-        }
-
-        %}
+        {% if topNav|length %}
+            {% include '_snippets/_navigation/_topnav.twig' %}
+        {% endif %}
     </div>
 </div>

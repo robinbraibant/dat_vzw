@@ -2,6 +2,7 @@
 @use "../tools" as *;
 
 .topnav {
+    margin-right: $spacing;
     @include mq(0, $bp-mobilenav) {
         display: flex;
         flex-flow: column nowrap;
@@ -22,6 +23,10 @@
         align-items: center;
         justify-content: flex-end;
     }
+}
+
+.topnav__mobile {
+    display:none
 }
 
 .topnav__section {

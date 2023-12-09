@@ -1,0 +1,6 @@
+adminOnly: 1
+allowSources: '["entry","url"]'
+enabledSiteGroups: '["1"]'
+handle: topNav
+levels: '1'
+title: Topnavigatie
