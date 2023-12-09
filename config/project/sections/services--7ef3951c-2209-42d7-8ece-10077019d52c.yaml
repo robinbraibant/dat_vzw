@@ -8,5 +8,8 @@ siteSettings:
     enabledByDefault: true
     hasUrls: true
     template: _pages/_services/_entry.twig
-    uriFormat: 'services/{slug}'
-type: channel
+    uriFormat: 'onze-werking/{slug}'
+structure:
+  maxLevels: null
+  uid: ec887ad1-7cbc-4731-9c7d-12e441e0cacd
+type: structure

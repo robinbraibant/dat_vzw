@@ -8,5 +8,5 @@ siteSettings:
     enabledByDefault: true
     hasUrls: true
     template: _pages/_services/_index.twig
-    uriFormat: diensten
+    uriFormat: onze-werking
 type: single

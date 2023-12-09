@@ -150,8 +150,10 @@
 }
 
 .footernav {
-    display: flex;
-    justify-content: center;
+    @include mq(0, lg) {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .footernav__list {
