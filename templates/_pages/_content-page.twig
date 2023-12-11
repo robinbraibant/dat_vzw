@@ -4,8 +4,16 @@
 
 {% block content %}
 
-{% include "_snippets/_hero/_heroDefault.twig" %}
+    {% include "_snippets/_hero/_heroDefault.twig" %}
 
-{% include '_snippets/_content/_contentBuilder.twig' %}
+    <div class="container">
+        {% include '_snippets/_content/_contentBuilder.twig' with {
+            settings: {
+                container: 'container',
+                row: 'row',
+                col: 'col-full'
+            }
+        } %}
+    </div>
 
 {% endblock %}

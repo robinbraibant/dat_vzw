@@ -44,23 +44,28 @@ ol {
     list-style: decimal;
 
     &:not([class]) {
-        list-style: none;
-        counter-reset: li;
-
+        list-style-type: decimal;
         > li {
-            counter-increment: li;
-
-            &::before {
-                display: inline-block;
-                content: counter(li)'.';
-                font-family: $font-family-secondary;
-                font-weight: 500;
-                font-style: italic;
+            &::marker {
                 color: $color-primary;
-                width: 1em;
-                margin-left: -1em;
             }
         }
+        //counter-reset: li;
+
+        //> li {
+        //    counter-increment: li;
+        //
+        //    &::before {
+        //        display: inline-block;
+        //        content: counter(li)'.';
+        //        font-family: $font-family-secondary;
+        //        font-weight: 500;
+        //        font-style: italic;
+        //        color: $color-primary;
+        //        width: 1em;
+        //        margin-left: -1em;
+        //    }
+        //}
     }
 
     .contrast-element &:not([class]) > li::before {

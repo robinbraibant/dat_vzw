@@ -4,7 +4,8 @@
     "italic",
     "underline",
     "ul",
-    "ol"
+    "ol",
+    "link"
   ],
   "linkNewTab": true,
   "pasteLinks": false,
