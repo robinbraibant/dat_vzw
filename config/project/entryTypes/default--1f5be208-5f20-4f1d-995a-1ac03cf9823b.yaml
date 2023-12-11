@@ -41,7 +41,19 @@ fieldLayouts:
             uid: ab62240b-28a8-4550-9bb3-fab7d498b813
             userCondition: null
             warning: null
-            width: 100
+            width: 75
+          -
+            elementCondition: null
+            fieldUid: e57c50c0-e93d-4551-afbc-bfccd8274f8d # Wijzig weergave
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 35004bfa-645b-4083-b18f-ab98e0d231f1
+            userCondition: null
+            warning: null
+            width: 25
           -
             elementCondition: null
             fieldUid: 71121d32-13d9-4173-b4d5-cb96fb596e4d # Intro
@@ -87,7 +99,7 @@ fieldLayouts:
           -
             elementCondition: null
             fieldUid: 2ed0506e-2d1d-4f21-a387-92dcc5cf64f7 # Overview Afbeelding
-            instructions: null
+            instructions: "Geef hier een afbeelding in die je wilt gebruiken wanneer een overzichtskaartje van deze entry wordt weergeven.\r\nIndien je deze leeg laat zal de hoofdafbeelding of de fallback afbeelding gebruikt worden."
             label: null
             required: false
             tip: null
@@ -99,24 +111,12 @@ fieldLayouts:
           -
             elementCondition: null
             fieldUid: 4e18d419-eb43-4cd2-8bbc-4506bd22e89b # Tekst
-            instructions: "Geef hier een omschrijving in die je wilt gebruiken wanneer een overzichtskaartje van deze entry wordt weergeven.\r\n"
+            instructions: "Geef hier een omschrijving in die je wilt gebruiken wanneer een overzichtskaartje van deze entry wordt weergeven.\r\nIndien je hier niets invult, zal de inhoud van het intro veld gebruikt worden."
             label: 'Overview Omschrijving'
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 5ba7164c-2059-402f-a87d-8f1987743087
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 00902a84-6c99-4c98-97db-207d7ed13b5c # Toon datum
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: c7dba6f2-00af-4575-a246-97059c159a04
             userCondition: null
             warning: null
             width: 100
@@ -163,6 +163,9 @@ handle: default
 hasTitleField: true
 name: Default
 section: 17b45978-7dbb-4e1a-b576-dbd15ff1f1ae # Blog
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null

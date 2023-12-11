@@ -9,4 +9,7 @@ siteSettings:
     hasUrls: true
     template: _pages/_blog/_entry.twig
     uriFormat: 'blog/{slug}'
-type: channel
+structure:
+  maxLevels: 1
+  uid: 391cc616-78ac-40f5-a3b7-6d49c9dbb604
+type: structure

@@ -78,11 +78,13 @@
 }
 
 .team-category--cardgrid {
-    width: 75%;
     margin: 6rem auto;
     @include mq(md) {
         display: flex;
         flex-flow: row wrap;
+    }
+    @include mq(0, xl) {
+        margin: 6rem 1.5rem;
     }
 }
 

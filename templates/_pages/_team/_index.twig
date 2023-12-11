@@ -1,6 +1,8 @@
 {% extends '_layout.twig' %}
 
-{% set breadcrumbs = [entry] %}
+{% set breadcrumbs = [
+    entry
+] %}
 
 {% block content %}
 
@@ -8,31 +10,43 @@
 
     {% set disciplines = craft.entries.section('team').all() %}
     {% if disciplines|length %}
-        <div class="team-category--cardgrid">
-            {% for discipline in disciplines %}
-                <a href="{{ discipline.getUrl() }}" class="team-category--cardgrid-item">
-                    {% set image = discipline.overviewImage.one() %}
-                    {% if image %}
-                        <div class="team-category--card-image">
-                            <img src="{{ image.getUrl() }}" alt="{{ image.title }}">
-                        </div>
-                    {% endif %}
-                    <div class="team-category--card-text">
-                        <h4 class="team-category--card-leading">
-                            {{ discipline.overviewTitle|length ? discipline.overviewTitle : discipline.title }}
-                        </h4>
-                    </div>
-                    <div class="team-category--line">
-                        <div class="team-category--card-circle"></div>
-                        <div class="team-category--card-line">
-                            <div class="team-category-card-line-animation"></div>
-                        </div>
-                    </div>
-                </a>
-            {% endfor %}
+        <div class="container">
+            <div class="row">
+                <div class="team-category--cardgrid">
+                    {% for discipline in disciplines %}
+                        <a href="{{ discipline.getUrl() }}" class="team-category--cardgrid-item">
+                            {% set image = discipline.overviewImage.one() %}
+                            {% if image %}
+                                <div class="team-category--card-image">
+                                    <img src="{{ image.getUrl() }}" alt="{{ image.title }}">
+                                </div>
+                            {% endif %}
+                            <div class="team-category--card-text">
+                                <h4 class="team-category--card-leading">
+                                    {{ discipline.overviewTitle|length ? discipline.overviewTitle : discipline.title }}
+                                </h4>
+                            </div>
+                            <div class="team-category--line">
+                                <div class="team-category--card-circle"></div>
+                                <div class="team-category--card-line">
+                                    <div class="team-category-card-line-animation"></div>
+                                </div>
+                            </div>
+                        </a>
+                    {% endfor %}
+                </div>
+            </div>
         </div>
     {% endif %}
 
-    {% include '_snippets/_content/_contentBuilder.twig' %}
+    <div class="container">
+        {% include '_snippets/_content/_contentBuilder.twig' with {
+            settings: {
+                container: 'container',
+                row: 'row',
+                col: 'col-full'
+            }
+        } %}
+    </div>
 
 {% endblock %}

@@ -9,4 +9,7 @@ siteSettings:
     hasUrls: true
     template: _pages/_jobs/_entry.twig
     uriFormat: 'vacatures/{slug}'
-type: channel
+structure:
+  maxLevels: 1
+  uid: cf43eeba-d378-4d7c-a8b1-b638117f94bf
+type: structure

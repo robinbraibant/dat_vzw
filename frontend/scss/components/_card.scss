@@ -75,3 +75,9 @@
     transition: transform 0.2s ease-in-out;
     overflow: hidden;
 }
+
+.card__date {
+    margin-bottom: $vertical-spacing;
+    color: $color-text-light;
+    order: -1;
+}

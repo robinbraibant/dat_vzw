@@ -41,7 +41,19 @@ fieldLayouts:
             uid: 467690ca-7458-4d4a-ae11-c2b2bb1494d4
             userCondition: null
             warning: null
-            width: 100
+            width: 75
+          -
+            elementCondition: null
+            fieldUid: e57c50c0-e93d-4551-afbc-bfccd8274f8d # Wijzig weergave
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7e46f31c-e157-4e6c-a31d-798426f6a36e
+            userCondition: null
+            warning: null
+            width: 25
           -
             elementCondition: null
             fieldUid: 71121d32-13d9-4173-b4d5-cb96fb596e4d # Intro
@@ -109,6 +121,9 @@ handle: teamOverview
 hasTitleField: true
 name: 'Team overzicht'
 section: 2ff59dd4-51db-4003-b745-1540e397b55f # Team overzicht
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

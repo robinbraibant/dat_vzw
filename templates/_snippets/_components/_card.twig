@@ -16,7 +16,7 @@
                     <h3 class="card__headline">{{ item.overviewTitle|length ? item.overviewTitle : item.title }}</h3>
                 {% endif %}
                 {% if showDate is defined and showDate %}
-                    <time class="blog__date" datetime="{{item.postDate|date('m-d-Y')}}">{{item.postDate|date('j F Y')}}</time>
+                    <time class="card__date" datetime="{{item.postDate|date('m-d-Y')}}">{{item.postDate|date('j F Y')}}</time>
                 {% endif %}
             </div>
             {% if item.intro|length or item.redactor|length %}
