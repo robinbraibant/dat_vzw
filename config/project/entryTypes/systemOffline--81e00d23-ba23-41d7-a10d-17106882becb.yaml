@@ -41,7 +41,19 @@ fieldLayouts:
             uid: 9fcd5581-7911-4ba3-8a3a-beeb9f2db080
             userCondition: null
             warning: null
-            width: 100
+            width: 75
+          -
+            elementCondition: null
+            fieldUid: e57c50c0-e93d-4551-afbc-bfccd8274f8d # Wijzig weergave
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c8fc3779-b770-4d5f-9fa6-0078d6c08e6b
+            userCondition: null
+            warning: null
+            width: 25
           -
             elementCondition: null
             fieldUid: 71121d32-13d9-4173-b4d5-cb96fb596e4d # Intro
@@ -87,28 +99,13 @@ fieldLayouts:
         name: Inhoud
         uid: 97becc2c-9686-4f75-8626-d4e9fe65562d
         userCondition: null
-      -
-        elementCondition: null
-        elements:
-          -
-            elementCondition: null
-            fieldUid: 87757b92-04cd-4915-971d-e0d100fccb17 # SEO instellingen
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 5509b94d-8387-4810-ba60-03dac9f8f090
-            userCondition: null
-            warning: null
-            width: 100
-        name: SEO
-        uid: 46d32df0-406f-4265-b26f-73b641a3cd0f
-        userCondition: null
 handle: systemOffline
 hasTitleField: true
 name: 'Systeem offline'
 section: defdf311-a20e-4586-9fd6-e5a6fbe2df2f # Systeem offline
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

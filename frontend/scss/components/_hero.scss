@@ -4,12 +4,13 @@
 .hero-container {
     position: relative;
     padding-top: $vertical-spacing * 2;
-    padding-bottom: $vertical-spacing;
+    padding-bottom: $vertical-spacing * 2;
     background-color: #0067a8;
 
     @include mq($bp-mobilenav) {
         padding-top: $vertical-spacing * 3;
         padding-bottom: $vertical-spacing * 2;
+        margin-bottom: $vertical-spacing;
 
         &.has-pattern {
             padding-top: calc(100vw * 0.0625);
@@ -231,11 +232,21 @@
         position: absolute;
         top: $spacing;
         right: 0;
-        height: calc(100% - #{$spacing-large});
+        height: calc(90% - #{$spacing-large});
         z-index: 0;
+        border-radius: 20px;
+        opacity: 80%;
+
+        @include mq(0, md) {
+            height: calc(100% - #{$spacing-large});
+        }
 
         @include mq(md) {
             left: 65%;
+        }
+
+        @include mq(lg) {
+            opacity: unset;
         }
     }
 }

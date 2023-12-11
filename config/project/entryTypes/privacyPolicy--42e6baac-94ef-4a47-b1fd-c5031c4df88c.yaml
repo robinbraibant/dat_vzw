@@ -41,7 +41,19 @@ fieldLayouts:
             uid: f092b558-45cd-4fe6-937f-a817d6253084
             userCondition: null
             warning: null
-            width: 100
+            width: 75
+          -
+            elementCondition: null
+            fieldUid: e57c50c0-e93d-4551-afbc-bfccd8274f8d # Wijzig weergave
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6d8e4e11-c72f-4c6e-95c9-23925fa06700
+            userCondition: null
+            warning: null
+            width: 25
           -
             elementCondition: null
             fieldUid: 71121d32-13d9-4173-b4d5-cb96fb596e4d # Intro
@@ -87,28 +99,13 @@ fieldLayouts:
         name: Inhoud
         uid: 64d1cb54-de4c-462f-a697-4020f3d02fa6
         userCondition: null
-      -
-        elementCondition: null
-        elements:
-          -
-            elementCondition: null
-            fieldUid: 87757b92-04cd-4915-971d-e0d100fccb17 # SEO instellingen
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 7e9ef266-d8e9-4dee-b32f-a35ad553f2fb
-            userCondition: null
-            warning: null
-            width: 100
-        name: SEO
-        uid: 3a39a2d2-f41c-4e0a-9f20-99a350596f6b
-        userCondition: null
 handle: privacyPolicy
 hasTitleField: true
 name: Privacybeleid
 section: db87c08e-7aa1-4adf-a5db-c8fd41241928 # Privacybeleid
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

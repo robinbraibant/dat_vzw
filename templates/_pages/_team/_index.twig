@@ -4,7 +4,7 @@
 
 {% block content %}
 
-    {% include "_snippets/_hero/_heroDefault.twig" %}
+    {% include "_snippets/_hero/_hero.twig" %}
 
     {% set disciplines = craft.entries.section('team').all() %}
     {% if disciplines|length %}

@@ -41,7 +41,19 @@ fieldLayouts:
             uid: d8eaf528-27e9-471c-83b3-7bf8d466e6a9
             userCondition: null
             warning: null
-            width: 100
+            width: 75
+          -
+            elementCondition: null
+            fieldUid: e57c50c0-e93d-4551-afbc-bfccd8274f8d # Wijzig weergave
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 35d4bfde-bd1b-4e88-a411-649479463b94
+            userCondition: null
+            warning: null
+            width: 25
           -
             elementCondition: null
             fieldUid: 71121d32-13d9-4173-b4d5-cb96fb596e4d # Intro
@@ -87,28 +99,13 @@ fieldLayouts:
         name: Inhoud
         uid: 52f5a8e4-d21d-4fec-99be-f029b8ed7c1a
         userCondition: null
-      -
-        elementCondition: null
-        elements:
-          -
-            elementCondition: null
-            fieldUid: 87757b92-04cd-4915-971d-e0d100fccb17 # SEO instellingen
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: a10be9ec-b46f-469f-9acd-bcb66e9380d4
-            userCondition: null
-            warning: null
-            width: 100
-        name: SEO
-        uid: cb5b596d-d1c8-4e7f-8c29-e061906f0c73
-        userCondition: null
 handle: pageNotFound
 hasTitleField: true
 name: 'Pagina niet gevonden'
 section: 88490f65-d10d-4df0-b13e-98cbcbda3135 # Pagina niet gevonden
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

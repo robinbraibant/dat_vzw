@@ -1,0 +1,14 @@
+columnSuffix: xsxakmex
+contentColumnType: boolean
+fieldGroup: ee71a197-2900-41c3-8ede-20b5bc467852 # Common
+handle: changeView
+instructions: 'Gebruik deze lightswitch om de weergave van de afbeelding te wijzigen.'
+name: 'Wijzig weergave'
+searchable: false
+settings:
+  default: false
+  offLabel: Patroon
+  onLabel: Basis
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

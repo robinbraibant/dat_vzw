@@ -41,7 +41,19 @@ fieldLayouts:
             uid: 4d95d0af-a359-408a-8aa7-bcb3fb634f63
             userCondition: null
             warning: null
-            width: 100
+            width: 75
+          -
+            elementCondition: null
+            fieldUid: e57c50c0-e93d-4551-afbc-bfccd8274f8d # Wijzig weergave
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 569b7810-3955-445b-8ad0-dcb687579c2d
+            userCondition: null
+            warning: null
+            width: 25
           -
             elementCondition: null
             fieldUid: 71121d32-13d9-4173-b4d5-cb96fb596e4d # Intro

@@ -41,7 +41,19 @@ fieldLayouts:
             uid: 687be6ef-e19c-4d66-91b6-36e32ac9af0c
             userCondition: null
             warning: null
-            width: 100
+            width: 75
+          -
+            elementCondition: null
+            fieldUid: e57c50c0-e93d-4551-afbc-bfccd8274f8d # Wijzig weergave
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4f322688-5282-4e72-bbc0-6571b5d08fe7
+            userCondition: null
+            warning: null
+            width: 25
           -
             elementCondition: null
             fieldUid: 71121d32-13d9-4173-b4d5-cb96fb596e4d # Intro
@@ -87,28 +99,13 @@ fieldLayouts:
         name: Inhoud
         uid: b47391ea-bc58-4739-ba19-40e5ede10491
         userCondition: null
-      -
-        elementCondition: null
-        elements:
-          -
-            elementCondition: null
-            fieldUid: 87757b92-04cd-4915-971d-e0d100fccb17 # SEO instellingen
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: d8b86b04-66da-4d4e-bca9-cc7d5967ff55
-            userCondition: null
-            warning: null
-            width: 100
-        name: SEO
-        uid: f9f6941f-26ec-4267-980c-0f62f658d0bb
-        userCondition: null
 handle: cookiePolicy
 hasTitleField: true
 name: Cookiebeleid
 section: 80ff6c1f-a362-46a8-968e-075a260d17ce # Cookiebeleid
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: '{heroTitle|striptags}'
 titleTranslationKeyFormat: null
