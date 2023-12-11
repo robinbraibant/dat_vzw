@@ -44,7 +44,7 @@ return [
         'enableTemplateCaching' => true,
         'backupOnUpdate' => true,
         // Whether administrative changes should be allowed
-        'allowAdminChanges' => true,
+        'allowAdminChanges' => (php_sapi_name() === 'cli'),
         'aliases' => [
             'basePath' => $_SERVER['DOCUMENT_ROOT'],
             "baseUrl" => App::env("BASE_URL"),

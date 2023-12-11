@@ -1,11 +1,14 @@
 {% extends '_layout.twig' %}
-{% set breadcrumbs = [entry] %}
+
+{% set breadcrumbs = [
+    entry
+] %}
+
+{% set jobs = craft.entries.section('jobs').collect() %}
 
 {% block content %}
 
     {% include "_snippets/_hero/_hero.twig" %}
-
-    {% set jobs = craft.entries.section('jobs').collect() %}
 
     {% if jobs|length %}
         <div class="container container--light">
@@ -17,10 +20,24 @@
                 {% endfor %}
             </div>
         </div>
+    {% else %}
+        <div class="container">
+            <div class="row">
+                <div class="col-full">
+                    {{ "Momenteel zijn er geen vacatures binnen onze organisatie"|t }}
+                </div>
+            </div>
+        </div>
     {% endif %}
 
     <div class="container">
-        {% include '_snippets/_content/_contentBuilder.twig' %}
+        {% include '_snippets/_content/_contentBuilder.twig' with {
+            settings: {
+                container: 'container',
+                row: 'row',
+                col: 'col-full'
+            }
+        } %}
     </div>
 
 {% endblock %}

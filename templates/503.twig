@@ -1,5 +1,6 @@
-{% set entry = craft.entries.section('systemOffline').one() %}
 {% extends '_layout.twig' %}
+
+{% set entry = craft.entries.section('systemOffline').one() %}
 
 {% set breadcrumbs = [
     entry

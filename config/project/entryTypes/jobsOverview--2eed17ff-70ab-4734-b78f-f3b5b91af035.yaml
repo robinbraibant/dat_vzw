@@ -41,7 +41,7 @@ fieldLayouts:
             uid: db581b27-3cfa-405a-97c8-61d458870986
             userCondition: null
             warning: null
-            width: 100
+            width: 75
           -
             elementCondition: null
             fieldUid: e57c50c0-e93d-4551-afbc-bfccd8274f8d # Wijzig weergave

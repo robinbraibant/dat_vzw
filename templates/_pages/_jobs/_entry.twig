@@ -1,6 +1,10 @@
 {% extends '_layout.twig' %}
+
 {% set parent = craft.entries.section('jobsOverview').one() %}
-{% set breadcrumbs = [parent, entry] %}
+{% set breadcrumbs = [
+    parent,
+    entry
+] %}
 
 {% block content %}
 

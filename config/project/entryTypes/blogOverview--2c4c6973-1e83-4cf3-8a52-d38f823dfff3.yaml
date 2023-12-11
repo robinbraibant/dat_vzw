@@ -41,7 +41,19 @@ fieldLayouts:
             uid: 02e21706-fbbb-4af9-9414-2fa7ba65ad9b
             userCondition: null
             warning: null
-            width: 100
+            width: 75
+          -
+            elementCondition: null
+            fieldUid: e57c50c0-e93d-4551-afbc-bfccd8274f8d # Wijzig weergave
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 62202230-eaf2-46fa-b557-d4c9fb80671c
+            userCondition: null
+            warning: null
+            width: 25
           -
             elementCondition: null
             fieldUid: 71121d32-13d9-4173-b4d5-cb96fb596e4d # Intro
@@ -109,6 +121,9 @@ handle: blogOverview
 hasTitleField: true
 name: 'Blog Overzicht'
 section: e8aee90c-bbbd-4082-928c-d34b7b58d3e0 # Blog Overzicht
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: '{heroTitle|striptags}'
 titleTranslationKeyFormat: null

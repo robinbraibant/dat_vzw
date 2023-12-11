@@ -2,18 +2,28 @@
 {% if image|length <= 0 %}
     {% set image = item.heroImage.one() %}
 {% endif %}
+{% if useFallback is defined and useFallback %}
+    {% if image|length <= 0 %}
+        {% set image = fallback.image.one() %}
+    {% endif %}
+{% endif %}
 
 <article class="card">
     <a class="card__content" href="{{ item.getUrl() }}">
         <div class="card__body">
-            {% if item.title|length %}
-                <h3 class="card__headline">{{ item.overviewTitle|length ? item.overviewTitle : item.title }}</h3>
-            {% endif %}
+            <div class="card__head">
+                {% if item.title|length %}
+                    <h3 class="card__headline">{{ item.overviewTitle|length ? item.overviewTitle : item.title }}</h3>
+                {% endif %}
+                {% if showDate is defined and showDate %}
+                    <time class="blog__date" datetime="{{item.postDate|date('m-d-Y')}}">{{item.postDate|date('j F Y')}}</time>
+                {% endif %}
+            </div>
             {% if item.intro|length or item.redactor|length %}
                 <div class="card__text">{{ item.redactor ? item.redactor : item.intro }}</div>
             {% endif %}
             <div class="button button--primary">
-                {{ "Lees meer"|t }}
+                {{ "Meer lezen"|t }}
             </div>
         </div>
 

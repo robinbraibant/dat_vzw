@@ -1,16 +1,34 @@
 {% extends '_layout.twig' %}
-{% set breadcrumbs = [entry] %}
+
+{% set breadcrumbs = [
+    entry
+] %}
+
+{% set blogs = craft.entries().section('blog').with(['image']).collect() %}
 
 {% block content %}
 
-{% include "_snippets/_hero/_hero.twig" %}
+    {% include "_snippets/_hero/_hero.twig" %}
 
-{% include "_snippets/_content/_blocks/_blogAll.twig"
-with {
-'block': false
-}
-%}
+    <div class="container">
+        <div class="row row-grid">
+            {% for item in blogs %}
+                <div class="col-md-6 col-lg-4">
+                    {% include "_snippets/_components/_card.twig"
+                        with { useFallback: true, showDate: true } %}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
 
-{% include '_snippets/_content/_contentBuilder.twig' %}
+    <div class="container">
+        {% include '_snippets/_content/_contentBuilder.twig' with {
+            settings: {
+                container: 'container',
+                row: 'row',
+                col: 'col-full'
+            }
+        } %}
+    </div>
 
 {% endblock %}
