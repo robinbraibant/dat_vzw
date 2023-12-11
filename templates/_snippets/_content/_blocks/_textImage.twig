@@ -12,7 +12,7 @@
 
 <div class="text-image container {% if bgColor %}container--light{% endif %}">
     <div class="row {% if imageLeft %}row-reverse{% endif %} align-items">
-        <div class="col-lg-5 {% if imageLeft %}col-lg-offset-1{% endif %}">
+        <div class="{% if block.image|length <= 0 %} col-full {% else %} col-lg-5 {% if imageLeft %}col-lg-offset-1{% endif %} {% endif %}">
             {% if block.blockTitle|length %}
             <h2 class="text-image__headline">{{block.blockTitle}}</h2>
             {% endif %}
@@ -29,15 +29,15 @@
         </div>
 
         {% if block.image|length %}
-        <div class="col-lg-6 {% if not imageLeft %}col-lg-offset-1{% endif %}">
-            <div class="text-image__media">
-                {% set image = block.image|first %}
-                <picture class="text-image__picture">
-                    <source media="" srcset="{{image.getUrl('fit908x908')}} 2x" />
-                    <img class="text-image__image" src="{{image.getUrl('fit908x908')}} 2x" alt="{{image.alt}}" loading="lazy"/>
-                </picture>
+            <div class="col-lg-6 {% if not imageLeft %}col-lg-offset-1{% endif %}">
+                <div class="text-image__media">
+                    {% set image = block.image|first %}
+                    <picture class="text-image__picture">
+                        <source media="" srcset="{{image.getUrl('fit908x908')}} 2x" />
+                        <img class="text-image__image" src="{{image.getUrl('fit908x908')}} 2x" alt="{{image.alt}}" loading="lazy"/>
+                    </picture>
+                </div>
             </div>
-        </div>
         {% endif %}
     </div>
 </div>
