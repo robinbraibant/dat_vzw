@@ -23,7 +23,11 @@
                 <div class="card__text">{{ item.redactor ? item.redactor : item.intro }}</div>
             {% endif %}
             <div class="button button--primary">
-                {{ "Meer lezen"|t }}
+                {% if buttonText is defined and buttonText|length %}
+                    {{ buttonText }}
+                {% else %}
+                    {{ "Meer lezen"|t }}
+                {% endif %}
             </div>
         </div>
 
