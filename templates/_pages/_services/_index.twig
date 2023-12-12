@@ -1,17 +1,32 @@
 {% extends '_layout.twig' %}
 
-{% set breadcrumbs = [entry] %}
+{% set breadcrumbs = [
+    entry
+] %}
+
+{% set services = craft.entries().section('services').with(['image']).collect() %}
 
 {% block content %}
 
-{% include "_snippets/_hero/_hero.twig" %}
+    {% include "_snippets/_hero/_hero.twig" %}
 
-{% include "_snippets/_content/_blocks/_servicesAll.twig"
-with {
-'block': false
-}
-%}
+    <div class="container">
+        <div class="row row-center row-grid">
+            {% set even = services|length is divisible by(2) %}
+            {% for item in services %}
+                <div class="{% if even %} col-md-6 col-lg-3 {% else %} col-md-8 col-lg-4 {% endif %}">
+                    {% include '_snippets/_components/_card.twig' %}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
 
-{% include '_snippets/_content/_contentBuilder.twig' %}
+    {% include '_snippets/_content/_contentBuilder.twig' with {
+        settings: {
+            container: 'container--small',
+            row: 'row',
+            col: 'col-full'
+        }
+    } %}
 
 {% endblock %}

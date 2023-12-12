@@ -4,9 +4,7 @@
 
 {% set contentBuilderBlocks = entry.contentBuilder.with(['textImage:image', 'images:images']).collect() %}
 
-{% if not contentBuilderBlocks|length %}
-        <div class="container">
-{% endif %}
+<div class="container">
 
 {% for block in contentBuilderBlocks %}
 
@@ -43,6 +41,4 @@
         {% endif %}
 {% endfor %}
 
-{% if not contentBuilderBlocks|length %}
-        </div>
-{% endif %}
+</div>

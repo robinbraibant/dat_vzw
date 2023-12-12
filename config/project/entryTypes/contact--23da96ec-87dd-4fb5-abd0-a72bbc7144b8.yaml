@@ -41,7 +41,19 @@ fieldLayouts:
             uid: 9fbdc571-bf28-4bc2-928a-615bd100dfdd
             userCondition: null
             warning: null
-            width: 100
+            width: 75
+          -
+            elementCondition: null
+            fieldUid: e57c50c0-e93d-4551-afbc-bfccd8274f8d # Wijzig weergave
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0218b27d-35a1-4e4f-9d97-13450445308b
+            userCondition: null
+            warning: null
+            width: 25
           -
             elementCondition: null
             fieldUid: 71121d32-13d9-4173-b4d5-cb96fb596e4d # Intro
@@ -121,6 +133,9 @@ handle: contact
 hasTitleField: true
 name: Contact
 section: 877440ea-915c-43b1-9d9b-b55f629c2075 # Contact
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: '{heroTitle|striptags}'
 titleTranslationKeyFormat: null

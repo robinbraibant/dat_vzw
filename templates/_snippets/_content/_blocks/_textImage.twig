@@ -4,12 +4,6 @@
     {% set imageLeft = false %}
 {% endif %}
 
-{#{% if block.bgColor != null %}#}
-{#    {% set bgColor = true %}#}
-{#{% else %}#}
-{#    {% set bgColor = false %}#}
-{#{% endif %}#}
-
 <div class="text-image">
     <div class="row {% if imageLeft %}row-reverse{% endif %} align-items">
         <div class="{% if block.image|length <= 0 %} col-full {% else %} col-lg-5 {% if imageLeft %}col-lg-offset-1{% endif %} {% endif %}">
@@ -18,7 +12,7 @@
             {% endif %}
 
             {% if block.redactor|length %}
-            {{block.redactor}}
+                {{block.redactor}}
             {% endif %}
 
             {% if block.ctas|length and not block.ctas.cta.isEmpty() %}
