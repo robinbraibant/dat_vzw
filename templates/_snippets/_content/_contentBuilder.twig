@@ -8,33 +8,40 @@
         <div class="container">
 {% endif %}
 
-{% if settings.container is defined %}
-        <div class="{{ settings.container }}">
-{% endif %}
+{% for block in contentBuilderBlocks %}
 
-        {% if settings.row is defined %}
-                <div class="{{ settings.row }}">
+        {% if block.bgColor != null %}
+                {% set bgColor = true %}
+        {% else %}
+                {% set bgColor = false %}
         {% endif %}
 
-                {% if settings.col is defined %}
-                        <div class="{{ settings.col }}">
+        {% if settings.container is defined %}
+                <div class="{{ settings.container }} {% if bgColor %}container--light{% endif %}">
+        {% endif %}
+
+                {% if settings.row is defined %}
+                        <div class="{{ settings.row }}">
                 {% endif %}
 
-                        {% for block in contentBuilderBlocks %}
-                            {% include '_snippets/_content/_blocks/_'~block.type.handle with { settings: settings} %}
-                        {% endfor %}
+                        {% if settings.col is defined %}
+                                <div class="{{ settings.col }}">
+                        {% endif %}
 
-                {% if settings.col is defined %}
+                                    {% include '_snippets/_content/_blocks/_'~block.type.handle with { settings: settings} %}
+
+                        {% if settings.col is defined %}
+                                </div>
+                        {% endif %}
+
+                {% if settings.row is defined %}
                         </div>
                 {% endif %}
 
-        {% if settings.row is defined %}
-                </div>
+        {% if settings.container is defined %}
+            </div>
         {% endif %}
-
-{% if settings.container is defined %}
-    </div>
-{% endif %}
+{% endfor %}
 
 {% if not contentBuilderBlocks|length %}
         </div>

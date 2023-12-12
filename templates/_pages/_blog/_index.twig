@@ -21,14 +21,12 @@
         </div>
     </div>
 
-    <div class="container">
-        {% include '_snippets/_content/_contentBuilder.twig' with {
-            settings: {
-                container: 'container',
-                row: 'row',
-                col: 'col-full'
-            }
-        } %}
-    </div>
+    {% include '_snippets/_content/_contentBuilder.twig' with {
+        settings: {
+            container: 'container--small',
+            row: 'row',
+            col: 'col-full'
+        }
+    } %}
 
 {% endblock %}
