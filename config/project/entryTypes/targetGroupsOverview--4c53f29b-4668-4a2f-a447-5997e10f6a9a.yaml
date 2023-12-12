@@ -41,7 +41,19 @@ fieldLayouts:
             uid: 333525cc-a7f1-4060-b780-e30342f1b197
             userCondition: null
             warning: null
-            width: 100
+            width: 75
+          -
+            elementCondition: null
+            fieldUid: e57c50c0-e93d-4551-afbc-bfccd8274f8d # Wijzig weergave
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ed9c55e7-8c74-4b6c-9a50-86dcc8db32ed
+            userCondition: null
+            warning: null
+            width: 25
           -
             elementCondition: null
             fieldUid: 71121d32-13d9-4173-b4d5-cb96fb596e4d # Intro
@@ -66,7 +78,7 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-        name: Content
+        name: Hero
         uid: a1f50d1a-16d1-45ee-a3aa-131efe08844a
         userCondition: null
       -
@@ -109,6 +121,9 @@ handle: targetGroupsOverview
 hasTitleField: true
 name: 'Doelgroepen overzicht'
 section: fe3adc56-c49e-468c-a8d2-6033cc7846c5 # Doelgroepen overzicht
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

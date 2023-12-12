@@ -1,16 +1,16 @@
 {% if block.imagePosition == 'left' %}
-{% set imageLeft = true %}
+    {% set imageLeft = true %}
 {% else %}
-{% set imageLeft = false %}
+    {% set imageLeft = false %}
 {% endif %}
 
 {% if block.bgColor != null %}
-{% set bgColor = true %}
+    {% set bgColor = true %}
 {% else %}
-{% set bgColor = false %}
+    {% set bgColor = false %}
 {% endif %}
 
-<div class="text-image container {% if bgColor %}container--light{% endif %}">
+<div class="text-image container--small {% if bgColor %}container--light{% endif %}">
     <div class="row {% if imageLeft %}row-reverse{% endif %} align-items">
         <div class="{% if block.image|length <= 0 %} col-full {% else %} col-lg-5 {% if imageLeft %}col-lg-offset-1{% endif %} {% endif %}">
             {% if block.blockTitle|length %}

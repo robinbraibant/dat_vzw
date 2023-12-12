@@ -41,7 +41,19 @@ fieldLayouts:
             uid: 8b1ca898-d903-4783-809d-783d551b0017
             userCondition: null
             warning: null
-            width: 100
+            width: 75
+          -
+            elementCondition: null
+            fieldUid: e57c50c0-e93d-4551-afbc-bfccd8274f8d # Wijzig weergave
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7d537206-d150-4808-bfe5-5169c7479e1e
+            userCondition: null
+            warning: null
+            width: 25
           -
             elementCondition: null
             fieldUid: 71121d32-13d9-4173-b4d5-cb96fb596e4d # Intro
@@ -92,6 +104,48 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
+            fieldUid: c7e33047-eed9-474f-b8e4-80a1945b1f57 # Overview Titel
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 47c6c686-a6fd-4436-b4c9-aeb460df19d2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 67058d8b-b679-4c50-96fc-9e21366eea0c # Overview Omschrijving
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9cb20a16-2137-4859-a1c8-e56f1b26110b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 2ed0506e-2d1d-4f21-a387-92dcc5cf64f7 # Overview Afbeelding
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ac415c1d-0aba-4151-927c-391bb8ff63a2
+            userCondition: null
+            warning: null
+            width: 100
+        name: Overview
+        uid: 563e69bd-e594-4fad-bd46-ae5145386718
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
             fieldUid: 87757b92-04cd-4915-971d-e0d100fccb17 # SEO instellingen
             instructions: null
             label: null
@@ -109,6 +163,9 @@ handle: default
 hasTitleField: true
 name: Default
 section: 14ff9459-9619-4a01-9cbb-c9614a846858 # Pagina's
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: '{heroTitle|striptags}'
 titleTranslationKeyFormat: null

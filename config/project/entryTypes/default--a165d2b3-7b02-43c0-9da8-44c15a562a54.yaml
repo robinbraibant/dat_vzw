@@ -86,6 +86,24 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
+            fieldUid: 42753f56-881c-4d30-82a4-7062d713de9b # Contentbuilder
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1100d9f5-3310-4710-a0e9-75dcb87ec3b9
+            userCondition: null
+            warning: null
+            width: 100
+        name: Inhoud
+        uid: 2384f987-87c1-4d71-83e7-9488778ee842
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
             fieldUid: c7e33047-eed9-474f-b8e4-80a1945b1f57 # Overview Titel
             instructions: null
             label: null
@@ -122,24 +140,6 @@ fieldLayouts:
             width: 100
         name: Overview
         uid: 27c0de69-10c6-4f0e-a0ae-1a3edea2ce57
-        userCondition: null
-      -
-        elementCondition: null
-        elements:
-          -
-            elementCondition: null
-            fieldUid: 42753f56-881c-4d30-82a4-7062d713de9b # Contentbuilder
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 1100d9f5-3310-4710-a0e9-75dcb87ec3b9
-            userCondition: null
-            warning: null
-            width: 100
-        name: Inhoud
-        uid: 2384f987-87c1-4d71-83e7-9488778ee842
         userCondition: null
       -
         elementCondition: null

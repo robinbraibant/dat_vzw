@@ -32,18 +32,6 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 99603efa-2602-40ce-9bd8-058d114c1498 # Afbeelding
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 5390934e-1294-489a-b930-6c07b0a6f057
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
             fieldUid: b693e790-e464-467a-81a1-f62bb9914cb2 # Hero afbeelding
             instructions: null
             label: null
@@ -53,7 +41,19 @@ fieldLayouts:
             uid: aff6a7ea-f8f5-4642-8536-c1211c00a07d
             userCondition: null
             warning: null
-            width: 100
+            width: 75
+          -
+            elementCondition: null
+            fieldUid: e57c50c0-e93d-4551-afbc-bfccd8274f8d # Wijzig weergave
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 14baf301-56b1-4a42-a316-042d17f5d1b7
+            userCondition: null
+            warning: null
+            width: 25
           -
             elementCondition: null
             fieldUid: 71121d32-13d9-4173-b4d5-cb96fb596e4d # Intro
@@ -98,6 +98,24 @@ fieldLayouts:
             width: 100
         name: Inhoud
         uid: 069e18c1-499f-4d77-b533-38dbe4b8ecce
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 99603efa-2602-40ce-9bd8-058d114c1498 # Afbeelding
+            instructions: 'Laad hier het icoon op dat deze doelgroep vertegenwoordigt. '
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5390934e-1294-489a-b930-6c07b0a6f057
+            userCondition: null
+            warning: null
+            width: 100
+        name: Overview
+        uid: fad55667-34e5-498a-85d7-f3cee39d7bcf
         userCondition: null
       -
         elementCondition: null
