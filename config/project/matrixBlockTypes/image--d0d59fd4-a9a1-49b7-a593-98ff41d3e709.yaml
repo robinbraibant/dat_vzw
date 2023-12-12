@@ -98,4 +98,4 @@ fields:
     type: statikbe\configvaluesfield\fields\ConfigValuesFieldField
 handle: image
 name: Afbeelding
-sortOrder: 7
+sortOrder: 5

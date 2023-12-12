@@ -96,4 +96,4 @@ fields:
     type: statikbe\configvaluesfield\fields\ConfigValuesFieldField
 handle: video
 name: Video
-sortOrder: 9
+sortOrder: 7

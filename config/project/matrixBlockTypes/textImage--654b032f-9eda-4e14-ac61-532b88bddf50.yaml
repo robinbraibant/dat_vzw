@@ -152,7 +152,7 @@ fields:
     searchable: true
     settings:
       blockTypeFields: 0
-      changedFieldIndicator: 1997455471
+      changedFieldIndicator: 848074986
       columns:
         __assoc__:
           -
@@ -257,5 +257,5 @@ fields:
     translationMethod: site
     type: craft\fields\Assets
 handle: textImage
-name: 'Tekst + afbeelding'
-sortOrder: 4
+name: 'Tekst (+ afbeelding)'
+sortOrder: 1

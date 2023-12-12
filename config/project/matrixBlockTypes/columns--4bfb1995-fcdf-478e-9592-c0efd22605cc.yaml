@@ -375,4 +375,4 @@ fields:
     type: craft\fields\PlainText
 handle: columns
 name: 'Tekst - 2 kolommen'
-sortOrder: 3
+sortOrder: 2

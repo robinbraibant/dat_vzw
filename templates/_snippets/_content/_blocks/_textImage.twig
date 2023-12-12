@@ -8,7 +8,7 @@
     <div class="row {% if imageLeft %}row-reverse{% endif %} align-items">
         <div class="{% if block.image|length <= 0 %} col-full {% else %} col-lg-5 {% if imageLeft %}col-lg-offset-1{% endif %} {% endif %}">
             {% if block.blockTitle|length %}
-            <h2 class="text-image__headline">{{block.blockTitle}}</h2>
+                <h2 class="text-image__headline">{{block.blockTitle}}</h2>
             {% endif %}
 
             {% if block.redactor|length %}

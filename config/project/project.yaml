@@ -1,4 +1,4 @@
-dateModified: 1702409913
+dateModified: 1702411582
 elementSources:
   craft\elements\Asset:
     -
@@ -173,7 +173,6 @@ fs:
 meta:
   __names__:
     0ae41f7b-646b-4f66-8dad-e8411d392412: Contactgegevens # Contactgegevens
-    0b28fe61-b8ff-46fb-9552-da9db3a1722c: Tooltip # Tooltip
     0b9892a1-1456-4b6b-a99b-8265c5d19c49: 'Call to action' # Call to action
     0bc3f94f-a78e-4766-8414-ee28e27bdf2d: 'Call to actions' # Call to actions
     0bd428e6-882a-4f74-9ab0-a015b9bc7dcd: 'Call to action(s)' # Call to action(s)
@@ -193,7 +192,6 @@ meta:
     1f0f182c-7d24-48fb-b7f2-3bec16e61cd4: 'Lijst item' # Lijst item
     1f5be208-5f20-4f1d-995a-1ac03cf9823b: Default # Default
     01f319e1-895d-4972-bcb3-09fc3d905c1b: Tekst # Tekst
-    2a54d133-f872-4d21-9dbf-53d17cf36ff6: 'Werking overzichtskaarten' # Werking overzichtskaarten
     2a2798e0-96da-48f0-8ae9-096674571c6d: 'Accent positite' # Accent positite
     2a7635da-9798-4a72-9262-84d14e66931f: 'Call to action(s)' # Call to action(s)
     2b98ef8f-2b83-48a2-96b0-e987c2bff979: Titel # Titel
@@ -214,8 +212,6 @@ meta:
     2fd3f5ca-2633-4a3b-b40b-e7f3d8ea2c2d: Gallery # Gallery
     2ff59dd4-51db-4003-b745-1540e397b55f: 'Team overzicht' # Team overzicht
     3aef0870-e313-4198-bf50-16cda443aa22: Subtekst # Subtekst
-    3cc91ca4-2d96-426a-bb90-fc52622494da: 'Call to action(s)' # Call to action(s)
-    3cd4a533-64b9-4638-8732-64be1729b809: Tekst # Tekst
     3e56d1c3-9586-4792-9ce9-47fcf80a065c: Accentpositite # Accentpositite
     4a86c3de-0f29-486a-88ca-d857f405ebe5: 'Blog 2x' # Blog 2x
     4bb8ab8c-f5d9-47ec-824a-143cf96a88a9: optimizedCases # optimizedCases
@@ -230,7 +226,6 @@ meta:
     5c61fe00-5302-4c1d-a804-99ec01932e2a: Link # Link
     5d4bab41-4481-4ca1-9a66-6707d059117d: 'Call to action' # Call to action
     5e7d61a3-f9e7-43eb-b0e9-abdb777ffe0c: 'Logo''s' # Logo's
-    5e9897d4-a4bb-4a02-9c5e-9f16e26cf9e3: Achtergrondkleur # Achtergrondkleur
     5f77ef4c-6f5b-44a6-a22f-fd97cb90e607: E-mailadres # E-mailadres
     5f238af3-d60a-4489-8334-377131dec325: Titel # Titel
     6a3d2c09-957d-4e21-9e65-98c873967b27: Tekst # Tekst
@@ -241,14 +236,12 @@ meta:
     6ff6ad71-f1fb-4ae6-bb19-0d0f9e460c5e: 'Call to action' # Call to action
     7b18c60a-5858-4538-a7c5-5f09b3e7b4b5: Achtergrondkleur # Achtergrondkleur
     7bf666ab-f1aa-443d-ba81-0ec00e3f5a42: 'Optimized Images' # Optimized Images
-    7df27cc9-e98e-4f22-8a21-6398b08ddada: Titel # Titel
     7ef3951c-2209-42d7-8ece-10077019d52c: Werking # Werking
     7f22b33c-9550-4501-9895-e236b5d47451: 'Call to action kolom 1' # Call to action kolom 1
     7f84ec17-6b6d-4ff2-8c4f-6ddc1985b47b: Accentkleur # Accentkleur
     7f2445d8-5c3c-45e3-b37f-12a267620d10: Auteur # Auteur
     7f378989-98b8-4ed9-8ce9-d9896c2b5095: Review # Review
     8ab1bf7f-df17-40d6-8f26-d3649c67d263: Subtekst # Subtekst
-    8ae04f87-c29b-40d5-aa85-7eda669ccf72: Titel # Titel
     8b3b3586-9325-4ed6-a052-612e6a0fd2d1: Titel # Titel
     8b253743-df16-4b9b-bc0f-1dd56e117bf1: URL # URL
     8bd3fb7c-3911-4b8d-b205-d5b933b76a26: Afbeelding # Afbeelding
@@ -280,16 +273,13 @@ meta:
     34f3b8c1-8699-4ca7-a398-e300dd1b28ae: Facebook # Facebook
     35bdf9d0-c610-4e31-a9d6-561f8c76c589: Titel # Titel
     38b877a9-6a46-4793-bb04-90e94b6c874c: Homepage # Homepage
-    38cd09e6-eb73-485e-ad7c-4386d438e44e: Titel # Titel
     38dbafcc-4a93-443f-a8c8-5e2999a788f9: 'Dat vzw' # Dat vzw
     039bc5b4-bcea-4656-8cb0-56e5bfe0167f: Profile # Profile
-    41db35dc-7055-475f-b15e-761d456030c4: Achtergrondkleur # Achtergrondkleur
     42e6baac-94ef-4a47-b1fd-c5031c4df88c: Privacybeleid # Privacybeleid
     44b87e8d-7e0d-47e4-95df-668e8186eb94: 'Tekst kolom 1' # Tekst kolom 1
     47a73520-8ab9-4ee0-99a6-74ac81658a6f: 'Alpine Digital' # Alpine Digital
     047fcf0a-9373-4e78-9a1f-1ef31f93ae65: 'Cases Landscape 2x' # Cases Landscape 2x
     49a2c2ee-fadf-4f20-83e1-b6f2513721d1: 'Call to action(s)' # Call to action(s)
-    49b2e501-f490-423e-bf75-44effe76308b: Achtergrondkleur # Achtergrondkleur
     50e251cc-bb40-433b-90eb-e44e5e7ae24c: 'Cases Square' # Cases Square
     51e8d0b6-683b-4ed7-a7a2-31f0ac53c7d7: Tekst # Tekst
     56b0bbba-5b0e-4f12-85db-b2de93f0afe5: Rating # Rating
@@ -300,7 +290,6 @@ meta:
     65b2bb5a-5270-45fc-a215-72c888b19334: Bestanden # Bestanden
     67be4005-b630-442c-afc2-4e1ffabf00c6: Auteur # Auteur
     70d06fd1-395f-4a88-a258-828d9cf416c5: 'Team 2x' # Team 2x
-    70ef8094-25bb-420d-b6b7-2b1dce499710: Afbeelding # Afbeelding
     72cdfb0c-58f9-4c05-8fff-fcc14fee38db: Afbeeldingen # Afbeeldingen
     74fff7e2-1518-4daa-bcd2-229e688b6876: New # New
     75d27957-6dab-4ec7-b69e-e262a11b3432: Title # Title
@@ -316,7 +305,6 @@ meta:
     148b8d62-a41b-46de-b88f-ebe75935728a: Vacatures # Vacatures
     150b2333-cac2-449e-a87e-63ff5495292b: Titel # Titel
     0237c026-6c5e-4d97-aebc-bfb500bb27b0: Klant # Klant
-    264d1ce4-2026-41ad-ba6f-e507cec68d14: 'Call to action(s)' # Call to action(s)
     264df666-1c87-4c38-a49d-bb07a49ef171: Titel # Titel
     281b3b71-a56c-4506-acea-15c94c1594f9: 'Call to action' # Call to action
     308c24ad-414e-4b74-ac8b-22a384fbeefd: Default # Default
@@ -327,7 +315,7 @@ meta:
     501f3d96-f29b-43ff-b392-abc0e4951179: 'Call to action(s)' # Call to action(s)
     520bd42c-315b-4139-b2ac-ae086094063c: Tekst # Tekst
     602eddbe-2cfe-4e05-aafb-45ce7180cef5: 'Core Image Mobile' # Core Image Mobile
-    654b032f-9eda-4e14-ac61-532b88bddf50: 'Tekst + afbeelding' # Tekst + afbeelding
+    654b032f-9eda-4e14-ac61-532b88bddf50: 'Tekst (+ afbeelding)' # Tekst (+ afbeelding)
     656c3b06-27a5-4968-9b74-c08ab5b577c3: Achtergrondkleur # Achtergrondkleur
     656d571e-89dc-4b2b-8930-aa003f6f9abe: 'Positie blok' # Positie blok
     663f99ff-5cc3-4cae-a0f3-de58f9ebdd22: Achtergrondkleur # Achtergrondkleur
@@ -335,13 +323,11 @@ meta:
     727ef76c-071b-4fc2-8a16-2358a64f3b08: 'Call to actions' # Call to actions
     740d0e8b-1e44-4ab1-88d3-b087e9a90fc8: Titel # Titel
     753d678c-4018-409d-9dfa-5c4fdc2219b7: 'Dat vzw' # Dat vzw
-    766b4990-9219-40cd-a20f-3c461cc12f15: Formulier # Formulier
     788f2e94-ef03-42fd-9ce3-4074eb1285f7: Achtergrondkleur # Achtergrondkleur
     792ae990-64b1-4ad4-bfd1-4e3c7c94d68c: 'Vacatures Overzicht' # Vacatures Overzicht
     825f91aa-6a2e-47cd-a8d0-465e1e49ce1b: Afbeelding # Afbeelding
     836f5f07-1bfd-490d-bf1d-504e9457919b: Titel # Titel
     845cec7b-b98e-4051-bbe3-b410026467ad: 'Call to action' # Call to action
-    0853d88c-017f-4722-8366-89f37ca22cc4: Titelblok # Titelblok
     0870e0d6-f1b0-45fc-824e-4865786aef5e: Titel # Titel
     00902a84-6c99-4c98-97db-207d7ed13b5c: 'Toon datum' # Toon datum
     903d7b8b-65d6-4892-a8e2-9ef746302b70: 'Rechterkant oplijsting' # Rechterkant oplijsting
@@ -361,10 +347,8 @@ meta:
     3540f360-b267-47da-a331-44471ce0be24: Achtergrondkleur # Achtergrondkleur
     3993aa71-b649-4685-9711-bc339c22cb38: Afbeelding # Afbeelding
     4661a1fc-ab07-482f-86b5-5e3bd2de38a2: Title # Title
-    5544f019-4d5a-4198-8793-06e57ac5717d: Tekst # Tekst
     5742e5e7-6ba7-4e37-8b85-018b27a80af8: Link # Link
     5961a9ca-0b69-4556-927b-52949d9ad945: Titel # Titel
-    6186bcae-b905-4241-8773-145ccc3ba4f3: Achtergrondkleur # Achtergrondkleur
     6299fda1-63f3-4b0a-aa5b-4929820c6cb1: 'Positie blok' # Positie blok
     6596d67f-6832-4fda-a085-b8f101f7de00: 'Lijst item' # Lijst item
     7013bea2-586f-4295-b3c8-450a5c9beaee: Achtergrondkleur # Achtergrondkleur
@@ -406,7 +390,7 @@ meta:
     877440ea-915c-43b1-9d9b-b55f629c2075: Contact # Contact
     3043947b-8b38-4325-aefc-dfb65b4a7f10: Titel # Titel
     3327264f-5bb0-4ed1-8acd-6882cbcb4ca8: Titel # Titel
-    4222272a-7023-4002-9729-41737c0aac17: 'USP''s' # USP's
+    4222272a-7023-4002-9729-41737c0aac17: Stappen # Stappen
     5060792f-0eb2-42b7-b835-cd32e5902136: overview # overview
     08527269-6401-4ff6-937b-938dbecc53a5: Achtergrondkleur # Achtergrondkleur
     9445878d-b337-433b-b7e1-a0a30c039120: Overview # Overview
@@ -446,8 +430,6 @@ meta:
     b20f857e-09d0-4491-90eb-0390b4efce0e: 'Call to action' # Call to action
     b693e790-e464-467a-81a1-f62bb9914cb2: 'Hero afbeelding' # Hero afbeelding
     b815ed0a-21e0-4ff0-b70a-42ae6b5d67ec: Tekst # Tekst
-    b5042dd9-234b-4fc1-b3fd-e04168caeea4: Werkingsonderdelen # Werkingsonderdelen
-    b7535a4a-9814-4405-b69d-925334f5e180: Formulier # Formulier
     b34185ec-9049-4bbb-bfca-41bd211ba894: Telefoonnummer # Telefoonnummer
     b427067e-c94a-4c52-8a70-353b7ddf14a8: YouTube # YouTube
     b898461c-6989-449b-9795-e0f10eda6481: Achtergrondkleur # Achtergrondkleur
@@ -461,8 +443,6 @@ meta:
     bea7e199-da05-4754-bae9-f85e5cf04713: Default # Default
     bed5a266-2220-47db-924c-a72bf4859d17: Titel # Titel
     beef22db-d952-402c-8d81-2ad5d3efd4e0: Titel # Titel
-    bf63573b-3a46-45f9-8a05-fe1df00844a8: Tekst # Tekst
-    bfdf630a-a045-42c8-be16-3331fa495b6e: Tekst # Tekst
     c0a4e21a-31a9-45c3-9047-f16c3be4a9d0: 'Optimized Blog Cases' # Optimized Blog Cases
     c0c55c21-ba7d-4148-9741-cd6e5eadfa01: 'Kleur icon' # Kleur icon
     c0d978b3-8b89-4fd2-9863-6a39a16212ab: Vacatures # Vacatures
@@ -472,14 +452,12 @@ meta:
     c7dcb4ed-b459-4f5a-be99-58f6373e3624: 'Text image 2x' # Text image 2x
     c7e33047-eed9-474f-b8e4-80a1945b1f57: 'Overview Titel' # Overview Titel
     c9bc3639-409b-4e74-a585-8bebd1240b75: Achtergrondkleur # Achtergrondkleur
-    c21b1ead-1dd5-4baf-9631-5d85e05b1936: 'Call to action' # Call to action
     c53d5712-ca90-48a4-9abb-c3137357eb02: 'Icoon klasse' # Icoon klasse
     c86b4395-57d5-4eaa-86ac-95b29e83b055: 'Call to action(s)' # Call to action(s)
     c603be04-a3c6-47e6-b056-c73d087abe76: 'Call to action' # Call to action
     c72145dd-9962-410a-b01b-ad7ca7258478: Homepage # Homepage
     cb0290a7-99ac-4c37-8100-624e9d441a8a: Achtergrondkleur # Achtergrondkleur
     cc9be780-1445-4090-9b31-2c7fe893e319: Centra # Centra
-    cd012a5f-aa21-426a-8cd9-f998532ca2bb: 'Call to action' # Call to action
     cdbcd49b-120d-44b0-8eb8-ec5dd64181b1: Achtergrondkleur # Achtergrondkleur
     cf4e05cf-6017-46f9-8d70-31f3c1d227c4: Afbeelding # Afbeelding
     cf143959-dd98-4560-a9b3-1b01c25de079: Titel # Titel
@@ -549,7 +527,6 @@ meta:
     fbd0191b-5b18-4c77-81db-73ba0839a3c5: 'Titel centrum' # Titel centrum
     fc4b61e2-a06f-4825-a27c-33eefb4f20aa: Artikels # Artikels
     fc9d4621-af74-45b4-9ebf-3b64b090bb6f: Postcode # Postcode
-    fd3e6c44-b090-4050-acd1-f201d539bb8f: Tekst # Tekst
     fd8d5d7e-6bfa-4439-bea4-a0170f232cb1: Titel # Titel
     fd602255-6775-4011-83d9-56c0d56df171: Tekst # Tekst
     fe3adc56-c49e-468c-a8d2-6033cc7846c5: 'Doelgroepen overzicht' # Doelgroepen overzicht

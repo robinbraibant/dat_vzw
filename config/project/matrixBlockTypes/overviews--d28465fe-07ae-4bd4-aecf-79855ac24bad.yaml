@@ -79,7 +79,7 @@ fields:
     searchable: false
     settings:
       blockTypeFields: 0
-      changedFieldIndicator: 824646528
+      changedFieldIndicator: 542688025
       columns:
         __assoc__:
           -
@@ -186,7 +186,7 @@ fields:
     searchable: true
     settings:
       blockTypeFields: 0
-      changedFieldIndicator: 129067217
+      changedFieldIndicator: 1089491249
       columns:
         __assoc__:
           -
@@ -209,4 +209,4 @@ fields:
     type: verbb\supertable\fields\SuperTableField
 handle: overviews
 name: Overviews
-sortOrder: 14
+sortOrder: 10

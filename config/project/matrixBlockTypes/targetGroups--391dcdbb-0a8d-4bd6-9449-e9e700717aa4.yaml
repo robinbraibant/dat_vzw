@@ -43,4 +43,4 @@ fields:
     type: craft\fields\PlainText
 handle: targetGroups
 name: Doelgroepen
-sortOrder: 10
+sortOrder: 8

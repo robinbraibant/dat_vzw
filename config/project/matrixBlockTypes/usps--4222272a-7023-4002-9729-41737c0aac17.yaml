@@ -79,7 +79,7 @@ fields:
     searchable: true
     settings:
       blockTypeFields: 0
-      changedFieldIndicator: 35181263
+      changedFieldIndicator: 501764186
       columns:
         __assoc__:
           -
@@ -192,5 +192,5 @@ fields:
     translationMethod: none
     type: craft\fields\Lightswitch
 handle: usps
-name: 'USP''s'
-sortOrder: 6
+name: Stappen
+sortOrder: 4

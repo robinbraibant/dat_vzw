@@ -67,7 +67,7 @@ fields:
     searchable: true
     settings:
       blockTypeFields: 0
-      changedFieldIndicator: 2112661635
+      changedFieldIndicator: 2094146996
       columns:
         __assoc__:
           -
@@ -152,4 +152,4 @@ fields:
     type: craft\redactor\Field
 handle: cta
 name: 'Call to action'
-sortOrder: 5
+sortOrder: 3

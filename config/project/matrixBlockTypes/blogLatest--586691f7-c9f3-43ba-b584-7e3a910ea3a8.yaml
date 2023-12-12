@@ -149,7 +149,7 @@ fields:
     searchable: true
     settings:
       blockTypeFields: 0
-      changedFieldIndicator: 2043854625
+      changedFieldIndicator: 1443873494
       columns:
         __assoc__:
           -
@@ -200,4 +200,4 @@ fields:
     type: craft\redactor\Field
 handle: blogLatest
 name: Blogs
-sortOrder: 12
+sortOrder: 9
